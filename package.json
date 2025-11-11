@@ -1,0 +1,19 @@
+{
+  "name": "restapi-cypress-sabium",
+  "version": "2.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cypress": "^15.4.0"
+  },
+  "devDependencies": {
+    "cypress-plugin-api": "^2.11.2",
+    "supertest": "^7.1.4"
+  }
+}

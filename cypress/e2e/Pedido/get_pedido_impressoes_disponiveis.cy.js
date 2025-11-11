@@ -1,0 +1,29 @@
+const BASE_URL = Cypress.env('BASE_URL')
+const PATH_API = '/Pedido/v3_pedido_impressoes_disponiveis';
+const Authorization = Cypress.env('API.PRAGMA')
+const idFilial = "12345678910"; 
+const idPedidoVenda = "12345678910";
+
+describe('Pedido - GET - /v3/pedido_impressoes_disponiveis/{idFilial}/{idPedidoVenda}', { env: { hideCredendials: true } }, () => {
+  
+    it('Resposta 200', () => {
+
+      cy.api({
+        method: 'GET', 
+        url: `${BASE_URL}/${PATH_API}/${idFilial}/${idPedidoVenda}`, 
+        headers: { Authorization },
+        failOnStatusCode: false
+      })
+        .then((response) => {
+          const { data } = body;
+          expect(response.status).to.eq(200);
+          expect(response.duration).to.be.below(2000); 
+          expect(resposta.body.retorno[0]).toHaveProperty('idfilial');
+          expect(resposta.body.retorno[0]).toHaveProperty('idpedidovenda');
+          expect(resposta.body.retorno[0]).toHaveProperty('imprimeNota');
+          expect(resposta.body.retorno[0]).toHaveProperty('imprimecontratoservico');
+          expect(resposta.body.retorno[0]).toHaveProperty('imprimecarne');
+          expect(resposta.body.retorno[0]).toHaveProperty('imprimeContratoCompraVenda');
+        });
+    });
+  });
