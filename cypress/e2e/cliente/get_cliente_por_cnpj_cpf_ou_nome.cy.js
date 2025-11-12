@@ -4,6 +4,9 @@ const Authorization = Cypress.env('API.PRAGMA');
 const clienteValido = "12345678901234";
 
 describe('API - Cliente - GET /v3/cliente/{cliente}', { env: { hideCredentials: true } }, () => {
+
+  const clienteSemDados = "00000000000000";
+  const clienteInvalido = "cliente_invalido";
    
   it('Deve retornar 200 e todas as propriedades esperadas para um cliente válido', () => {
     cy.api({
@@ -20,13 +23,11 @@ describe('API - Cliente - GET /v3/cliente/{cliente}', { env: { hideCredentials: 
       expect(ret).to.have.property('cnpj_cpf');
       expect(ret).to.have.property('nome');
       expect(ret).to.have.property('nomefantasia');
-      // ... (demais asserções do seu teste original)
     });
   });
 
   it('Deve retornar 204 quando não houver dados para o cliente informado', () => {
-    const clienteSemDados = "00000000000000";
-
+    
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${clienteSemDados}`,
@@ -39,7 +40,6 @@ describe('API - Cliente - GET /v3/cliente/{cliente}', { env: { hideCredentials: 
   });
 
   it('Deve retornar 412 para cliente inválido', () => {
-    const clienteInvalido = "cliente_invalido";
 
     cy.api({
       method: 'GET',

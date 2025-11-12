@@ -46,5 +46,5 @@ O repositório está configurado para manter informações sensíveis, como URLs
 
 Ajustar const de todos os arquivos de teste em um arquivo que fique escondido do github.
 
-Pegando variáveis, colocando no cypress.env.json e ajustando nos arquivos de teste. Feito até:
-Pasta "caixa"
+Retirando variáreis de dentro dos arquivos de teste e colocando no describe
+Próximo é "diversos"

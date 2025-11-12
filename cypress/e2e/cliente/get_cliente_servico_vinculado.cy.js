@@ -5,6 +5,9 @@ const clienteValido = "12345678901234";
 const processoValido = "000000";
 
 describe('API - Cliente - GET /v3/cliente_servico_vinculado/{cliente}', { env: { hideCredentials: true } }, () => {
+
+  const clienteSemServico = "00000000000000";
+  const processoSemServico = "000000";
    
   it('Deve retornar 200 e as propriedades do serviço vinculado', () => {
     cy.api({
@@ -29,9 +32,7 @@ describe('API - Cliente - GET /v3/cliente_servico_vinculado/{cliente}', { env: {
   });
 
   it('Deve retornar 204 quando não houver serviços vinculados para o cliente/processo', () => {
-    const clienteSemServico = "00000000000000";
-    const processoSemServico = "000000";
-
+    
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${clienteSemServico}/${processoSemServico}`,

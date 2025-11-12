@@ -4,6 +4,8 @@ const Authorization = Cypress.env('API.PRAGMA');
 const clienteValido = "12345678901234";
 
 describe('API - Cliente - GET /v3/cliente_simples/{cliente}', { env: { hideCredentials: true } }, () => {
+
+  const clienteSemDados = "00000000000000";
   
   it('Deve retornar 200 e propriedades do cliente simplificado', () => {
     cy.api({
@@ -58,7 +60,6 @@ describe('API - Cliente - GET /v3/cliente_simples/{cliente}', { env: { hideCrede
   });
 
   it('Deve retornar 204 quando não houver dados para o cliente simplificado', () => {
-    const clienteSemDados = "00000000000000";
 
     cy.api({
       method: 'GET',

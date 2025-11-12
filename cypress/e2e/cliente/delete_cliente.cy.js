@@ -5,6 +5,9 @@ const clienteValido = "12345678901234";
 
 describe('API - Cliente - DELETE /v3/cliente/{cliente}', { env: { hideCredentials: true } }, () => {
 
+  const clienteSemDados = "00000000000000";
+  const clienteInvalido = "cliente_invalido";
+
   it('Deve retornar 200 ao excluir cliente válido', () => {
     cy.api({
       method: 'DELETE',
@@ -18,7 +21,6 @@ describe('API - Cliente - DELETE /v3/cliente/{cliente}', { env: { hideCredential
   });
 
   it('Deve retornar 204 ao excluir cliente já inexistente', () => {
-    const clienteSemDados = "00000000000000";
 
     cy.api({
       method: 'DELETE',
@@ -32,7 +34,6 @@ describe('API - Cliente - DELETE /v3/cliente/{cliente}', { env: { hideCredential
   });
 
   it('Deve retornar 412 para cliente inválido', () => {
-    const clienteInvalido = "cliente_invalido";
 
     cy.api({
       method: 'DELETE',

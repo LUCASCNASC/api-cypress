@@ -6,6 +6,11 @@ const dataAberturaValida = Cypress.env('DATA_ABERTUTA_VALIDA');
 
 describe('API - Caixa Rotina Diária Filial', { env: { hideCredentials: true } }, () => {
 
+  const idFilialSemDados = 99999; // Use um ID de filial que não há rotina para a data
+  const dataSemMovimentacao = "2099-01-01"; // Data futura para garantir ausência de dados
+  const idFilialInvalido = 'abc';
+  const dataAberturaInvalida = 'data_invalida';
+
   it('Deve retornar 200 e responder rapidamente para uma filial e data válidas', () => {
     cy.api({
       method: 'GET',
@@ -19,9 +24,7 @@ describe('API - Caixa Rotina Diária Filial', { env: { hideCredentials: true } }
   });
 
   it('Deve retornar 204 quando não houver dados para a filial/data informados', () => {
-    const idFilialSemDados = 99999; // Use um ID de filial que não há rotina para a data
-    const dataSemMovimentacao = "2099-01-01"; // Data futura para garantir ausência de dados
-
+    
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${idFilialSemDados}/${dataSemMovimentacao}`,
@@ -34,9 +37,7 @@ describe('API - Caixa Rotina Diária Filial', { env: { hideCredentials: true } }
   });
 
   it('Deve retornar 412 para parâmetros que não atendem aos pré-requisitos', () => {
-    const idFilialInvalido = 'abc'; // ID inválido propositalmente
-    const dataAberturaInvalida = 'data_invalida';
-
+    
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${idFilialInvalido}/${dataAberturaInvalida}`,

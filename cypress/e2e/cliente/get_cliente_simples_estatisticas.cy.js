@@ -6,6 +6,9 @@ const idpessoaValido = "12334";
 
 describe('API - Cliente - GET /v3/cliente_simples_estatisticas/{idpessoa}', { env: { hideCredentials: true } }, () => {
   
+  const idpessoaSemEstatistica = "000000";
+  const idpessoaInvalido = "id_invalido";
+  
   it('Deve retornar 200 e todas as propriedades de estatísticas do cliente simplificado', () => {
     cy.api({
       method: 'GET',
@@ -57,7 +60,6 @@ describe('API - Cliente - GET /v3/cliente_simples_estatisticas/{idpessoa}', { en
   });
 
   it('Deve retornar 204 quando não houver estatísticas para o idpessoa informado', () => {
-    const idpessoaSemEstatistica = "000000";
 
     cy.api({
       method: 'GET',
@@ -82,7 +84,6 @@ describe('API - Cliente - GET /v3/cliente_simples_estatisticas/{idpessoa}', { en
   });
 
   it('Deve retornar 412 para idpessoa inválido', () => {
-    const idpessoaInvalido = "id_invalido";
 
     cy.api({
       method: 'GET',
