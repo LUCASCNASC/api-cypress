@@ -4,6 +4,9 @@ const Authorization = Cypress.env('API.PRAGMA');
 const cepValido = "12123123";
 
 describe('API - Diversos - GET /v3/local_entrega_por_cep', { env: { hideCredentials: true } }, () => {
+
+  const cepInvalido = "abcde";
+  const cepSemDados = "00000000";
   
   it('Deve retornar 200 e as propriedades do local de entrega por CEP', () => {
     cy.api({
@@ -28,8 +31,7 @@ describe('API - Diversos - GET /v3/local_entrega_por_cep', { env: { hideCredenti
   });
 
   it('Deve retornar 204 quando não houver locais de entrega para o CEP informado', () => {
-    const cepSemDados = "00000000";
-
+    
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${cepSemDados}`,
@@ -42,8 +44,7 @@ describe('API - Diversos - GET /v3/local_entrega_por_cep', { env: { hideCredenti
   });
 
   it('Deve retornar 412 para CEP inválido', () => {
-    const cepInvalido = "abcde";
-
+    
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${cepInvalido}`,

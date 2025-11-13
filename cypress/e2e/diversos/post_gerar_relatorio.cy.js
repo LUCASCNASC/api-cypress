@@ -11,7 +11,6 @@ describe('API - Diversos - POST /v3/gerar_relatorio', { env: { hideCredentials: 
       headers: { Authorization },
       failOnStatusCode: false,
       body: {
-        // Exemplo de payload, ajuste conforme necessário para a API.
         idmodelorelatorio: 1,
         filtros: [{ nome: "dataIni", valor: "2025-01-01" }]
       }

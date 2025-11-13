@@ -19,12 +19,11 @@ describe('API - Diversos - GET /v3/estado', { env: { hideCredentials: true } }, 
     });
   });
 
-  it('Deve retornar 204 quando não houver estados cadastrados', () => {
+  it.skip('Deve retornar 204 quando não houver estados cadastrados', () => {
     // Se o endpoint não aceita parâmetro, simule um cenário de ambiente sem estados cadastrados, se possível
     // Caso não seja aplicável, este teste pode ser omitido.
   });
 
-  it('Deve retornar 412 se houver erro de pré-requisito', () => {
-    // Não aplicável se o endpoint não exige parâmetros obrigatórios, mas pode ser incluído para cobrir cenários de erro.
+  it.skip('Deve retornar 412 se houver erro de pré-requisito', () => {
   });
 });

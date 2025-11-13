@@ -4,6 +4,9 @@ const Authorization = Cypress.env('API.PRAGMA');
 const tabelaValida = "123";
 
 describe('API - Diversos - GET /v3/dados_tabela/{tabela}', { env: { hideCredentials: true } }, () => {
+
+  const tabelaSemDados = "tabela_inexistente";
+  const tabelaInvalida = "!@#";
   
   it('Deve retornar 200 e as propriedades da tabela', () => {
     cy.api({
@@ -21,8 +24,7 @@ describe('API - Diversos - GET /v3/dados_tabela/{tabela}', { env: { hideCredenti
   });
 
   it('Deve retornar 204 quando não houver dados para a tabela informada', () => {
-    const tabelaSemDados = "tabela_inexistente";
-
+    
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${tabelaSemDados}`,
@@ -35,7 +37,6 @@ describe('API - Diversos - GET /v3/dados_tabela/{tabela}', { env: { hideCredenti
   });
 
   it('Deve retornar 412 para tabela inválida', () => {
-    const tabelaInvalida = "!@#";
 
     cy.api({
       method: 'GET',

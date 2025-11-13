@@ -7,6 +7,11 @@ const idrotacidade = "123";
 
 describe('API - Diversos - GET /v3/rota_cidade', { env: { hideCredentials: true } }, () => {
 
+  const idgruporotaInvalido = "abc";
+  const idgruporotaSemRota = "9999";
+  const idrotaSemRota = "9999";
+  const idrotacidadeSemRota = "9999";
+
   it('Deve retornar 200 e as propriedades de rota cidade', () => {
     cy.api({
       method: 'GET',
@@ -27,9 +32,6 @@ describe('API - Diversos - GET /v3/rota_cidade', { env: { hideCredentials: true 
   });
 
   it('Deve retornar 204 quando não houver rotas cidade para os parâmetros informados', () => {
-    const idgruporotaSemRota = "9999";
-    const idrotaSemRota = "9999";
-    const idrotacidadeSemRota = "9999";
 
     cy.api({
       method: 'GET',
@@ -43,7 +45,7 @@ describe('API - Diversos - GET /v3/rota_cidade', { env: { hideCredentials: true 
   });
 
   it('Deve retornar 412 se houver erro de pré-requisito', () => {
-    const idgruporotaInvalido = "abc";
+    
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${idgruporotaInvalido}/${idrota}/${idrotacidade}`,

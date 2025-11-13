@@ -5,6 +5,8 @@ const cepValido = "12312312312";
 
 describe('API - Diversos - GET /v3/cep/{cep}', { env: { hideCredentials: true } }, () => {
   
+  const cepSemDados = "00000000";
+  const cepInvalido = "abcde";
 
   it('Deve retornar 200 e as propriedades do CEP', () => {
     cy.api({
@@ -26,8 +28,7 @@ describe('API - Diversos - GET /v3/cep/{cep}', { env: { hideCredentials: true } 
   });
 
   it('Deve retornar 204 quando não houver dados para o CEP informado', () => {
-    const cepSemDados = "00000000";
-
+    
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${cepSemDados}`,
@@ -40,7 +41,6 @@ describe('API - Diversos - GET /v3/cep/{cep}', { env: { hideCredentials: true } 
   });
 
   it('Deve retornar 412 para CEP inválido', () => {
-    const cepInvalido = "abcde";
 
     cy.api({
       method: 'GET',

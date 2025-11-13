@@ -52,12 +52,12 @@ describe('API - Diversos - GET /v3/processo', { env: { hideCredentials: true } }
     });
   });
 
-  it('Deve retornar 204 quando não houver processos configurados', () => {
+  it.skip('Deve retornar 204 quando não houver processos configurados', () => {
     // Se possível, configure ambiente/teste com ausência de processos.
     // Caso não seja possível, pode ser omitido.
   });
 
-  it('Deve retornar 412 se houver erro de pré-requisito', () => {
+  it.skip('Deve retornar 412 se houver erro de pré-requisito', () => {
     // Caso seja possível simular erro de pré-requisito, adicione aqui.
   });
 });

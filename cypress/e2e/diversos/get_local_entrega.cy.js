@@ -4,6 +4,9 @@ const Authorization = Cypress.env('API.PRAGMA');
 const rotaValida = "123";
 
 describe('API - Diversos - GET /v3/local_entrega', { env: { hideCredentials: true } }, () => {
+
+  const rotaInvalida = "abc";
+  const rotaSemDados = "9999"; // Valor que não retorna dados
   
   it('Deve retornar 200 e as propriedades do local de entrega', () => {
     cy.api({
@@ -28,8 +31,7 @@ describe('API - Diversos - GET /v3/local_entrega', { env: { hideCredentials: tru
   });
 
   it('Deve retornar 204 quando não houver locais de entrega para a rota informada', () => {
-    const rotaSemDados = "9999"; // Valor que não retorna dados
-
+    
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${rotaSemDados}`,
@@ -42,8 +44,7 @@ describe('API - Diversos - GET /v3/local_entrega', { env: { hideCredentials: tru
   });
 
   it('Deve retornar 412 para rota inválida', () => {
-    const rotaInvalida = "abc";
-
+    
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${rotaInvalida}`,

@@ -4,6 +4,9 @@ const Authorization = Cypress.env('API.PRAGMA');
 const ufValido = "123";
 
 describe('API - Diversos - GET /v3/cidade', { env: { hideCredentials: true } }, () => {
+
+  const ufSemCidades = "ZZ";
+  const ufInvalido = "123";
   
   it('Deve retornar 200 e as propriedades de cidade', () => {
     cy.api({
@@ -21,8 +24,7 @@ describe('API - Diversos - GET /v3/cidade', { env: { hideCredentials: true } }, 
   });
 
   it('Deve retornar 204 quando não houver cidades para a UF informada', () => {
-    const ufSemCidades = "ZZ"; // UF que não existe
-
+    
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${ufSemCidades}`,
@@ -35,7 +37,6 @@ describe('API - Diversos - GET /v3/cidade', { env: { hideCredentials: true } }, 
   });
 
   it('Deve retornar 412 para UF inválida', () => {
-    const ufInvalido = "123";
 
     cy.api({
       method: 'GET',

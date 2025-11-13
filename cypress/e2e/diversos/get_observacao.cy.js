@@ -18,7 +18,7 @@ describe('API - Diversos - GET /v3/observacao', { env: { hideCredentials: true }
     });
   });
 
-  it('Deve retornar 204 quando não houver observações cadastradas', () => {
+  it.skip('Deve retornar 204 quando não houver observações cadastradas', () => {
     // Se não for possível simular ambiente vazio, pode ser omitido.
   });
 });

@@ -7,6 +7,8 @@ const offset = "123";
 const sort = "123";
 
 describe('API - Diversos - GET /v3/vendedor', { env: { hideCredentials: true } }, () => {
+
+  
   
   it('Deve retornar 200 e as propriedades de vendedor', () => {
     cy.api({
@@ -25,7 +27,6 @@ describe('API - Diversos - GET /v3/vendedor', { env: { hideCredentials: true } }
   });
 
   it('Deve retornar 412 para termo inválido', () => {
-    const termoInvalido = "!@#";
 
     cy.api({
       method: 'GET',

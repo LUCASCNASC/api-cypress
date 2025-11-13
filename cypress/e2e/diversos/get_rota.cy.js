@@ -7,6 +7,10 @@ const idrotacidade = "123";
 
 describe('API - Diversos - GET /v3/rota', { env: { hideCredentials: true } }, () => {
 
+  const idgruporotaSemRota = "9999";
+  const idrotaSemRota = "9999";
+  const idrotacidadeSemRota = "9999";
+
   it('Deve retornar 200 e as propriedades de rota', () => {
     cy.api({
       method: 'GET',
@@ -31,9 +35,6 @@ describe('API - Diversos - GET /v3/rota', { env: { hideCredentials: true } }, ()
   });
 
   it('Deve retornar 204 quando não houver rotas para os parâmetros informados', () => {
-    const idgruporotaSemRota = "9999";
-    const idrotaSemRota = "9999";
-    const idrotacidadeSemRota = "9999";
 
     cy.api({
       method: 'GET',

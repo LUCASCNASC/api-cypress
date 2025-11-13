@@ -19,12 +19,12 @@ describe('API - Diversos - GET /v3/forma_pagamento', { env: { hideCredentials: t
     });
   });
 
-  it('Deve retornar 204 quando não houver formas de pagamento cadastradas', () => {
+  it.skip('Deve retornar 204 quando não houver formas de pagamento cadastradas', () => {
     // Se o endpoint não aceita parâmetro, simule um cenário de ambiente sem formas cadastradas, se possível
     // Caso não seja aplicável, este teste pode ser omitido.
   });
 
-  it('Deve retornar 412 se houver erro de pré-requisito', () => {
+  it.skip('Deve retornar 412 se houver erro de pré-requisito', () => {
     // Não aplicável se o endpoint não exige parâmetros obrigatórios, mas pode ser incluído para cobrir cenários de erro.
   });
 });

@@ -5,6 +5,9 @@ const idtipogrupoValido = "123";
 
 describe('API - Diversos - GET /v3/grupo', { env: { hideCredentials: true } }, () => {
 
+  const idtipogrupoInvalido = "abc";
+  const idtipogrupoSemGrupo = "9999";
+
   it('Deve retornar 200 e as propriedades do grupo', () => {
     cy.api({
       method: 'GET',
@@ -24,7 +27,6 @@ describe('API - Diversos - GET /v3/grupo', { env: { hideCredentials: true } }, (
   });
 
   it('Deve retornar 204 quando não houver grupos para o tipo informado', () => {
-    const idtipogrupoSemGrupo = "9999"; // id não existente
 
     cy.api({
       method: 'GET',
@@ -38,7 +40,6 @@ describe('API - Diversos - GET /v3/grupo', { env: { hideCredentials: true } }, (
   });
 
   it('Deve retornar 412 para idtipogrupo inválido', () => {
-    const idtipogrupoInvalido = "abc";
 
     cy.api({
       method: 'GET',

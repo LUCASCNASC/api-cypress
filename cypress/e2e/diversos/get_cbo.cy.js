@@ -7,6 +7,9 @@ const offset = "123";
 const sort = "123";
 
 describe('API - Diversos - GET /v3/cbo', { env: { hideCredentials: true } }, () => {
+
+  const termoSemDados = "xxxxxx";
+  const termoInvalido = "!!@@##";
   
   it('Deve retornar 200 e as propriedades do CBO', () => {
     cy.api({
@@ -26,8 +29,7 @@ describe('API - Diversos - GET /v3/cbo', { env: { hideCredentials: true } }, () 
   });
 
   it('Deve retornar 204 quando não houver dados para o termo informado', () => {
-    const termoSemDados = "xxxxxx";
-
+    
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${termoSemDados}/${limit}/${offset}/${sort}`,
@@ -40,7 +42,6 @@ describe('API - Diversos - GET /v3/cbo', { env: { hideCredentials: true } }, () 
   });
 
   it('Deve retornar 412 para termo inválido', () => {
-    const termoInvalido = "!!@@##";
 
     cy.api({
       method: 'GET',

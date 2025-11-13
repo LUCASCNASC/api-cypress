@@ -22,11 +22,11 @@ describe('API - Diversos - GET /v3/operacoes_tef', { env: { hideCredentials: tru
     });
   });
 
-  it('Deve retornar 204 quando não houver operações TEF configuradas', () => {
+  it.skip('Deve retornar 204 quando não houver operações TEF configuradas', () => {
     // Se não for possível simular, pode ser omitido.
   });
 
-  it('Deve retornar 412 se houver erro de pré-requisito', () => {
+  it.skip('Deve retornar 412 se houver erro de pré-requisito', () => {
     // Caso seja possível simular erro de pré-requisito, adicione aqui.
   });
 });

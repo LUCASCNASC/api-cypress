@@ -8,6 +8,9 @@ const sort = "123";
 
 describe('API - Diversos - GET /v3/cnae', { env: { hideCredentials: true } }, () => {
 
+  const termoSemDados = "xxxxxx";
+  const termoInvalido = "!!@@##";
+
   it('Deve retornar 200 e as propriedades do CNAE', () => {
     cy.api({
       method: 'GET',
@@ -25,8 +28,7 @@ describe('API - Diversos - GET /v3/cnae', { env: { hideCredentials: true } }, ()
   });
 
   it('Deve retornar 204 quando não houver dados para o termo informado', () => {
-    const termoSemDados = "xxxxxx";
-
+    
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${termoSemDados}/${limit}/${offset}/${sort}`,
@@ -39,7 +41,6 @@ describe('API - Diversos - GET /v3/cnae', { env: { hideCredentials: true } }, ()
   });
 
   it('Deve retornar 412 para termo inválido', () => {
-    const termoInvalido = "!!@@##";
 
     cy.api({
       method: 'GET',
