@@ -1,13 +1,13 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Cliente/v3_cliente_servico_vinculado';
 const Authorization = Cypress.env('API.PRAGMA');
-const clienteValido = "12345678901234";
-const processoValido = "000000";
 
 describe('API - Cliente - GET /v3/cliente_servico_vinculado/{cliente}', { env: { hideCredentials: true } }, () => {
 
   const clienteSemServico = "00000000000000";
   const processoSemServico = "000000";
+  const clienteValido = "12345678901234";
+  const processoValido = "000000";
    
   it('Deve retornar 200 e as propriedades do serviço vinculado', () => {
     cy.api({

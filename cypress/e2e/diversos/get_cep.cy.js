@@ -1,12 +1,12 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Diversos/v2_diversos_cep';
 const Authorization = Cypress.env('API.PRAGMA');
-const cepValido = "12312312312";
 
 describe('API - Diversos - GET /v3/cep/{cep}', { env: { hideCredentials: true } }, () => {
   
   const cepSemDados = "00000000";
   const cepInvalido = "abcde";
+  const cepValido = "12312312312";
 
   it('Deve retornar 200 e as propriedades do CEP', () => {
     cy.api({

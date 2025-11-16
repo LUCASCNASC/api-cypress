@@ -1,9 +1,10 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/api/session';
 const AUTHORIZATION = Cypress.env('API.PRAGMA');
-const AUTHORIZATION_INVALID = Cypress.env('API.PRAGMA_INVALID');
 
 describe('API - Sessões Ativas - GET /api/session', { env: { hideCredendials: true } }, () => {
+
+  const AUTHORIZATION_INVALID = Cypress.env('API.PRAGMA_INVALID');
   
   it('Deve retornar 200, array de sessões não vazio e propriedades obrigatórias', () => {
     cy.api({

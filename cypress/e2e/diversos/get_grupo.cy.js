@@ -1,12 +1,12 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Diversos/v3_diversos_grupo';
 const Authorization = Cypress.env('API.PRAGMA');
-const idtipogrupoValido = "123"; 
 
 describe('API - Diversos - GET /v3/grupo', { env: { hideCredentials: true } }, () => {
 
   const idtipogrupoInvalido = "abc";
   const idtipogrupoSemGrupo = "9999";
+  const idtipogrupoValido = "123"; 
 
   it('Deve retornar 200 e as propriedades do grupo', () => {
     cy.api({

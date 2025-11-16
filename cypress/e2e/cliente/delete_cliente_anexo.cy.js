@@ -1,8 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Cliente/v3_cliente_anexo_delete';
 const Authorization = Cypress.env('API.PRAGMA');
-const idcnpj_cpfValido = "12312312312"; 
-const idpessoaanexoValido = "123"; 
 
 describe('API - Cliente - DELETE /v3/cliente_anexo/{idcnpj_cpf}', { env: { hideCredentials: true } }, () => {
 
@@ -10,6 +8,8 @@ describe('API - Cliente - DELETE /v3/cliente_anexo/{idcnpj_cpf}', { env: { hideC
   const idpessoaanexoInvalido = "anexo_invalido";
   const idcnpj_cpfSemAnexo = "00000000000000";
   const idpessoaanexoSemAnexo = "000000";
+  const idcnpj_cpfValido = "12312312312"; 
+  const idpessoaanexoValido = "123"; 
 
   it('Deve retornar 200 ao excluir anexo válido', () => {
     cy.api({

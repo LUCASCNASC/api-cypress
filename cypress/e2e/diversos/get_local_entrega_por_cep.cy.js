@@ -1,12 +1,12 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Diversos/v3_diversos_local_entrega_por_cep';
 const Authorization = Cypress.env('API.PRAGMA');
-const cepValido = "12123123";
 
 describe('API - Diversos - GET /v3/local_entrega_por_cep', { env: { hideCredentials: true } }, () => {
 
   const cepInvalido = "abcde";
   const cepSemDados = "00000000";
+  const cepValido = "12123123";
   
   it('Deve retornar 200 e as propriedades do local de entrega por CEP', () => {
     cy.api({

@@ -1,12 +1,12 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Diversos/v2_diversos_dados_tabela';
 const Authorization = Cypress.env('API.PRAGMA');
-const tabelaValida = "123";
 
 describe('API - Diversos - GET /v3/dados_tabela/{tabela}', { env: { hideCredentials: true } }, () => {
 
   const tabelaSemDados = "tabela_inexistente";
   const tabelaInvalida = "!@#";
+  const tabelaValida = "123";
   
   it('Deve retornar 200 e as propriedades da tabela', () => {
     cy.api({

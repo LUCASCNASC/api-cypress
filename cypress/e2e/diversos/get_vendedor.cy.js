@@ -1,14 +1,13 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Diversos/v2_diversos_vendedor';
 const Authorization = Cypress.env('API.PRAGMA');
-const termoValido = "123"; // Preencha conforme necessário
-const limit = "123";
-const offset = "123";
-const sort = "123";
 
 describe('API - Diversos - GET /v3/vendedor', { env: { hideCredentials: true } }, () => {
 
-  
+  const termoValido = "123";
+  const limit = "123";
+  const offset = "123";
+  const sort = "123";
   
   it('Deve retornar 200 e as propriedades de vendedor', () => {
     cy.api({

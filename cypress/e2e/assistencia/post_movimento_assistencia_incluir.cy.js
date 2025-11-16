@@ -1,10 +1,10 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Assistencia/v3_post_movimento_assistencia_incluir';
 const AUTHORIZATION = Cypress.env('API.PRAGMA');
-const AUTHORIZATION_INVALID = Cypress.env('API.PRAGMA_INVALID');
 
 describe('Assistência - POST /v3/movimento_assistencia_incluir/', { env: { hideCredendials: true } }, () => {
   const url = `${BASE_URL}/${PATH_API}`;
+  const AUTHORIZATION_INVALID = Cypress.env('API.PRAGMA_INVALID');
 
   it('Deve retornar 200 e validar as propriedades do retorno', () => {
     cy.api({

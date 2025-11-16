@@ -1,12 +1,12 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Diversos/v2_diversos_cidade';
 const Authorization = Cypress.env('API.PRAGMA');
-const ufValido = "123";
 
 describe('API - Diversos - GET /v3/cidade', { env: { hideCredentials: true } }, () => {
 
   const ufSemCidades = "ZZ";
   const ufInvalido = "123";
+  const ufValido = "123";
   
   it('Deve retornar 200 e as propriedades de cidade', () => {
     cy.api({
