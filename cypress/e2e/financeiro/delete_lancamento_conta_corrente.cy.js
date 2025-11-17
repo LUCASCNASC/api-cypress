@@ -1,10 +1,11 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Financeiro/v3_financeiro_lancamento_conta_corrente_delete';
 const Authorization = Cypress.env('API.PRAGMA');
-const idFilialValido = "123123123";
-const idLancamentoContaCorrenteValido = "123123123";
 
 describe('API - Financeiro - DELETE /v3/lancamento_conta_corrente/{idFilial}/{idLancamentoContaCorrente}', { env: { hideCredentials: true } }, () => {
+
+  const idFilialValido = "123123123";
+  const idLancamentoContaCorrenteValido = "123123123";
 
   it('Deve retornar 201 ao estornar lançamento de conta corrente', () => {
     cy.api({

@@ -1,12 +1,13 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Gestão%20Devolução/v2_gestao_devolucao_nota_devolucao_simulacao';
 const Authorization = Cypress.env('API.PRAGMA');
-const filial = "123123123"; 
-const solicitacao = "123123123";
-const Authorization2 = "123123123";
 
 describe('Gestão Devolução - GET - /v3/nota_devolucao_simulacao/{filial}/{solicitacao}', { env: { hideCredendials: true } }, () => {
   
+  const filial = "123123123"; 
+  const solicitacao = "123123123";
+  const Authorization2 = "123123123";
+
     it('Resposta 200', () => {
       cy.api({
         method: 'GET', 

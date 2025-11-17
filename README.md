@@ -48,4 +48,4 @@ Ajustar const de todos os arquivos de teste em um arquivo que fique escondido do
 
 Próximos passos:
 - Deixar apenas as variáveis Authorization, BASE_URL e PATH_URL para fora do arquivo de teste.
-Feito até a pasta: "filial"
+Feito até a pasta: "logistica"

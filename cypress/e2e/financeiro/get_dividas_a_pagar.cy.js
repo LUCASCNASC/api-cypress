@@ -1,10 +1,11 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Financeiro/v3_financeiro_dividas_pagar';
 const Authorization = Cypress.env('API.PRAGMA');
-const idFilialValido = "123123123"; 
-const cpf_cnpjValido = "123123123";
 
 describe('API - Financeiro - GET /v3/dividas_a_pagar/{idFilial}/{cpf_cnpj}', { env: { hideCredentials: true } }, () => {
+
+  const idFilialValido = "123123123"; 
+  const cpf_cnpjValido = "123123123";
 
   it('Deve retornar 200 e as propriedades dos títulos a pagar', () => {
     cy.api({

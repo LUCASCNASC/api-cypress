@@ -1,11 +1,12 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Financeiro/v3_financeiro_pedidos_por_titulo';
 const Authorization = Cypress.env('API.PRAGMA');
-const idFilial = "123123123";
-const idTitulo = "123123123"; 
-const idTipoTitulo = "123123123";
 
 describe('API - Financeiro - GET /v3/pedidos_por_titulo/{idFilial}/{idTitulo}/{idTipoTitulo}', { env: { hideCredentials: true } }, () => {
+
+  const idFilial = "123123123";
+  const idTitulo = "123123123"; 
+  const idTipoTitulo = "123123123";
 
   it('Deve retornar 200 e as propriedades de pedidos por título', () => {
     cy.api({

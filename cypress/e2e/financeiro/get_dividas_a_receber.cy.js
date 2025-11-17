@@ -1,13 +1,14 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Financeiro/v3_financeiro_dividas_a_receber';
 const Authorization = Cypress.env('API.PRAGMA');
-const idFilialValido = "123123123";
-const cpf_cnpjValido = "123123123";
-const separarvinculados = "123123123";
-const limit = "123123123";
-const offset = "123123123";
 
 describe('API - Financeiro - GET /v3/dividas_a_receber/{idFilial}/{cpf_cnpj}', { env: { hideCredentials: true } }, () => {
+
+  const idFilialValido = "123123123";
+  const cpf_cnpjValido = "123123123";
+  const separarvinculados = "123123123";
+  const limit = "123123123";
+  const offset = "123123123";
 
   it('Deve retornar 200 e as propriedades dos títulos a receber', () => {
     cy.api({
