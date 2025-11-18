@@ -1,10 +1,11 @@
 const BASE_URL = Cypress.env('BASE_URL')
 const PATH_API = '/Pedido/v2_pedido_get_delete2';
 const Authorization = Cypress.env('API.PRAGMA')
-const codigo = "12345678910"; 
-const idfilial = "12345678910";
 
 describe('Pedido - DELETE - /v3/pedido/{codigo}', { env: { hideCredendials: true } }, () => {
+
+  const codigo = "12345678910"; 
+  const idfilial = "12345678910";
   
     it('Resposta 200', () => {
 

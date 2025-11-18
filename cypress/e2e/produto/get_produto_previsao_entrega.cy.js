@@ -1,15 +1,16 @@
 const BASE_URL = Cypress.env('BASE_URL')
 const PATH_API = '/Produto/v2_produto_previsao_entrega';
 const Authorization = Cypress.env('API.PRAGMA')
-const processo_venda = "12345678910";
-const filial = "12345678910"; 
-const filial_faturar = "12345678910"; 
-const filial_saldo = "12345678910"; 
-const sku = "12345678910"; 
-const quantidade = "12345678910";
-const local_saldo = "12345678910"; 
 
 describe('Produtos - GET - /v3/produto_previsao_entrega ', { env: { hideCredendials: true } }, () => {
+
+  const processo_venda = "12345678910";
+  const filial = "12345678910"; 
+  const filial_faturar = "12345678910"; 
+  const filial_saldo = "12345678910"; 
+  const sku = "12345678910"; 
+  const quantidade = "12345678910";
+  const local_saldo = "12345678910"; 
     
     it('Resposta 200', () => {
 

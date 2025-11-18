@@ -1,12 +1,13 @@
 const BASE_URL = Cypress.env('BASE_URL')
 const PATH_API = '/Pedido/v2_pedido_pendencia';
 const Authorization = Cypress.env('API.PRAGMA')
-const idpedidovenda = "12345678910"; 
-const idvendedor = "12345678910"; 
-const cnpj_cpf = "12345678910";
-const listapedidovenda = "12345678910";
 
 describe('Pedido - GET - /v3/pedido_pendencia', { env: { hideCredendials: true } }, () => {
+
+  const idpedidovenda = "12345678910"; 
+  const idvendedor = "12345678910"; 
+  const cnpj_cpf = "12345678910";
+  const listapedidovenda = "12345678910";
   
     it('Resposta 200', () => {
 

@@ -1,11 +1,12 @@
 const BASE_URL = Cypress.env('BASE_URL')
 const PATH_API = '/Pagamento%20pedido/v2_pag_pedido_nota_fiscal';
 const Authorization = Cypress.env('API.PRAGMA')
-const filial = "12345678910"; 
-const pedido = "12345678910";
-const registro_nota = "12345678910"; 
 
 describe('Pagamento pedido - GET - /v3/nota_fiscal/{filial}', { env: { hideCredendials: true } }, () => {
+
+  const filial = "12345678910"; 
+  const pedido = "12345678910";
+  const registro_nota = "12345678910"; 
   
     it('Resposta 200', () => {
 

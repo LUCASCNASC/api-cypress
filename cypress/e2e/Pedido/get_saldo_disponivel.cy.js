@@ -1,10 +1,11 @@
 const BASE_URL = Cypress.env('BASE_URL')
 const PATH_API = '/Pedido/v3_pedido_saldo_disponivel';
 const Authorization = Cypress.env('API.PRAGMA')
-const idFilial = "12345678910"; 
-const idPedidoVenda = "12345678910";
 
 describe('Pedido - GET - /v3/saldo_disponivel/{idFilial}/{idPedidoVenda}', { env: { hideCredendials: true } }, () => {
+
+  const idFilial = "12345678910"; 
+  const idPedidoVenda = "12345678910";
   
     it('Resposta 200', () => {
 

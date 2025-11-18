@@ -1,9 +1,10 @@
 const BASE_URL = Cypress.env('BASE_URL')
 const PATH_API = '/Pós-venda/v2_pos_venda_Historico';
 const Authorization = Cypress.env('API.PRAGMA')
-const codigo = "12345678910";
 
 describe('Pós-venda - GET - /v3/pos_venda_Historico/{codigo}', { env: { hideCredendials: true } }, () => {
+
+  const codigo = "12345678910";
   
     it('Resposta 200', () => {
 

@@ -1,13 +1,14 @@
 const BASE_URL = Cypress.env('BASE_URL')
 const PATH_API = '/Trial/v2_trial_get_post1';
 const Authorization = Cypress.env('API.PRAGMA')
-const idFilial = "12345678910"; 
-const pedido = "12345678910"; 
-const vendedor = "12345678910"; 
-const limit = "12345678910"; 
-const offset = "12345678910"; 
 
 describe('Trial - GET - /v3/trial', { env: { hideCredendials: true } }, () => {
+
+  const idFilial = "12345678910"; 
+  const pedido = "12345678910"; 
+  const vendedor = "12345678910"; 
+  const limit = "12345678910"; 
+  const offset = "12345678910"; 
   
     it('Resposta 200', () => {
 

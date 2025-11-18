@@ -1,9 +1,10 @@
 const BASE_URL = Cypress.env('BASE_URL')
 const PATH_API = '/Produto/v2_produto_destaque';
 const Authorization = Cypress.env('API.PRAGMA')
-const id_processo = "12345678910"; 
 
 describe('Produtos - GET - /v3/produto_destaque ', { env: { hideCredendials: true } }, () => {
+
+  const id_processo = "12345678910"; 
   
     it('Resposta 200', () => {
 

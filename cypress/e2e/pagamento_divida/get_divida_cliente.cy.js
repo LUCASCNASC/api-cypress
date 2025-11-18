@@ -1,10 +1,11 @@
 const BASE_URL = Cypress.env('BASE_URL')
 const PATH_API = '/Pagamento%20divida/v2_divida_cliente';
 const Authorization = Cypress.env('API.PRAGMA')
-const filial = "12345678910";
-const cliente = "12345678910";
 
 describe('Pagamento divida - GET - /v3/divida_cliente/{filial}/{cliente}', { env: { hideCredendials: true } }, () => {
+
+  const filial = "12345678910";
+  const cliente = "12345678910";
   
     it('Resposta 200', () => {
 

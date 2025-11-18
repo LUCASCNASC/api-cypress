@@ -1,10 +1,11 @@
 const BASE_URL = Cypress.env('BASE_URL')
 const PATH_API = '/Produto/v2_produto_detalhe_promocao';
 const Authorization = Cypress.env('API.PRAGMA')
-const produto = "12345678910";
-const processo_venda = "12345678910";
 
 describe('Produtos - GET - /v3/produto_detalhe_promocao/{produto}', { env: { hideCredendials: true } }, () => {
+
+  const produto = "12345678910";
+  const processo_venda = "12345678910";
   
     it('Resposta 200', () => {
 

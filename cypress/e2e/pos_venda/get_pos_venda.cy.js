@@ -1,10 +1,11 @@
 const BASE_URL = Cypress.env('BASE_URL')
 const PATH_API = '/Pós-venda/v3_pos_venda_get_post1';
 const Authorization = Cypress.env('API.PRAGMA')
-const datainicial = "yyyy-mm-dd"; 
-const datafinal = "yyyy-mm-dd";
 
 describe('Pós-venda - GET - /v3/pos_venda', { env: { hideCredendials: true } }, () => {
+
+  const datainicial = "2025-11-01"; 
+  const datafinal = "2025-11-30";
   
     it('Resposta 200', () => {
 

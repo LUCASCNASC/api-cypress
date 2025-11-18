@@ -1,11 +1,12 @@
 const BASE_URL = Cypress.env('BASE_URL')
 const PATH_API = '/Sessão/v2_sessao_login';
 const Authorization = Cypress.env('API.PRAGMA')
-const usuario = "12345678910"; 
-const senha = "12345678910";
-const codigoverificacao = "12345678910"; 
 
 describe('Sessão - GET - /v3/login/{usuario}/{senha}', { env: { hideCredendials: true } }, () => {
+
+  const usuario = "12345678910"; 
+  const senha = "12345678910";
+  const codigoverificacao = "12345678910"; 
   
     it('Resposta 204 - Sem dados de retorno', () => {
 
