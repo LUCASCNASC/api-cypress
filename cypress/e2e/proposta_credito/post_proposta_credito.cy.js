@@ -1,6 +1,6 @@
-const BASE_URL = Cypress.env('BASE_URL')
+const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Proposta%20crédito/v2_proposta_credito_post';
-const Authorization = Cypress.env('API.PRAGMA')
+const Authorization = Cypress.env('API.PRAGMA');
 
 describe('Proposta crédito - POST - /v3/proposta_credito', { env: { hideCredendials: true } }, () => {
   

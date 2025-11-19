@@ -1,6 +1,6 @@
-const BASE_URL = Cypress.env('BASE_URL')
+const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Pedido/v3_pedido_validar_cliente';
-const Authorization = Cypress.env('API.PRAGMA')
+const Authorization = Cypress.env('API.PRAGMA');
 
 describe('Pedido - POST - /v3/pedido_validar_cliente', { env: { hideCredendials: true } }, () => {
   

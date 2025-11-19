@@ -1,6 +1,6 @@
-const BASE_URL = Cypress.env('BASE_URL')
+const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Projeto%20Real%20Time/v3_post_estoque';
-const Authorization = Cypress.env('API.PRAGMA')
+const Authorization = Cypress.env('API.PRAGMA');
 
 describe('Projeto Real Time - POST - /v3/estoque/', { env: { hideCredendials: true } }, () => {
   

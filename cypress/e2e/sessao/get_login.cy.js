@@ -1,6 +1,6 @@
-const BASE_URL = Cypress.env('BASE_URL')
+const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Sessão/v2_sessao_login';
-const Authorization = Cypress.env('API.PRAGMA')
+const Authorization = Cypress.env('API.PRAGMA');
 
 describe('Sessão - GET - /v3/login/{usuario}/{senha}', { env: { hideCredendials: true } }, () => {
 

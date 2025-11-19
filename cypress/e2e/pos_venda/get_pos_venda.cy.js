@@ -1,6 +1,6 @@
-const BASE_URL = Cypress.env('BASE_URL')
+const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Pós-venda/v3_pos_venda_get_post1';
-const Authorization = Cypress.env('API.PRAGMA')
+const Authorization = Cypress.env('API.PRAGMA');
 
 describe('Pós-venda - GET - /v3/pos_venda', { env: { hideCredendials: true } }, () => {
 

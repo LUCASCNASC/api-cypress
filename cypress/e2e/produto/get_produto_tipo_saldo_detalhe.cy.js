@@ -1,6 +1,6 @@
-const BASE_URL = Cypress.env('BASE_URL')
+const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Produto/v3_produto_tipo_saldo_detalhe';
-const Authorization = Cypress.env('API.PRAGMA')
+const Authorization = Cypress.env('API.PRAGMA');
 
 describe('Produtos - GET - /v3/produto_tipo_saldo_detalhe ', { env: { hideCredendials: true } }, () => {
 

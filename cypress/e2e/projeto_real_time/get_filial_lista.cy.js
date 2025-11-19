@@ -1,6 +1,6 @@
-const BASE_URL = Cypress.env('BASE_URL')
+const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Projeto%20Real%20Time/v3_get_filial_lista';
-const Authorization = Cypress.env('API.PRAGMA')
+const Authorization = Cypress.env('API.PRAGMA');
 
 describe('Projeto Real Time - GET - /v3/filial_lista/', { env: { hideCredendials: true } }, () => {
   

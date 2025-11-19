@@ -1,6 +1,6 @@
-const BASE_URL = Cypress.env('BASE_URL')
+const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Pedido/v2_pedido_get_delete1';
-const Authorization = Cypress.env('API.PRAGMA')
+const Authorization = Cypress.env('API.PRAGMA');
 
 describe('Pedido - GET - /v3/pedido/{codigo}', { env: { hideCredendials: true } }, () => {
 

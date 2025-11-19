@@ -1,6 +1,6 @@
-const BASE_URL = Cypress.env('BASE_URL')
+const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Logística/v3_get_logistica_lista_mapa_carga_cliente';
-const Authorization = Cypress.env('API.PRAGMA')
+const Authorization = Cypress.env('API.PRAGMA');
 
 describe('Logística - GET - /v3/mapa_carga_cliente/{idFilial}/{idSituacaoMapaCarga}/{dataInicial}/{dataFinal}', { env: { hideCredendials: true } }, () => {
 

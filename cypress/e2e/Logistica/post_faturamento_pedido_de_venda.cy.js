@@ -1,6 +1,6 @@
-const BASE_URL = Cypress.env('BASE_URL')
+const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Logística/v3_post_logistica_faturamentopedidovendaporcliente';
-const Authorization = Cypress.env('API.PRAGMA')
+const Authorization = Cypress.env('API.PRAGMA');
 
 describe('Logística - POST - /v3/faturamento_pedido_de_venda', { env: { hideCredendials: true } }, () => {
   

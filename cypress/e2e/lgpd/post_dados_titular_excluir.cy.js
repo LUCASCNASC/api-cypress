@@ -1,6 +1,6 @@
-const BASE_URL = Cypress.env('BASE_URL')
+const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/LGPD/v3_post_lgpd_dados_titular_excluir';
-const Authorization = Cypress.env('API.PRAGMA')
+const Authorization = Cypress.env('API.PRAGMA');
 
 describe('Titulo - POST - /v3/dados_titular_excluir', { env: { hideCredendials: true } }, () => {
   

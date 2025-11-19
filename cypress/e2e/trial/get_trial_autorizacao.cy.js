@@ -1,6 +1,7 @@
-const BASE_URL = Cypress.env('BASE_URL')
+const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Trial/v3_get_trial_autorizacao';
-const Authorization = Cypress.env('API.PRAGMA')
+const Authorization = Cypress.env('API.PRAGMA');
+
 
 describe('Trial - GET - /v3/trial_autorizacao/{idFilial}/{idUsuario}/{triais}', { env: { hideCredendials: true } }, () => {
 

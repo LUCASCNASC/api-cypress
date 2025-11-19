@@ -1,6 +1,6 @@
-const BASE_URL = Cypress.env('BASE_URL')
+const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Pagamento%20pedido/v2_pag_pedido_estornar_baixa_pedido';
-const Authorization = Cypress.env('API.PRAGMA')
+const Authorization = Cypress.env('API.PRAGMA');
 
 describe('Financeiro - POST - /v3/estornar_baixa_pedido', { env: { hideCredendials: true } }, () => {
   

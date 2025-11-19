@@ -1,6 +1,6 @@
-const BASE_URL = Cypress.env('BASE_URL')
+const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Pagamento%20divida/v2_divida_baixa_titulo_multiplos';
-const Authorization = Cypress.env('API.PRAGMA')
+const Authorization = Cypress.env('API.PRAGMA');
 
 describe('Financeiro - POST - /v3/baixa_titulo_multiplos', { env: { hideCredendials: true } }, () => {
   

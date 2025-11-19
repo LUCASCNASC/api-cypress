@@ -1,6 +1,6 @@
-const BASE_URL = Cypress.env('BASE_URL')
+const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Titulo/v3_put_titulo_alterar';
-const Authorization = Cypress.env('API.PRAGMA')
+const Authorization = Cypress.env('API.PRAGMA');
 
 describe('Titulo - PUT - /v3/titulo_alterar', { env: { hideCredendials: true } }, () => {
   

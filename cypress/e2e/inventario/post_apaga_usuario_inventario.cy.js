@@ -1,6 +1,6 @@
-const BASE_URL = Cypress.env('BASE_URL')
+const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Inventário/v3_post_apaga_usuario_inventario';
-const Authorization = Cypress.env('API.PRAGMA')
+const Authorization = Cypress.env('API.PRAGMA');
 
 describe('Inventário - POST - /v3/apaga_usuario_inventario/{idFilial}/{idInventario}', { env: { hideCredendials: true } }, () => {
   
