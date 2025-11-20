@@ -2,10 +2,10 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Fisco/Contabil/v3_nota_fiscal_calcular_imposto';
 const Authorization = Cypress.env('API.PRAGMA');
 
+const Filial = "123123123";
+const RegistroNota = "123123123";
+
 describe('Fisco/Contábil - GET - /v3/nota_fiscal_calcular_imposto/{Filial}/{RegistroNota}', { env: { hideCredendials: true } }, () => {
-  
-  const Filial = "123123123";
-  const RegistroNota = "123123123";
 
   it('Deve retornar 200 e as propriedades do cálculo de imposto da nota fiscal', () => {
     cy.api({

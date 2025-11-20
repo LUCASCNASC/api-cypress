@@ -2,9 +2,9 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/api/session';
 const AUTHORIZATION = Cypress.env('API.PRAGMA');
 
-describe('API - Sessões Ativas - GET /api/session', { env: { hideCredendials: true } }, () => {
+const AUTHORIZATION_INVALID = Cypress.env('API.PRAGMA_INVALID');
 
-  const AUTHORIZATION_INVALID = Cypress.env('API.PRAGMA_INVALID');
+describe('API - Sessões Ativas - GET /api/session', { env: { hideCredendials: true } }, () => {
   
   it('Deve retornar 200, array de sessões não vazio e propriedades obrigatórias', () => {
     cy.api({
@@ -15,7 +15,6 @@ describe('API - Sessões Ativas - GET /api/session', { env: { hideCredendials: t
     }).should((response) => {
       expect(response.status, 'Status deve ser 200').to.eq(200);
       expect(response.duration, 'Tempo de resposta deve ser inferior a 2000ms').to.be.lessThan(2000);
-
       expect(response.body, 'Body deve conter a propriedade retorno').to.have.property('retorno');
       expect(response.body.retorno, 'Retorno deve ser array não vazio').to.be.an('array').and.not.be.empty;
 

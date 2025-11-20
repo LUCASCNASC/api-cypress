@@ -2,11 +2,11 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Cliente/v2_cliente_simples_get';
 const Authorization = Cypress.env('API.PRAGMA');
 
+const clienteSemDados = "00000000000000";
+const clienteValido = "12345678901234";
+
 describe('API - Cliente - GET /v3/cliente_simples/{cliente}', { env: { hideCredentials: true } }, () => {
 
-  const clienteSemDados = "00000000000000";
-  const clienteValido = "12345678901234";
-  
   it('Deve retornar 200 e propriedades do cliente simplificado', () => {
     cy.api({
       method: 'GET',

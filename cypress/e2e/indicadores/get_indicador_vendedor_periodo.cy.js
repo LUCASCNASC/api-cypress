@@ -2,10 +2,10 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Indicadores/v3_indicador_vendedor_periodo';
 const Authorization = Cypress.env('API.PRAGMA');
 
+const datainicial= "123123123";
+const datafinal= "123123123";
+
 describe('Indicadores - GET - /v3/indicador_vendedor_periodo/{datainicial}/{datafinal}', { env: { hideCredendials: true } }, () => {
-  
-  const datainicial= "123123123";
-  const datafinal= "123123123";
 
     it('Resposta 200', () => {
       cy.api({

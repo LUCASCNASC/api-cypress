@@ -2,13 +2,13 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Fisco/Contabil/v3_nota_fiscal_lista';
 const Authorization = Cypress.env('API.PRAGMA');
 
+const Filial = "123123123";
+const Registro_Nota = "123123123";
+const Data_Inicial = "123123123";
+const Data_Final = "123123123";
+const CNPJ_CPF = "123123123";
+
 describe('Fisco/Contábil - GET - /v3/nota_fiscal_lista/{Filial}/{Registro_Nota}/{Data_Inicial}/{Data_Final}/{CNPJ_CPF}', { env: { hideCredendials: true } }, () => {
-  
-  const Filial = "123123123";
-  const Registro_Nota = "123123123";
-  const Data_Inicial = "123123123";
-  const Data_Final = "123123123";
-  const CNPJ_CPF = "123123123";
 
   it('Deve retornar 200 e as propriedades das notas fiscais', () => {
     cy.api({

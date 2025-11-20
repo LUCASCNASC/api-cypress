@@ -2,9 +2,9 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Fisco/Contabil/v3_regra_fiscal_cfop_delete';
 const Authorization = Cypress.env('API.PRAGMA');
 
+const idBaseFiscalCFOP = "123";
+
 describe('Fisco/Contábil - DELETE - /v3/regra_fiscal_cfop_deletar/{idBaseFiscalCFOP}', { env: { hideCredendials: true } }, () => {
-  
-  const idBaseFiscalCFOP = "123";
 
   it('Deve retornar 200 e as propriedades da base fiscal de CFOP excluída', () => {
     cy.api({

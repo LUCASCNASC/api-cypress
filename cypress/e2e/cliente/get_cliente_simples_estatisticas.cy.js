@@ -2,12 +2,12 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Cliente/v2_cliente_simples_estatisticas';
 const Authorization = Cypress.env('API.PRAGMA');
 
+const idpessoaSemEstatistica = "000000";
+const idpessoaInvalido = "id_invalido";
+const AUTHORIZATION_INVALID = Cypress.env('API.PRAGMA_INVALID');
+const idpessoaValido = "12334";
+
 describe('API - Cliente - GET /v3/cliente_simples_estatisticas/{idpessoa}', { env: { hideCredentials: true } }, () => {
-  
-  const idpessoaSemEstatistica = "000000";
-  const idpessoaInvalido = "id_invalido";
-  const AUTHORIZATION_INVALID = Cypress.env('API.PRAGMA_INVALID');
-  const idpessoaValido = "12334";
   
   it('Deve retornar 200 e todas as propriedades de estatísticas do cliente simplificado', () => {
     cy.api({

@@ -2,11 +2,11 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Cliente/v3_cliente_anexo';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('API - Cliente - GET /v3/cliente_anexo/{idcnpj_cpf}', { env: { hideCredentials: true } }, () => {
+const idcnpj_cpfSemAnexo = "00000000000000";
+const idcnpj_cpfInvalido = "cpf_invalido";
+const idcnpj_cpfValido = "100002139114930";
 
-  const idcnpj_cpfSemAnexo = "00000000000000";
-  const idcnpj_cpfInvalido = "cpf_invalido";
-  const idcnpj_cpfValido = "100002139114930";
+describe('API - Cliente - GET /v3/cliente_anexo/{idcnpj_cpf}', { env: { hideCredentials: true } }, () => {
   
   it('Deve retornar 200 e as propriedades do anexo para idcnpj_cpf válido', () => {
     cy.api({

@@ -2,11 +2,11 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Filial/v3_get_filial_por_tipo';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('API - Filial - GET /v3/filial_por_tipo/{UF}/{Municipio}/{Tipo}', { env: { hideCredentials: true } }, () => {
+const ufValida = 'PR';
+const municipioValido = 3317;
+const tipoValido = 1;
 
-  const ufValida = 'PR';
-  const municipioValido = 3317;
-  const tipoValido = 1;
+describe('API - Filial - GET /v3/filial_por_tipo/{UF}/{Municipio}/{Tipo}', { env: { hideCredentials: true } }, () => {
 
   it('Deve retornar 200 e as propriedades da lista de filial por tipo', () => {
     cy.api({

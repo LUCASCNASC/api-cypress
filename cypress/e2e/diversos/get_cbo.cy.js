@@ -2,15 +2,15 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Diversos/v2_diversos_cbo';
 const Authorization = Cypress.env('API.PRAGMA');
 
+const termoSemDados = "xxxxxx";
+const termoInvalido = "!!@@##";
+const termoValido = "123";
+const limit = "123"; 
+const offset = "123";
+const sort = "123";
+
 describe('API - Diversos - GET /v3/cbo', { env: { hideCredentials: true } }, () => {
 
-  const termoSemDados = "xxxxxx";
-  const termoInvalido = "!!@@##";
-  const termoValido = "123";
-  const limit = "123"; 
-  const offset = "123";
-  const sort = "123";
-  
   it('Deve retornar 200 e as propriedades do CBO', () => {
     cy.api({
       method: 'GET',

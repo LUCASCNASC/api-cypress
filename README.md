@@ -47,5 +47,4 @@ O repositório está configurado para manter informações sensíveis, como URLs
 Ajustar const de todos os arquivos de teste em um arquivo que fique escondido do github.
 
 Próximos passos:
-- Deixar apenas as variáveis Authorization, BASE_URL e PATH_URL para fora do arquivo de teste.
-Finalizado
+- feito até "logistica".

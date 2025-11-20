@@ -2,12 +2,12 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Diversos/v2_diversos_local_entrega';
 const Authorization = Cypress.env('API.PRAGMA');
 
+const rotaInvalida = "abc";
+const rotaSemDados = "9999";
+const rotaValida = "123";
+
 describe('API - Diversos - GET /v3/local_entrega', { env: { hideCredentials: true } }, () => {
 
-  const rotaInvalida = "abc";
-  const rotaSemDados = "9999";
-  const rotaValida = "123";
-  
   it('Deve retornar 200 e as propriedades do local de entrega', () => {
     cy.api({
       method: 'GET',

@@ -2,11 +2,11 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Intenção%20compra/v2_intencao_compra_detalhe';
 const Authorization = Cypress.env('API.PRAGMA');
 
+const codigo = "123123123";
+const cliente = "123123123";
+const situacao = "123123123";
+
 describe('Intenção compra - GET - /v3/intencao_compra_detalhe/{codigo}', { env: { hideCredendials: true } }, () => {
-  
-  const codigo = "123123123";
-  const cliente = "123123123";
-  const situacao = "123123123";
 
     it('Resposta 200', () => {
       cy.api({

@@ -2,14 +2,14 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Diversos/v2_diversos_cnae';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('API - Diversos - GET /v3/cnae', { env: { hideCredentials: true } }, () => {
+const termoSemDados = "xxxxxx";
+const termoInvalido = "!!@@##";
+const termoValido = "123"; // Preencha conforme necessário
+const limit = "123";
+const offset = "123";
+const sort = "123";
 
-  const termoSemDados = "xxxxxx";
-  const termoInvalido = "!!@@##";
-  const termoValido = "123"; // Preencha conforme necessário
-  const limit = "123";
-  const offset = "123";
-  const sort = "123";
+describe('API - Diversos - GET /v3/cnae', { env: { hideCredentials: true } }, () => {
 
   it('Deve retornar 200 e as propriedades do CNAE', () => {
     cy.api({

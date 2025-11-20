@@ -2,9 +2,9 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Filial/v2_filial_detalhe';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('API - Filial - GET /v3/filial_detalhe/{filial}', { env: { hideCredentials: true } }, () => {
+const filialValida = 10050; 
 
-  const filialValida = 10050; 
+describe('API - Filial - GET /v3/filial_detalhe/{filial}', { env: { hideCredentials: true } }, () => {
   
   it('Deve retornar 200 e todas as propriedades do detalhe da filial', () => {
     cy.api({

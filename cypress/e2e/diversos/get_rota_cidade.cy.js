@@ -2,16 +2,16 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Diversos/v3_diversos_rota_cidade';
 const Authorization = Cypress.env('API.PRAGMA');
 
+const idgruporotaInvalido = "abc";
+const idgruporotaSemRota = "9999";
+const idrotaSemRota = "9999";
+const idrotacidadeSemRota = "9999";
+const idgruporota = "123";
+const idrota = "123";
+const idrotacidade = "123";
+
 describe('API - Diversos - GET /v3/rota_cidade', { env: { hideCredentials: true } }, () => {
-
-  const idgruporotaInvalido = "abc";
-  const idgruporotaSemRota = "9999";
-  const idrotaSemRota = "9999";
-  const idrotacidadeSemRota = "9999";
-  const idgruporota = "123";
-  const idrota = "123";
-  const idrotacidade = "123";
-
+  
   it('Deve retornar 200 e as propriedades de rota cidade', () => {
     cy.api({
       method: 'GET',
