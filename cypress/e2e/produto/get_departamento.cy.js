@@ -2,13 +2,13 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Produto/v2_produto_departamento';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('Produtos - GET - /v3/departamento', { env: { hideCredendials: true } }, () => {
+const termo = "12345678910";
+const departamento = "12345678910"; 
+const marca = "12345678910";
+const so_promocao = "12345678910"; 
+const so_servico = "12345678910"; 
 
-  const termo = "12345678910";
-  const departamento = "12345678910"; 
-  const marca = "12345678910";
-  const so_promocao = "12345678910"; 
-  const so_servico = "12345678910"; 
+describe('Produtos - GET - /v3/departamento', { env: { hideCredendials: true } }, () => {
   
     it('Resposta 200', () => {
 

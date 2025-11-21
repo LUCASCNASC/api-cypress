@@ -2,9 +2,9 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Sessão/v2_sessao_login_complementos';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('Sessão - GET - /v3/login_complementos', { env: { hideCredendials: true } }, () => {
+const ambiente = "12345678910";
 
-  const ambiente = "12345678910";
+describe('Sessão - GET - /v3/login_complementos', { env: { hideCredendials: true } }, () => {
   
     it('Resposta 200', () => {
 

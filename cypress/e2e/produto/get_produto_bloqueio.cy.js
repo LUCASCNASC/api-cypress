@@ -2,11 +2,11 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Produto/v2_produto_bloqueio';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('Produtos - GET - /v3/produto_bloqueio', { env: { hideCredendials: true } }, () => {
+const filial_saldo = "12345678910";
+const sku = "12345678910"; 
+const id_cnpj_cpf = "12345678910";
 
-  const filial_saldo = "12345678910";
-  const sku = "12345678910"; 
-  const id_cnpj_cpf = "12345678910";
+describe('Produtos - GET - /v3/produto_bloqueio', { env: { hideCredendials: true } }, () => {
   
     it('Resposta 200', () => {
 

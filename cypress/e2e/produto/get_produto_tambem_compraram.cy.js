@@ -2,9 +2,9 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Produto/v2_produto_tambem_compraram';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('Produtos - GET - /v3/produto_tambem_compraram ', { env: { hideCredendials: true } }, () => {
+const lista = "12345678910";
 
-  const lista = "12345678910";
+describe('Produtos - GET - /v3/produto_tambem_compraram ', { env: { hideCredendials: true } }, () => {
   
     it('Resposta 200', () => {
 

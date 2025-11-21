@@ -2,9 +2,9 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Proposta%20crédito/v2_proposta_credito_situacao';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('Proposta crédito - GET - /v3/proposta_credito_situacao/{codigo}', { env: { hideCredendials: true } }, () => {
+const codigo = "12345678910"; 
 
-  const codigo = "12345678910"; 
+describe('Proposta crédito - GET - /v3/proposta_credito_situacao/{codigo}', { env: { hideCredendials: true } }, () => {
   
     it('Resposta 200', () => {
 

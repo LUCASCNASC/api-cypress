@@ -2,11 +2,10 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Recarga/v3_get_recarga';
 const Authorization = Cypress.env('API.PRAGMA');
 
+const idFilial = "12345678910"; 
+const idItemServico = "12345678910";
 
-describe('Recarga - GET - /v3/recarga/{idFilial}/{idItemServico}', { env: { hideCredendials: true } }, () => {
-
-  const idFilial = "12345678910"; 
-  const idItemServico = "12345678910"; 
+describe('Recarga - GET - /v3/recarga/{idFilial}/{idItemServico}', { env: { hideCredendials: true } }, () => { 
   
     it('Resposta 200', () => {
 

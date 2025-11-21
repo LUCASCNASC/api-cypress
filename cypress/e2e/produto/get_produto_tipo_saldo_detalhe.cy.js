@@ -2,11 +2,11 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Produto/v3_produto_tipo_saldo_detalhe';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('Produtos - GET - /v3/produto_tipo_saldo_detalhe ', { env: { hideCredendials: true } }, () => {
+const idFilialSaldo = "12345678910"; 
+const sku = "12345678910";
+const idTipoSaldoProduto = "12345678910"; 
 
-  const idFilialSaldo = "12345678910"; 
-  const sku = "12345678910";
-  const idTipoSaldoProduto = "12345678910"; 
+describe('Produtos - GET - /v3/produto_tipo_saldo_detalhe ', { env: { hideCredendials: true } }, () => {
   
     it('Resposta 200', () => {
 

@@ -2,10 +2,10 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Pagamento%20pedido/v2_pag_pedido_contrato_compra_e_venda';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('Pagamento pedido - GET - /v3/contrato_compra_e_venda/{filial}/{pedido}', { env: { hideCredendials: true } }, () => {
+const filial = "12345678910"; 
+const pedido = "12345678910";
 
-  const filial = "12345678910"; 
-  const pedido = "12345678910"; 
+describe('Pagamento pedido - GET - /v3/contrato_compra_e_venda/{filial}/{pedido}', { env: { hideCredendials: true } }, () => { 
   
     it('Resposta 200', () => {
 

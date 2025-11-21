@@ -2,10 +2,10 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Pedido/v2_pedido_detalhes';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('Pedido - GET - /v3/pedido_detalhes/{codigo}', { env: { hideCredendials: true } }, () => {
+const idFilial = "12345678910"; 
+const codigo = "12345678910";
 
-  const idFilial = "12345678910"; 
-  const codigo = "12345678910";
+describe('Pedido - GET - /v3/pedido_detalhes/{codigo}', { env: { hideCredendials: true } }, () => {
   
     it('Resposta 200', () => {
 

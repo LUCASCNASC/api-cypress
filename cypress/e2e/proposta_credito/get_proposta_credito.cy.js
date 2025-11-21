@@ -2,13 +2,13 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Proposta%20crédito/v2_proposta_credito_get';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('Proposta crédito - GET - /v3/proposta_credito/{data_inicial}', { env: { hideCredendials: true } }, () => {
+const data_inicial = "yyyy-mm-dd";
+const vendedor = "12345678910";
+const cliente = "12345678910";
+const limit = "12345678910";
+const offset = "12345678910";
 
-  const data_inicial = "yyyy-mm-dd";
-  const vendedor = "12345678910";
-  const cliente = "12345678910";
-  const limit = "12345678910";
-  const offset = "12345678910";
+describe('Proposta crédito - GET - /v3/proposta_credito/{data_inicial}', { env: { hideCredendials: true } }, () => {
   
     it('Resposta 200', () => {
 

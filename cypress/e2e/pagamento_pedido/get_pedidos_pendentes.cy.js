@@ -2,14 +2,14 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Pagamento%20pedido/v3_pag_pedidos_pendentes';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('Pagamento pedido - GET - /v3/pedidos_pendentes/{filial}', { env: { hideCredendials: true } }, () => {
+const filial = "12345678910";
+const data = "12345678910"; 
+const numeroPedido = "12345678910"
+const cnpjCpf = "12345678910";
+const limit = "12345678910"; 
+const offset = "12345678910";
 
-  const filial = "12345678910";
-  const data = "12345678910"; 
-  const numeroPedido = "12345678910"
-  const cnpjCpf = "12345678910";
-  const limit = "12345678910"; 
-  const offset = "12345678910";
+describe('Pagamento pedido - GET - /v3/pedidos_pendentes/{filial}', { env: { hideCredendials: true } }, () => {
   
     it('Resposta 200', () => {
 

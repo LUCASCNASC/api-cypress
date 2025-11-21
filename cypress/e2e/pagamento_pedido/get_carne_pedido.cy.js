@@ -2,10 +2,10 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Pagamento%20pedido/v3_pag_pedido_carne_pedido';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('Pagamento pedido - GET - /v3/carne_pedido/{filial}/{pedido}', { env: { hideCredendials: true } }, () => {
+const filial = "12345678910"; 
+const pedido = "12345678910"; 
 
-  const filial = "12345678910"; 
-  const pedido = "12345678910"; 
+describe('Pagamento pedido - GET - /v3/carne_pedido/{filial}/{pedido}', { env: { hideCredendials: true } }, () => {
   
     it('Resposta 200', () => {
 

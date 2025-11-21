@@ -2,9 +2,9 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Sistema/v2_sistema_key_value';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('Sistema - GET - /v3/key_value/{key}', { env: { hideCredendials: true } }, () => {
+const key = "12345678910";
 
-  const key = "12345678910";
+describe('Sistema - GET - /v3/key_value/{key}', { env: { hideCredendials: true } }, () => {
   
     it('Resposta 200', () => {
 
