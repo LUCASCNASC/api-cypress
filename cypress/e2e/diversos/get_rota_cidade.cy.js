@@ -13,9 +13,10 @@ const idrotacidade = "123";
 describe('API - Diversos - GET /v3/rota_cidade', { env: { hideCredentials: true } }, () => {
   
   it('Deve retornar 200 e as propriedades de rota cidade', () => {
+
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}${PATH_API}/${idgruporota}/${idrota}/${idrotacidade}`,
+      url: `${BASE_URL}/${PATH_API}/${idgruporota}/${idrota}/${idrotacidade}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).then((response) => {
@@ -35,7 +36,7 @@ describe('API - Diversos - GET /v3/rota_cidade', { env: { hideCredentials: true 
 
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}${PATH_API}/${idgruporotaSemRota}/${idrotaSemRota}/${idrotacidadeSemRota}`,
+      url: `${BASE_URL}/${PATH_API}/${idgruporotaSemRota}/${idrotaSemRota}/${idrotacidadeSemRota}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).then((response) => {
@@ -48,7 +49,7 @@ describe('API - Diversos - GET /v3/rota_cidade', { env: { hideCredentials: true 
     
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}${PATH_API}/${idgruporotaInvalido}/${idrota}/${idrotacidade}`,
+      url: `${BASE_URL}/${PATH_API}/${idgruporotaInvalido}/${idrota}/${idrotacidade}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).then((response) => {

@@ -7,9 +7,10 @@ const AUTHORIZATION_INVALID = Cypress.env('API.PRAGMA_INVALID');
 describe('API - Sessões Ativas - GET /api/session', { env: { hideCredendials: true } }, () => {
   
   it('Deve retornar 200, array de sessões não vazio e propriedades obrigatórias', () => {
+
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}${PATH_API}`,
+      url: `${BASE_URL}/${PATH_API}`,
       headers: { Authorization: AUTHORIZATION },
       failOnStatusCode: false
     }).should((response) => {
@@ -29,9 +30,10 @@ describe('API - Sessões Ativas - GET /api/session', { env: { hideCredendials: t
   });
 
   it('Deve retornar erro de autorização com token inválido - 401 e 403', () => {
+    
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}${PATH_API}`,
+      url: `${BASE_URL}/${PATH_API}`,
       headers: { Authorization: AUTHORIZATION_INVALID },
       failOnStatusCode: false
     }).should((response) => {

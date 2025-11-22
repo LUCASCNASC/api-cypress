@@ -12,6 +12,7 @@ const sort = "123";
 describe('API - Diversos - GET /v3/cnae', { env: { hideCredentials: true } }, () => {
 
   it('Deve retornar 200 e as propriedades do CNAE', () => {
+    
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${termoValido}/${limit}/${offset}/${sort}`,

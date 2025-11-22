@@ -12,9 +12,10 @@ const idrotacidade = "123";
 describe('API - Diversos - GET /v3/rota', { env: { hideCredentials: true } }, () => {
 
   it('Deve retornar 200 e as propriedades de rota', () => {
+
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}${PATH_API}/${idgruporota}/${idrota}/${idrotacidade}`,
+      url: `${BASE_URL}/${PATH_API}/${idgruporota}/${idrota}/${idrotacidade}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).then((response) => {
@@ -38,7 +39,7 @@ describe('API - Diversos - GET /v3/rota', { env: { hideCredentials: true } }, ()
 
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}${PATH_API}/${idgruporotaSemRota}/${idrotaSemRota}/${idrotacidadeSemRota}`,
+      url: `${BASE_URL}/${PATH_API}/${idgruporotaSemRota}/${idrotaSemRota}/${idrotacidadeSemRota}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).then((response) => {

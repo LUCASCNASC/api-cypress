@@ -9,6 +9,7 @@ const clienteValido = "12345678901234";
 describe('API - Cliente - GET /v3/cliente/{cliente}', { env: { hideCredentials: true } }, () => {
 
   it('Deve retornar 200 e todas as propriedades esperadas para um cliente válido', () => {
+    
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${clienteValido}`,

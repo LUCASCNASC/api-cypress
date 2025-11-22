@@ -9,6 +9,7 @@ const idtipogrupoValido = "123";
 describe('API - Diversos - GET /v3/grupo', { env: { hideCredentials: true } }, () => {
 
   it('Deve retornar 200 e as propriedades do grupo', () => {
+    
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${idtipogrupoValido}`,

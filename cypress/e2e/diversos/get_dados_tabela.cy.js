@@ -9,6 +9,7 @@ const tabelaValida = "123";
 describe('API - Diversos - GET /v3/dados_tabela/{tabela}', { env: { hideCredentials: true } }, () => {
 
   it('Deve retornar 200 e as propriedades da tabela', () => {
+    
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${tabelaValida}`,

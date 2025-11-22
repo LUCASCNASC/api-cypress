@@ -10,6 +10,7 @@ const idpessoaValido = "12334";
 describe('API - Cliente - GET /v3/cliente_simples_estatisticas/{idpessoa}', { env: { hideCredentials: true } }, () => {
   
   it('Deve retornar 200 e todas as propriedades de estatísticas do cliente simplificado', () => {
+    
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${idpessoaValido}`,

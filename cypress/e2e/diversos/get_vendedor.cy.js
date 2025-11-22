@@ -10,9 +10,10 @@ const sort = "123";
 describe('API - Diversos - GET /v3/vendedor', { env: { hideCredentials: true } }, () => {
 
   it('Deve retornar 200 e as propriedades de vendedor', () => {
+
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}${PATH_API}/${termoValido}/${limit}/${offset}/${sort}`,
+      url: `${BASE_URL}/${PATH_API}/${termoValido}/${limit}/${offset}/${sort}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).then((response) => {
@@ -29,7 +30,7 @@ describe('API - Diversos - GET /v3/vendedor', { env: { hideCredentials: true } }
 
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}${PATH_API}/${termoInvalido}/${limit}/${offset}/${sort}`,
+      url: `${BASE_URL}/${PATH_API}/${termoInvalido}/${limit}/${offset}/${sort}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).then((response) => {

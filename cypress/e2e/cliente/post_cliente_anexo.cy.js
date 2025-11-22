@@ -5,9 +5,10 @@ const Authorization = Cypress.env('API.PRAGMA');
 describe('API - Cliente - POST /v3/cliente_anexo', { env: { hideCredentials: true } }, () => {
 
   it('Deve retornar 200 ou 201 ao incluir anexo válido', () => {
+
     cy.api({
       method: 'POST',
-      url: `${BASE_URL}${PATH_API}/`,
+      url: `${BASE_URL}/${PATH_API}`,
       headers: { Authorization },
       failOnStatusCode: false,
       body: {
@@ -25,7 +26,7 @@ describe('API - Cliente - POST /v3/cliente_anexo', { env: { hideCredentials: tru
 
     cy.api({
       method: 'POST',
-      url: `${BASE_URL}${PATH_API}/`,
+      url: `${BASE_URL}/${PATH_API}`,
       headers: { Authorization },
       failOnStatusCode: false,
       body: {

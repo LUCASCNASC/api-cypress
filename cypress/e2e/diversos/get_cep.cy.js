@@ -9,6 +9,7 @@ const cepValido = "12312312312";
 describe('API - Diversos - GET /v3/cep/{cep}', { env: { hideCredentials: true } }, () => {
   
   it('Deve retornar 200 e as propriedades do CEP', () => {
+    
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${cepValido}`,

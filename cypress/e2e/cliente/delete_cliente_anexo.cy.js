@@ -12,6 +12,7 @@ const idpessoaanexoValido = "123";
 describe('API - Cliente - DELETE /v3/cliente_anexo/{idcnpj_cpf}', { env: { hideCredentials: true } }, () => {
 
   it('Deve retornar 200 ao excluir anexo válido', () => {
+    
     cy.api({
       method: 'DELETE',
       url: `${BASE_URL}${PATH_API}/${idcnpj_cpfValido}/${idpessoaanexoValido}`,
@@ -24,7 +25,7 @@ describe('API - Cliente - DELETE /v3/cliente_anexo/{idcnpj_cpf}', { env: { hideC
   });
 
   it('Deve retornar 204 ao tentar excluir anexo já inexistente', () => {
-    
+
     cy.api({
       method: 'DELETE',
       url: `${BASE_URL}${PATH_API}/${idcnpj_cpfSemAnexo}/${idpessoaanexoSemAnexo}`,
@@ -37,7 +38,7 @@ describe('API - Cliente - DELETE /v3/cliente_anexo/{idcnpj_cpf}', { env: { hideC
   });
 
   it('Deve retornar 412 para parâmetros inválidos', () => {
-    
+
     cy.api({
       method: 'DELETE',
       url: `${BASE_URL}${PATH_API}/${idcnpj_cpfInvalido}/${idpessoaanexoInvalido}`,

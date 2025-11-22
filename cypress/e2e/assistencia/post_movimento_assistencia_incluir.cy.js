@@ -7,6 +7,7 @@ const AUTHORIZATION_INVALID = Cypress.env('API.PRAGMA_INVALID');
 describe('Assistência - POST /v3/movimento_assistencia_incluir/', { env: { hideCredendials: true } }, () => {
 
   it('Deve retornar 200 e validar as propriedades do retorno', () => {
+    
     cy.api({
       method: 'POST',
       url,
@@ -37,6 +38,7 @@ describe('Assistência - POST /v3/movimento_assistencia_incluir/', { env: { hide
   });
 
   it('Deve retornar 412 se payload não atender aos pré-requisitos', () => {
+
     cy.api({
       method: 'POST',
       url,
@@ -55,6 +57,7 @@ describe('Assistência - POST /v3/movimento_assistencia_incluir/', { env: { hide
   });
 
   it('Deve retornar erro de autenticação com token inválido', () => {
+
     cy.api({
       method: 'POST',
       url,
@@ -72,6 +75,7 @@ describe('Assistência - POST /v3/movimento_assistencia_incluir/', { env: { hide
   });
 
   it('Deve retornar erro de autenticação se header de autorização estiver ausente - 401 e 403', () => {
+    
     cy.api({
       method: 'POST',
       url,

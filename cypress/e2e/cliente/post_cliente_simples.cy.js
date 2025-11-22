@@ -5,9 +5,10 @@ const Authorization = Cypress.env('API.PRAGMA');
 describe('API - Cliente - POST /v3/cliente_simples', { env: { hideCredentials: true } }, () => {
   
   it('Deve retornar 200 ou 201 ao incluir/alterar cliente simplificado', () => {
+
     cy.api({
       method: 'POST',
-      url: `${BASE_URL}${PATH_API}/`,
+      url: `${BASE_URL}/${PATH_API}`,
       headers: { Authorization },
       failOnStatusCode: false,
       body: {
@@ -21,9 +22,10 @@ describe('API - Cliente - POST /v3/cliente_simples', { env: { hideCredentials: t
   });
 
   it('Deve retornar 412 ao tentar incluir cliente simplificado com dados inválidos', () => {
+
     cy.api({
       method: 'POST',
-      url: `${BASE_URL}${PATH_API}/`,
+      url: `${BASE_URL}/${PATH_API}`,
       headers: { Authorization },
       failOnStatusCode: false,
       body: {

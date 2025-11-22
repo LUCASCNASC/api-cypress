@@ -9,6 +9,7 @@ const rotaValida = "123";
 describe('API - Diversos - GET /v3/local_entrega', { env: { hideCredentials: true } }, () => {
 
   it('Deve retornar 200 e as propriedades do local de entrega', () => {
+    
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${rotaValida}`,

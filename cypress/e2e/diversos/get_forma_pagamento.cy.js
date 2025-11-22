@@ -5,9 +5,10 @@ const Authorization = Cypress.env('API.PRAGMA');
 describe('API - Diversos - GET /v3/forma_pagamento', { env: { hideCredentials: true } }, () => {
   
   it('Deve retornar 200 e as propriedades de forma de pagamento', () => {
+    
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}${PATH_API}`,
+      url: `${BASE_URL}/${PATH_API}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).then((response) => {

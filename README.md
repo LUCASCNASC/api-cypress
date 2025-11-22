@@ -46,5 +46,4 @@ O repositório está configurado para manter informações sensíveis, como URLs
 
 Ajustar const de todos os arquivos de teste em um arquivo que fique escondido do github.
 
-Próximos passos:
-- finalizado
+Ajustado até "filial".

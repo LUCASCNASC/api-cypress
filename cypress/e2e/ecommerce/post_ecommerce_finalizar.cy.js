@@ -5,9 +5,10 @@ const Authorization = Cypress.env('API.PRAGMA');
 describe('API - E-commerce - POST /v3/ecommerce_finalizar', { env: { hideCredentials: true } }, () => {
   
   it('Deve retornar 200 ao finalizar pedido e-commerce válido', () => {
+
     cy.api({
       method: 'POST',
-      url: `${BASE_URL}${PATH_API}`,
+      url: `${BASE_URL}/${PATH_API}`,
       headers: { Authorization },
       failOnStatusCode: false,
       body: {
@@ -31,9 +32,10 @@ describe('API - E-commerce - POST /v3/ecommerce_finalizar', { env: { hideCredent
   });
 
   it('Deve retornar 412 ao tentar finalizar pedido e-commerce com payload inválido', () => {
+
     cy.api({
       method: 'POST',
-      url: `${BASE_URL}${PATH_API}`,
+      url: `${BASE_URL}/${PATH_API}`,
       headers: { Authorization },
       failOnStatusCode: false,
       body: {

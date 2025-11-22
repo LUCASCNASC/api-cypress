@@ -5,9 +5,10 @@ const Authorization = Cypress.env('API.PRAGMA');
 describe('API - Compras - POST /v3/pedido_compra_incluir', { env: { hideCredentials: true } }, () => {
   
   it('Deve retornar 200 e as propriedades do retorno ao incluir pedido válido', () => {
+    
     cy.api({
       method: 'POST',
-      url: `${BASE_URL}${PATH_API}`,
+      url: `${BASE_URL}/${PATH_API}`,
       headers: { Authorization },
       failOnStatusCode: false,
       body: {
@@ -29,9 +30,10 @@ describe('API - Compras - POST /v3/pedido_compra_incluir', { env: { hideCredenti
   });
 
   it('Deve retornar 412 ao tentar incluir pedido com dados inválidos', () => {
+
     cy.api({
       method: 'POST',
-      url: `${BASE_URL}${PATH_API}`,
+      url: `${BASE_URL}/${PATH_API}`,
       headers: { Authorization },
       failOnStatusCode: false,
       body: {

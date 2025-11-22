@@ -9,6 +9,7 @@ const clienteValido = "12345678901234";
 describe('API - Cliente - GET /v3/cliente_renovacao/{cliente}', { env: { hideCredentials: true } }, () => {
 
   it('Deve retornar 200 e as propriedades de renovação para um cliente válido', () => {
+    
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${clienteValido}`,
@@ -34,7 +35,7 @@ describe('API - Cliente - GET /v3/cliente_renovacao/{cliente}', { env: { hideCre
   });
 
   it('Deve retornar 204 quando não houver renovações para o cliente', () => {
-    
+
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${clienteSemRenovacao}`,
@@ -47,7 +48,7 @@ describe('API - Cliente - GET /v3/cliente_renovacao/{cliente}', { env: { hideCre
   });
 
   it('Deve retornar 412 para cliente inválido', () => {
-    
+
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${clienteInvalido}`,

@@ -5,9 +5,10 @@ const Authorization = Cypress.env('API.PRAGMA');
 describe('API - Diversos - GET /v3/operacoes_tef', { env: { hideCredentials: true } }, () => {
   
   it('Deve retornar 200 e as propriedades de operações TEF', () => {
+    
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}${PATH_API}/`,
+      url: `${BASE_URL}/${PATH_API}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).then((response) => {

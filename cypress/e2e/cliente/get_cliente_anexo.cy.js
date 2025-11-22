@@ -9,6 +9,7 @@ const idcnpj_cpfValido = "100002139114930";
 describe('API - Cliente - GET /v3/cliente_anexo/{idcnpj_cpf}', { env: { hideCredentials: true } }, () => {
   
   it('Deve retornar 200 e as propriedades do anexo para idcnpj_cpf válido', () => {
+    
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${idcnpj_cpfValido}`,
@@ -27,7 +28,7 @@ describe('API - Cliente - GET /v3/cliente_anexo/{idcnpj_cpf}', { env: { hideCred
   });
 
   it('Deve retornar 204 quando não houver anexos para o idcnpj_cpf informado', () => {
-    
+
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${idcnpj_cpfSemAnexo}`,

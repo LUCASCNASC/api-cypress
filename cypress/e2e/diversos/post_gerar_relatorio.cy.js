@@ -5,9 +5,10 @@ const Authorization = Cypress.env('API.PRAGMA');
 describe('API - Diversos - POST /v3/gerar_relatorio', { env: { hideCredentials: true } }, () => {
   
   it('Deve retornar 200 e as propriedades do relatório gerado', () => {
+
     cy.api({
       method: 'POST',
-      url: `${BASE_URL}${PATH_API}`,
+      url: `${BASE_URL}/${PATH_API}`,
       headers: { Authorization },
       failOnStatusCode: false,
       body: {
@@ -26,9 +27,10 @@ describe('API - Diversos - POST /v3/gerar_relatorio', { env: { hideCredentials: 
   });
 
   it('Deve retornar 412 ao tentar gerar relatório com dados inválidos', () => {
+
     cy.api({
       method: 'POST',
-      url: `${BASE_URL}${PATH_API}`,
+      url: `${BASE_URL}/${PATH_API}`,
       headers: { Authorization },
       failOnStatusCode: false,
       body: {

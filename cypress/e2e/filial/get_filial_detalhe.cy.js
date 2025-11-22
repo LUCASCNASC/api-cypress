@@ -3,13 +3,15 @@ const PATH_API = '/Filial/v2_filial_detalhe';
 const Authorization = Cypress.env('API.PRAGMA');
 
 const filialValida = 10050; 
+const filialSemDados = 99999;
 
 describe('API - Filial - GET /v3/filial_detalhe/{filial}', { env: { hideCredentials: true } }, () => {
   
   it('Deve retornar 200 e todas as propriedades do detalhe da filial', () => {
+
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}${PATH_API}/${filialValida}`,
+      url: `${BASE_URL}/${PATH_API}/${filialValida}`,
       headers: { Authorization }
     }).then((response) => {
       expect(response.status).to.equal(200);
@@ -43,11 +45,10 @@ describe('API - Filial - GET /v3/filial_detalhe/{filial}', { env: { hideCredenti
   });
 
   it('Deve retornar 204 quando não houver dados para a filial informada', () => {
-    const filialSemDados = 99999; // Filial que não existe
 
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}${PATH_API}/${filialSemDados}`,
+      url: `${BASE_URL}/${PATH_API}/${filialSemDados}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).then((response) => {
