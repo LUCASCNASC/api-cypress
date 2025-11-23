@@ -7,6 +7,7 @@ const idBaseFiscalCFOP = "123";
 describe('Fisco/Contábil - DELETE - /v3/regra_fiscal_cfop_deletar/{idBaseFiscalCFOP}', { env: { hideCredendials: true } }, () => {
 
   it('Deve retornar 200 e as propriedades da base fiscal de CFOP excluída', () => {
+    
     cy.api({
       method: 'DELETE',
       url: `${BASE_URL}/${PATH_API}/${idBaseFiscalCFOP}`,

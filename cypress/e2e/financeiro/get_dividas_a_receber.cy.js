@@ -7,13 +7,18 @@ const cpf_cnpjValido = "123123123";
 const separarvinculados = "123123123";
 const limit = "123123123";
 const offset = "123123123";
+const idFilialSemTitulos = "99999";
+const cpf_cnpjSemTitulos = "00000000000000";
+const idFilialInvalido = "abc";
+const cpf_cnpjInvalido = "xyz";
 
 describe('API - Financeiro - GET /v3/dividas_a_receber/{idFilial}/{cpf_cnpj}', { env: { hideCredentials: true } }, () => {
 
   it('Deve retornar 200 e as propriedades dos títulos a receber', () => {
+
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}${PATH_API}/${idFilialValido}/${cpf_cnpjValido}/${separarvinculados}/${limit}/${offset}`,
+      url: `${BASE_URL}/${PATH_API}/${idFilialValido}/${cpf_cnpjValido}/${separarvinculados}/${limit}/${offset}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).then((response) => {
@@ -65,11 +70,10 @@ describe('API - Financeiro - GET /v3/dividas_a_receber/{idFilial}/{cpf_cnpj}', {
   });
 
   it('Deve retornar 204 quando não houver títulos a receber', () => {
-    const idFilialSemTitulos = "99999";
-    const cpf_cnpjSemTitulos = "00000000000000";
+    
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}${PATH_API}/${idFilialSemTitulos}/${cpf_cnpjSemTitulos}/${separarvinculados}/${limit}/${offset}`,
+      url: `${BASE_URL}/${PATH_API}/${idFilialSemTitulos}/${cpf_cnpjSemTitulos}/${separarvinculados}/${limit}/${offset}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).then((response) => {
@@ -79,11 +83,10 @@ describe('API - Financeiro - GET /v3/dividas_a_receber/{idFilial}/{cpf_cnpj}', {
   });
 
   it('Deve retornar 412 para parâmetros inválidos', () => {
-    const idFilialInvalido = "abc";
-    const cpf_cnpjInvalido = "xyz";
+    
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}${PATH_API}/${idFilialInvalido}/${cpf_cnpjInvalido}/${separarvinculados}/${limit}/${offset}`,
+      url: `${BASE_URL}/${PATH_API}/${idFilialInvalido}/${cpf_cnpjInvalido}/${separarvinculados}/${limit}/${offset}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).then((response) => {

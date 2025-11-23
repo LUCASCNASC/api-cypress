@@ -5,9 +5,10 @@ const Authorization = Cypress.env('API.PRAGMA');
 describe('API - Financeiro - POST /v3/agencia', { env: { hideCredentials: true } }, () => {
   
   it('Deve retornar 201 ao incluir agência', () => {
+
     cy.api({
       method: 'POST',
-      url: `${BASE_URL}${PATH_API}`,
+      url: `${BASE_URL}/${PATH_API}`,
       headers: { Authorization },
       failOnStatusCode: false,
       body: {
@@ -23,9 +24,10 @@ describe('API - Financeiro - POST /v3/agencia', { env: { hideCredentials: true }
   });
 
   it('Deve retornar 500 ao tentar incluir agência com payload inválido', () => {
+    
     cy.api({
       method: 'POST',
-      url: `${BASE_URL}${PATH_API}`,
+      url: `${BASE_URL}/${PATH_API}`,
       headers: { Authorization },
       failOnStatusCode: false,
       body: {

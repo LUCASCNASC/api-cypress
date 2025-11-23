@@ -5,9 +5,10 @@ const Authorization = Cypress.env('API.PRAGMA');
 describe('Fisco/Contábil - POST - /v3/lista_solicitacao_processamento', { env: { hideCredendials: true } }, () => {
 
   it('Deve retornar 200 e as propriedades da lista de solicitações de processamento', () => {
+    
     cy.api({
       method: 'POST',
-      url: `${API_BASE_URLURL}/${PATH_API}`,
+      url: `${BASE_URL}/${PATH_API}`,
       headers: { Authorization },
       failOnStatusCode: false,
       body: {

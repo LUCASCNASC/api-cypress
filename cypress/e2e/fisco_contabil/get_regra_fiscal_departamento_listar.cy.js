@@ -10,6 +10,7 @@ const OrigemProduto = "123123123";
 describe('Fisco/Contábil - GET - /v3/regra_fiscal_departamento_listar/{Grupo}/{UF}/{CFOP}/{OrigemProduto}', { env: { hideCredendials: true } }, () => {
 
   it('Deve retornar 200 e as propriedades da base fiscal de departamento', () => {
+    
     cy.api({
       method: 'GET',
       url: `${BASE_URL}/${PATH_API}/${Grupo}/${UF}/${CFOP}/${OrigemProduto}`,

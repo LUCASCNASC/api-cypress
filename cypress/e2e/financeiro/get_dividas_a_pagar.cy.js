@@ -4,13 +4,18 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 const idFilialValido = "123123123"; 
 const cpf_cnpjValido = "123123123";
+const idFilialInvalido = "abc";
+const cpf_cnpjInvalido = "xyz";
+const idFilialSemTitulos = "99999";
+const cpf_cnpjSemTitulos = "00000000000000";
 
 describe('API - Financeiro - GET /v3/dividas_a_pagar/{idFilial}/{cpf_cnpj}', { env: { hideCredentials: true } }, () => {
 
   it('Deve retornar 200 e as propriedades dos títulos a pagar', () => {
+
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}${PATH_API}/${idFilialValido}/${cpf_cnpjValido}`,
+      url: `${BASE_URL}/${PATH_API}/${idFilialValido}/${cpf_cnpjValido}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).then((response) => {
@@ -27,11 +32,10 @@ describe('API - Financeiro - GET /v3/dividas_a_pagar/{idFilial}/{cpf_cnpj}', { e
   });
 
   it('Deve retornar 204 quando não houver títulos a pagar', () => {
-    const idFilialSemTitulos = "99999";
-    const cpf_cnpjSemTitulos = "00000000000000";
+    
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}${PATH_API}/${idFilialSemTitulos}/${cpf_cnpjSemTitulos}`,
+      url: `${BASE_URL}/${PATH_API}/${idFilialSemTitulos}/${cpf_cnpjSemTitulos}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).then((response) => {
@@ -41,11 +45,10 @@ describe('API - Financeiro - GET /v3/dividas_a_pagar/{idFilial}/{cpf_cnpj}', { e
   });
 
   it('Deve retornar 412 para parâmetros inválidos', () => {
-    const idFilialInvalido = "abc";
-    const cpf_cnpjInvalido = "xyz";
+    
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}${PATH_API}/${idFilialInvalido}/${cpf_cnpjInvalido}`,
+      url: `${BASE_URL}/${PATH_API}/${idFilialInvalido}/${cpf_cnpjInvalido}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).then((response) => {

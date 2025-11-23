@@ -5,6 +5,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 describe('Fisco/Contábil - POST - /v3/conhecimento_nota_saida_incluir/', { env: { hideCredendials: true } }, () => {
   
   it('Deve retornar 200 e as propriedades do conhecimento de nota de saída', () => {
+    
     cy.api({
       method: 'POST',
       url: `${BASE_URL}/${PATH_API}`,

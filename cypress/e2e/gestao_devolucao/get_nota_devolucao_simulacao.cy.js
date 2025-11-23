@@ -9,6 +9,7 @@ const Authorization2 = "123123123";
 describe('Gestão Devolução - GET - /v3/nota_devolucao_simulacao/{filial}/{solicitacao}', { env: { hideCredendials: true } }, () => {
 
     it('Resposta 200', () => {
+      
       cy.api({
         method: 'GET', 
         url: `${BASE_URL}/${PATH_API}/${filial}/${solicitacao}/${Authorization}`, 

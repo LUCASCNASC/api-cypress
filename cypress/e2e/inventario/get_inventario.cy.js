@@ -5,9 +5,10 @@ const Authorization = Cypress.env('API.PRAGMA');
 describe('Inventário - GET - /v3/inventario', { env: { hideCredendials: true } } , () => {
   
   it('Resposta 200', () => {
+    
     cy.api({
       method: 'GET', 
-      url: `${BASE_URL}/${PATH_API}/`, 
+      url: `${BASE_URL}/${PATH_API}`, 
       headers: { Authorization },
       failOnStatusCode: false
     })

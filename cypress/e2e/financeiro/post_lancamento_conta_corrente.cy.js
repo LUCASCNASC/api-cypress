@@ -5,9 +5,10 @@ const Authorization = Cypress.env('API.PRAGMA');
 describe('API - Financeiro - POST /v3/lancamento_conta_corrente', { env: { hideCredentials: true } }, () => {
   
   it('Deve retornar 201 e as propriedades do lançamento conta corrente', () => {
+
     cy.api({
       method: 'POST',
-      url: `${BASE_URL}${PATH_API}`,
+      url: `${BASE_URL}/${PATH_API}`,
       headers: { Authorization },
       failOnStatusCode: false,
       body: {
@@ -26,9 +27,10 @@ describe('API - Financeiro - POST /v3/lancamento_conta_corrente', { env: { hideC
   });
 
   it('Deve retornar 412 ao tentar incluir lançamento com payload inválido', () => {
+
     cy.api({
       method: 'POST',
-      url: `${BASE_URL}${PATH_API}`,
+      url: `${BASE_URL}/${PATH_API}`,
       headers: { Authorization },
       failOnStatusCode: false,
       body: {

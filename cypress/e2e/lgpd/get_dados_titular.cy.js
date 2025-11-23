@@ -7,6 +7,7 @@ const cpf = "123123123";
 describe('Recarga - GET - /v3/dados_titular/{cpf}', { env: { hideCredendials: true } } , () => {
   
     it('Resposta 200', () => {
+      
       cy.api({
         method: 'GET', 
         url: `${BASE_URL}/${PATH_API}/${cpf}`, 

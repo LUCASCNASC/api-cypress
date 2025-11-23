@@ -5,6 +5,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 describe('Fisco/Contábil - POST - /v3/corrigir_saldo_medio_produtos', { env: { hideCredendials: true } }, () => {
   
   it('Deve retornar 200 e as propriedades da correção de saldo/custo médio', () => {
+    
     cy.api({
       method: 'POST',
       url: `${BASE_URL}/${PATH_API}`,

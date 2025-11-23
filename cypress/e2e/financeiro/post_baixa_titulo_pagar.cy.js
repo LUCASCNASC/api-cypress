@@ -5,9 +5,10 @@ const Authorization = Cypress.env('API.PRAGMA');
 describe('API - Financeiro - POST /v3/baixa_titulo_pagar', { env: { hideCredentials: true } }, () => {
   
   it('Deve retornar 200 ao baixar títulos a pagar', () => {
+    
     cy.api({
       method: 'POST',
-      url: `${BASE_URL}${PATH_API}`,
+      url: `${BASE_URL}/${PATH_API}`,
       headers: { Authorization },
       failOnStatusCode: false,
       body: {
@@ -22,9 +23,10 @@ describe('API - Financeiro - POST /v3/baixa_titulo_pagar', { env: { hideCredenti
   });
 
   it('Deve retornar 412 ao tentar baixar título a pagar com payload inválido', () => {
+
     cy.api({
       method: 'POST',
-      url: `${BASE_URL}${PATH_API}`,
+      url: `${BASE_URL}/${PATH_API}`,
       headers: { Authorization },
       failOnStatusCode: false,
       body: {

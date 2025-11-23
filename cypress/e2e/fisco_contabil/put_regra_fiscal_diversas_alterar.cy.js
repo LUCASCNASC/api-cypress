@@ -5,6 +5,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 describe('Financeiro - PUT - /v3/regra_fiscal_diversas_alterar', { env: { hideCredendials: true } }, () => {
   
   it('Deve retornar 200 e as propriedades da base fiscal diversas alterada', () => {
+    
     cy.api({
       method: 'PUT',
       url: `${BASE_URL}/${PATH_API}`,

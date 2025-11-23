@@ -5,9 +5,10 @@ const Authorization = Cypress.env('API.PRAGMA');
 describe('Gestão Devolução - POST - /v3/efetivar_proposta_abatimento', { env: { hideCredendials: true } }, () => {
   
     it('Resposta 200', () => {
+      
       cy.api({
         method: 'POST', 
-        url: `${BASE_URL}/${PATH_API}/`, 
+        url: `${BASE_URL}/${PATH_API}`, 
         headers: { Authorization },
         failOnStatusCode: false
       })

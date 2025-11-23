@@ -5,9 +5,10 @@ const Authorization = Cypress.env('API.PRAGMA');
 describe('Intenção compra - GET - /v3/intencao_compra_motivo', { env: { hideCredendials: true } }, () => {
   
   it('Resposta 200', () => {
+    
     cy.api({
       method: 'GET', 
-      url: `${BASE_URL}/${PATH_API}/`, 
+      url: `${BASE_URL}/${PATH_API}`, 
       headers: { Authorization },
       failOnStatusCode: false
     })

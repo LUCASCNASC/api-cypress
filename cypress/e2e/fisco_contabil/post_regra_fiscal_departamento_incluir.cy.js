@@ -5,6 +5,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 describe('Fisco/Contábil - POST - /v3/regra_fiscal_departamento_incluir', { env: { hideCredendials: true } }, () => {
   
   it('POST - /v3/regra_fiscal_departamento_incluir - Resposta 200', () => {
+    
     cy.api({
       method: 'POST',
       url: `${BASE_URL}/${PATH_API}`,

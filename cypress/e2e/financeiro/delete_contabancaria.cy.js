@@ -5,13 +5,16 @@ const Authorization = Cypress.env('API.PRAGMA');
 const codigoBancoValido = "123123123";
 const codigoAgenciaValido = "123123123";
 const codigoContaValido = "123123123";
+const codigoBancoInvalido = "99999";
+  const codigoAgenciaInvalido = "99999";
+  const codigoContaInvalido = "99999999";
 
 describe('API - Financeiro - DELETE /v3/contabancaria/{codigoBanco}/{codigoAgencia}/{codigoConta}', { env: { hideCredentials: true } }, () => {
 
   it('Deve retornar 200 ao excluir conta bancária', () => {
     cy.api({
       method: 'DELETE',
-      url: `${BASE_URL}${PATH_API}/${codigoBancoValido}/${codigoAgenciaValido}/${codigoContaValido}`,
+      url: `${BASE_URL}/${PATH_API}/${codigoBancoValido}/${codigoAgenciaValido}/${codigoContaValido}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).then((response) => {
@@ -21,12 +24,10 @@ describe('API - Financeiro - DELETE /v3/contabancaria/{codigoBanco}/{codigoAgenc
   });
 
   it('Deve retornar erro ao tentar excluir conta bancária inexistente ou inválida', () => {
-    const codigoBancoInvalido = "99999";
-    const codigoAgenciaInvalido = "99999";
-    const codigoContaInvalido = "99999999";
+  
     cy.api({
       method: 'DELETE',
-      url: `${BASE_URL}${PATH_API}/${codigoBancoInvalido}/${codigoAgenciaInvalido}/${codigoContaInvalido}`,
+      url: `${BASE_URL}/${PATH_API}/${codigoBancoInvalido}/${codigoAgenciaInvalido}/${codigoContaInvalido}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).then((response) => {

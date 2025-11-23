@@ -5,9 +5,10 @@ const Authorization = Cypress.env('API.PRAGMA');
 describe('API - Financeiro - POST /v3/bloquetos_por_titulo', { env: { hideCredentials: true } }, () => {
   
   it('Deve retornar 200 ao imprimir meio de cobrança em PDF', () => {
+
     cy.api({
       method: 'POST',
-      url: `${BASE_URL}${PATH_API}`,
+      url: `${BASE_URL}/${PATH_API}`,
       headers: { Authorization },
       failOnStatusCode: false,
       body: {
@@ -21,9 +22,10 @@ describe('API - Financeiro - POST /v3/bloquetos_por_titulo', { env: { hideCreden
   });
 
   it('Deve retornar 412 ao tentar imprimir meio de cobrança com payload inválido', () => {
+
     cy.api({
       method: 'POST',
-      url: `${BASE_URL}${PATH_API}`,
+      url: `${BASE_URL}/${PATH_API}`,
       headers: { Authorization },
       failOnStatusCode: false,
       body: {

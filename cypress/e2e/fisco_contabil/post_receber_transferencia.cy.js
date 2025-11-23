@@ -5,6 +5,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 describe('Fisco/Contábil - POST - /v3/receber_transferencia', { env: { hideCredendials: true } }, () => {
   
   it('Deve retornar 200 e as propriedades do recebimento de transferência', () => {
+    
     cy.api({
       method: 'POST',
       url: `${BASE_URL}/${PATH_API}`,

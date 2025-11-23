@@ -5,6 +5,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 describe('Fisco/Contábil - POST - /v3/manifesto_documento_fiscal_incluir', { env: { hideCredendials: true } }, () => {
   
   it('Deve retornar 200 e as propriedades do manifesto de documento fiscal incluído', () => {
+    
     cy.api({
       method: 'POST',
       url: `${BASE_URL}/${PATH_API}`,

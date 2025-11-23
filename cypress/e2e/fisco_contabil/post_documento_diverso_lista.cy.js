@@ -5,6 +5,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 describe('Fisco/Contábil - POST - /v3/documento_diverso_lista/', { env: { hideCredendials: true } }, () => {
   
   it('Deve retornar 200 e as propriedades dos documentos diversos', () => {
+    
     cy.api({
       method: 'POST',
       url: `${BASE_URL}/${PATH_API}`,

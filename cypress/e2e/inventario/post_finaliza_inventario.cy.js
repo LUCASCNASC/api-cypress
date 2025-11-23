@@ -5,6 +5,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 describe('Inventário - POST - /v3/finaliza_inventario', { env: { hideCredendials: true } }, () => {
   
     it('Resposta 200', () => {
+      
       cy.api({
         method: 'POST', 
         url: `${BASE_URL}/${PATH_API}`, 

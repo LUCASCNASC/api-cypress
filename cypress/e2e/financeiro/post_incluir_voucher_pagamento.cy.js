@@ -5,9 +5,10 @@ const Authorization = Cypress.env('API.PRAGMA');
 describe('API - Financeiro - POST /v3/incluir_voucher_pagamento', { env: { hideCredentials: true } }, () => {
   
   it('Deve retornar 201 e as propriedades do voucher de pagamento', () => {
+    
     cy.api({
       method: 'POST',
-      url: `${BASE_URL}${PATH_API}`,
+      url: `${BASE_URL}/${PATH_API}`,
       headers: { Authorization },
       failOnStatusCode: false,
       body: {
@@ -26,9 +27,10 @@ describe('API - Financeiro - POST /v3/incluir_voucher_pagamento', { env: { hideC
   });
 
   it('Deve retornar 412 ao tentar incluir voucher de pagamento com payload inválido', () => {
+
     cy.api({
       method: 'POST',
-      url: `${BASE_URL}${PATH_API}`,
+      url: `${BASE_URL}/${PATH_API}`,
       headers: { Authorization },
       failOnStatusCode: false,
       body: {

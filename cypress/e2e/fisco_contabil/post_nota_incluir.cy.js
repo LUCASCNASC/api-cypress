@@ -5,6 +5,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 describe('Fisco/Contábil - POST - /v3/nota_incluir/', { env: { hideCredendials: true } }, () => {
   
   it('Deve retornar 200 e as propriedades da nota fiscal incluída', () => {
+    
     cy.api({
       method: 'POST',
       url: `${BASE_URL}/${PATH_API}`,

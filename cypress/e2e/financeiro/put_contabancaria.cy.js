@@ -5,9 +5,10 @@ const Authorization = Cypress.env('API.PRAGMA');
 describe('API - Financeiro - PUT /v3/contabancaria', { env: { hideCredentials: true } }, () => {
   
   it('Deve retornar 201 ao alterar conta bancária', () => {
+
     cy.api({
       method: 'PUT',
-      url: `${BASE_URL}${PATH_API}`,
+      url: `${BASE_URL}/${PATH_API}`,
       headers: { Authorization },
       failOnStatusCode: false,
       body: {
@@ -24,9 +25,10 @@ describe('API - Financeiro - PUT /v3/contabancaria', { env: { hideCredentials: t
   });
 
   it('Deve retornar 500 ao tentar alterar conta bancária com payload inválido', () => {
+
     cy.api({
       method: 'PUT',
-      url: `${BASE_URL}${PATH_API}`,
+      url: `${BASE_URL}/${PATH_API}`,
       headers: { Authorization },
       failOnStatusCode: false,
       body: {
