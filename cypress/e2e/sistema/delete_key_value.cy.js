@@ -6,18 +6,18 @@ const key = "12345678910";
 
 describe('Sistema - DELETE - /v3/key_value/{key}', { env: { hideCredendials: true } } , () => {
   
-    it('Resposta 200', () => {
+  it('Resposta 200', () => {
 
-      cy.api({
-        method: 'DELETE',
-        url: `${BASE_URL}/${PATH_API}/${key}`,
-        headers: { Authorization },
-        failOnStatusCode: false
-      })
-        .then((response) => {
-          const { data } = body;
-          expect(response.status).to.eq(200);
-          expect(response.duration).to.be.below(2000);
-        });
-    });
+    cy.api({
+      method: 'DELETE',
+      url: `${BASE_URL}/${PATH_API}/${key}`,
+      headers: { Authorization },
+      failOnStatusCode: false
+    })
+      .then((response) => {
+        const { data } = body;
+        expect(response.status).to.eq(200);
+        expect(response.duration).to.be.below(2000);
+      });
   });
+});

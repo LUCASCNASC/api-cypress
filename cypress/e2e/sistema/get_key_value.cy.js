@@ -6,20 +6,20 @@ const key = "12345678910";
 
 describe('Sistema - GET - /v3/key_value/{key}', { env: { hideCredendials: true } }, () => {
   
-    it('Resposta 200', () => {
+  it('Resposta 200', () => {
 
-      cy.api({
-        method: 'GET',
-        url: `${BASE_URL}/${PATH_API}/${key}`, 
-        headers: { Authorization },
-        failOnStatusCode: false
-      })
-        .then((response) => {
-          const { data } = body;
-          expect(response.status).to.eq(200);
-          expect(response.duration).to.be.below(2000);
-          expect(resposta.body.retorno[0]).toHaveProperty('chave');
-          expect(resposta.body.retorno[0]).toHaveProperty('valor');
-        });
-    });
+    cy.api({
+      method: 'GET',
+      url: `${BASE_URL}/${PATH_API}/${key}`, 
+      headers: { Authorization },
+      failOnStatusCode: false
+    })
+      .then((response) => {
+        const { data } = body;
+        expect(response.status).to.eq(200);
+        expect(response.duration).to.be.below(2000);
+        expect(resposta.body.retorno[0]).toHaveProperty('chave');
+        expect(resposta.body.retorno[0]).toHaveProperty('valor');
+      });
   });
+});

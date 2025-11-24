@@ -8,20 +8,20 @@ const id_cnpj_cpf = "12345678910";
 
 describe('Produtos - GET - /v3/produto_bloqueio', { env: { hideCredendials: true } }, () => {
   
-    it('Resposta 200', () => {
+  it('Resposta 200', () => {
 
-      cy.api({
-        method: 'GET', 
-        url: `${BASE_URL}/${PATH_API}/${filial}/${sku}/${id_cnpj_cpf}`, 
-        headers: { Authorization },
-        failOnStatusCode: false
-      })
-        .then((response) => {
-          const { data } = body;
-          expect(response.status).to.eq(200);
-          expect(response.duration).to.be.below(2000);
-          expect(resposta.body.retorno[0]).toHaveProperty('ProdutoBloqueado');
-          expect(resposta.body.retorno[0]).toHaveProperty('ProdutoNaoLiberado');
-        });
-    });
+    cy.api({
+      method: 'GET', 
+      url: `${BASE_URL}/${PATH_API}/${filial}/${sku}/${id_cnpj_cpf}`, 
+      headers: { Authorization },
+      failOnStatusCode: false
+    })
+      .then((response) => {
+        const { data } = body;
+        expect(response.status).to.eq(200);
+        expect(response.duration).to.be.below(2000);
+        expect(resposta.body.retorno[0]).toHaveProperty('ProdutoBloqueado');
+        expect(resposta.body.retorno[0]).toHaveProperty('ProdutoNaoLiberado');
+      });
   });
+});

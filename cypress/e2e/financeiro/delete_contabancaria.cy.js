@@ -6,8 +6,8 @@ const codigoBancoValido = "123123123";
 const codigoAgenciaValido = "123123123";
 const codigoContaValido = "123123123";
 const codigoBancoInvalido = "99999";
-  const codigoAgenciaInvalido = "99999";
-  const codigoContaInvalido = "99999999";
+const codigoAgenciaInvalido = "99999";
+const codigoContaInvalido = "99999999";
 
 describe('API - Financeiro - DELETE /v3/contabancaria/{codigoBanco}/{codigoAgencia}/{codigoConta}', { env: { hideCredentials: true } }, () => {
 

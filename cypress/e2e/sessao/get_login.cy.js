@@ -7,19 +7,19 @@ const senha = "12345678910";
 const codigoverificacao = "12345678910"; 
 
 describe('Sessão - GET - /v3/login/{usuario}/{senha}', { env: { hideCredendials: true } }, () => {
-  
-    it('Resposta 204 - Sem dados de retorno', () => {
 
-      cy.api({
-        method: 'GET', 
-        url: `${BASE_URL}/${PATH_API}/${usuario}/${senha}/${codigoverificacao}`, 
-        headers: { Authorization },
-        failOnStatusCode: false
-      })
-        .then((response) => {
-          const { data } = body;
-          expect(response.status).to.eq(204);
-          expect(response.duration).to.be.below(2000);
-        });
-    });
+  it('Resposta 204 - Sem dados de retorno', () => {
+
+    cy.api({
+      method: 'GET', 
+      url: `${BASE_URL}/${PATH_API}/${usuario}/${senha}/${codigoverificacao}`, 
+      headers: { Authorization },
+      failOnStatusCode: false
+    })
+      .then((response) => {
+        const { data } = body;
+        expect(response.status).to.eq(204);
+        expect(response.duration).to.be.below(2000);
+      });
   });
+});
