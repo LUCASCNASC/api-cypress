@@ -10,7 +10,7 @@ const so_servico = "12345678910";
 
 describe('Produtos - GET - /v3/departamento', { env: { hideCredendials: true } }, () => {
   
-  it('Resposta 200', () => {
+  it('Status Code 200', () => {
 
     cy.api({
       method: 'GET', 

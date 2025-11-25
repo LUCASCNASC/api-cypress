@@ -10,7 +10,7 @@ const so_servico = "false";
 
 describe('Produtos - GET - /v3/produto ', { env: { hideCredendials: true } }, () => {
   
-  it('Resposta 200', () => {''
+  it('Status Code 200', () => {''
 
     cy.api({
       method: 'GET', 

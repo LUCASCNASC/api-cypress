@@ -9,7 +9,7 @@ const dataFinal = "123123123";
 
 describe('Logística - GET - /v3/mapa_carga_loja/{idFilial}/{idSituacaoMapaCarga}/{dataInicial}/{dataFinal}', { env: { hideCredendials: true } } , () => {
 
-  it('Resposta 200', () => {
+  it('Status Code 200', () => {
 
     cy.api({
       method: 'GET', 

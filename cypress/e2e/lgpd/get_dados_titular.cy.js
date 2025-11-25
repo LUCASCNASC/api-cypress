@@ -6,7 +6,7 @@ const cpf = "123123123";
 
 describe('Recarga - GET - /v3/dados_titular/{cpf}', { env: { hideCredendials: true } } , () => {
   
-  it('Resposta 200', () => {
+  it('Status Code 200', () => {
     
     cy.api({
       method: 'GET', 

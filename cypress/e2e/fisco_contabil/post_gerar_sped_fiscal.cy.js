@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 describe('Fisco/Contábil - POST - /v3/gerar_sped_fiscal', { env: { hideCredendials: true } }, () => {
   
-  it('Deve retornar 200 e as propriedades do processamento SPED fiscal', () => {
+  it('Status Code 200 e as propriedades do processamento SPED fiscal', () => {
     
     cy.api({
       method: 'POST',

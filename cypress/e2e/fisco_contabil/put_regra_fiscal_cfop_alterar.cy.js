@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 describe('Financeiro - PUT - /v3/regra_fiscal_cfop_alterar', { env: { hideCredendials: true } }, () => {
   
-  it('Deve retornar 200 e as propriedades da base fiscal CFOP alterada', () => {
+  it('Status Code 200 e as propriedades da base fiscal CFOP alterada', () => {
     
     cy.api({
       method: 'PUT',

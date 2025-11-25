@@ -8,7 +8,7 @@ const clienteValido = "12345678901234";
 
 describe('API - Cliente - DELETE /v3/cliente/{cliente}', { env: { hideCredentials: true } }, () => {
 
-  it('Deve retornar 200 ao excluir cliente válido', () => {
+  it('Status Code 200 ao excluir cliente válido', () => {
     
     cy.api({
       method: 'DELETE',

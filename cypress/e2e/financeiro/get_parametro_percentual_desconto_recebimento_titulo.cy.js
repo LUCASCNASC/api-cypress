@@ -8,7 +8,7 @@ const idFilialSemParametro = "99999";
 
 describe('API - Financeiro - GET /v3/parametro_percentual_desconto_recebimento_titulo/{idFilial}', { env: { hideCredentials: true } }, () => {
 
-  it('Deve retornar 200 e o percentual máximo', () => {
+  it('Status Code 200 e o percentual máximo', () => {
 
     cy.api({
       method: 'GET',

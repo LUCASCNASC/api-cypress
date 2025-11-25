@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 describe('Sessão - POST - /v3/sessao_login_altera_senha', { env: { hideCredendials: true } }, () => {
   
-  it('Resposta 200', () => {
+  it('Status Code 200', () => {
 
     cy.api({
       method: 'GET',

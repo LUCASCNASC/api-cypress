@@ -6,7 +6,7 @@ const VERSAO = Cypress.env('VERSAO');
 
 describe('API - Swagger JSON - GET /api/swagger', { env: { hideCredentials: true } }, () => {
   
-  it('Deve retornar 200 e JSON válido do Swagger', () => {
+  it('Status Code 200 e JSON válido do Swagger', () => {
 
     cy.api({
       method: 'GET',

@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 describe('Fisco/Contábil - POST - /v3/gerar_descarga_contabil', { env: { hideCredendials: true } }, () => {
   
-  it('Deve retornar 200 e as propriedades da descarga contábil gerada', () => {
+  it('Status Code 200 e as propriedades da descarga contábil gerada', () => {
     
     cy.api({
       method: 'POST',

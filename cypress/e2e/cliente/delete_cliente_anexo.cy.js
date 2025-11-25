@@ -11,7 +11,7 @@ const idpessoaanexoValido = "123";
 
 describe('API - Cliente - DELETE /v3/cliente_anexo/{idcnpj_cpf}', { env: { hideCredentials: true } }, () => {
 
-  it('Deve retornar 200 ao excluir anexo válido', () => {
+  it('Status Code 200 ao excluir anexo válido', () => {
     
     cy.api({
       method: 'DELETE',

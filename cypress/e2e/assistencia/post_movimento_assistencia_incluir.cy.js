@@ -6,7 +6,7 @@ const AUTHORIZATION_INVALID = Cypress.env('API.PRAGMA_INVALID');
 
 describe('Assistência - POST /v3/movimento_assistencia_incluir/', { env: { hideCredendials: true } }, () => {
 
-  it('Deve retornar 200 e validar as propriedades do retorno', () => {
+  it('Status Code 200 e validar as propriedades do retorno', () => {
     
     cy.api({
       method: 'POST',

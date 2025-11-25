@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 describe('Pagamento divida - POST - /v3/baixa_titulo', { env: { hideCredendials: true } }, () => {
   
-  it('Resposta 200', () => {
+  it('Status Code 200', () => {
 
     cy.api({
       method: 'POST', 

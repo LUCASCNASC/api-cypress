@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 describe('API - Diversos - GET /v3/observacao', { env: { hideCredentials: true } }, () => {
   
-  it('Deve retornar 200 e as propriedades de observação', () => {
+  it('Status Code 200 e as propriedades de observação', () => {
 
     cy.api({
       method: 'GET', 

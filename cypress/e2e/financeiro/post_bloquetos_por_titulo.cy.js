@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 describe('API - Financeiro - POST /v3/bloquetos_por_titulo', { env: { hideCredentials: true } }, () => {
   
-  it('Deve retornar 200 ao imprimir meio de cobrança em PDF', () => {
+  it('Status Code 200 ao imprimir meio de cobrança em PDF', () => {
 
     cy.api({
       method: 'POST',

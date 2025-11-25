@@ -14,7 +14,7 @@ const idTipoTituloSemPedidos = "99999";
 
 describe('API - Financeiro - GET /v3/pedidos_por_titulo/{idFilial}/{idTitulo}/{idTipoTitulo}', { env: { hideCredentials: true } }, () => {
 
-  it('Deve retornar 200 e as propriedades de pedidos por título', () => {
+  it('Status Code 200 e as propriedades de pedidos por título', () => {
 
     cy.api({
       method: 'GET',

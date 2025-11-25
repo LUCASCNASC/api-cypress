@@ -8,7 +8,7 @@ const ufValido = "123";
 
 describe('API - Diversos - GET /v3/cidade', { env: { hideCredentials: true } }, () => {
 
-  it('Deve retornar 200 e as propriedades de cidade', () => {
+  it('Status Code 200 e as propriedades de cidade', () => {
     
     cy.api({
       method: 'GET',

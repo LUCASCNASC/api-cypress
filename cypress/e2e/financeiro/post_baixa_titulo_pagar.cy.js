@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 describe('API - Financeiro - POST /v3/baixa_titulo_pagar', { env: { hideCredentials: true } }, () => {
   
-  it('Deve retornar 200 ao baixar títulos a pagar', () => {
+  it('Status Code 200 ao baixar títulos a pagar', () => {
     
     cy.api({
       method: 'POST',

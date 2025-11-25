@@ -7,7 +7,7 @@ const pedido = "12345678910";
 
 describe('Pagamento pedido - GET - /v3/carne_pedido/{filial}/{pedido}', { env: { hideCredendials: true } }, () => {
   
-  it('Resposta 200', () => {
+  it('Status Code 200', () => {
 
     cy.api({
       method: 'GET', 

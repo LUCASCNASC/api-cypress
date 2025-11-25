@@ -6,7 +6,7 @@ const codigo = "12345678910";
 
 describe('Proposta crédito - GET - /v3/proposta_credito_situacao/{codigo}', { env: { hideCredendials: true } }, () => {
   
-  it('Resposta 200', () => {
+  it('Status Code 200', () => {
 
     cy.api({
       method: 'GET', 

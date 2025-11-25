@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 describe('Financeiro - POST - /v3/baixa_divida_cliente', { env: { hideCredendials: true } }, () => {
 
-  it('Resposta 200', () => {
+  it('Status Code 200', () => {
 
     cy.api({
       method: 'POST', 

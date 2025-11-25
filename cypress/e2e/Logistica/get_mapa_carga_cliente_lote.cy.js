@@ -8,7 +8,7 @@ const idMapaCargaFinal = "123123123";
 
 describe('Logística - GET - /v3/mapa_carga_cliente_lote/{idFilial}/{idMapaCargaInicial}/{idMapaCargaFinal}', { env: { hideCredendials: true } } , () => {
 
-  it('Resposta 200', () => {
+  it('Status Code 200', () => {
 
     cy.api({
       method: 'GET', 

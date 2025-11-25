@@ -7,7 +7,7 @@ const codigoInvalido = "99999";
 
 describe('API - Financeiro - DELETE /v3/banco/{codigo}', { env: { hideCredentials: true } }, () => {
 
-  it('Deve retornar 200 ao excluir banco', () => {
+  it('Status Code 200 ao excluir banco', () => {
     
     cy.api({
       method: 'DELETE',

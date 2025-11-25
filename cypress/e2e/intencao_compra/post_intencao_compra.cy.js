@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 describe('Intenção compra - POST - /v3/intencao_compra', { env: { hideCredendials: true } } , () => {
   
-  it('Resposta 200', () => {
+  it('Status Code 200', () => {
     
     cy.api({
       method: 'POST', 

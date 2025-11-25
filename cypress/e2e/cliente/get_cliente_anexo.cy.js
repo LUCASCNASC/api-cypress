@@ -8,7 +8,7 @@ const idcnpj_cpfValido = "100002139114930";
 
 describe('API - Cliente - GET /v3/cliente_anexo/{idcnpj_cpf}', { env: { hideCredentials: true } }, () => {
   
-  it('Deve retornar 200 e as propriedades do anexo para idcnpj_cpf válido', () => {
+  it('Status Code 200 e as propriedades do anexo para idcnpj_cpf válido', () => {
     
     cy.api({
       method: 'GET',

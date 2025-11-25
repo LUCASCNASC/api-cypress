@@ -9,7 +9,7 @@ const processoValido = "000000";
 
 describe('API - Cliente - GET /v3/cliente_servico_vinculado/{cliente}', { env: { hideCredentials: true } }, () => {
    
-  it('Deve retornar 200 e as propriedades do serviço vinculado', () => {
+  it('Status Code 200 e as propriedades do serviço vinculado', () => {
     
     cy.api({
       method: 'GET',

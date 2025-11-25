@@ -7,7 +7,7 @@ const idfilial = "12345678910";
 
 describe('Pedido - DELETE - /v3/pedido/{codigo}', { env: { hideCredendials: true } }, () => {
   
-  it('Resposta 200', () => {
+  it('Status Code 200', () => {
 
     cy.api({
       method: 'DELETE', 

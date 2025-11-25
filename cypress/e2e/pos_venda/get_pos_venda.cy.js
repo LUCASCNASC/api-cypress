@@ -7,7 +7,7 @@ const datafinal = "2025-11-30";
 
 describe('Pós-venda - GET - /v3/pos_venda', { env: { hideCredendials: true } }, () => {
   
-  it('Resposta 200', () => {
+  it('Status Code 200', () => {
 
     cy.api({
       mehtod: '`${BASE_URL}/Pedido/v2_pedido_get_delete2/${codigo}/${idfilial}`', 

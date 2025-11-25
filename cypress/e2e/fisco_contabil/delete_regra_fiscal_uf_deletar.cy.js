@@ -6,7 +6,7 @@ const idBaseFiscalUF = "123123123";
 
 describe('Fisco/Contábil - DELETE - /v3/regra_fiscal_uf_deletar/{idBaseFiscalUF}', { env: { hideCredendials: true } }, () => {
 
-  it('Deve retornar 200 e as propriedades da base fiscal de UF excluída', () => {
+  it('Status Code 200 e as propriedades da base fiscal de UF excluída', () => {
     
     cy.api({
       method: 'DELETE',

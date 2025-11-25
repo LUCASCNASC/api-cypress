@@ -6,7 +6,7 @@ const idBaseFiscalDepartamento = "123123123";
 
 describe('Fisco/Contábil - DELETE - /v3/regra_fiscal_departamento_deletar/{idBaseFiscalDepartamento}', { env: { hideCredendials: true } }, () => {
 
-  it('Deve retornar 200 e as propriedades da base fiscal de departamento excluída', () => {
+  it('Status Code 200 e as propriedades da base fiscal de departamento excluída', () => {
     
     cy.api({
       method: 'DELETE',

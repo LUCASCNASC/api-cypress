@@ -7,7 +7,7 @@ const RegistroNota = "123123123";
 
 describe('Fisco/Contábil - GET - /v3/nota_fiscal_inutilizar_conhecimento_saida/{Filial}/{RegistroNota}', { env: { hideCredendials: true } }, () => {
   
-  it('Deve retornar 200 e as propriedades da inutilização de conhecimento de saída', () => {
+  it('Status Code 200 e as propriedades da inutilização de conhecimento de saída', () => {
     
     cy.api({
       method: 'GET',

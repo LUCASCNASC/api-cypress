@@ -9,7 +9,7 @@ const sort = "123";
 
 describe('API - Diversos - GET /v3/vendedor', { env: { hideCredentials: true } }, () => {
 
-  it('Deve retornar 200 e as propriedades de vendedor', () => {
+  it('Status Code 200 e as propriedades de vendedor', () => {
 
     cy.api({
       method: 'GET',

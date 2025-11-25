@@ -11,7 +11,7 @@ const dataAberturaValida = Cypress.env('DATA_ABERTURA_VALIDA');
 
 describe('API - Caixa Rotina Diária Filial', { env: { hideCredentials: true } }, () => {
 
-  it('Deve retornar 200 e responder rapidamente para uma filial e data válidas', () => {
+  it('Status Code 200 e responder rapidamente para uma filial e data válidas', () => {
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${idFilialValido}/${dataAberturaValida}`,

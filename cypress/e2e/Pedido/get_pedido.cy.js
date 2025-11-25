@@ -8,7 +8,7 @@ const validarsituacaopedido = "12345678910";
 
 describe('Pedido - GET - /v3/pedido/{codigo}', { env: { hideCredendials: true } }, () => {
   
-  it('Resposta 200', () => {
+  it('Status Code 200', () => {
 
     cy.api({
       method: 'GET', 

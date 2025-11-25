@@ -11,7 +11,7 @@ const sort = "123";
 
 describe('API - Diversos - GET /v3/cbo', { env: { hideCredentials: true } }, () => {
 
-  it('Deve retornar 200 e as propriedades do CBO', () => {
+  it('Status Code 200 e as propriedades do CBO', () => {
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${termoValido}/${limit}/${offset}/${sort}`,

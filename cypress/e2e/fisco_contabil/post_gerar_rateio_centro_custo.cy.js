@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 describe('Fisco/Contábil - POST - /v3/nota_fiscal_consulta_nfe/', { env: { hideCredendials: true } }, () => {
   
-  it('Deve retornar 200 e as propriedades do rateio centro de custo gerado', () => {
+  it('Status Code 200 e as propriedades do rateio centro de custo gerado', () => {
     
     cy.api({
       method: 'POST',

@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 describe('Fisco/Contábil - POST - /v3/movimento_bens_patrimonio_incluir/', { env: { hideCredendials: true } }, () => {
   
-  it('Deve retornar 200 e as propriedades do movimento de bens patrimoniais incluído', () => {
+  it('Status Code 200 e as propriedades do movimento de bens patrimoniais incluído', () => {
     
     cy.api({
       method: 'POST',

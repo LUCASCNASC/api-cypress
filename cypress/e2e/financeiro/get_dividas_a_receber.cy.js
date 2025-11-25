@@ -14,7 +14,7 @@ const cpf_cnpjInvalido = "xyz";
 
 describe('API - Financeiro - GET /v3/dividas_a_receber/{idFilial}/{cpf_cnpj}', { env: { hideCredentials: true } }, () => {
 
-  it('Deve retornar 200 e as propriedades dos títulos a receber', () => {
+  it('Status Code 200 e as propriedades dos títulos a receber', () => {
 
     cy.api({
       method: 'GET',

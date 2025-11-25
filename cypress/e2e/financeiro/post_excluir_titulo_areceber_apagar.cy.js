@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 describe('API - Financeiro - POST /v3/excluir_titulo_areceber_apagar', { env: { hideCredentials: true } }, () => {
   
-  it('Deve retornar 200 e as propriedades da exclusão de título', () => {
+  it('Status Code 200 e as propriedades da exclusão de título', () => {
 
     cy.api({
       method: 'POST',

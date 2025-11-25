@@ -8,7 +8,7 @@ const idtipotef = "12345678910";
 
 describe('Pagamento pedido - GET - /v3/pedido_divida/{filial}', { env: { hideCredendials: true } }, () => { 
     
-  it('Resposta 200', () => {
+  it('Status Code 200', () => {
 
     cy.api({
       method: 'GET', 

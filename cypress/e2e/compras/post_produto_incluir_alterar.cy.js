@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 describe('API - Compras - POST /v3/produto_incluir_alterar', { env: { hideCredentials: true } }, () => {
   
-  it('Deve retornar 200 ao incluir/alterar produto válido', () => {
+  it('Status Code 200 ao incluir/alterar produto válido', () => {
 
     cy.api({
       method: 'POST',

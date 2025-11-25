@@ -6,7 +6,7 @@ const codigo = "12345678910";
 
 describe('Pós-venda - GET - /v3/pos_venda_Historico/{codigo}', { env: { hideCredendials: true } }, () => {
   
-  it('Resposta 200', () => {
+  it('Status Code 200', () => {
 
     cy.api({
       method: '`${BASE_URL}/${PATH_API}/${codigo}/${idfilial}`', 

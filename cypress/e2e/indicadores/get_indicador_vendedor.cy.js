@@ -8,7 +8,7 @@ const dia = "123123123";
 
 describe('Indicadores - GET - /v3/indicador_vendedor/{ano}', { env: { hideCredendials: true } } , () => {
 
-  it('Resposta 200', () => {
+  it('Status Code 200', () => {
     
     cy.api({
       method: 'GET', 

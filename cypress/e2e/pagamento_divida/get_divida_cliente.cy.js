@@ -7,7 +7,7 @@ const cliente = "12345678910";
 
 describe('Pagamento divida - GET - /v3/divida_cliente/{filial}/{cliente}', { env: { hideCredendials: true } }, () => {
 
-  it('Resposta 200', () => {
+  it('Status Code 200', () => {
 
     cy.api({
       method: 'GET', 

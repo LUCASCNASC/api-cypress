@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 describe('API - Financeiro - GET /v3/banco', { env: { hideCredentials: true } }, () => {
   
-  it('Deve retornar 200 e as propriedades de banco', () => {
+  it('Status Code 200 e as propriedades de banco', () => {
 
     cy.api({
       method: 'GET',

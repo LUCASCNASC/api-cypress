@@ -6,7 +6,7 @@ const codigo = "123123123";
 
 describe('Intenção compra - DELETE - /v3/intencao_compra/{codigo}', { env: { hideCredendials: true } } , () => {
 
-  it('Resposta 200', () => {
+  it('Status Code 200', () => {
     
     cy.api({
       method: 'DELETE', 

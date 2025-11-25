@@ -7,7 +7,7 @@ const idItemServico = "12345678910";
 
 describe('Recarga - GET - /v3/recarga/{idFilial}/{idItemServico}', { env: { hideCredendials: true } }, () => { 
   
-  it('Resposta 200', () => {
+  it('Status Code 200', () => {
 
     cy.api({
       method: 'GET', 

@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 describe('API - E-commerce - POST /v3/ecommerce_finalizar', { env: { hideCredentials: true } }, () => {
   
-  it('Deve retornar 200 ao finalizar pedido e-commerce válido', () => {
+  it('Status Code 200 ao finalizar pedido e-commerce válido', () => {
 
     cy.api({
       method: 'POST',

@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 describe('API - Financeiro - POST /v3/estornar_baixa_titulo', { env: { hideCredentials: true } }, () => {
   
-  it('Deve retornar 200 ao estornar baixa de título', () => {
+  it('Status Code 200 ao estornar baixa de título', () => {
 
     cy.api({
       method: 'POST',

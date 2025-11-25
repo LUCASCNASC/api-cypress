@@ -12,7 +12,7 @@ const idrotacidade = "123";
 
 describe('API - Diversos - GET /v3/rota_cidade', { env: { hideCredentials: true } }, () => {
   
-  it('Deve retornar 200 e as propriedades de rota cidade', () => {
+  it('Status Code 200 e as propriedades de rota cidade', () => {
 
     cy.api({
       method: 'GET',
