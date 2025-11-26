@@ -2,12 +2,12 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Cliente/v3_cliente_anexo_delete';
 const Authorization = Cypress.env('API.PRAGMA');
 
-const idcnpj_cpfInvalido = "cpf_invalido";
-const idpessoaanexoInvalido = "anexo_invalido";
-const idcnpj_cpfSemAnexo = "00000000000000";
-const idpessoaanexoSemAnexo = "000000";
-const idcnpj_cpfValido = "12312312312"; 
-const idpessoaanexoValido = "123"; 
+const idcnpj_cpfInvalido = Cypress.env('ID_CNPJ_CPF_INVALIDO');
+const idpessoaanexoInvalido = Cypress.env('ID_PESSOA_ANEXO_INVALIDO');
+const idcnpj_cpfSemAnexo = Cypress.env('ID_CNPJ_CPF_SEM_ANEXO');
+const idpessoaanexoSemAnexo = Cypress.env('ID_PESSOA_ANEXO_SEM_ANEXO');
+const idcnpj_cpfValido = Cypress.env('ID_CNPJ_CPF_VALIDO');
+const idpessoaanexoValido = Cypress.env('ID_PESSOA_ANEXO_VALIDO');
 
 describe('API - Cliente - DELETE /v3/cliente_anexo/{idcnpj_cpf}', { env: { hideCredentials: true } }, () => {
 

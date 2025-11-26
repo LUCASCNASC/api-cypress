@@ -44,6 +44,5 @@ O repositório está configurado para manter informações sensíveis, como URLs
 
 > Projeto mantido por [LUCASCNASC](https://github.com/LUCASCNASC)
 
-Ajustar const de todos os arquivos de teste em um arquivo que fique escondido do github.
-
-Ajustado até "lgpd".
+Colocando const dentro do arquivo cypress.env.json. Feito até:
+pasta "cliente", arquivo "delete_cliente.cy.js"

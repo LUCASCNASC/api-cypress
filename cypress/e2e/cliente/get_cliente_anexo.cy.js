@@ -2,8 +2,8 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Cliente/v3_cliente_anexo';
 const Authorization = Cypress.env('API.PRAGMA');
 
-const idcnpj_cpfSemAnexo = "00000000000000";
-const idcnpj_cpfInvalido = "cpf_invalido";
+const idcnpj_cpfSemAnexo = Cypress.env('ID_CNPJ_CPF_SEM_ANEXO');
+const idcnpj_cpfInvalido = Cypress.env('ID_CNPJ_CPF_INVALIDO');
 const idcnpj_cpfValido = "100002139114930";
 
 describe('API - Cliente - GET /v3/cliente_anexo/{idcnpj_cpf}', { env: { hideCredentials: true } }, () => {

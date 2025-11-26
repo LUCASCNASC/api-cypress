@@ -1,13 +1,13 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/v3/caixa_rotina_diaria_filial';
 const Authorization = Cypress.env('API.PRAGMA');
-
-const idFilialSemDados = 99999;
-const dataSemMovimentacao = "2099-01-01";
-const idFilialInvalido = 'abc';
-const dataAberturaInvalida = 'data_invalida';
+ 
+const idFilialSemDados = Cypress.env('ID_FILIAL_SEM_DADOS');
 const idFilialValido = Cypress.env('ID_FILIAL_VALIDO');
 const dataAberturaValida = Cypress.env('DATA_ABERTURA_VALIDA');
+const dataSemMovimentacao = Cypress.env('DATA_SEM_MOVIMENTACAO');
+const idFilialInvalido = Cypress.env('ID_FILIAL_INVALIDO');
+const dataAberturaInvalida = Cypress.env('DATA_ABERTURA_INVALIDA');
 
 describe('API - Caixa Rotina Diária Filial', { env: { hideCredentials: true } }, () => {
 

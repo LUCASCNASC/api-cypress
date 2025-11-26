@@ -2,8 +2,8 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Cliente/v2_cliente_get_delete_get';
 const Authorization = Cypress.env('API.PRAGMA');
 
-const clienteSemDados = "00000000000000";
-const clienteInvalido = "cliente_invalido";
+const clienteSemDados = Cypress.env('00000000000000');
+const clienteInvalido = Cypress.env('cliente_invalido');
 const clienteValido = "12345678901234";
 
 describe('API - Cliente - GET /v3/cliente/{cliente}', { env: { hideCredentials: true } }, () => {
