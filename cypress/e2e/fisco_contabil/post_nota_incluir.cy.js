@@ -2,7 +2,7 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Fisco/Contabil/v3_post_nota_incluir';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('Fisco/Contábil - POST - /v3/nota_incluir/', { env: { hideCredendials: true } }, () => {
+describe('API rest - Fisco/Contábil - POST - /v3/nota_incluir/', { env: { hideCredendials: true } }, () => {
   
   it('Status Code 200 e as propriedades da nota fiscal incluída', () => {
     

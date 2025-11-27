@@ -7,7 +7,7 @@ const idvendedor = "12345678910";
 const cnpj_cpf = "12345678910";
 const listapedidovenda = "12345678910";
 
-describe('Pedido - GET - /v3/pedido_pendencia', { env: { hideCredendials: true } }, () => {
+describe('API rest - Pedido - GET - /v3/pedido_pendencia', { env: { hideCredendials: true } }, () => {
   
   it('Status Code 200', () => {
 

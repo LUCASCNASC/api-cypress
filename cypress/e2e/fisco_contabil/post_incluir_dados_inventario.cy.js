@@ -2,7 +2,7 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Fisco/Contabil/v3_post_inventario_incluir';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('Fisco/Contábil - POST - /v3/incluir_dados_inventario', { env: { hideCredendials: true } }, () => {
+describe('API rest - Fisco/Contábil - POST - /v3/incluir_dados_inventario', { env: { hideCredendials: true } }, () => {
   
   it('Status Code 200 e as propriedades da inclusão de dados de inventário', () => {
     

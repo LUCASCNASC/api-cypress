@@ -7,7 +7,7 @@ const sku = "12345678910";
 const quantidade = "12345678910"; 
 const local_saldo = "12345678910";
 
-describe('Produtos - GET - /v3/produto_composicao_saldo', { env: { hideCredendials: true } }, () => {
+describe('API rest - Produtos - GET - /v3/produto_composicao_saldo', { env: { hideCredendials: true } }, () => {
   
   it('Status Code 200', () => {
 

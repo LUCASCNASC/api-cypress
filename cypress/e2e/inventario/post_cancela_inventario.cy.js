@@ -5,7 +5,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 const idFilial = "123123123";
 const idInventario = "123123123";
 
-describe('Inventário - POST - /v3/cancela_inventario/{idFilial}/{idInventario}', { env: { hideCredendials: true } }, () => {
+describe('API rest - Inventário - POST - /v3/cancela_inventario/{idFilial}/{idInventario}', { env: { hideCredendials: true } }, () => {
 
   it('Status Code 200', () => {
     

@@ -6,7 +6,7 @@ const cepInvalido = "abcde";
 const cepSemDados = "00000000";
 const cepValido = "12123123";
 
-describe('API - Diversos - GET /v3/local_entrega_por_cep', { env: { hideCredentials: true } }, () => {
+describe('API rest - Diversos - GET /v3/local_entrega_por_cep', { env: { hideCredentials: true } }, () => {
 
   it('Status Code 200 e as propriedades do local de entrega por CEP', () => {
     

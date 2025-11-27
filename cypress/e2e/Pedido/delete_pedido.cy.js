@@ -5,7 +5,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 const codigo = "12345678910"; 
 const idfilial = "12345678910";
 
-describe('Pedido - DELETE - /v3/pedido/{codigo}', { env: { hideCredendials: true } }, () => {
+describe('API rest - Pedido - DELETE - /v3/pedido/{codigo}', { env: { hideCredendials: true } }, () => {
   
   it('Status Code 200', () => {
 

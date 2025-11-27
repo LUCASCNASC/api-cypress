@@ -2,7 +2,7 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Fisco/Contabil/v3_post_nota_fiscal_reenvio_nfe';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('Fisco/Contábil - POST - /v3/nota_fiscal_reenvio_nfe/', { env: { hideCredendials: true } }, () => {
+describe('API rest - Fisco/Contábil - POST - /v3/nota_fiscal_reenvio_nfe/', { env: { hideCredendials: true } }, () => {
   
   it('Status Code 200 e as propriedades do reenvio da nota fiscal NFe', () => {
     

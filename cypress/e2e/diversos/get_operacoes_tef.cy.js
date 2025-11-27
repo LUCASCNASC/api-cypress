@@ -2,7 +2,7 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Diversos/v3_diversos_operacoes_tef';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('API - Diversos - GET /v3/operacoes_tef', { env: { hideCredentials: true } }, () => {
+describe('API rest - Diversos - GET /v3/operacoes_tef', { env: { hideCredentials: true } }, () => {
   
   it('Status Code 200 e as propriedades de operações TEF', () => {
     

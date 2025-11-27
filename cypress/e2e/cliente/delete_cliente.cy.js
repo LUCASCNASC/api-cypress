@@ -6,7 +6,7 @@ const clienteSemDados = Cypress.env('00000000000000');
 const clienteInvalido = Cypress.env('cliente_invalido');
 const clienteValido = Cypress.env('12345678901234');
 
-describe('API - Cliente - DELETE /v3/cliente/{cliente}', { env: { hideCredentials: true } }, () => {
+describe('API rest - Cliente - DELETE /v3/cliente/{cliente}', { env: { hideCredentials: true } }, () => {
 
   it('Status Code 200 ao excluir cliente válido', () => {
     

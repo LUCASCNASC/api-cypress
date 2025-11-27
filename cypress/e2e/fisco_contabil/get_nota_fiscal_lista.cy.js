@@ -8,7 +8,7 @@ const Data_Inicial = "123123123";
 const Data_Final = "123123123";
 const CNPJ_CPF = "123123123";
 
-describe('Fisco/Contábil - GET - /v3/nota_fiscal_lista/{Filial}/{Registro_Nota}/{Data_Inicial}/{Data_Final}/{CNPJ_CPF}', { env: { hideCredendials: true } }, () => {
+describe('API rest - Fisco/Contábil - GET - /v3/nota_fiscal_lista/{Filial}/{Registro_Nota}/{Data_Inicial}/{Data_Final}/{CNPJ_CPF}', { env: { hideCredendials: true } }, () => {
 
   it('Status Code 200 e as propriedades das notas fiscais', () => {
     

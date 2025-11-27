@@ -2,7 +2,7 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Compras/v3_post_produto_incluir_alterar';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('API - Compras - POST /v3/produto_incluir_alterar', { env: { hideCredentials: true } }, () => {
+describe('API rest - Compras - POST /v3/produto_incluir_alterar', { env: { hideCredentials: true } }, () => {
   
   it('Status Code 200 ao incluir/alterar produto válido', () => {
 

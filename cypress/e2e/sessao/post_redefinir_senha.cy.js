@@ -2,7 +2,7 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Sessão/v3_post_redefinir_senha';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('Sessão - POST - /v3/redefinir_senha', { env: { hideCredendials: true } }, () => {
+describe('API rest - Sessão - POST - /v3/redefinir_senha', { env: { hideCredendials: true } }, () => {
   
   it('Status Code 200', () => {
 

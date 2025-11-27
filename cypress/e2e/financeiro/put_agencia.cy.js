@@ -2,7 +2,7 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Financeiro/v3_financeiro_agencia2';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('API - Financeiro - PUT /v3/agencia', { env: { hideCredentials: true } }, () => {
+describe('API rest - Financeiro - PUT /v3/agencia', { env: { hideCredentials: true } }, () => {
   
   it('Deve retornar 201 e as propriedades da agência alterada', () => {
 

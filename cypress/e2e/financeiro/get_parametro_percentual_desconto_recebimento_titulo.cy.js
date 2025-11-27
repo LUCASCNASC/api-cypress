@@ -6,7 +6,7 @@ const idFilial = "123123123";
 const idFilialInvalido = "abc";
 const idFilialSemParametro = "99999";
 
-describe('API - Financeiro - GET /v3/parametro_percentual_desconto_recebimento_titulo/{idFilial}', { env: { hideCredentials: true } }, () => {
+describe('API rest - Financeiro - GET /v3/parametro_percentual_desconto_recebimento_titulo/{idFilial}', { env: { hideCredentials: true } }, () => {
 
   it('Status Code 200 e o percentual máximo', () => {
 

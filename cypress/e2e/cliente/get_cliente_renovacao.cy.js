@@ -6,7 +6,7 @@ const clienteInvalido = "00000000000001";
 const clienteSemRenovacao = "00000000000000";
 const clienteValido = "12345678901234";
 
-describe('API - Cliente - GET /v3/cliente_renovacao/{cliente}', { env: { hideCredentials: true } }, () => {
+describe('API rest - Cliente - GET /v3/cliente_renovacao/{cliente}', { env: { hideCredentials: true } }, () => {
 
   it('Status Code 200 e as propriedades de renovação para um cliente válido', () => {
     

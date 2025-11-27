@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 const idBaseFiscalDepartamento = "123123123";
 
-describe('Fisco/Contábil - DELETE - /v3/regra_fiscal_departamento_deletar/{idBaseFiscalDepartamento}', { env: { hideCredendials: true } }, () => {
+describe('API rest - Fisco/Contábil - DELETE - /v3/regra_fiscal_departamento_deletar/{idBaseFiscalDepartamento}', { env: { hideCredendials: true } }, () => {
 
   it('Status Code 200 e as propriedades da base fiscal de departamento excluída', () => {
     

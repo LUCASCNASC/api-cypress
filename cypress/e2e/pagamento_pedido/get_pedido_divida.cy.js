@@ -6,7 +6,7 @@ const filial = "12345678910";
 const termo = "12345678910";
 const idtipotef = "12345678910";
 
-describe('Pagamento pedido - GET - /v3/pedido_divida/{filial}', { env: { hideCredendials: true } }, () => { 
+describe('API rest - Pagamento pedido - GET - /v3/pedido_divida/{filial}', { env: { hideCredendials: true } }, () => { 
     
   it('Status Code 200', () => {
 

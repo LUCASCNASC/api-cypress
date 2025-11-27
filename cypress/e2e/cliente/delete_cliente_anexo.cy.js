@@ -9,7 +9,7 @@ const idpessoaanexoSemAnexo = Cypress.env('ID_PESSOA_ANEXO_SEM_ANEXO');
 const idcnpj_cpfValido = Cypress.env('ID_CNPJ_CPF_VALIDO');
 const idpessoaanexoValido = Cypress.env('ID_PESSOA_ANEXO_VALIDO');
 
-describe('API - Cliente - DELETE /v3/cliente_anexo/{idcnpj_cpf}', { env: { hideCredentials: true } }, () => {
+describe('API rest - Cliente - DELETE /v3/cliente_anexo/{idcnpj_cpf}', { env: { hideCredentials: true } }, () => {
 
   it('Status Code 200 ao excluir anexo válido', () => {
     

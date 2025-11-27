@@ -7,7 +7,7 @@ const idLancamentoContaCorrenteValido = "123123123";
 const idFilialInvalido = "99999";
   const idLancamentoContaCorrenteInvalido = "99999";
 
-describe('API - Financeiro - DELETE /v3/lancamento_conta_corrente/{idFilial}/{idLancamentoContaCorrente}', { env: { hideCredentials: true } }, () => {
+describe('API rest - Financeiro - DELETE /v3/lancamento_conta_corrente/{idFilial}/{idLancamentoContaCorrente}', { env: { hideCredentials: true } }, () => {
 
   it('Deve retornar 201 ao estornar lançamento de conta corrente', () => {
     

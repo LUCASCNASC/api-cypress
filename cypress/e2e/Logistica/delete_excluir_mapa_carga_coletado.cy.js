@@ -6,7 +6,7 @@ const idFilial = "123123123";
 const idMapaCarga = "123123123"; 
 const TipoMapaCarga = "123123123";
 
-describe('Logística - DELETE - /v3/exluir_mapa_carga_coletado/{idFilial}/{idMapaCarga}/{TipoMapaCarga}', { env: { hideCredendials: true } }, () => {
+describe('API rest - Logística - DELETE - /v3/exluir_mapa_carga_coletado/{idFilial}/{idMapaCarga}/{TipoMapaCarga}', { env: { hideCredendials: true } }, () => {
 
   it('Status Code 200', () => {
 

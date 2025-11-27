@@ -6,7 +6,7 @@ const idFilial = "123123123";
 const idMapaCargaInicial = "123123123";
 const idMapaCargaFinal = "123123123";
 
-describe('Logística - GET - /v3/mapa_carga_cliente_lote/{idFilial}/{idMapaCargaInicial}/{idMapaCargaFinal}', { env: { hideCredendials: true } } , () => {
+describe('API rest - Logística - GET - /v3/mapa_carga_cliente_lote/{idFilial}/{idMapaCargaInicial}/{idMapaCargaFinal}', { env: { hideCredendials: true } } , () => {
 
   it('Status Code 200', () => {
 

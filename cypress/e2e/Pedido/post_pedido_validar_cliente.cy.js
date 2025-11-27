@@ -2,7 +2,7 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Pedido/v3_pedido_validar_cliente';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('Pedido - POST - /v3/pedido_validar_cliente', { env: { hideCredendials: true } }, () => {
+describe('API rest - Pedido - POST - /v3/pedido_validar_cliente', { env: { hideCredendials: true } }, () => {
   
     it('Status Code 200', () => {
       

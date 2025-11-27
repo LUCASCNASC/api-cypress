@@ -8,7 +8,7 @@ const marca = "12345678910";
 const so_promocao = "true"; 
 const so_servico = "false";
 
-describe('Produtos - GET - /v3/produto ', { env: { hideCredendials: true } }, () => {
+describe('API rest - Produtos - GET - /v3/produto ', { env: { hideCredendials: true } }, () => {
   
   it('Status Code 200', () => {''
 

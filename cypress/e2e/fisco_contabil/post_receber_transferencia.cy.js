@@ -2,7 +2,7 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Fisco/Contabil/v3_post_receber_transferencia';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('Fisco/Contábil - POST - /v3/receber_transferencia', { env: { hideCredendials: true } }, () => {
+describe('API rest - Fisco/Contábil - POST - /v3/receber_transferencia', { env: { hideCredendials: true } }, () => {
   
   it('Status Code 200 e as propriedades do recebimento de transferência', () => {
     

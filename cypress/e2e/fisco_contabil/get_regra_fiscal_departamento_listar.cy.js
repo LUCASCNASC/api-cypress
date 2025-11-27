@@ -7,7 +7,7 @@ const UF = "123123123";
 const CFOP = "123123123";
 const OrigemProduto = "123123123";
 
-describe('Fisco/Contábil - GET - /v3/regra_fiscal_departamento_listar/{Grupo}/{UF}/{CFOP}/{OrigemProduto}', { env: { hideCredendials: true } }, () => {
+describe('API rest - Fisco/Contábil - GET - /v3/regra_fiscal_departamento_listar/{Grupo}/{UF}/{CFOP}/{OrigemProduto}', { env: { hideCredendials: true } }, () => {
 
   it('Status Code 200 e as propriedades da base fiscal de departamento', () => {
     

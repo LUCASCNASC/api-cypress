@@ -6,7 +6,7 @@ const clienteSemDados = Cypress.env('00000000000000');
 const clienteInvalido = Cypress.env('cliente_invalido');
 const clienteValido = "12345678901234";
 
-describe('API - Cliente - GET /v3/cliente/{cliente}', { env: { hideCredentials: true } }, () => {
+describe('API rest - Cliente - GET /v3/cliente/{cliente}', { env: { hideCredentials: true } }, () => {
 
   it('Status Code 200 e todas as propriedades esperadas para um cliente válido', () => {
     

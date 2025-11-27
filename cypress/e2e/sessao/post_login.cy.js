@@ -2,7 +2,7 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Sessão/v3_sessao_login_post';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('Sessão - POST - /v3/login', { env: { hideCredendials: true } }, () => {
+describe('API rest - Sessão - POST - /v3/login', { env: { hideCredendials: true } }, () => {
   
   it('Resposta 204', () => {
 

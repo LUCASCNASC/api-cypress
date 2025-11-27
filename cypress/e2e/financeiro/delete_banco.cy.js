@@ -5,7 +5,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 const codigoValido = "123123123";
 const codigoInvalido = "99999";
 
-describe('API - Financeiro - DELETE /v3/banco/{codigo}', { env: { hideCredentials: true } }, () => {
+describe('API rest - Financeiro - DELETE /v3/banco/{codigo}', { env: { hideCredentials: true } }, () => {
 
   it('Status Code 200 ao excluir banco', () => {
     

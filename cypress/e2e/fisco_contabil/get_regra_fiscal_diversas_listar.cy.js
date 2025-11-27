@@ -9,7 +9,7 @@ const Pessoa = "123123123";
 const Grupo = "123123123";
 const OrigemProduto = "123123123";
 
-describe('Fisco/Contábil - GET - /v3/regra_fiscal_diversas_listar/{TipoBase}/{CFOP}/{Identificador}/{Pessoa}/{Grupo}/{OrigemProduto}', { env: { hideCredendials: true } }, () => {
+describe('API rest - Fisco/Contábil - GET - /v3/regra_fiscal_diversas_listar/{TipoBase}/{CFOP}/{Identificador}/{Pessoa}/{Grupo}/{OrigemProduto}', { env: { hideCredendials: true } }, () => {
 
   it('Status Code 200 e as propriedades da base fiscal diversas', () => {
     

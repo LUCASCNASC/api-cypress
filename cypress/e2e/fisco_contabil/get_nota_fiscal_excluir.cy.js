@@ -5,7 +5,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 const idFilial = "123123123";
 const idRegistroNota = "123123123";
 
-describe('Fisco/Contábil - GET - /v3/nota_fiscal_excluir/{idFilial}/{idRegistroNota}', { env: { hideCredendials: true } }, () => {
+describe('API rest - Fisco/Contábil - GET - /v3/nota_fiscal_excluir/{idFilial}/{idRegistroNota}', { env: { hideCredendials: true } }, () => {
 
   it('Status Code 200 e as propriedades da exclusão de nota fiscal', () => {
     

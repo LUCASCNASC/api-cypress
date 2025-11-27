@@ -7,7 +7,7 @@ const processoSemServico = "000000";
 const clienteValido = "12345678901234";
 const processoValido = "000000";
 
-describe('API - Cliente - GET /v3/cliente_servico_vinculado/{cliente}', { env: { hideCredentials: true } }, () => {
+describe('API rest - Cliente - GET /v3/cliente_servico_vinculado/{cliente}', { env: { hideCredentials: true } }, () => {
    
   it('Status Code 200 e as propriedades do serviço vinculado', () => {
     

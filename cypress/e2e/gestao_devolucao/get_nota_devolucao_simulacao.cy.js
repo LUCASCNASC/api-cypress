@@ -6,7 +6,7 @@ const filial = "123123123";
 const solicitacao = "123123123";
 const Authorization2 = "123123123";
 
-describe('Gestão Devolução - GET - /v3/nota_devolucao_simulacao/{filial}/{solicitacao}', { env: { hideCredendials: true } }, () => {
+describe('API rest - Gestão Devolução - GET - /v3/nota_devolucao_simulacao/{filial}/{solicitacao}', { env: { hideCredendials: true } }, () => {
 
   it('Status Code 200', () => {
     

@@ -9,7 +9,7 @@ const idContaCorrenteSemDados = "99999";
 const idTipoContaCorrenteInvalido = "abc";
 const idContaCorrenteInvalido = "xyz";
 
-describe('API - Financeiro - GET /v3/historico_conta_corrente/{idTipoContaCorrente}', { env: { hideCredentials: true } }, () => {
+describe('API rest - Financeiro - GET /v3/historico_conta_corrente/{idTipoContaCorrente}', { env: { hideCredentials: true } }, () => {
 
   it('Status Code 200 e as propriedades do histórico de conta corrente', () => {
 

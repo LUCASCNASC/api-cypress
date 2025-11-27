@@ -7,7 +7,7 @@ const codigoAgenciaValido = "123456";
 const codigoBancoInvalido = "99999";
 const codigoAgenciaInvalida = "99999";
 
-describe('API - Financeiro - DELETE /v3/agencia/{codigoBanco}/{codigoAgencia}', { env: { hideCredentials: true } }, () => {
+describe('API rest - Financeiro - DELETE /v3/agencia/{codigoBanco}/{codigoAgencia}', { env: { hideCredentials: true } }, () => {
   
   it('Status Code 200 ao excluir agência', () => {
 

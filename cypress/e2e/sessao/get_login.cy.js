@@ -6,7 +6,7 @@ const usuario = "12345678910";
 const senha = "12345678910";
 const codigoverificacao = "12345678910"; 
 
-describe('Sessão - GET - /v3/login/{usuario}/{senha}', { env: { hideCredendials: true } }, () => {
+describe('API rest - Sessão - GET - /v3/login/{usuario}/{senha}', { env: { hideCredendials: true } }, () => {
 
   it('Resposta 204 - Sem dados de retorno', () => {
 

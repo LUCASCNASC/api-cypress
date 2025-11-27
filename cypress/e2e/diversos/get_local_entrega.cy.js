@@ -6,7 +6,7 @@ const rotaInvalida = "abc";
 const rotaSemDados = "9999";
 const rotaValida = "123";
 
-describe('API - Diversos - GET /v3/local_entrega', { env: { hideCredentials: true } }, () => {
+describe('API rest - Diversos - GET /v3/local_entrega', { env: { hideCredentials: true } }, () => {
 
   it('Status Code 200 e as propriedades do local de entrega', () => {
     

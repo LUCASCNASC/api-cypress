@@ -6,7 +6,7 @@ const idtipogrupoInvalido = "abc";
 const idtipogrupoSemGrupo = "9999";
 const idtipogrupoValido = "123"; 
 
-describe('API - Diversos - GET /v3/grupo', { env: { hideCredentials: true } }, () => {
+describe('API rest - Diversos - GET /v3/grupo', { env: { hideCredentials: true } }, () => {
 
   it('Status Code 200 e as propriedades do grupo', () => {
     

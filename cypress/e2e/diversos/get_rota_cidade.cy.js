@@ -10,7 +10,7 @@ const idgruporota = "123";
 const idrota = "123";
 const idrotacidade = "123";
 
-describe('API - Diversos - GET /v3/rota_cidade', { env: { hideCredentials: true } }, () => {
+describe('API rest - Diversos - GET /v3/rota_cidade', { env: { hideCredentials: true } }, () => {
   
   it('Status Code 200 e as propriedades de rota cidade', () => {
 

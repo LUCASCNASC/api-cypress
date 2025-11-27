@@ -2,7 +2,7 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Fisco/Contabil/v3_post_documento_diverso_entrada_incluir';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('Fisco/Contábil - POST - /v3/documento_diverso_entrada_incluir/', { env: { hideCredendials: true } }, () => {
+describe('API rest - Fisco/Contábil - POST - /v3/documento_diverso_entrada_incluir/', { env: { hideCredendials: true } }, () => {
   
   it('Status Code 200 e as propriedades do documento diverso de entrada incluído', () => {
     

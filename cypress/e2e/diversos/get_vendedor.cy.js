@@ -7,7 +7,7 @@ const limit = "123";
 const offset = "123";
 const sort = "123";
 
-describe('API - Diversos - GET /v3/vendedor', { env: { hideCredentials: true } }, () => {
+describe('API rest - Diversos - GET /v3/vendedor', { env: { hideCredentials: true } }, () => {
 
   it('Status Code 200 e as propriedades de vendedor', () => {
 

@@ -2,7 +2,7 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Cliente/v3_cliente_simples_post';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('API - Cliente - POST /v3/cliente_simples', { env: { hideCredentials: true } }, () => {
+describe('API rest - Cliente - POST /v3/cliente_simples', { env: { hideCredentials: true } }, () => {
   
   it('Status Code 200 ou 201 ao incluir/alterar cliente simplificado', () => {
 

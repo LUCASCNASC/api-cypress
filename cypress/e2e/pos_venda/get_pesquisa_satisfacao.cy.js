@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 const idfilial = "12345678910";
 
-describe('Pós-venda - GET - /v3/pesquisa_satisfacao', { env: { hideCredendials: true } }, () => {
+describe('API rest - Pós-venda - GET - /v3/pesquisa_satisfacao', { env: { hideCredendials: true } }, () => {
   
   it('Status Code 200', () => {
 

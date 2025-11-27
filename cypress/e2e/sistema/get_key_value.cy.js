@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 const key = "12345678910";
 
-describe('Sistema - GET - /v3/key_value/{key}', { env: { hideCredendials: true } }, () => {
+describe('API rest - Sistema - GET - /v3/key_value/{key}', { env: { hideCredendials: true } }, () => {
   
   it('Status Code 200', () => {
 

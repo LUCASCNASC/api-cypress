@@ -2,7 +2,7 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Inventário/v3_get_inventario';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('Inventário - GET - /v3/inventario', { env: { hideCredendials: true } } , () => {
+describe('API rest - Inventário - GET - /v3/inventario', { env: { hideCredendials: true } } , () => {
   
   it('Status Code 200', () => {
     

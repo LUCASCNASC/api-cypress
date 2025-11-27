@@ -2,7 +2,7 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/E-commerce/v3_ecommerce_finalizar';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('API - E-commerce - POST /v3/ecommerce_finalizar', { env: { hideCredentials: true } }, () => {
+describe('API rest - E-commerce - POST /v3/ecommerce_finalizar', { env: { hideCredentials: true } }, () => {
   
   it('Status Code 200 ao finalizar pedido e-commerce válido', () => {
 

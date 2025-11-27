@@ -2,7 +2,7 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Financeiro/v3_financeiro_baixa_titulo_pagar';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('API - Financeiro - POST /v3/baixa_titulo_pagar', { env: { hideCredentials: true } }, () => {
+describe('API rest - Financeiro - POST /v3/baixa_titulo_pagar', { env: { hideCredentials: true } }, () => {
   
   it('Status Code 200 ao baixar títulos a pagar', () => {
     

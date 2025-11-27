@@ -2,7 +2,7 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Financeiro/v3_financeiro_conta_bancaria1';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('API - Financeiro - POST /v3/contabancaria', { env: { hideCredentials: true } }, () => {
+describe('API rest - Financeiro - POST /v3/contabancaria', { env: { hideCredentials: true } }, () => {
   
   it('Deve retornar 201 ao incluir conta bancária', () => {
 

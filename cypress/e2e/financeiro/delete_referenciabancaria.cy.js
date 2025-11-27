@@ -7,7 +7,7 @@ const idReferenciaBancariaValido = "123123123";
 const cnpjCpfInvalido = "00000000000000";
 const idReferenciaBancariaInvalido = "999999";
 
-describe('API - Financeiro - DELETE /v3/referenciabancaria/{cnpjCpf}/{idReferenciaBancaria}', { env: { hideCredentials: true } }, () => {
+describe('API rest - Financeiro - DELETE /v3/referenciabancaria/{cnpjCpf}/{idReferenciaBancaria}', { env: { hideCredentials: true } }, () => {
 
   it('Status Code 200 ao excluir referência bancária', () => {
 
