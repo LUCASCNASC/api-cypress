@@ -6,7 +6,7 @@ const filial_saldo = "12345678910";
 const sku = "12345678910";  
 const pedido = "12345678910"; 
 
-describe('API rest - Produtos - GET - /v3/local_saldo', { env: { hideCredendials: true } }, () => {
+describe('API rest - Produto - GET - /v3/local_saldo', { env: { hideCredendials: true } }, () => {
 
   it('Status Code 200', () => {
 

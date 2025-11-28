@@ -6,7 +6,7 @@ const idFilialSaldo = "12345678910";
 const sku = "12345678910";
 const idTipoSaldoProduto = "12345678910"; 
 
-describe('API rest - Produtos - GET - /v3/produto_tipo_saldo_detalhe ', { env: { hideCredendials: true } }, () => {
+describe('API rest - Produto - GET - /v3/produto_tipo_saldo_detalhe ', { env: { hideCredendials: true } }, () => {
   
   it('Status Code 200', () => {
 

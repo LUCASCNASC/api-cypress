@@ -2,7 +2,7 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Fisco/Contabil/v3_regra_fiscal_uf_put';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('Financeiro - PUT - /v3/regra_fiscal_uf_alterar', { env: { hideCredendials: true } }, () => {
+describe('API rest - Fisco/Contábil - PUT - /v3/regra_fiscal_uf_alterar', { env: { hideCredendials: true } }, () => {
   
   it('Status Code 200 e as propriedades da base fiscal UF alterada', () => {
     

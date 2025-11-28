@@ -9,7 +9,7 @@ const dataSemMovimentacao = Cypress.env('DATA_SEM_MOVIMENTACAO');
 const idFilialInvalido = Cypress.env('ID_FILIAL_INVALIDO');
 const dataAberturaInvalida = Cypress.env('DATA_ABERTURA_INVALIDA');
 
-describe('API rest - Caixa Rotina Diária Filial', { env: { hideCredentials: true } }, () => {
+describe('API rest - Caixa - Caixa Rotina Diária Filial', { env: { hideCredentials: true } }, () => {
 
   it('Status Code 200 e responder rapidamente para uma filial e data válidas', () => {
     cy.api({

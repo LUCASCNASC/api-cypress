@@ -6,7 +6,7 @@ const produto = "12345678910";
 const pesquisagtin = "12345678910"; 
 const pedido = "12345678910";
 
-describe('API rest - Produtos - GET - /v3/produto_detalhe/{produto}', { env: { hideCredendials: true } }, () => {
+describe('API rest - Produto - GET - /v3/produto_detalhe/{produto}', { env: { hideCredendials: true } }, () => {
   
   it('Status Code 200', () => {
 
