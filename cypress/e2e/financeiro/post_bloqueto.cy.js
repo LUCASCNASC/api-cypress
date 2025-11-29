@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 describe('API rest - Financeiro - POST /v3/bloqueto', { env: { hideCredentials: true } }, () => {
   
-  it('Status Code 200 ao incluir meio de cobrança', () => {
+  it('Status Code 200', () => {
 
     cy.api({
       method: 'POST',

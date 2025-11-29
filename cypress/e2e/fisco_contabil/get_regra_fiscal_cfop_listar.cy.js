@@ -9,7 +9,7 @@ const OrigemProduto = "123123123";
 
 describe('API rest - Fisco/Contábil - GET - /v3/regra_fiscal_cfop_listar/{UFOrigem}/{UFDestino}/{UFTomador}/{OrigemProduto}', { env: { hideCredendials: true } }, () => {
   
-  it('Status Code 200 e as propriedades da base fiscal CFOP', () => {
+  it('Status Code 200', () => {
     
     cy.api({
       method: 'GET',

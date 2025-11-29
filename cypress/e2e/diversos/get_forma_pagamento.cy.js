@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 describe('API rest - Diversos - GET /v3/forma_pagamento', { env: { hideCredentials: true } }, () => {
   
-  it('Status Code 200 e as propriedades de forma de pagamento', () => {
+  it('Status Code 200', () => {
     
     cy.api({
       method: 'GET',

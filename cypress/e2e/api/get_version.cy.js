@@ -4,7 +4,7 @@ const AUTHORIZATION = Cypress.env('API.PRAGMA');
 
 describe('API rest - API - Versão do Sistema - GET /api/version', { env: { hideCredendials: true } }, () => {
   
-  it('Status Code 200 e propriedades de versão obrigatórias', () => {
+  it('Status Code 200', () => {
 
     cy.api({
       method: 'GET',

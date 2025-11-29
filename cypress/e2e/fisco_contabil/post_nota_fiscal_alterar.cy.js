@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 describe('API rest - Fisco/Contábil - POST - /v3/nota_fiscal_alterar/', { env: { hideCredendials: true } }, () => {
   
-  it('Status Code 200 ao alterar nota fiscal do tipo manual', () => {
+  it('Status Code 200', () => {
     
     cy.api({
       method: 'POST',

@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 describe('API rest - Financeiro - POST /v3/lancamento_conta_corrente', { env: { hideCredentials: true } }, () => {
   
-  it('Deve retornar 201 e as propriedades do lançamento conta corrente', () => {
+  it('Status Code 201', () => {
 
     cy.api({
       method: 'POST',

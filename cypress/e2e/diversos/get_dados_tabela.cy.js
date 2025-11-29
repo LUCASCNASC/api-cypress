@@ -8,7 +8,7 @@ const tabelaValida = "123";
 
 describe('API rest - Diversos - GET /v3/dados_tabela/{tabela}', { env: { hideCredentials: true } }, () => {
 
-  it('Status Code 200 e as propriedades da tabela', () => {
+  it('Status Code 200', () => {
     
     cy.api({
       method: 'GET',

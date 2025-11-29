@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 describe('API rest - Fisco/Contábil - POST - /v3/lista_solicitacao_processamento', { env: { hideCredendials: true } }, () => {
 
-  it('Status Code 200 e as propriedades da lista de solicitações de processamento', () => {
+  it('Status Code 200', () => {
     
     cy.api({
       method: 'POST',

@@ -8,7 +8,7 @@ const rotaValida = "123";
 
 describe('API rest - Diversos - GET /v3/local_entrega', { env: { hideCredentials: true } }, () => {
 
-  it('Status Code 200 e as propriedades do local de entrega', () => {
+  it('Status Code 200', () => {
     
     cy.api({
       method: 'GET',

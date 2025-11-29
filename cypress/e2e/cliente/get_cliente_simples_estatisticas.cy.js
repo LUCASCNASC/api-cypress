@@ -9,7 +9,7 @@ const idpessoaValido = "12334";
 
 describe('API rest - Cliente - GET /v3/cliente_simples_estatisticas/{idpessoa}', { env: { hideCredentials: true } }, () => {
   
-  it('Status Code 200 e todas as propriedades de estatísticas do cliente simplificado', () => {
+  it('Status Code 200', () => {
     
     cy.api({
       method: 'GET',

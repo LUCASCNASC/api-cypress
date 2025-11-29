@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 describe('API rest - Financeiro - POST /v3/contabancaria', { env: { hideCredentials: true } }, () => {
   
-  it('Deve retornar 201 ao incluir conta bancária', () => {
+  it('Status Code 201', () => {
 
     cy.api({
       method: 'POST',

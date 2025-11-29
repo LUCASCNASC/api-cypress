@@ -43,6 +43,3 @@ O repositório está configurado para manter informações sensíveis, como URLs
 ---
 
 > Projeto mantido por [LUCASCNASC](https://github.com/LUCASCNASC)
-
-Colocando const dentro do arquivo cypress.env.json. Feito até:
-pasta "cliente", arquivo "delete_cliente.cy.js"

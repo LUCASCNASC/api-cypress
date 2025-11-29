@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 describe('API rest - Fisco/Contábil - POST - /v3/documento_diverso_entrada_incluir/', { env: { hideCredendials: true } }, () => {
   
-  it('Status Code 200 e as propriedades do documento diverso de entrada incluído', () => {
+  it('Status Code 200', () => {
     
     cy.api({
       method: 'POST',

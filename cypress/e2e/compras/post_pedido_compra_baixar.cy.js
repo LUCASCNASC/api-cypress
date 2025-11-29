@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 describe('API rest - Compras - POST /v3/pedido_compra_baixar', { env: { hideCredentials: true } }, () => {
   
-  it('Status Code 200 ao baixar pedido de compra válido', () => {
+  it('Status Code 200', () => {
 
     cy.api({
       method: 'POST',

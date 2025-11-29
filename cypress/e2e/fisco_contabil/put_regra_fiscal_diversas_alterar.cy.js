@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 describe('API rest - Fisco/Contábil - PUT - /v3/regra_fiscal_diversas_alterar', { env: { hideCredendials: true } }, () => {
   
-  it('Status Code 200 e as propriedades da base fiscal diversas alterada', () => {
+  it('Status Code 200', () => {
     
     cy.api({
       method: 'PUT',

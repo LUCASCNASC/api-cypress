@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 describe('API rest - Financeiro - POST /v3/incluir_voucher_pagamento', { env: { hideCredentials: true } }, () => {
   
-  it('Deve retornar 201 e as propriedades do voucher de pagamento', () => {
+  it('Status Code 201', () => {
     
     cy.api({
       method: 'POST',

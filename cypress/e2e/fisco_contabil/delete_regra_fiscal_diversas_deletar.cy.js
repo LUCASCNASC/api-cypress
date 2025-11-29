@@ -6,7 +6,7 @@ const idBaseFiscalDiversas = "123123123";
 
 describe('API rest - Fisco/Contábil - DELETE - /v3/regra_fiscal_diversas_deletar/{idBaseFiscalDiversas}', { env: { hideCredendials: true } }, () => {
 
-  it('Status Code 200 e as propriedades da base fiscal diversas excluída', () => {
+  it('Status Code 200', () => {
     
     cy.api({
       method: 'DELETE',

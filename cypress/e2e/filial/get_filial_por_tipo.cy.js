@@ -14,7 +14,7 @@ const tipoInvalido = "xyz";
 
 describe('API rest - Filial - GET /v3/filial_por_tipo/{UF}/{Municipio}/{Tipo}', { env: { hideCredentials: true } }, () => {
 
-  it('Status Code 200 e as propriedades da lista de filial por tipo', () => {
+  it('Status Code 200', () => {
 
     cy.api({
       method: 'GET',

@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 describe('API rest - Financeiro - POST /v3/formas_pagamento_titulos', { env: { hideCredentials: true } }, () => {
   
-  it('Deve retornar 201 e as propriedades de formas de pagamento por título', () => {
+  it('Status Code 201', () => {
 
     cy.api({
       method: 'POST',

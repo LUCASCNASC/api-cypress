@@ -7,7 +7,7 @@ const RegistroNota = "123123123";
 
 describe('API rest - Fisco/Contábil - GET - /v3/nota_fiscal_cancelar/{Filial}/{RegistroNota}', { env: { hideCredendials: true } }, () => {
 
-  it('Status Code 200 e as propriedades do cancelamento de nota fiscal', () => {
+  it('Status Code 200', () => {
     
     cy.api({
       method: 'GET',

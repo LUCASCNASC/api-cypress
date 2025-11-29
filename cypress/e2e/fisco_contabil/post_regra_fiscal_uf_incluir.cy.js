@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 describe('API rest - Fisco/Contábil - POST - /v3/regra_fiscal_uf_incluir', { env: { hideCredendials: true } }, () => {
   
-  it('Status Code 200 e as propriedades da base fiscal UF incluída', () => {
+  it('Status Code 200', () => {
     
     cy.api({
       method: 'POST',

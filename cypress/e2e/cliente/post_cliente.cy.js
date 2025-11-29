@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 describe('API rest - Cliente - POST /v3/cliente', { env: { hideCredentials: true } }, () => {
   
-  it('Status Code 200 ou 201 ao incluir/alterar cliente', () => {
+  it('Status Code 200 ou 201', () => {
 
     cy.api({
       method: 'POST',

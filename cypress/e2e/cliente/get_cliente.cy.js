@@ -8,7 +8,7 @@ const clienteValido = "12345678901234";
 
 describe('API rest - Cliente - GET /v3/cliente/{cliente}', { env: { hideCredentials: true } }, () => {
 
-  it('Status Code 200 e todas as propriedades esperadas para um cliente válido', () => {
+  it('Status Code 200', () => {
     
     cy.api({
       method: 'GET',

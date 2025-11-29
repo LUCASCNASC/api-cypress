@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 describe('API rest - Compras - POST /v3/pedido_compra_incluir', { env: { hideCredentials: true } }, () => {
   
-  it('Status Code 200 e as propriedades do retorno ao incluir pedido válido', () => {
+  it('Status Code 200', () => {
     
     cy.api({
       method: 'POST',

@@ -7,7 +7,7 @@ const filialSemDados = 99999;
 
 describe('API rest - Filial - GET /v3/filial_detalhe/{filial}', { env: { hideCredentials: true } }, () => {
   
-  it('Status Code 200 e todas as propriedades do detalhe da filial', () => {
+  it('Status Code 200', () => {
 
     cy.api({
       method: 'GET',

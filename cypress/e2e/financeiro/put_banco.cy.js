@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 describe('API rest - Financeiro - PUT /v3/banco', { env: { hideCredentials: true } }, () => {
   
-  it('Deve retornar 201 e as propriedades do banco alterado', () => {
+  it('Status Code 201', () => {
 
     cy.api({
       method: 'PUT',

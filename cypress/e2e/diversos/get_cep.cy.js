@@ -8,7 +8,7 @@ const cepValido = "12312312312";
 
 describe('API rest - Diversos - GET /v3/cep/{cep}', { env: { hideCredentials: true } }, () => {
   
-  it('Status Code 200 e as propriedades do CEP', () => {
+  it('Status Code 200', () => {
     
     cy.api({
       method: 'GET',

@@ -11,7 +11,7 @@ const idrotacidade = "123";
 
 describe('API rest - Diversos - GET /v3/rota', { env: { hideCredentials: true } }, () => {
 
-  it('Status Code 200 e as propriedades de rota', () => {
+  it('Status Code 200', () => {
 
     cy.api({
       method: 'GET',

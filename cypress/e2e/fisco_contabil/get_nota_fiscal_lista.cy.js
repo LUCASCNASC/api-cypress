@@ -10,7 +10,7 @@ const CNPJ_CPF = "123123123";
 
 describe('API rest - Fisco/Contábil - GET - /v3/nota_fiscal_lista/{Filial}/{Registro_Nota}/{Data_Inicial}/{Data_Final}/{CNPJ_CPF}', { env: { hideCredendials: true } }, () => {
 
-  it('Status Code 200 e as propriedades das notas fiscais', () => {
+  it('Status Code 200', () => {
     
     cy.api({
       method: 'GET',

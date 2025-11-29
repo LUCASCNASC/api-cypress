@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 describe('API rest - Fisco/Contábil - POST - /v3/corrigir_saldo_medio_produtos', { env: { hideCredendials: true } }, () => {
   
-  it('Status Code 200 e as propriedades da correção de saldo/custo médio', () => {
+  it('Status Code 200', () => {
     
     cy.api({
       method: 'POST',
