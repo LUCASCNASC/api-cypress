@@ -38,7 +38,6 @@ describe('API rest - Assistência - POST /v3/movimento_assistencia_incluir/', { 
   });
 
   it('Deve retornar 412 se payload não atender aos pré-requisitos', () => {
-
     cy.api({
       method: 'POST',
       url,
@@ -57,7 +56,6 @@ describe('API rest - Assistência - POST /v3/movimento_assistencia_incluir/', { 
   });
 
   it('Deve retornar erro de autenticação com token inválido', () => {
-
     cy.api({
       method: 'POST',
       url,

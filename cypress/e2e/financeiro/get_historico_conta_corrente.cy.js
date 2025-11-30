@@ -12,7 +12,6 @@ const idContaCorrenteInvalido = "xyz";
 describe('API rest - Financeiro - GET /v3/historico_conta_corrente/{idTipoContaCorrente}', { env: { hideCredentials: true } }, () => {
 
   it('Status Code 200', () => {
-
     cy.api({
       method: 'GET',
       url: `${BASE_URL}/${PATH_API}/${idTipoContaCorrente}/${idContaCorrente}`,

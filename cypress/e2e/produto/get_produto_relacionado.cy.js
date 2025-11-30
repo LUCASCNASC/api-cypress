@@ -7,7 +7,6 @@ const lista = "12345678910";
 describe('API rest - Produto - GET - /v3/produto_relacionado ', { env: { hideCredendials: true } } , () => {
   
   it('Status Code 200', () => {
-
     cy.api({
       method: 'GET', 
       url: `${BASE_URL}/${PATH_API}/${lista}`, 

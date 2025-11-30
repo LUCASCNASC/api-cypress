@@ -5,7 +5,6 @@ const AUTHORIZATION = Cypress.env('API.PRAGMA');
 describe('API rest - API - Versão do Sistema - GET /api/version', { env: { hideCredendials: true } }, () => {
   
   it('Status Code 200', () => {
-
     cy.api({
       method: 'GET',
       url: `${BASE_URL}/${PATH_API}`,
@@ -26,7 +25,6 @@ describe('API rest - API - Versão do Sistema - GET /api/version', { env: { hide
   });
 
   it('Deve retornar erro de autorização se header estiver ausente - 401 e 403', () => {
-
     cy.api({
       method: 'GET',
       url: `${BASE_URL}/${PATH_API}`,

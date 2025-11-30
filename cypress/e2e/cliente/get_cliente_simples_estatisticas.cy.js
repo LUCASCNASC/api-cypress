@@ -61,7 +61,6 @@ describe('API rest - Cliente - GET /v3/cliente_simples_estatisticas/{idpessoa}',
   });
 
   it('Deve retornar 204 quando não houver estatísticas para o idpessoa informado', () => {
-
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${idpessoaSemEstatistica}`,
@@ -85,7 +84,6 @@ describe('API rest - Cliente - GET /v3/cliente_simples_estatisticas/{idpessoa}',
   });
 
   it('Deve retornar 412 para idpessoa inválido', () => {
-
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${idpessoaInvalido}`,

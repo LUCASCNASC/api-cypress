@@ -5,7 +5,6 @@ const Authorization = Cypress.env('API.PRAGMA');
 describe('API rest - Financeiro - POST /v3/lancamento_conta_corrente', { env: { hideCredentials: true } }, () => {
   
   it('Status Code 201', () => {
-
     cy.api({
       method: 'POST',
       url: `${BASE_URL}/${PATH_API}`,
@@ -27,7 +26,6 @@ describe('API rest - Financeiro - POST /v3/lancamento_conta_corrente', { env: { 
   });
 
   it('Deve retornar 412 ao tentar incluir lançamento com payload inválido', () => {
-
     cy.api({
       method: 'POST',
       url: `${BASE_URL}/${PATH_API}`,

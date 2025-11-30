@@ -5,7 +5,6 @@ const Authorization = Cypress.env('API.PRAGMA');
 describe('API rest - Financeiro - PUT /v3/agencia', { env: { hideCredentials: true } }, () => {
   
   it('Status Code 201', () => {
-
     cy.api({
       method: 'PUT',
       url: `${BASE_URL}/${PATH_API}`,
@@ -27,7 +26,6 @@ describe('API rest - Financeiro - PUT /v3/agencia', { env: { hideCredentials: tr
   });
 
   it('Deve retornar 500 ao tentar alterar agência com payload inválido', () => {
-
     cy.api({
       method: 'PUT',
       url: `${BASE_URL}/${PATH_API}`,

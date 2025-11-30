@@ -23,7 +23,6 @@ describe('API rest - Financeiro - POST /v3/baixa_titulo_pagar', { env: { hideCre
   });
 
   it('Deve retornar 412 ao tentar baixar título a pagar com payload inválido', () => {
-
     cy.api({
       method: 'POST',
       url: `${BASE_URL}/${PATH_API}`,

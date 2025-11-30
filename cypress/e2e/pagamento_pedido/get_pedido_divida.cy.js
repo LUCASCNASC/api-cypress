@@ -9,7 +9,6 @@ const idtipotef = "12345678910";
 describe('API rest - Pagamento pedido - GET - /v3/pedido_divida/{filial}', { env: { hideCredendials: true } }, () => { 
     
   it('Status Code 200', () => {
-
     cy.api({
       method: 'GET', 
       url: `${BASE_URL}/${PATH_API}/${filial}/${termo}/${idtipotef}`, 

@@ -9,7 +9,6 @@ const idTipoSaldoProduto = "12345678910";
 describe('API rest - Produto - GET - /v3/produto_tipo_saldo_detalhe ', { env: { hideCredendials: true } }, () => {
   
   it('Status Code 200', () => {
-
     cy.api({
       method: 'GET', 
       url: `${BASE_URL}/${PATH_API}/${idFilialSaldo}/${sku}/${idTipoSaldoProduto}`, 

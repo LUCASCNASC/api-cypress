@@ -7,7 +7,6 @@ const codigo = "12345678910";
 describe('API rest - Pedido - GET - /v3/pedido_relatorio/{codigo}', { env: { hideCredendials: true } }, () => {
 
   it('Status Code 200', () => {
-
     cy.api({
       method: 'GET', 
       url: `${BASE_URL}/${PATH_API}/${codigo}`, 

@@ -13,7 +13,6 @@ const idrotacidade = "123";
 describe('API rest - Diversos - GET /v3/rota_cidade', { env: { hideCredentials: true } }, () => {
   
   it('Status Code 200', () => {
-
     cy.api({
       method: 'GET',
       url: `${BASE_URL}/${PATH_API}/${idgruporota}/${idrota}/${idrotacidade}`,
@@ -33,7 +32,6 @@ describe('API rest - Diversos - GET /v3/rota_cidade', { env: { hideCredentials: 
   });
 
   it('Deve retornar 204 quando não houver rotas cidade para os parâmetros informados', () => {
-
     cy.api({
       method: 'GET',
       url: `${BASE_URL}/${PATH_API}/${idgruporotaSemRota}/${idrotaSemRota}/${idrotacidadeSemRota}`,

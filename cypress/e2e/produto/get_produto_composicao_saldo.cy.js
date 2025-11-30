@@ -10,7 +10,6 @@ const local_saldo = "12345678910";
 describe('API rest - Produto - GET - /v3/produto_composicao_saldo', { env: { hideCredendials: true } }, () => {
   
   it('Status Code 200', () => {
-
     cy.api({
       method: 'GET', 
       url: `${BASE_URL}/${PATH_API}/${filial_saldo}/${sku}/${quantidade}/${local_saldo}`,

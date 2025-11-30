@@ -5,7 +5,6 @@ const Authorization = Cypress.env('API.PRAGMA');
 describe('API rest - Financeiro - POST /v3/referenciabancaria', { env: { hideCredentials: true } }, () => {
   
   it('Status Code 201', () => {
-
     cy.api({
       method: 'POST',
       url: `${BASE_URL}/${PATH_API}`,
@@ -27,7 +26,6 @@ describe('API rest - Financeiro - POST /v3/referenciabancaria', { env: { hideCre
   });
 
   it('Deve retornar 500 ao tentar incluir referência bancária com payload inválido', () => {
-
     cy.api({
       method: 'POST',
       url: `${BASE_URL}/${PATH_API}`,

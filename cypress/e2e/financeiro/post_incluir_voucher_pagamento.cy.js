@@ -27,7 +27,6 @@ describe('API rest - Financeiro - POST /v3/incluir_voucher_pagamento', { env: { 
   });
 
   it('Deve retornar 412 ao tentar incluir voucher de pagamento com payload inválido', () => {
-
     cy.api({
       method: 'POST',
       url: `${BASE_URL}/${PATH_API}`,

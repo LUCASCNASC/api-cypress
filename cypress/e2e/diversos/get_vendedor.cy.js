@@ -10,7 +10,6 @@ const sort = "123";
 describe('API rest - Diversos - GET /v3/vendedor', { env: { hideCredentials: true } }, () => {
 
   it('Status Code 200', () => {
-
     cy.api({
       method: 'GET',
       url: `${BASE_URL}/${PATH_API}/${termoValido}/${limit}/${offset}/${sort}`,
@@ -27,7 +26,6 @@ describe('API rest - Diversos - GET /v3/vendedor', { env: { hideCredentials: tru
   });
 
   it('Deve retornar 412 para termo inválido', () => {
-
     cy.api({
       method: 'GET',
       url: `${BASE_URL}/${PATH_API}/${termoInvalido}/${limit}/${offset}/${sort}`,

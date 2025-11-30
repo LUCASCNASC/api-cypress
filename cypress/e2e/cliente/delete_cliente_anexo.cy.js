@@ -25,7 +25,6 @@ describe('API rest - Cliente - DELETE /v3/cliente_anexo/{idcnpj_cpf}', { env: { 
   });
 
   it('Deve retornar 204 ao tentar excluir anexo já inexistente', () => {
-
     cy.api({
       method: 'DELETE',
       url: `${BASE_URL}${PATH_API}/${idcnpj_cpfSemAnexo}/${idpessoaanexoSemAnexo}`,
@@ -38,7 +37,6 @@ describe('API rest - Cliente - DELETE /v3/cliente_anexo/{idcnpj_cpf}', { env: { 
   });
 
   it('Deve retornar 412 para parâmetros inválidos', () => {
-
     cy.api({
       method: 'DELETE',
       url: `${BASE_URL}${PATH_API}/${idcnpj_cpfInvalido}/${idpessoaanexoInvalido}`,

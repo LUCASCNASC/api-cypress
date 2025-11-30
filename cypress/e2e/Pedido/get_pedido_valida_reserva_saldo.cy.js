@@ -8,7 +8,6 @@ const idPedidoVenda = "12345678910";
 describe('API rest - Pedido - GET - /v3/pedido_valida_reserva_saldo/{idFilial}/{idPedidoVenda}', { env: { hideCredendials: true } }, () => {
   
   it('Resposta 204', () => {
-
     cy.api({
       method: 'GET', 
       url: `${BASE_URL}/${PATH_API}/${idFilial}/${idPedidoVenda}`, 

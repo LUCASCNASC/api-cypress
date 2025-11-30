@@ -42,7 +42,6 @@ describe('API rest - Diversos - GET /v3/cep/{cep}', { env: { hideCredentials: tr
   });
 
   it('Deve retornar 412 para CEP inválido', () => {
-
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${cepInvalido}`,

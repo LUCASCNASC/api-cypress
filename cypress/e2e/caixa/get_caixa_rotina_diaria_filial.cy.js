@@ -37,7 +37,6 @@ describe('API rest - Caixa - Caixa Rotina Diária Filial', { env: { hideCredenti
   });
 
   it('Deve retornar 412 para parâmetros que não atendem aos pré-requisitos', () => {
-
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${idFilialInvalido}/${dataAberturaInvalida}`,

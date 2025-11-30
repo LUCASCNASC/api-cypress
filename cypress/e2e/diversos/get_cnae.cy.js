@@ -42,7 +42,6 @@ describe('API rest - Diversos - GET /v3/cnae', { env: { hideCredentials: true } 
   });
 
   it('Deve retornar 412 para termo inválido', () => {
-
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${termoInvalido}/${limit}/${offset}/${sort}`,
