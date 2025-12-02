@@ -8,6 +8,7 @@ const quantidadeNivel = "12345678910";
 describe('API rest - Trial - GET - /v3/trial_nivel_usuario/{idTrial}/{QuantidadeNivel}', { env: { hideCredendials: true } }, () => {
   
   it('Status Code 200', () => {
+    
     cy.api({
       method: 'GET', 
       url: `${BASE_URL}/${PATH_API}/${idTrial}/${quantidadeNivel}`, 

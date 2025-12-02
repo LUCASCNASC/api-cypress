@@ -5,6 +5,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 describe('API rest - Sistema - POST - /v3/evento', { env: { hideCredendials: true } }, () => {
   
   it('Resposta 201', () => {
+    
     cy.api({
       method: 'POST', 
       url: `${BASE_URL}/${PATH_API}`, 

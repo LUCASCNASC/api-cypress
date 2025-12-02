@@ -30,6 +30,7 @@ describe('API rest - Compras - POST /v3/pedido_compra_incluir', { env: { hideCre
   });
 
   it('Deve retornar 412 ao tentar incluir pedido com dados inválidos', () => {
+    
     cy.api({
       method: 'POST',
       url: `${BASE_URL}/${PATH_API}`,

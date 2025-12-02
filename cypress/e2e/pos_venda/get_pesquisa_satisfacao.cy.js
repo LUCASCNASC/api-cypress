@@ -7,6 +7,7 @@ const idfilial = "12345678910";
 describe('API rest - Pós-venda - GET - /v3/pesquisa_satisfacao', { env: { hideCredendials: true } }, () => {
   
   it('Status Code 200', () => {
+    
     cy.api({
       method: 'GET', 
       url: `${BASE_URL}/${PATH_API}/${idfilial}`, 

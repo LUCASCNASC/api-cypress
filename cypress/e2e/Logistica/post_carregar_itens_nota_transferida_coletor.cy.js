@@ -5,6 +5,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 describe('API rest - Logística - POST - /v3/carregar_itens_nota_transferida_coletor', { env: { hideCredendials: true } }, () => {
   
   it('Status Code 200', () => {
+    
     cy.api({
       method: 'POST', 
       url: `${BASE_URL}/${PATH_API}`, 

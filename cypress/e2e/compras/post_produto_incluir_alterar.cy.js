@@ -5,6 +5,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 describe('API rest - Compras - POST /v3/produto_incluir_alterar', { env: { hideCredentials: true } }, () => {
   
   it('Status Code 200', () => {
+    
     cy.api({
       method: 'POST',
       url: `${BASE_URL}/${PATH_API}`,
@@ -21,6 +22,7 @@ describe('API rest - Compras - POST /v3/produto_incluir_alterar', { env: { hideC
   });
 
   it('Deve retornar 412 ao tentar incluir/alterar produto com dados inválidos', () => {
+    
     cy.api({
       method: 'POST',
       url: `${BASE_URL}/${PATH_API}`,

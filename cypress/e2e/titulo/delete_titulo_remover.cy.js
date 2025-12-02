@@ -10,6 +10,7 @@ const numeroTitulo = "12345678910";
 describe('API rest - Titulo - DELETE - /v3/titulo_remover/{numeroEmpresa}/{numeroFilial}/{tipoTitulo}/{numeroTitulo}, { env: { hideCredendials: true } }', () => {
   
   it('Status Code 200', () => {
+    
     cy.api({
       method: 'DELETE', 
       url: `${BASE_URL}/${PATH_API}/${numeroEmpresa}/${numeroFilial}/${tipoTitulo}/${numeroTitulo}`, 

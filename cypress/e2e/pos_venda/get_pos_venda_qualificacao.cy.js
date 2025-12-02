@@ -5,6 +5,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 describe('API rest - Pós-venda - GET - /v3/pos_venda_qualificacao', { env: { hideCredendials: true } }, () => {
   
   it('Status Code 200', () => {
+    
     cy.api({
       method: '`${BASE_URL}/Pedido/v2_pedido_get_delete2/${codigo}/${idfilial}`', 
       url: `${BASE_URL}/${PATH_API}`, 

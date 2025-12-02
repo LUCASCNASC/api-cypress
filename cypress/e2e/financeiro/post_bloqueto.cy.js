@@ -5,6 +5,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 describe('API rest - Financeiro - POST /v3/bloqueto', { env: { hideCredentials: true } }, () => {
   
   it('Status Code 200', () => {
+    
     cy.api({
       method: 'POST',
       url: `${BASE_URL}/${PATH_API}`,
@@ -28,6 +29,7 @@ describe('API rest - Financeiro - POST /v3/bloqueto', { env: { hideCredentials: 
   });
 
   it('Deve retornar 412 ao tentar incluir meio de cobrança com payload inválido', () => {
+    
     cy.api({
       method: 'POST',
       url: `${BASE_URL}/${PATH_API}`,

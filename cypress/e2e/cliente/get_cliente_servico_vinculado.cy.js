@@ -33,6 +33,7 @@ describe('API rest - Cliente - GET /v3/cliente_servico_vinculado/{cliente}', { e
   });
 
   it('Deve retornar 204 quando não houver serviços vinculados para o cliente/processo', () => {
+    
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${clienteSemServico}/${processoSemServico}`,

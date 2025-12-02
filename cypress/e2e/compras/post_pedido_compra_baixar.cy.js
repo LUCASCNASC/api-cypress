@@ -5,6 +5,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 describe('API rest - Compras - POST /v3/pedido_compra_baixar', { env: { hideCredentials: true } }, () => {
   
   it('Status Code 200', () => {
+    
     cy.api({
       method: 'POST',
       url: `${BASE_URL}/${PATH_API}`,
@@ -20,6 +21,7 @@ describe('API rest - Compras - POST /v3/pedido_compra_baixar', { env: { hideCred
   });
 
   it('Deve retornar 412 ao tentar baixar pedido com dados inválidos', () => {
+    
     cy.api({
       method: 'POST',
       url: `${BASE_URL}/${PATH_API}`,

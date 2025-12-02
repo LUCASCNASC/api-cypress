@@ -5,6 +5,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 describe('API rest - Financeiro - POST /v3/excluir_titulo_areceber_apagar', { env: { hideCredentials: true } }, () => {
   
   it('Status Code 200', () => {
+    
     cy.api({
       method: 'POST',
       url: `${BASE_URL}/${PATH_API}`,
@@ -26,6 +27,7 @@ describe('API rest - Financeiro - POST /v3/excluir_titulo_areceber_apagar', { en
   });
 
   it('Deve retornar 412 ao tentar excluir título com payload inválido', () => {
+    
     cy.api({
       method: 'POST',
       url: `${BASE_URL}/${PATH_API}`,

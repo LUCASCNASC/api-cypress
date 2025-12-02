@@ -28,6 +28,7 @@ describe('API rest - Diversos - GET /v3/grupo', { env: { hideCredentials: true }
   });
 
   it('Deve retornar 204 quando não houver grupos para o tipo informado', () => {
+    
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${idtipogrupoSemGrupo}`,
@@ -40,6 +41,7 @@ describe('API rest - Diversos - GET /v3/grupo', { env: { hideCredentials: true }
   });
 
   it('Deve retornar 412 para idtipogrupo inválido', () => {
+    
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${idtipogrupoInvalido}`,

@@ -38,6 +38,7 @@ describe('API rest - Diversos - GET /v3/dados_tabela/{tabela}', { env: { hideCre
   });
 
   it('Deve retornar 412 para tabela inválida', () => {
+    
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${tabelaInvalida}`,

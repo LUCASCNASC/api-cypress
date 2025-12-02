@@ -28,6 +28,7 @@ describe('API rest - Cliente - GET /v3/cliente_anexo/{idcnpj_cpf}', { env: { hid
   });
 
   it('Deve retornar 204 quando não houver anexos para o idcnpj_cpf informado', () => {
+    
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${idcnpj_cpfSemAnexo}`,
@@ -40,6 +41,7 @@ describe('API rest - Cliente - GET /v3/cliente_anexo/{idcnpj_cpf}', { env: { hid
   });
 
   it('Deve retornar 412 para idcnpj_cpf inválido', () => {
+    
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${idcnpj_cpfInvalido}`,

@@ -5,6 +5,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 describe('API rest - Cliente - POST /v3/cliente_anexo', { env: { hideCredentials: true } }, () => {
 
   it('Status Code 200 ou 201', () => {
+    
     cy.api({
       method: 'POST',
       url: `${BASE_URL}/${PATH_API}`,
@@ -22,6 +23,7 @@ describe('API rest - Cliente - POST /v3/cliente_anexo', { env: { hideCredentials
   });
 
   it('Deve retornar 412 ao tentar incluir anexo com dados inválidos', () => {
+    
     cy.api({
       method: 'POST',
       url: `${BASE_URL}/${PATH_API}`,

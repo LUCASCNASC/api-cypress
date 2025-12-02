@@ -15,6 +15,7 @@ const tipoInvalido = "xyz";
 describe('API rest - Filial - GET /v3/filial_por_tipo/{UF}/{Municipio}/{Tipo}', { env: { hideCredentials: true } }, () => {
 
   it('Status Code 200', () => {
+    
     cy.api({
       method: 'GET',
       url: `${BASE_URL}/${PATH_API}/${ufValida}/${municipioValido}/${tipoValido}`,
@@ -38,6 +39,7 @@ describe('API rest - Filial - GET /v3/filial_por_tipo/{UF}/{Municipio}/{Tipo}', 
   });
 
   it('Deve retornar 204 quando não houver filiais para os parâmetros informados', () => {
+    
     cy.api({
       method: 'GET',
       url: `${BASE_URL}/${PATH_API}/${ufSemFilial}/${municipioSemFilial}/${tipoSemFilial}`,
@@ -50,6 +52,7 @@ describe('API rest - Filial - GET /v3/filial_por_tipo/{UF}/{Municipio}/{Tipo}', 
   });
 
   it('Deve retornar 412 para parâmetros inválidos', () => {
+    
     cy.api({
       method: 'GET',
       url: `${BASE_URL}/${PATH_API}/${ufInvalida}/${municipioInvalido}/${tipoInvalido}`,

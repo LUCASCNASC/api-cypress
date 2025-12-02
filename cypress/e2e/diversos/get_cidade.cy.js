@@ -38,6 +38,7 @@ describe('API rest - Diversos - GET /v3/cidade', { env: { hideCredentials: true 
   });
 
   it('Deve retornar 412 para UF inválida', () => {
+    
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${ufInvalido}`,

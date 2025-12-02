@@ -11,6 +11,7 @@ const so_servico = "12345678910";
 describe('API rest - Produto - GET - /v3/departamento', { env: { hideCredendials: true } }, () => {
   
   it('Status Code 200', () => {
+    
     cy.api({
       method: 'GET', 
       url: `${BASE_URL}/${PATH_API}`, 

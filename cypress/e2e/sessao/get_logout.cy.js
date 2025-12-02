@@ -5,6 +5,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 describe('API rest - Sessão - GET - /v3/logout', { env: { hideCredendials: true } }, () => {
   
   it('Resposta 204', () => {
+    
     cy.api({
       method: 'GET',
       url: `${BASE_URL}/${PATH_API}`,

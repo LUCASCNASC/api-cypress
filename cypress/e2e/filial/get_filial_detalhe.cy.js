@@ -8,6 +8,7 @@ const filialSemDados = 99999;
 describe('API rest - Filial - GET /v3/filial_detalhe/{filial}', { env: { hideCredentials: true } }, () => {
   
   it('Status Code 200', () => {
+    
     cy.api({
       method: 'GET',
       url: `${BASE_URL}/${PATH_API}/${filialValida}`,
@@ -44,6 +45,7 @@ describe('API rest - Filial - GET /v3/filial_detalhe/{filial}', { env: { hideCre
   });
 
   it('Deve retornar 204 quando não houver dados para a filial informada', () => {
+    
     cy.api({
       method: 'GET',
       url: `${BASE_URL}/${PATH_API}/${filialSemDados}`,

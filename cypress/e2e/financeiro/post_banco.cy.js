@@ -24,6 +24,7 @@ describe('API rest - Financeiro - POST /v3/banco', { env: { hideCredentials: tru
   });
 
   it('Deve retornar 500 ao tentar incluir banco com payload inválido', () => {
+    
     cy.api({
       method: 'POST',
       url: `${BASE_URL}/${PATH_API}`,
