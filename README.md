@@ -46,3 +46,4 @@ O repositório está configurado para manter informações sensíveis, como URLs
 
 It is necessary to develop and specify the scenarios.
 - Integrate IA with project.
+- To do documentation of tests scenarios.
