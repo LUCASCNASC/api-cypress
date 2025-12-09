@@ -23,7 +23,7 @@ describe('API rest - Financeiro - PUT /v3/banco', { env: { hideCredentials: true
     });
   });
 
-  it('Deve retornar 500 ao tentar alterar banco com payload inválido', () => {
+  it('Status Code 500', () => {
     
     cy.api({
       method: 'PUT',

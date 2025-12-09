@@ -21,7 +21,7 @@ describe('API rest - Cliente - DELETE /v3/cliente/{cliente}', { env: { hideCrede
     });
   });
 
-  it('Deve retornar 204 ao excluir cliente já inexistente', () => {
+  it('Status Code 204', () => {
     
     cy.api({
       method: 'DELETE',
@@ -34,7 +34,7 @@ describe('API rest - Cliente - DELETE /v3/cliente/{cliente}', { env: { hideCrede
     });
   });
 
-  it('Deve retornar 412 para cliente inválido', () => {
+  it('Status Code 412', () => {
     
     cy.api({
       method: 'DELETE',

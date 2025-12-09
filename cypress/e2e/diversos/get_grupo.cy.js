@@ -27,7 +27,7 @@ describe('API rest - Diversos - GET /v3/grupo', { env: { hideCredentials: true }
     });
   });
 
-  it('Deve retornar 204 quando não houver grupos para o tipo informado', () => {
+  it('Status Code 204', () => {
     
     cy.api({
       method: 'GET',
@@ -40,7 +40,7 @@ describe('API rest - Diversos - GET /v3/grupo', { env: { hideCredentials: true }
     });
   });
 
-  it('Deve retornar 412 para idtipogrupo inválido', () => {
+  it('Status Code 412', () => {
     
     cy.api({
       method: 'GET',

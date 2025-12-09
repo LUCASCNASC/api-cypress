@@ -31,7 +31,7 @@ describe('API rest - E-commerce - POST /v3/ecommerce_finalizar', { env: { hideCr
     });
   });
 
-  it('Deve retornar 412 ao tentar finalizar pedido e-commerce com payload inválido', () => {
+  it('Status Code 412', () => {
     
     cy.api({
       method: 'POST',

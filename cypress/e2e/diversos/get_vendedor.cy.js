@@ -26,7 +26,7 @@ describe('API rest - Diversos - GET /v3/vendedor', { env: { hideCredentials: tru
     });
   });
 
-  it('Deve retornar 412 para termo inválido', () => {
+  it('Status Code 412', () => {
     
     cy.api({
       method: 'GET',

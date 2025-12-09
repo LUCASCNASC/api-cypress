@@ -18,8 +18,4 @@ describe('API rest - Diversos - GET /v3/observacao', { env: { hideCredentials: t
       expect(ret).to.have.property('descricao');
     });
   });
-
-  it.skip('Deve retornar 204 quando não houver observações cadastradas', () => {
-    // Se não for possível simular ambiente vazio, pode ser omitido.
-  });
 });

@@ -23,7 +23,7 @@ describe('API rest - Financeiro - POST /v3/contabancaria', { env: { hideCredenti
     });
   });
 
-  it('Deve retornar 500 ao tentar incluir conta bancária com payload inválido', () => {
+  it('Status Code 500', () => {
     
     cy.api({
       method: 'POST',

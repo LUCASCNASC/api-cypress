@@ -29,7 +29,7 @@ describe('API rest - API - Sessões Ativas - GET /api/session', { env: { hideCre
     });
   });
 
-  it('Deve retornar erro de autorização com token inválido - 401 e 403', () => {
+  it('Status Code 401 e 403', () => {
     
     cy.api({
       method: 'GET',

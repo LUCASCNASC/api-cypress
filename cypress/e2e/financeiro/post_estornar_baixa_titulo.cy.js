@@ -21,7 +21,7 @@ describe('API rest - Financeiro - POST /v3/estornar_baixa_titulo', { env: { hide
     });
   });
 
-  it('Deve retornar 500 ao tentar estornar com payload inválido', () => {
+  it('Status Code 500', () => {
     
     cy.api({
       method: 'POST',

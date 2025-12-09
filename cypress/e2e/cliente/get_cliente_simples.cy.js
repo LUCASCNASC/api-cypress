@@ -60,7 +60,7 @@ describe('API rest - Cliente - GET /v3/cliente_simples/{cliente}', { env: { hide
     });
   });
 
-  it('Deve retornar 204 quando não houver dados para o cliente simplificado', () => {
+  it('Status Code 204', () => {
     
     cy.api({
       method: 'GET',

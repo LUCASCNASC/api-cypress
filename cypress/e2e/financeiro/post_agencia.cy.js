@@ -23,7 +23,7 @@ describe('API rest - Financeiro - POST /v3/agencia', { env: { hideCredentials: t
     });
   });
 
-  it('Deve retornar 500 ao tentar incluir agência com payload inválido', () => {
+  it('Status Code 500', () => {
     
     cy.api({
       method: 'POST',

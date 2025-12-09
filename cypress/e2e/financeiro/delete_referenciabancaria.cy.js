@@ -22,7 +22,7 @@ describe('API rest - Financeiro - DELETE /v3/referenciabancaria/{cnpjCpf}/{idRef
     });
   });
 
-  it('Deve retornar erro ao tentar excluir referência inexistente ou inválida', () => {
+  it('Status Code 404 e 412', () => {
     
     cy.api({
       method: 'DELETE',

@@ -29,7 +29,7 @@ describe('API rest - Diversos - GET /v3/cbo', { env: { hideCredentials: true } }
     });
   });
 
-  it('Deve retornar 204 quando não houver dados para o termo informado', () => {
+  it('Status Code 204', () => {
     
     cy.api({
       method: 'GET',
@@ -42,7 +42,7 @@ describe('API rest - Diversos - GET /v3/cbo', { env: { hideCredentials: true } }
     });
   });
 
-  it('Deve retornar 412 para termo inválido', () => {
+  it('Status Code 412', () => {
     
     cy.api({
       method: 'GET',

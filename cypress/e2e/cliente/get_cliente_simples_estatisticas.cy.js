@@ -60,7 +60,7 @@ describe('API rest - Cliente - GET /v3/cliente_simples_estatisticas/{idpessoa}',
     });
   });
 
-  it('Deve retornar 204 quando não houver estatísticas para o idpessoa informado', () => {
+  it('Status Code 204', () => {
     
     cy.api({
       method: 'GET',
@@ -73,7 +73,7 @@ describe('API rest - Cliente - GET /v3/cliente_simples_estatisticas/{idpessoa}',
     });
   });
 
-  it('Deve retornar 401 quando não autorizado', () => {
+  it('Status Code 401', () => {
     
     cy.api({
       method: 'GET',
@@ -85,7 +85,7 @@ describe('API rest - Cliente - GET /v3/cliente_simples_estatisticas/{idpessoa}',
     });
   });
 
-  it('Deve retornar 412 para idpessoa inválido', () => {
+  it('Status Code 412', () => {
     
     cy.api({
       method: 'GET',

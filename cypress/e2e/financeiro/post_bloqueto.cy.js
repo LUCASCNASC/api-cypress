@@ -28,7 +28,7 @@ describe('API rest - Financeiro - POST /v3/bloqueto', { env: { hideCredentials: 
     });
   });
 
-  it('Deve retornar 412 ao tentar incluir meio de cobrança com payload inválido', () => {
+  it('Status Code 412', () => {
     
     cy.api({
       method: 'POST',

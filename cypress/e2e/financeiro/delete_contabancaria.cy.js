@@ -24,7 +24,7 @@ describe('API rest - Financeiro - DELETE /v3/contabancaria/{codigoBanco}/{codigo
     });
   });
 
-  it('Deve retornar erro ao tentar excluir conta bancária inexistente ou inválida', () => {
+  it('Status Code 404 e 412', () => {
   
     cy.api({
       method: 'DELETE',

@@ -22,7 +22,7 @@ describe('API rest - Cliente - POST /v3/cliente_anexo', { env: { hideCredentials
     });
   });
 
-  it('Deve retornar 412 ao tentar incluir anexo com dados inválidos', () => {
+  it('Status Code 412', () => {
     
     cy.api({
       method: 'POST',

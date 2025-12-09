@@ -31,7 +31,7 @@ describe('API rest - Diversos - GET /v3/local_entrega', { env: { hideCredentials
     });
   });
 
-  it('Deve retornar 204 quando não houver locais de entrega para a rota informada', () => {
+  it('Status Code 204', () => {
     
     cy.api({
       method: 'GET',
@@ -44,7 +44,7 @@ describe('API rest - Diversos - GET /v3/local_entrega', { env: { hideCredentials
     });
   });
 
-  it('Deve retornar 412 para rota inválida', () => {
+  it('Status Code 412', () => {
     
     cy.api({
       method: 'GET',

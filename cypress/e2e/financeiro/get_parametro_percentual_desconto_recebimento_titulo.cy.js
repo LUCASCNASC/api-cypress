@@ -23,7 +23,7 @@ describe('API rest - Financeiro - GET /v3/parametro_percentual_desconto_recebime
     });
   });
 
-  it('Deve retornar 204 quando não houver parâmetro para o idFilial informado', () => {
+  it('Status Code 204', () => {
     
     cy.api({
       method: 'GET',
@@ -36,7 +36,7 @@ describe('API rest - Financeiro - GET /v3/parametro_percentual_desconto_recebime
     });
   });
 
-  it('Deve retornar 412 para idFilial inválido', () => {
+  it('Status Code 412', () => {
     
     cy.api({
       method: 'GET',

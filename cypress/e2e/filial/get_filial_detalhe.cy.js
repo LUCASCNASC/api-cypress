@@ -44,7 +44,7 @@ describe('API rest - Filial - GET /v3/filial_detalhe/{filial}', { env: { hideCre
     });
   });
 
-  it('Deve retornar 204 quando não houver dados para a filial informada', () => {
+  it('Status Code 204', () => {
     
     cy.api({
       method: 'GET',
@@ -57,7 +57,7 @@ describe('API rest - Filial - GET /v3/filial_detalhe/{filial}', { env: { hideCre
     });
   });
 
-  it('Deve retornar 412 para filial inválida', () => {
+  it('Status Code 412', () => {
     const filialInvalida = "abc";
 
     cy.api({

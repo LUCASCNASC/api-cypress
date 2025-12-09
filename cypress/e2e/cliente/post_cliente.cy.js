@@ -21,7 +21,7 @@ describe('API rest - Cliente - POST /v3/cliente', { env: { hideCredentials: true
     });
   });
 
-  it('Deve retornar 412 ao tentar incluir cliente com dados inválidos', () => {
+  it('Status Code 412', () => {
     
     cy.api({
       method: 'POST',

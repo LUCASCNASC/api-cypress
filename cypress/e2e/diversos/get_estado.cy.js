@@ -19,12 +19,4 @@ describe('API rest - Diversos - GET /v3/estado', { env: { hideCredentials: true 
       expect(ret).to.have.property('uf_nome');
     });
   });
-
-  it.skip('Deve retornar 204 quando não houver estados cadastrados', () => {
-    // Se o endpoint não aceita parâmetro, simule um cenário de ambiente sem estados cadastrados, se possível
-    // Caso não seja aplicável, este teste pode ser omitido.
-  });
-
-  it.skip('Deve retornar 412 se houver erro de pré-requisito', () => {
-  });
 });

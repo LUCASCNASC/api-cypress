@@ -24,7 +24,7 @@ describe('API rest - Diversos - GET /v3/dados_tabela/{tabela}', { env: { hideCre
     });
   });
 
-  it('Deve retornar 204 quando não houver dados para a tabela informada', () => {
+  it('Status Code 204', () => {
     
     cy.api({
       method: 'GET',
@@ -37,7 +37,7 @@ describe('API rest - Diversos - GET /v3/dados_tabela/{tabela}', { env: { hideCre
     });
   });
 
-  it('Deve retornar 412 para tabela inválida', () => {
+  it('Status Code 412', () => {
     
     cy.api({
       method: 'GET',

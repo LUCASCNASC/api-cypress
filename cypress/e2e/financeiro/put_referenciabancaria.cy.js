@@ -27,7 +27,7 @@ describe('API rest - Financeiro - PUT /v3/referenciabancaria', { env: { hideCred
     });
   });
 
-  it('Deve retornar 500 ao tentar alterar referência bancária com payload inválido', () => {
+  it('Status Code 500', () => {
     
     cy.api({
       method: 'PUT',

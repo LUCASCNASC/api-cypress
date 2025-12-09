@@ -24,7 +24,7 @@ describe('API rest - Financeiro - PUT /v3/contabancaria', { env: { hideCredentia
     });
   });
 
-  it('Deve retornar 500 ao tentar alterar conta bancária com payload inválido', () => {
+  it('Status Code 500', () => {
     
     cy.api({
       method: 'PUT',

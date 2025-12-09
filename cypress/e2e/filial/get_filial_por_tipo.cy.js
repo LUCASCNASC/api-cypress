@@ -38,7 +38,7 @@ describe('API rest - Filial - GET /v3/filial_por_tipo/{UF}/{Municipio}/{Tipo}', 
     });
   });
 
-  it('Deve retornar 204 quando não houver filiais para os parâmetros informados', () => {
+  it('Status Code 204', () => {
     
     cy.api({
       method: 'GET',
@@ -51,7 +51,7 @@ describe('API rest - Filial - GET /v3/filial_por_tipo/{UF}/{Municipio}/{Tipo}', 
     });
   });
 
-  it('Deve retornar 412 para parâmetros inválidos', () => {
+  it('Status Code 412', () => {
     
     cy.api({
       method: 'GET',

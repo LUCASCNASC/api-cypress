@@ -24,7 +24,7 @@ describe('API rest - Diversos - GET /v3/cidade', { env: { hideCredentials: true 
     });
   });
 
-  it('Deve retornar 204 quando não houver cidades para a UF informada', () => {
+  it('Status Code 204', () => {
     
     cy.api({
       method: 'GET',
@@ -37,7 +37,7 @@ describe('API rest - Diversos - GET /v3/cidade', { env: { hideCredentials: true 
     });
   });
 
-  it('Deve retornar 412 para UF inválida', () => {
+  it('Status Code 412', () => {
     
     cy.api({
       method: 'GET',

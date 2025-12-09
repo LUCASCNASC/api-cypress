@@ -27,7 +27,7 @@ describe('API rest - Cliente - GET /v3/cliente/{cliente}', { env: { hideCredenti
     });
   });
 
-  it('Deve retornar 204 quando não houver dados para o cliente informado', () => {
+  it('Status Code 204', () => {
     
     cy.api({
       method: 'GET',
@@ -40,7 +40,7 @@ describe('API rest - Cliente - GET /v3/cliente/{cliente}', { env: { hideCredenti
     });
   });
 
-  it('Deve retornar 412 para cliente inválido', () => {
+  it('Status Code 412', () => {
     
     cy.api({
       method: 'GET',

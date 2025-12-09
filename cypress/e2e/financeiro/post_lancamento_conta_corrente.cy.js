@@ -26,7 +26,7 @@ describe('API rest - Financeiro - POST /v3/lancamento_conta_corrente', { env: { 
     });
   });
 
-  it('Deve retornar 412 ao tentar incluir lançamento com payload inválido', () => {
+  it('Status Code 412', () => {
     
     cy.api({
       method: 'POST',

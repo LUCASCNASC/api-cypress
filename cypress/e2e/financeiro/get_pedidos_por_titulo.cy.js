@@ -30,7 +30,7 @@ describe('API rest - Financeiro - GET /v3/pedidos_por_titulo/{idFilial}/{idTitul
     });
   });
 
-  it('Deve retornar 204 quando não houver pedidos para o título informado', () => {
+  it('Status Code 204', () => {
     
     cy.api({
       method: 'GET',
@@ -43,7 +43,7 @@ describe('API rest - Financeiro - GET /v3/pedidos_por_titulo/{idFilial}/{idTitul
     });
   });
 
-  it('Deve retornar 412 para parâmetros inválidos', () => {
+  it('Status Code 412', () => {
     
     cy.api({
       method: 'GET',

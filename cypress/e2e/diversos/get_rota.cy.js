@@ -35,7 +35,7 @@ describe('API rest - Diversos - GET /v3/rota', { env: { hideCredentials: true } 
     });
   });
 
-  it('Deve retornar 204 quando não houver rotas para os parâmetros informados', () => {
+  it('Status Code 204', () => {
     
     cy.api({
       method: 'GET',

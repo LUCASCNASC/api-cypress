@@ -26,7 +26,7 @@ describe('API rest - Financeiro - POST /v3/excluir_titulo_areceber_apagar', { en
     });
   });
 
-  it('Deve retornar 412 ao tentar excluir título com payload inválido', () => {
+  it('Status Code 412', () => {
     
     cy.api({
       method: 'POST',

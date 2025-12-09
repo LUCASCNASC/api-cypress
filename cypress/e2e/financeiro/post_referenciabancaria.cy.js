@@ -26,7 +26,7 @@ describe('API rest - Financeiro - POST /v3/referenciabancaria', { env: { hideCre
     });
   });
 
-  it('Deve retornar 500 ao tentar incluir referência bancária com payload inválido', () => {
+  it('Status Code 500', () => {
     
     cy.api({
       method: 'POST',

@@ -34,7 +34,7 @@ describe('API rest - Financeiro - POST /v3/formas_pagamento_titulos', { env: { h
     });
   });
 
-  it('Deve retornar 412 ao tentar consultar formas de pagamento com payload inválido', () => {
+  it('Status Code 412', () => {
     
     cy.api({
       method: 'POST',

@@ -26,7 +26,7 @@ describe('API rest - Financeiro - PUT /v3/agencia', { env: { hideCredentials: tr
     });
   });
 
-  it('Deve retornar 500 ao tentar alterar agência com payload inválido', () => {
+  it('Status Code 500', () => {
     
     cy.api({
       method: 'PUT',

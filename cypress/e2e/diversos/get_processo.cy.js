@@ -52,13 +52,4 @@ describe('API rest - Diversos - GET /v3/processo', { env: { hideCredentials: tru
       expect(ret.servicofrete[0]).to.have.property('permite_alterar');
     });
   });
-
-  it.skip('Deve retornar 204 quando não houver processos configurados', () => {
-    // Se possível, configure ambiente/teste com ausência de processos.
-    // Caso não seja possível, pode ser omitido.
-  });
-
-  it.skip('Deve retornar 412 se houver erro de pré-requisito', () => {
-    // Caso seja possível simular erro de pré-requisito, adicione aqui.
-  });
 });

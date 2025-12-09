@@ -20,7 +20,7 @@ describe('API rest - Compras - POST /v3/pedido_compra_baixar', { env: { hideCred
     });
   });
 
-  it('Deve retornar 412 ao tentar baixar pedido com dados inválidos', () => {
+  it('Status Code 412', () => {
     
     cy.api({
       method: 'POST',

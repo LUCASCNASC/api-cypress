@@ -26,7 +26,7 @@ describe('API rest - Diversos - POST /v3/gerar_relatorio', { env: { hideCredenti
     });
   });
 
-  it('Deve retornar 412 ao tentar gerar relatório com dados inválidos', () => {
+  it('Status Code 412', () => {
     
     cy.api({
       method: 'POST',

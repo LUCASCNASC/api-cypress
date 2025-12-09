@@ -22,7 +22,7 @@ describe('API rest - Financeiro - DELETE /v3/lancamento_conta_corrente/{idFilial
     });
   });
 
-  it('Deve retornar 500 ao tentar estornar lançamento inexistente ou inválido', () => {
+  it('Status Code 500', () => {
     
     cy.api({
       method: 'DELETE',

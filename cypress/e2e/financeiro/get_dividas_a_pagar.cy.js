@@ -31,7 +31,7 @@ describe('API rest - Financeiro - GET /v3/dividas_a_pagar/{idFilial}/{cpf_cnpj}'
     });
   });
 
-  it('Deve retornar 204 quando não houver títulos a pagar', () => {
+  it('Status Code 204', () => {
     
     cy.api({
       method: 'GET',
@@ -44,7 +44,7 @@ describe('API rest - Financeiro - GET /v3/dividas_a_pagar/{idFilial}/{cpf_cnpj}'
     });
   });
 
-  it('Deve retornar 412 para parâmetros inválidos', () => {
+  it('Status Code 412', () => {
     
     cy.api({
       method: 'GET',

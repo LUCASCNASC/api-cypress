@@ -37,7 +37,7 @@ describe('API rest - Assistência - POST /v3/movimento_assistencia_incluir/', { 
     });
   });
 
-  it('Deve retornar 412 se payload não atender aos pré-requisitos', () => {
+  it('Status Code 402', () => {
     
     cy.api({
       method: 'POST',
@@ -56,7 +56,7 @@ describe('API rest - Assistência - POST /v3/movimento_assistencia_incluir/', { 
     });
   });
 
-  it('Deve retornar erro de autenticação com token inválido', () => {
+  it('Status Code 401 e 403', () => {
     
     cy.api({
       method: 'POST',
@@ -74,7 +74,7 @@ describe('API rest - Assistência - POST /v3/movimento_assistencia_incluir/', { 
     });
   });
 
-  it('Deve retornar erro de autenticação se header de autorização estiver ausente - 401 e 403', () => {
+  it('Status Code 401 e 403', () => {
     
     cy.api({
       method: 'POST',

@@ -21,7 +21,7 @@ describe('API rest - Compras - POST /v3/produto_incluir_alterar', { env: { hideC
     });
   });
 
-  it('Deve retornar 412 ao tentar incluir/alterar produto com dados inválidos', () => {
+  it('Status Code 412', () => {
     
     cy.api({
       method: 'POST',

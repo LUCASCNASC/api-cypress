@@ -20,7 +20,7 @@ describe('API rest - Financeiro - DELETE /v3/banco/{codigo}', { env: { hideCrede
     });
   });
 
-  it('Deve retornar erro ao tentar excluir banco inexistente ou com código inválido', () => {
+  it('Status Code 404 e 412', () => {
     
     cy.api({
       method: 'DELETE',

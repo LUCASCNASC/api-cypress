@@ -21,7 +21,7 @@ describe('API rest - Cliente - POST /v3/cliente_simples', { env: { hideCredentia
     });
   });
 
-  it('Deve retornar 412 ao tentar incluir cliente simplificado com dados inválidos', () => {
+  it('Status Code 412', () => {
     
     cy.api({
       method: 'POST',

@@ -29,7 +29,7 @@ describe('API rest - Financeiro - GET /v3/historico_conta_corrente/{idTipoContaC
     });
   });
 
-  it('Deve retornar 204 quando não houver histórico para os parâmetros informados', () => {
+  it('Status Code 204', () => {
     
     cy.api({
       method: 'GET',
@@ -42,7 +42,7 @@ describe('API rest - Financeiro - GET /v3/historico_conta_corrente/{idTipoContaC
     });
   });
 
-  it('Deve retornar 412 para parâmetros inválidos', () => {
+  it('Status Code 412', () => {
     
     cy.api({
       method: 'GET',

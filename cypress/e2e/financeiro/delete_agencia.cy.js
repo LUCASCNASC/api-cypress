@@ -22,7 +22,7 @@ describe('API rest - Financeiro - DELETE /v3/agencia/{codigoBanco}/{codigoAgenci
     });
   });
 
-  it('Deve retornar erro ao tentar excluir agência inexistente ou inválida', () => {
+  it('Status Code 404 e 412', () => {
     
     cy.api({
       method: 'DELETE',

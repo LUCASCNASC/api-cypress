@@ -32,7 +32,7 @@ describe('API rest - Diversos - GET /v3/rota_cidade', { env: { hideCredentials: 
     });
   });
 
-  it('Deve retornar 204 quando não houver rotas cidade para os parâmetros informados', () => {
+  it('Status Code 204', () => {
     
     cy.api({
       method: 'GET',
@@ -45,7 +45,7 @@ describe('API rest - Diversos - GET /v3/rota_cidade', { env: { hideCredentials: 
     });
   });
 
-  it('Deve retornar 412 se houver erro de pré-requisito', () => {
+  it('Status Code 412', () => {
     
     cy.api({
       method: 'GET',

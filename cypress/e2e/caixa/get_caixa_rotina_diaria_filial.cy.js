@@ -24,7 +24,7 @@ describe('API rest - Caixa - Caixa Rotina Diária Filial', { env: { hideCredenti
     });
   });
 
-  it('Deve retornar 204 quando não houver dados para a filial/data informados', () => {
+  it('Status Code 204', () => {
     
     cy.api({
       method: 'GET',
@@ -37,7 +37,7 @@ describe('API rest - Caixa - Caixa Rotina Diária Filial', { env: { hideCredenti
     });
   });
 
-  it('Deve retornar 412 para parâmetros que não atendem aos pré-requisitos', () => {
+  it('Status Code 412', () => {
     
     cy.api({
       method: 'GET',

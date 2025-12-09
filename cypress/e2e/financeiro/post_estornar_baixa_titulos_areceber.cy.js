@@ -28,7 +28,7 @@ describe('API rest - Financeiro - POST /v3/estornar_baixa_titulo_areceber', { en
     });
   });
 
-  it('Deve retornar 412 ao tentar estornar com payload inválido', () => {
+  it('Status Code 412', () => {
     
     cy.api({
       method: 'POST',

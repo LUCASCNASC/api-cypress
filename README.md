@@ -44,6 +44,5 @@ O repositório está configurado para manter informações sensíveis, como URLs
 
 > Projeto mantido por [LUCASCNASC](https://github.com/LUCASCNASC)
 
-It is necessary to develop and specify the scenarios.
-- Integrate IA with project.
-- To do documentation of tests scenarios.
+Ajustando nomes dos cenários de teste:
+- até "financeiro"
