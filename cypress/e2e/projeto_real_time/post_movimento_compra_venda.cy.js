@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 describe('API rest - Projeto Real Time - POST - /v3/movimento_compra_venda/', () => {
   
-  it('POST - /v3/movimento_compra_venda/ - Status Code 200', { env: { hideCredendials: true } }, () => {
+  it('Status Code 200', { env: { hideCredendials: true } }, () => {
     
     cy.api({
       method: 'POST', 

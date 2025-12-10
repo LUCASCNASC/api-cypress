@@ -45,4 +45,4 @@ O repositório está configurado para manter informações sensíveis, como URLs
 > Projeto mantido por [LUCASCNASC](https://github.com/LUCASCNASC)
 
 Ajustando nomes dos cenários de teste:
-- até "financeiro"
+- finalizado

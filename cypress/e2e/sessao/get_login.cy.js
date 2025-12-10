@@ -8,7 +8,7 @@ const codigoverificacao = "12345678910";
 
 describe('API rest - Sessão - GET - /v3/login/{usuario}/{senha}', { env: { hideCredendials: true } }, () => {
 
-  it('Resposta 204 - Sem dados de retorno', () => {
+  it('Status Code 204', () => {
     
     cy.api({
       method: 'GET', 
