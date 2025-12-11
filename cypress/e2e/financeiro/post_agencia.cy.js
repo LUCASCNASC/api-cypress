@@ -31,7 +31,6 @@ describe('API rest - Financeiro - POST /v3/agencia', { env: { hideCredentials: t
       headers: { Authorization },
       failOnStatusCode: false,
       body: {
-        // Payload inválido
         codigoBanco: null,
         codigoAgencia: null,
         nome: "",

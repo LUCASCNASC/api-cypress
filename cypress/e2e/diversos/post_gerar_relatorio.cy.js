@@ -34,7 +34,6 @@ describe('API rest - Diversos - POST /v3/gerar_relatorio', { env: { hideCredenti
       headers: { Authorization },
       failOnStatusCode: false,
       body: {
-        // Payload inválido
         idmodelorelatorio: null,
         filtros: []
       }

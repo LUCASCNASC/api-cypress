@@ -46,7 +46,6 @@ describe('API rest - Caixa - Caixa Rotina Diária Filial', { env: { hideCredenti
       failOnStatusCode: false
     }).should((response) => {
       expect(response.status, 'Status code deve ser 412').to.equal(412);
-      // Dependendo da API, valide mensagem de erro aqui
       expect(response.body).to.exist;
     });
   });

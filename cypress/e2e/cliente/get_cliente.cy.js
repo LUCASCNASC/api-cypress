@@ -18,7 +18,6 @@ describe('API rest - Cliente - GET /v3/cliente/{cliente}', { env: { hideCredenti
     }).then((response) => {
       expect(response.status).to.eq(200);
       expect(response.duration).to.be.lessThan(2000);
-
       const ret = response.body.retorno[0];
     });
   });

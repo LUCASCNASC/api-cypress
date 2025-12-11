@@ -28,7 +28,6 @@ describe('API rest - Inventário - GET - /v3/itens_inventario/{idFilial}/{idInve
         expect(resposta.body.retorno[0].inventarios[0]).toHaveProperty('codigoBarra');
         expect(resposta.body.retorno[0].inventarios[0]).toHaveProperty('saldoInventario');
         expect(resposta.body.retorno[0].inventarios[0]).toHaveProperty('saldoFilial');
-
       });
   });
 });

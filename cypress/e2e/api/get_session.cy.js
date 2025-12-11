@@ -19,7 +19,6 @@ describe('API rest - API - Sessões Ativas - GET /api/session', { env: { hideCre
       expect(response.body, 'Body deve conter a propriedade retorno').to.have.property('retorno');
       expect(response.body.retorno, 'Retorno deve ser array não vazio').to.be.an('array').and.not.be.empty;
 
-      // Validação detalhada de cada sessão retornada
       response.body.retorno.forEach(sessao => {
         expect(sessao).to.include.all.keys('sessao', 'tempo', 'expiraEm');
         expect(sessao.sessao).to.be.a('string');

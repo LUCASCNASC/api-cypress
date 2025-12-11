@@ -34,7 +34,6 @@ describe('API rest - Produto - GET - /v3/departamento', { env: { hideCredendials
         expect(resposta.body.retorno[0]).toHaveProperty('servico');
         expect(resposta.body.retorno[0]).toHaveProperty('imagem');
         expect(resposta.body.retorno[0]).toHaveProperty('ordem');
-
       });
   });
 });

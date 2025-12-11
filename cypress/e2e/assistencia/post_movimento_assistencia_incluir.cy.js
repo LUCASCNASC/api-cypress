@@ -22,11 +22,9 @@ describe('API rest - Assistência - POST /v3/movimento_assistencia_incluir/', { 
     }).should((response) => {
       expect(response.status, 'Status deve ser 200').to.eq(200);
       expect(response.duration, 'Deve responder em menos de 2s').to.be.lessThan(2000);
-
       expect(response.body, 'Deve conter propriedade retorno').to.have.property('retorno');
       expect(response.body.retorno, 'Retorno deve ser array não vazio').to.be.an('array').and.not.be.empty;
 
-      // Validação das propriedades esperadas no item retornado
       const item = response.body.retorno[0];
       expect(item).to.include.all.keys('Empresa', 'Filial', 'ID_Registro_Nota', 'Qtde_Assistencias', 'Erros');
       expect(item.Empresa).to.be.a('string');
@@ -45,14 +43,12 @@ describe('API rest - Assistência - POST /v3/movimento_assistencia_incluir/', { 
       headers: { Authorization: AUTHORIZATION },
       failOnStatusCode: false,
       body: {
-        // Payload inválido (faltando campos obrigatórios ou com tipos errados)
         Empresa: "",
         Filial: null
       }
     }).should((response) => {
       expect(response.status, 'Status deve ser 412').to.eq(412);
       expect(response.body).to.have.property('erro');
-      // Adapte o campo esperado conforme resposta real da API em erro
     });
   });
 

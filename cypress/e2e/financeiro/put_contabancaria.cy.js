@@ -20,7 +20,6 @@ describe('API rest - Financeiro - PUT /v3/contabancaria', { env: { hideCredentia
     }).then((response) => {
       expect(response.status).to.eq(201);
       expect(response.duration).to.be.lessThan(2000);
-      // Adicione asserts específicos, se necessário
     });
   });
 

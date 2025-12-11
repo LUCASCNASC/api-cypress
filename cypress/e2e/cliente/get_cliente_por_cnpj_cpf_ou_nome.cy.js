@@ -20,7 +20,6 @@ describe('API rest - Cliente - GET /v3/cliente/{cliente}', { env: { hideCredenti
       expect(response.duration).to.be.lessThan(2000);
 
       const ret = response.body.retorno[0];
-      
       expect(ret).to.have.property('cnpj_cpf');
       expect(ret).to.have.property('nome');
       expect(ret).to.have.property('nomefantasia');

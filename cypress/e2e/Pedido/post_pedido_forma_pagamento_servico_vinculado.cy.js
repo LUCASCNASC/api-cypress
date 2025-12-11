@@ -29,7 +29,6 @@ describe('API rest - Pedido - POST - /v3/pedido_forma_pagamento_servico_vinculad
         expect(resposta.body.retorno[0].servicos[0]).toHaveProperty('tipoValor');
         expect(resposta.body.retorno[0].servicos[0]).toHaveProperty('tipoAplicacao');
         expect(resposta.body.retorno[0].servicos[0]).toHaveProperty('lancarautomatico');
-
       });
   });
 });

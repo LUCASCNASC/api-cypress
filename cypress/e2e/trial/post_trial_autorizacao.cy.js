@@ -15,7 +15,7 @@ describe('API rest - Trial - POST - /v3/trial_autorizacao', { env: { hideCredend
       .then((response) => {
         const { data } = body;
         expect(response.status).to.eq(200);
-        expect(response.duration).to.be.below(2000); // Verifica se o tempo de resposta foi abaixo de 2000ms
+        expect(response.duration).to.be.below(2000);
       });
   });
 });
