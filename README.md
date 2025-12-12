@@ -39,7 +39,6 @@ O repositório está configurado para manter informações sensíveis, como URLs
 - Nunca compartilhe seu arquivo `.env` ou informações sensíveis.
 - Sempre atualize o `.env.example` com novas variáveis de ambiente necessárias.
 - Consulte a documentação do Cypress para mais detalhes de configuração.
-
 ---
 
 > Projeto mantido por [LUCASCNASC](https://github.com/LUCASCNASC)
