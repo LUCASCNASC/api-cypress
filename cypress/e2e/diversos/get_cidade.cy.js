@@ -9,7 +9,6 @@ const ufValido = "123";
 describe('API rest - Diversos - GET /v3/cidade', { env: { hideCredentials: true } }, () => {
 
   it('Status Code 200', () => {
-    
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${ufValido}`,
@@ -25,7 +24,6 @@ describe('API rest - Diversos - GET /v3/cidade', { env: { hideCredentials: true 
   });
 
   it('Status Code 204', () => {
-    
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${ufSemCidades}`,
@@ -38,7 +36,6 @@ describe('API rest - Diversos - GET /v3/cidade', { env: { hideCredentials: true 
   });
 
   it('Status Code 412', () => {
-    
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${ufInvalido}`,

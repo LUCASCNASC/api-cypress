@@ -9,7 +9,6 @@ const Authorization2 = "123123123";
 describe('API rest - Gestão Devolução - GET - /v3/nota_devolucao_simulacao/{filial}/{solicitacao}', { env: { hideCredendials: true } }, () => {
 
   it('Status Code 200', () => {
-    
     cy.api({
       method: 'GET', 
       url: `${BASE_URL}/${PATH_API}/${filial}/${solicitacao}/${Authorization}`, 

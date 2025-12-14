@@ -9,7 +9,6 @@ const cepValido = "12123123";
 describe('API rest - Diversos - GET /v3/local_entrega_por_cep', { env: { hideCredentials: true } }, () => {
 
   it('Status Code 200', () => {
-    
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${cepValido}`,
@@ -32,7 +31,6 @@ describe('API rest - Diversos - GET /v3/local_entrega_por_cep', { env: { hideCre
   });
 
   it('Status Code 204', () => {
-    
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${cepSemDados}`,
@@ -45,7 +43,6 @@ describe('API rest - Diversos - GET /v3/local_entrega_por_cep', { env: { hideCre
   });
 
   it('Status Code 412', () => {
-    
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${cepInvalido}`,

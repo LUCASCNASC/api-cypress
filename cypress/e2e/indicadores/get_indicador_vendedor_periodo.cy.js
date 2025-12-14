@@ -8,7 +8,6 @@ const datafinal= "123123123";
 describe('API rest - Indicadores - GET - /v3/indicador_vendedor_periodo/{datainicial}/{datafinal}', { env: { hideCredendials: true } }, () => {
 
   it('Status Code 200', () => {
-    
     cy.api({
       method: 'GET', 
       url: `${BASE_URL}/${PATH_API}/${datainicial}/${datafinal}`, 

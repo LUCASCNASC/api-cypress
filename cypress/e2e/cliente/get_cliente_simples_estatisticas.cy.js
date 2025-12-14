@@ -10,7 +10,6 @@ const idpessoaValido = "12334";
 describe('API rest - Cliente - GET /v3/cliente_simples_estatisticas/{idpessoa}', { env: { hideCredentials: true } }, () => {
   
   it('Status Code 200', () => {
-    
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${idpessoaValido}`,
@@ -61,7 +60,6 @@ describe('API rest - Cliente - GET /v3/cliente_simples_estatisticas/{idpessoa}',
   });
 
   it('Status Code 204', () => {
-    
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${idpessoaSemEstatistica}`,
@@ -74,7 +72,6 @@ describe('API rest - Cliente - GET /v3/cliente_simples_estatisticas/{idpessoa}',
   });
 
   it('Status Code 401', () => {
-    
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/123456`,
@@ -86,7 +83,6 @@ describe('API rest - Cliente - GET /v3/cliente_simples_estatisticas/{idpessoa}',
   });
 
   it('Status Code 412', () => {
-    
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${idpessoaInvalido}`,

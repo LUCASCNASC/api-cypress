@@ -12,7 +12,6 @@ const dataAberturaInvalida = Cypress.env('DATA_ABERTURA_INVALIDA');
 describe('API rest - Caixa - Caixa Rotina Diária Filial', { env: { hideCredentials: true } }, () => {
 
   it('Status Code 200', () => {
-    
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${idFilialValido}/${dataAberturaValida}`,
@@ -25,7 +24,6 @@ describe('API rest - Caixa - Caixa Rotina Diária Filial', { env: { hideCredenti
   });
 
   it('Status Code 204', () => {
-    
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${idFilialSemDados}/${dataSemMovimentacao}`,
@@ -38,7 +36,6 @@ describe('API rest - Caixa - Caixa Rotina Diária Filial', { env: { hideCredenti
   });
 
   it('Status Code 412', () => {
-    
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${idFilialInvalido}/${dataAberturaInvalida}`,

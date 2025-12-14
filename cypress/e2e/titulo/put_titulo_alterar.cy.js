@@ -5,7 +5,6 @@ const Authorization = Cypress.env('API.PRAGMA');
 describe('API rest - Titulo - PUT - /v3/titulo_alterar', { env: { hideCredendials: true } }, () => {
   
   it('Status Code 200', () => {
-    
     cy.api({
       method: 'PUT', 
       url: `${BASE_URL}/${PATH_API}`, 

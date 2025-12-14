@@ -8,7 +8,6 @@ const idInventario = "123123123";
 describe('API rest - Inventário - POST - /v3/cancela_inventario/{idFilial}/{idInventario}', { env: { hideCredendials: true } }, () => {
 
   it('Status Code 200', () => {
-    
     cy.api({
       method: 'POST', 
       url: `${BASE_URL}/${PATH_API}`, 

@@ -5,7 +5,6 @@ const Authorization = Cypress.env('API.PRAGMA');
 describe('API rest - Fisco/Contábil - POST - /v3/gerar_descarga_contabil', { env: { hideCredendials: true } }, () => {
   
   it('Status Code 200', () => {
-    
     cy.api({
       method: 'POST',
       url: `${BASE_URL}/${PATH_API}`,

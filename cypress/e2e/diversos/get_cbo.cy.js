@@ -12,7 +12,6 @@ const sort = "123";
 describe('API rest - Diversos - GET /v3/cbo', { env: { hideCredentials: true } }, () => {
 
   it('Status Code 200', () => {
-    
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${termoValido}/${limit}/${offset}/${sort}`,
@@ -30,7 +29,6 @@ describe('API rest - Diversos - GET /v3/cbo', { env: { hideCredentials: true } }
   });
 
   it('Status Code 204', () => {
-    
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${termoSemDados}/${limit}/${offset}/${sort}`,
@@ -43,7 +41,6 @@ describe('API rest - Diversos - GET /v3/cbo', { env: { hideCredentials: true } }
   });
 
   it('Status Code 412', () => {
-    
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${termoInvalido}/${limit}/${offset}/${sort}`,

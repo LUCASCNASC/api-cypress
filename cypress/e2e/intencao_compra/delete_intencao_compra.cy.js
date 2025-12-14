@@ -7,7 +7,6 @@ const codigo = "123123123";
 describe('API rest - Intenção compra - DELETE - /v3/intencao_compra/{codigo}', { env: { hideCredendials: true } } , () => {
 
   it('Status Code 200', () => {
-    
     cy.api({
       method: 'DELETE', 
       url: `${BASE_URL}/${PATH_API}/${codigo}`, 

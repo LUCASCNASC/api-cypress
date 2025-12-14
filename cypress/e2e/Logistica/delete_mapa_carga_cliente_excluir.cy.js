@@ -10,7 +10,6 @@ const idPedidoVenda = "123123123";
 describe('API rest - Logística - DELETE - /v3/mapa_carga_cliente_excluir/{idFilial}/{idMapaCarga}', { env: { hideCredendials: true } }, () => {
 
   it('Status Code 200', () => {
-    
     cy.api({
       method: 'DELETE', 
       url: `${BASE_URL}/${PATH_API}/${idFilial}/${idMapaCarga}/${idFilialPedido}/${idPedidoVenda}`, 

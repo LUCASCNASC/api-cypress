@@ -10,7 +10,6 @@ const processoValido = "000000";
 describe('API rest - Cliente - GET /v3/cliente_servico_vinculado/{cliente}', { env: { hideCredentials: true } }, () => {
    
   it('Status Code 200', () => {
-    
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${clienteValido}/${processoValido}`,
@@ -33,7 +32,6 @@ describe('API rest - Cliente - GET /v3/cliente_servico_vinculado/{cliente}', { e
   });
 
   it('Status Code 204', () => {
-    
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${clienteSemServico}/${processoSemServico}`,
