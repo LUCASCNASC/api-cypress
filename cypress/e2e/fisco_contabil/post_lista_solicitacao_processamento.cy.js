@@ -2,7 +2,7 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Fisco/Contabil/v3_lista_solicitacao_processamento';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('API rest - Fisco/Contábil - POST - /v3/lista_solicitacao_processamento', { env: { hideCredendials: true } }, () => {
+describe('API rest - Fisco/Contábil - POST /Fisco/Contabil/v3_lista_solicitacao_processamento', { env: { hideCredendials: true } }, () => {
 
   it('Status Code 200', () => {
     cy.api({

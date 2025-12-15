@@ -4,7 +4,7 @@ const AUTHORIZATION = Cypress.env('API.PRAGMA');
 
 const AUTHORIZATION_INVALID = Cypress.env('API.PRAGMA_INVALID');
 
-describe('API rest - Assistência - POST /v3/movimento_assistencia_incluir/', { env: { hideCredendials: true } }, () => {
+describe('API rest - Assistência - POST /Assistencia/v3_post_movimento_assistencia_incluir', { env: { hideCredendials: true } }, () => {
 
   it('Status Code 200', () => {
     cy.api({

@@ -6,7 +6,7 @@ const clienteInvalido = "00000000000001";
 const clienteSemRenovacao = "00000000000000";
 const clienteValido = "12345678901234";
 
-describe('API rest - Cliente - GET /v3/cliente_renovacao/{cliente}', { env: { hideCredentials: true } }, () => {
+describe('API rest - Cliente - GET /Cliente/v2_cliente_renovacao', { env: { hideCredentials: true } }, () => {
 
   it('Status Code 200', () => {
     cy.api({

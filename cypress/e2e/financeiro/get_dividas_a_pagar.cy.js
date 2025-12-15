@@ -9,7 +9,7 @@ const cpf_cnpjInvalido = "xyz";
 const idFilialSemTitulos = "99999";
 const cpf_cnpjSemTitulos = "00000000000000";
 
-describe('API rest - Financeiro - GET /v3/dividas_a_pagar/{idFilial}/{cpf_cnpj}', { env: { hideCredentials: true } }, () => {
+describe('API rest - Financeiro - GET /Financeiro/v3_financeiro_dividas_pagar', { env: { hideCredentials: true } }, () => {
 
   it('Status Code 200', () => {
     cy.api({

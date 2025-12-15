@@ -2,7 +2,7 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Intenção%20compra/v2_intencao_compra_get_post2';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('API rest - Intenção compra - POST - /v3/intencao_compra', { env: { hideCredendials: true } } , () => {
+describe('API rest - Intenção compra - POST /Intenção%20compra/v2_intencao_compra_get_post2', { env: { hideCredendials: true } } , () => {
   
   it('Status Code 200', () => {
     cy.api({

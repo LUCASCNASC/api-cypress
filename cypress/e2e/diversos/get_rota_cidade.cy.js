@@ -10,7 +10,7 @@ const idgruporota = "123";
 const idrota = "123";
 const idrotacidade = "123";
 
-describe('API rest - Diversos - GET /v3/rota_cidade', { env: { hideCredentials: true } }, () => {
+describe('API rest - Diversos - GET /Diversos/v3_diversos_rota_cidade', { env: { hideCredentials: true } }, () => {
   
   it('Status Code 200', () => {
     cy.api({

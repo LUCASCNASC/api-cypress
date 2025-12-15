@@ -2,7 +2,7 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Financeiro/v3_post_estornar_baixa_titulo_areceber';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('API rest - Financeiro - POST /v3/estornar_baixa_titulo_areceber', { env: { hideCredentials: true } }, () => {
+describe('API rest - Financeiro - POST /Financeiro/v3_post_estornar_baixa_titulo_areceber', { env: { hideCredentials: true } }, () => {
   
   it('Status Code 200', () => {
     cy.api({

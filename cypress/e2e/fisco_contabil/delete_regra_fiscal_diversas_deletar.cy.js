@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 const idBaseFiscalDiversas = "123123123";
 
-describe('API rest - Fisco/Contábil - DELETE - /v3/regra_fiscal_diversas_deletar/{idBaseFiscalDiversas}', { env: { hideCredendials: true } }, () => {
+describe('API rest - Fisco/Contábil - DELETE - /Fisco/Contabil/v3_regra_fiscal_diversas_delete', { env: { hideCredendials: true } }, () => {
 
   it('Status Code 200', () => {
     cy.api({

@@ -5,7 +5,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 const datainicial= "123123123";
 const datafinal= "123123123";
 
-describe('API rest - Indicadores - GET - /v3/indicador_vendedor_periodo/{datainicial}/{datafinal}', { env: { hideCredendials: true } }, () => {
+describe('API rest - Indicadores - GET /Indicadores/v3_indicador_vendedor_periodo', { env: { hideCredendials: true } }, () => {
 
   it('Status Code 200', () => {
     cy.api({

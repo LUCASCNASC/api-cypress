@@ -7,7 +7,7 @@ const processoSemServico = "000000";
 const clienteValido = "12345678901234";
 const processoValido = "000000";
 
-describe('API rest - Cliente - GET /v3/cliente_servico_vinculado/{cliente}', { env: { hideCredentials: true } }, () => {
+describe('API rest - Cliente - GET /Cliente/v3_cliente_servico_vinculado', { env: { hideCredentials: true } }, () => {
    
   it('Status Code 200', () => {
     cy.api({

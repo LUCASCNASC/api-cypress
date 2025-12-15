@@ -5,7 +5,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 const UFOrigem = "123123123";
 const OrigemProduto = "123123123"; 
 
-describe('API rest - Fisco/Contábil - GET - /v3/regra_fiscal_uf_listar/{UFOrigem}/{OrigemProduto}', { env: { hideCredendials: true } }, () => {
+describe('API rest - Fisco/Contábil - GET - /Fisco/Contabil/v3_regra_fiscal_uf_get', { env: { hideCredendials: true } }, () => {
 
   it('Status Code 200', () => {
     cy.api({

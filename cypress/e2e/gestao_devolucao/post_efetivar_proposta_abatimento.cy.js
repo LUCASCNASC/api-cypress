@@ -2,7 +2,7 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Gestão%20Devolução/v2_gestao_devolucao_efetivar_proposta_abatimento';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('API rest - Gestão Devolução - POST - /v3/efetivar_proposta_abatimento', { env: { hideCredendials: true } }, () => {
+describe('API rest - Gestão Devolução - POST /Gestão%20Devolução/v2_gestao_devolucao_efetivar_proposta_abatimento', { env: { hideCredendials: true } }, () => {
   
   it('Status Code 200', () => {
     cy.api({

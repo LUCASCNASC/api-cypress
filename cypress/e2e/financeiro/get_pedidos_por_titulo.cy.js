@@ -12,7 +12,7 @@ const idFilialSemPedidos = "99999";
 const idTituloSemPedidos = "99999";
 const idTipoTituloSemPedidos = "99999";
 
-describe('API rest - Financeiro - GET /v3/pedidos_por_titulo/{idFilial}/{idTitulo}/{idTipoTitulo}', { env: { hideCredentials: true } }, () => {
+describe('API rest - Financeiro - GET /Financeiro/v3_financeiro_pedidos_por_titulo', { env: { hideCredentials: true } }, () => {
 
   it('Status Code 200', () => {
     cy.api({

@@ -2,7 +2,7 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Fisco/Contabil/v3_post_manifesto_documento_fiscal_incluir';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('API rest - Fisco/Contábil - POST - /v3/manifesto_documento_fiscal_incluir', { env: { hideCredendials: true } }, () => {
+describe('API rest - Fisco/Contábil - POST /Fisco/Contabil/v3_post_manifesto_documento_fiscal_incluir', { env: { hideCredendials: true } }, () => {
   
   it('Status Code 200', () => {
     cy.api({

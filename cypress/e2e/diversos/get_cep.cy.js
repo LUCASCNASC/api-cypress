@@ -6,7 +6,7 @@ const cepSemDados = "00000000";
 const cepInvalido = "abcde";
 const cepValido = "12312312312";
 
-describe('API rest - Diversos - GET /v3/cep/{cep}', { env: { hideCredentials: true } }, () => {
+describe('API rest - Diversos - GET /Diversos/v2_diversos_cep', { env: { hideCredentials: true } }, () => {
   
   it('Status Code 200', () => {
     cy.api({

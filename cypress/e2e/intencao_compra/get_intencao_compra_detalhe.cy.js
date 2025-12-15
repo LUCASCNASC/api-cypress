@@ -6,7 +6,7 @@ const codigo = "123123123";
 const cliente = "123123123";
 const situacao = "123123123";
 
-describe('API rest - Intenção compra - GET - /v3/intencao_compra_detalhe/{codigo}', { env: { hideCredendials: true } }, () => {
+describe('API rest - Intenção compra - GET /Intenção%20compra/v2_intencao_compra_detalhe', { env: { hideCredendials: true } }, () => {
 
     it('Status Code 200', () => {
       

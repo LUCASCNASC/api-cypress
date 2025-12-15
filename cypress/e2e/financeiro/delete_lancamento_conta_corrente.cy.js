@@ -7,7 +7,7 @@ const idLancamentoContaCorrenteValido = "123123123";
 const idFilialInvalido = "99999";
   const idLancamentoContaCorrenteInvalido = "99999";
 
-describe('API rest - Financeiro - DELETE /v3/lancamento_conta_corrente/{idFilial}/{idLancamentoContaCorrente}', { env: { hideCredentials: true } }, () => {
+describe('API rest - Financeiro - DELETE /Financeiro/v3_financeiro_lancamento_conta_corrente_delete', { env: { hideCredentials: true } }, () => {
 
   it('Status Code 201', () => {
     cy.api({

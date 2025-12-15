@@ -2,7 +2,7 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Financeiro/v3_financeiro_bloqueto';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('API rest - Financeiro - POST /v3/bloqueto', { env: { hideCredentials: true } }, () => {
+describe('API rest - Financeiro - POST /Financeiro/v3_financeiro_bloqueto', { env: { hideCredentials: true } }, () => {
   
   it('Status Code 200', () => {
     cy.api({

@@ -9,7 +9,7 @@ const limit = "123";
 const offset = "123";
 const sort = "123";
 
-describe('API rest - Diversos - GET /v3/cnae', { env: { hideCredentials: true } }, () => {
+describe('API rest - Diversos - GET /Diversos/v2_diversos_cnae', { env: { hideCredentials: true } }, () => {
 
   it('Status Code 200', () => {
     cy.api({

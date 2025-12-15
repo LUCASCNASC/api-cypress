@@ -2,7 +2,7 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Inventário/v3_post_apaga_usuario_inventario';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('API rest - Inventário - POST - /v3/apaga_usuario_inventario/{idFilial}/{idInventario}', { env: { hideCredendials: true } }, () => {
+describe('API rest - Inventário - POST /Inventário/v3_post_apaga_usuario_inventario', { env: { hideCredendials: true } }, () => {
   
   it('Status Code 200', () => {
     cy.api({

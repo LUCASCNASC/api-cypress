@@ -6,7 +6,7 @@ const ufSemCidades = "ZZ";
 const ufInvalido = "123";
 const ufValido = "123";
 
-describe('API rest - Diversos - GET /v3/cidade', { env: { hideCredentials: true } }, () => {
+describe('API rest - Diversos - GET /Diversos/v2_diversos_cidade', { env: { hideCredentials: true } }, () => {
 
   it('Status Code 200', () => {
     cy.api({

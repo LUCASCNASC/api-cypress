@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 const cpf = "123123123";
 
-describe('API rest - LGPD - GET - /v3/dados_titular/{cpf}', { env: { hideCredendials: true } } , () => {
+describe('API rest - LGPD - GET /LGPD/v3_get_lgpd_dados_titular', { env: { hideCredendials: true } } , () => {
   
   it('Status Code 200', () => {
     cy.api({

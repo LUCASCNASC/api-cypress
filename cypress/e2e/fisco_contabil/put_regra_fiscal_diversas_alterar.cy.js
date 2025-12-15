@@ -2,7 +2,7 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Fisco/Contabil/v3_regra_fiscal_diversas_put';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('API rest - Fisco/Contábil - PUT - /v3/regra_fiscal_diversas_alterar', { env: { hideCredendials: true } }, () => {
+describe('API rest - Fisco/Contábil - PUT /Fisco/Contabil/v3_regra_fiscal_diversas_put', { env: { hideCredendials: true } }, () => {
   
   it('Status Code 200', () => {
     cy.api({
