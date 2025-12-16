@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 const codigo = "12345678910"; 
 
-describe('API rest - Proposta crédito - GET - /v3/proposta_credito_situacao/{codigo}', { env: { hideCredendials: true } }, () => {
+describe('API rest - Proposta crédito - GET - /Proposta%20crédito/v2_proposta_credito_situacao', { env: { hideCredendials: true } }, () => {
   
   it('Status Code 200', () => {
     cy.api({

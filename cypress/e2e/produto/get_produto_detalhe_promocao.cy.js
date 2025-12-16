@@ -5,7 +5,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 const produto = "12345678910";
 const processo_venda = "12345678910";
 
-describe('API rest - Produto - GET - /v3/produto_detalhe_promocao/{produto}', { env: { hideCredendials: true } }, () => {
+describe('API rest - Produto - GET - /Produto/v2_produto_detalhe_promocao', { env: { hideCredendials: true } }, () => {
 
   it('Status Code 200', () => {
     cy.api({

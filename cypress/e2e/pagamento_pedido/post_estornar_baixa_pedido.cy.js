@@ -2,7 +2,7 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Pagamento%20pedido/v2_pag_pedido_estornar_baixa_pedido';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('API rest - Pagamento pedido - POST - /v3/estornar_baixa_pedido', { env: { hideCredendials: true } }, () => {
+describe('API rest - Pagamento pedido - POST - /Pagamento%20pedido/v2_pag_pedido_estornar_baixa_pedido', { env: { hideCredendials: true } }, () => {
   
   it('Status Code 200', () => {
     cy.api({

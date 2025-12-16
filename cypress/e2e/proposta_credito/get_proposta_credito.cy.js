@@ -8,7 +8,7 @@ const cliente = "12345678910";
 const limit = "12345678910";
 const offset = "12345678910";
 
-describe('API rest - Proposta crédito - GET - /v3/proposta_credito/{data_inicial}', { env: { hideCredendials: true } }, () => {
+describe('API rest - Proposta crédito - GET - /Proposta%20crédito/v2_proposta_credito_get', { env: { hideCredendials: true } }, () => {
   
   it('Status Code 200', () => {
     cy.api({

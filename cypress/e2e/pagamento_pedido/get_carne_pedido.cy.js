@@ -5,7 +5,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 const filial = "12345678910"; 
 const pedido = "12345678910"; 
 
-describe('API rest - Pagamento pedido - GET - /v3/carne_pedido/{filial}/{pedido}', { env: { hideCredendials: true } }, () => {
+describe('API rest - Pagamento pedido - GET - /Pagamento%20pedido/v3_pag_pedido_carne_pedido', { env: { hideCredendials: true } }, () => {
   
   it('Status Code 200', () => {
     cy.api({

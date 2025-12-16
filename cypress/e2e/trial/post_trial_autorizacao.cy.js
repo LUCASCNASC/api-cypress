@@ -2,7 +2,7 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Trial/v3_post_trial_autorizacao';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('API rest - Trial - POST - /v3/trial_autorizacao', { env: { hideCredendials: true } }, () => {
+describe('API rest - Trial - POST - /Trial/v3_post_trial_autorizacao', { env: { hideCredendials: true } }, () => {
   
   it('Status Code 200', () => { 
 

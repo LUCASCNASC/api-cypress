@@ -2,7 +2,7 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Logística/v3_post_logistica_faturamentomapacargacliente';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('API rest - Logística - POST - /v3/faturamento_mapa_carga_cliente', { env: { hideCredendials: true } }, () => {
+describe('API rest - Logística - POST - /Logística/v3_post_logistica_faturamentomapacargacliente', { env: { hideCredendials: true } }, () => {
   
   it('Status Code 200', () => {
     cy.api({

@@ -5,7 +5,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 const idFilialOrigem = "123123123"; 
 const idRegistroNotaOrigem = "123123123"; 
 
-describe('API rest - Logística - DELETE - /v3/exluir_mapa_carga_coletado/{idFilial}/{idMapaCarga}/{TipoMapaCarga}', { env: { hideCredendials: true } } , () => {
+describe('API rest - Logística - DELETE - /Logística/v3_delete_excluir_dado_coletado_nota_transferida', { env: { hideCredendials: true } } , () => {
 
   it('Status Code 200', () => {
     cy.api({

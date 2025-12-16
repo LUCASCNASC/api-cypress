@@ -5,7 +5,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 const idFilial = "12345678910"; 
 const idItemServico = "12345678910";
 
-describe('API rest - Recarga - GET - /v3/recarga/{idFilial}/{idItemServico}', { env: { hideCredendials: true } }, () => { 
+describe('API rest - Recarga - GET - /Recarga/v3_get_recarga', { env: { hideCredendials: true } }, () => { 
   
   it('Status Code 200', () => {
     cy.api({

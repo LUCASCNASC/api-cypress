@@ -2,7 +2,7 @@ const API_BASE_URLURL = Cypress.env('BASE_URL');
 const PATH_API = '/Trial/v3_post_gerador_trial';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('API rest - Trial - POST - /v3/gerador_trial', { env: { hideCredendials: true } }, () => {
+describe('API rest - Trial - POST - /Trial/v3_post_gerador_trial', { env: { hideCredendials: true } }, () => {
   
   it('Status Code 200', () => {
     cy.api({

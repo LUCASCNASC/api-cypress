@@ -5,11 +5,11 @@ const Authorization = Cypress.env('API.PRAGMA');
 const datainicial = "2025-11-01"; 
 const datafinal = "2025-11-30";
 
-describe('API rest - Pós-venda - GET - /v3/pos_venda', { env: { hideCredendials: true } }, () => {
+describe('API rest - Pós-venda - GET - /Pós-venda/v3_pos_venda_get_post1', { env: { hideCredendials: true } }, () => {
   
   it('Status Code 200', () => {
     cy.api({
-      mehtod: '`${BASE_URL}/Pedido/v2_pedido_get_delete2/${codigo}/${idfilial}`', 
+      method: 'GET', 
       url: `${BASE_URL}/${PATH_API}`, 
       headers: { Authorization },
       failOnStatusCode: false

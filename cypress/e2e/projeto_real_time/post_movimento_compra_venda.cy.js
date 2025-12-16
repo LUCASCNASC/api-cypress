@@ -2,7 +2,7 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Projeto%20Real%20Time/v3_post_movimento_compra_venda';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('API rest - Projeto Real Time - POST - /v3/movimento_compra_venda/', () => {
+describe('API rest - Projeto Real Time - POST - /Projeto%20Real%20Time/v3_post_movimento_compra_venda', () => {
   
   it('Status Code 200', { env: { hideCredendials: true } }, () => {
     cy.api({

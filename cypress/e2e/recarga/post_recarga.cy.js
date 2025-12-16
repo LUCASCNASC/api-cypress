@@ -2,7 +2,7 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Recarga/v3_post_recarga';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('API rest - Recarga - POST - /v3/recarga', { env: { hideCredendials: true } }, () => {
+describe('API rest - Recarga - POST - /Recarga/v3_post_recarga', { env: { hideCredendials: true } }, () => {
   
   it('Status Code 200', () => {
     cy.api({

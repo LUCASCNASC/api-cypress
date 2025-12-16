@@ -2,7 +2,7 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Sessão/v3_post_sessao_login_altera_senha';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('API rest - Sessão - POST - /v3/sessao_login_altera_senha', { env: { hideCredendials: true } }, () => {
+describe('API rest - Sessão - POST - /Sessão/v3_post_sessao_login_altera_senha', { env: { hideCredendials: true } }, () => {
   
   it('Status Code 200', () => {
     cy.api({

@@ -5,7 +5,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 const idFilial = "12345678910"; 
 const idPedidoVenda = "12345678910";
 
-describe('API rest - Pedido - GET - /v3/pedido_valida_reserva_saldo/{idFilial}/{idPedidoVenda}', { env: { hideCredendials: true } }, () => {
+describe('API rest - Pedido - GET - /Pedido/v3_pedido_valida_reserva_saldo', { env: { hideCredendials: true } }, () => {
   
   it('Resposta 204', () => {
     cy.api({

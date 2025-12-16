@@ -8,7 +8,7 @@ const vendedor = "12345678910";
 const limit = "12345678910"; 
 const offset = "12345678910";   
 
-describe('API rest - Trial - GET - /v3/trial', { env: { hideCredendials: true } }, () => {
+describe('API rest - Trial - GET - /Trial/v2_trial_get_post1', { env: { hideCredendials: true } }, () => {
   
   it('Status Code 200', () => {
     cy.api({

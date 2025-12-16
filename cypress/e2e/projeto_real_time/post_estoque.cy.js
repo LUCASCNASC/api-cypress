@@ -2,7 +2,7 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Projeto%20Real%20Time/v3_post_estoque';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('API rest - Projeto Real Time - POST - /v3/estoque/', { env: { hideCredendials: true } }, () => {
+describe('API rest - Projeto Real Time - POST - /Projeto%20Real%20Time/v3_post_estoque', { env: { hideCredendials: true } }, () => {
   
   it('Status Code 200', () => {
     cy.api({

@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 const idFilial = "123123123";
 
-describe('API rest - Logística - GET - /v3/nota_receber_transferida_coletor/{idFilial}', { env: { hideCredendials: true } }, () => {
+describe('API rest - Logística - GET - /Logística/v3_get_carregar_nota_transferida_coletor', { env: { hideCredendials: true } }, () => {
 
   it('Status Code 200', () => {
     const requestBody = 

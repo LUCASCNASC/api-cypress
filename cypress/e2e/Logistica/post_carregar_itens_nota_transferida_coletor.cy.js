@@ -2,7 +2,7 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Logística/v3_get_carregar_Itens_nota_transferida_coletor';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('API rest - Logística - POST - /v3/carregar_itens_nota_transferida_coletor', { env: { hideCredendials: true } }, () => {
+describe('API rest - Logística - POST - /Logística/v3_get_carregar_Itens_nota_transferida_coletor', { env: { hideCredendials: true } }, () => {
   
   it('Status Code 200', () => {
     cy.api({

@@ -2,7 +2,7 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Produto/v3_produto_saldo_disponivel';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('API rest - Produto - POST - /v3/saldo_disponivel', { env: { hideCredendials: true } }, () => {
+describe('API rest - Produto - POST - /Produto/v3_produto_saldo_disponivel', { env: { hideCredendials: true } }, () => {
 
   it('Status Code 200', () => {
     cy.api({

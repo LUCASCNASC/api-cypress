@@ -2,7 +2,7 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH_API = '/Pedido/v2_pedido_baixar';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('API rest - Pedido - POST - /v3/pedido_baixar', { env: { hideCredendials: true } }, () => {
+describe('API rest - Pedido - POST - /Pedido/v2_pedido_baixar', { env: { hideCredendials: true } }, () => {
   
   it('Status Code 200', () => {
     const requestBody = 

@@ -7,7 +7,7 @@ const valor = "12345678910";
 const tipo_servico = "12345678910"; 
 const processo = "12345678910";
 
-describe('API rest - Produto - GET - /v3/produto_servico_vinculado ', { env: { hideCredendials: true } }, () => {
+describe('API rest - Produto - GET - /Produto/v2_produto_servico_vinculado', { env: { hideCredendials: true } }, () => {
 
   it('Status Code 200', () => {
     cy.api({

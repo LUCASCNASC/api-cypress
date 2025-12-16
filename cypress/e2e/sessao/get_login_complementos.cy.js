@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 const ambiente = "12345678910";
 
-describe('API rest - Sessão - GET - /v3/login_complementos', { env: { hideCredendials: true } }, () => {
+describe('API rest - Sessão - GET - /Sessão/v2_sessao_login_complementos', { env: { hideCredendials: true } }, () => {
   
   it('Status Code 200', () => {
     cy.api({
