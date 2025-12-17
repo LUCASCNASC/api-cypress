@@ -8,7 +8,7 @@ const cepValido = "12312312312";
 
 describe('API rest - Diversos - GET /Diversos/v2_diversos_cep', { env: { hideCredentials: true } }, () => {
   
-  it('Status Code 200', () => {
+  it('Status Code: 200', () => {
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${cepValido}`,
@@ -27,7 +27,7 @@ describe('API rest - Diversos - GET /Diversos/v2_diversos_cep', { env: { hideCre
     });
   });
 
-  it('Status Code 204', () => {
+  it('Status Code: 204', () => {
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${cepSemDados}`,
@@ -39,7 +39,7 @@ describe('API rest - Diversos - GET /Diversos/v2_diversos_cep', { env: { hideCre
     });
   });
 
-  it('Status Code 412', () => {
+  it('Status Code: 412', () => {
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${cepInvalido}`,

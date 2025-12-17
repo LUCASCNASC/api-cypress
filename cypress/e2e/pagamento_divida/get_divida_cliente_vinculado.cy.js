@@ -8,7 +8,7 @@ const cliente = "456";
 describe('API rest - Pagamento divida - GET - /Pagamento%20divida/v2_divida_cliente_vinculado
   ', { env: { hideCredendials: true } }, () => {
 
-  it('Status Code 200', () => {
+  it('Status Code: 200', () => {
     cy.api({
       method: 'GET', 
       url: `${BASE_URL}${PATH_API}/${filial}/${cliente}`, 

@@ -8,7 +8,7 @@ const clienteValido = Cypress.env('12345678901234');
 
 describe('API rest - Cliente - DELETE /Cliente/v2_cliente_get_delete_delete', { env: { hideCredentials: true } }, () => {
 
-  it('Status Code 200', () => {
+  it('Status Code: 200', () => {
     cy.api({
       method: 'DELETE',
       url: `${BASE_URL}${PATH_API}/${clienteValido}`,
@@ -20,7 +20,7 @@ describe('API rest - Cliente - DELETE /Cliente/v2_cliente_get_delete_delete', { 
     });
   });
 
-  it('Status Code 204', () => {
+  it('Status Code: 204', () => {
     cy.api({
       method: 'DELETE',
       url: `${BASE_URL}${PATH_API}/${clienteSemDados}`,
@@ -32,7 +32,7 @@ describe('API rest - Cliente - DELETE /Cliente/v2_cliente_get_delete_delete', { 
     });
   });
 
-  it('Status Code 412', () => {
+  it('Status Code: 412', () => {
     cy.api({
       method: 'DELETE',
       url: `${BASE_URL}${PATH_API}/${clienteInvalido}`,

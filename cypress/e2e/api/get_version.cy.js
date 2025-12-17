@@ -4,7 +4,7 @@ const AUTHORIZATION = Cypress.env('API.PRAGMA');
 
 describe('API rest - GET /api/version', { env: { hideCredendials: true } }, () => {
   
-  it('Status Code 200', () => {
+  it('Status Code: 200', () => {
 
     cy.api({
       method: 'GET',
@@ -24,7 +24,7 @@ describe('API rest - GET /api/version', { env: { hideCredendials: true } }, () =
     });
   });
 
-  it('Status Code 401 e 403', () => {
+  it('Status Code: 401 e 403', () => {
     cy.api({
       method: 'GET',
       url: `${BASE_URL}/${PATH_API}`,

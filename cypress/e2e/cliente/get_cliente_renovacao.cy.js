@@ -8,7 +8,7 @@ const clienteValido = "12345678901234";
 
 describe('API rest - Cliente - GET /Cliente/v2_cliente_renovacao', { env: { hideCredentials: true } }, () => {
 
-  it('Status Code 200', () => {
+  it('Status Code: 200', () => {
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${clienteValido}`,
@@ -33,7 +33,7 @@ describe('API rest - Cliente - GET /Cliente/v2_cliente_renovacao', { env: { hide
     });
   });
 
-  it('Status Code 204', () => {
+  it('Status Code: 204', () => {
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${clienteSemRenovacao}`,
@@ -45,7 +45,7 @@ describe('API rest - Cliente - GET /Cliente/v2_cliente_renovacao', { env: { hide
     });
   });
 
-  it('Status Code 412', () => {
+  it('Status Code: 412', () => {
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH_API}/${clienteInvalido}`,

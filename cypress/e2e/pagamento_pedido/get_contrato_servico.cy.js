@@ -7,7 +7,7 @@ const pedido = "12345678910";
 
 describe('API rest - Pagamento pedido - GET - /Pagamento%20pedido/v2_pag_pedido_contrato_servico', { env: { hideCredendials: true } }, () => {
   
-  it('Status Code 200', () => {
+  it('Status Code: 200', () => {
     cy.api({
       method: 'GET', 
       url: `${BASE_URL}/${PATH_API}/${filial}/${pedido}`, 

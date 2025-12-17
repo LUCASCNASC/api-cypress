@@ -11,7 +11,7 @@ const codigoContaInvalido = "99999999";
 
 describe('API rest - Financeiro - DELETE /Financeiro/v3_financeiro_conta_bancaria_delete', { env: { hideCredentials: true } }, () => {
 
-  it('Status Code 200', () => {
+  it('Status Code: 200', () => {
     cy.api({
       method: 'DELETE',
       url: `${BASE_URL}/${PATH_API}/${codigoBancoValido}/${codigoAgenciaValido}/${codigoContaValido}`,
@@ -23,7 +23,7 @@ describe('API rest - Financeiro - DELETE /Financeiro/v3_financeiro_conta_bancari
     });
   });
 
-  it('Status Code 404 e 412', () => {
+  it('Status Code: 404 e 412', () => {
   
     cy.api({
       method: 'DELETE',

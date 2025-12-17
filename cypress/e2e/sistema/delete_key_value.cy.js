@@ -6,7 +6,7 @@ const key = "12345678910";
 
 describe('API rest - Sistema - DELETE - /Sistema/v2_sistema_key_value_delete', { env: { hideCredendials: true } } , () => {
   
-  it('Status Code 200', () => {
+  it('Status Code: 200', () => {
     cy.api({
       method: 'DELETE',
       url: `${BASE_URL}/${PATH_API}/${key}`,

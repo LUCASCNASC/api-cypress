@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 describe('API rest - Pagamento divida - POST - /Pagamento%20divida/v2_divida_baixa_titulo_multiplos', { env: { hideCredendials: true } }, () => {
 
-  it('Status Code 200', () => {
+  it('Status Code: 200', () => {
     cy.api({
       method: 'POST', 
       url: `${BASE_URL}/${PATH_API}`, 
