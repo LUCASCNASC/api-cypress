@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 describe('API rest - Compras - POST /Compras/v3_post_pedido_compra_incluir', { env: { hideCredentials: true } }, () => {
   
-  it('Status Code: 200', () => {
+  it('Status Code is 200', () => {
     cy.api({
       method: 'POST',
       url: `${BASE_URL}/${PATH_API}`,
@@ -28,7 +28,7 @@ describe('API rest - Compras - POST /Compras/v3_post_pedido_compra_incluir', { e
     });
   });
 
-  it('Status Code: 412', () => {
+  it('Status Code is 412', () => {
     cy.api({
       method: 'POST',
       url: `${BASE_URL}/${PATH_API}`,

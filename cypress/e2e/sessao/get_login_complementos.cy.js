@@ -6,7 +6,7 @@ const ambiente = "12345678910";
 
 describe('API rest - Sessão - GET - /Sessão/v2_sessao_login_complementos', { env: { hideCredendials: true } }, () => {
   
-  it('Status Code: 200', () => {
+  it('Status Code is 200', () => {
     cy.api({
       method: 'GET',
       url: `${BASE_URL}/${PATH_API}/${ambiente}`,

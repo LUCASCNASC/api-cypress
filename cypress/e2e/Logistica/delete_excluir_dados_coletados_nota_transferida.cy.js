@@ -7,7 +7,7 @@ const idRegistroNotaOrigem = "123123123";
 
 describe('API rest - Logística - DELETE - /Logística/v3_delete_excluir_dado_coletado_nota_transferida', { env: { hideCredendials: true } } , () => {
 
-  it('Status Code: 200', () => {
+  it('Status Code is 200', () => {
     cy.api({
       method: 'DELETE', 
       url: `${BASE_URL}/${PATH_API}/${idFilialOrigem}/${idRegistroNotaOrigem}`, 

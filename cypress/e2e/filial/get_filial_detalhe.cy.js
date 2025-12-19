@@ -7,7 +7,7 @@ const filialSemDados = 99999;
 
 describe('API rest - Filial - GET /Filial/v2_filial_detalhe', { env: { hideCredentials: true } }, () => {
   
-  it('Status Code: 200', () => {
+  it('Status Code is 200', () => {
     cy.api({
       method: 'GET',
       url: `${BASE_URL}/${PATH_API}/${filialValida}`,
@@ -43,7 +43,7 @@ describe('API rest - Filial - GET /Filial/v2_filial_detalhe', { env: { hideCrede
     });
   });
 
-  it('Status Code: 204', () => {
+  it('Status Code is 204', () => {
     cy.api({
       method: 'GET',
       url: `${BASE_URL}/${PATH_API}/${filialSemDados}`,
@@ -55,7 +55,7 @@ describe('API rest - Filial - GET /Filial/v2_filial_detalhe', { env: { hideCrede
     });
   });
 
-  it('Status Code: 412', () => {
+  it('Status Code is 412', () => {
     const filialInvalida = "abc";
 
     cy.api({

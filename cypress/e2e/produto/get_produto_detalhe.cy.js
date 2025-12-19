@@ -8,7 +8,7 @@ const pedido = "12345678910";
 
 describe('API rest - Produto - GET - /Produto/v2_produto_detalhe', { env: { hideCredendials: true } }, () => {
   
-  it('Status Code: 200', () => {
+  it('Status Code is 200', () => {
     cy.api({
       method: 'GET', 
       url: `${BASE_URL}/${PATH_API}/${produto}/${pesquisagtin}/${pedido}`, 

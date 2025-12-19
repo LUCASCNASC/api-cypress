@@ -9,7 +9,7 @@ const dataFinal = "123123123";
 
 describe('API rest - Logística - GET - /Logística/v3_get_logistica_lista_mapa_carga_loja', { env: { hideCredendials: true } } , () => {
 
-  it('Status Code: 200', () => {
+  it('Status Code is 200', () => {
     cy.api({
       method: 'GET', 
       url: `${BASE_URL}/${PATH_API}/${idFilial}/${idSituacaoMapaCarga}/${dataInicial}/${dataFinal}`, 

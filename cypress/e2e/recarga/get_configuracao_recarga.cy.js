@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 describe('API rest - Recarga - GET - /Recarga/v3_configuracao_recarga', { env: { hideCredendials: true } }, () => {
 
-  it('Status Code: 200', () => {
+  it('Status Code is 200', () => {
     cy.api({
       method: 'GET', 
       url: `${BASE_URL}/${PATH_API}`, 

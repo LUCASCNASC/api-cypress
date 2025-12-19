@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 describe('API rest - Sessão - GET - /Sessão/v3_sessao_login_validar', { env: { hideCredendials: true } }, () => {
   
-  it('Status Code: 200', () => {
+  it('Status Code is 200', () => {
     const requestBody = {}
 
     cy.api({

@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 describe('API rest - Sistema - POST - /Sistema/v3_sistema_envio_email_post', { env: { hideCredendials: true } }, () => {
   
-  it('Status Code: 200', () => {
+  it('Status Code is 200', () => {
     cy.api({
       method: 'POST',
       url: `${BASE_URL}/${PATH_API}`,

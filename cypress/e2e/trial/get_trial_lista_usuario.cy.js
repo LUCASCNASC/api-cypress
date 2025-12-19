@@ -6,7 +6,7 @@ const idUsuario = "12345678910";
 
 describe('API rest - Trial - GET - /Trial/v3_get_lista_trial_usuario', { env: { hideCredendials: true } }, () => {
   
-  it('Status Code: 200', () => {
+  it('Status Code is 200', () => {
     cy.api({
       method: 'GET', 
       url: `${BASE_URL}/${PATH_API}/${idUsuario}`, 

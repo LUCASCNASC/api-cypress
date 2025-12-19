@@ -6,7 +6,7 @@ const idFilial = "123123123";
 
 describe('API rest - Logística - GET - /Logística/v3_get_carregar_nota_transferida_coletor', { env: { hideCredendials: true } }, () => {
 
-  it('Status Code: 200', () => {
+  it('Status Code is 200', () => {
     const requestBody = 
 
     cy.api({
