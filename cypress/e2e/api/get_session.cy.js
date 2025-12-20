@@ -1,5 +1,5 @@
 const BASE_URL = Cypress.env('BASE_URL');
-const PATH_API = '/api/session';
+const PATH = '/api/session';
 const AUTHORIZATION = Cypress.env('API.PRAGMA');
 
 const AUTHORIZATION_INVALID = Cypress.env('API.PRAGMA_INVALID');
@@ -9,7 +9,7 @@ describe('API rest - API - GET /api/session', { env: { hideCredendials: true } }
   it('Status Code is 200', () => {
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}/${PATH_API}`,
+      url: `${BASE_URL}/${PATH}`,
       headers: { Authorization: AUTHORIZATION },
       failOnStatusCode: false
     }).should((response) => {
@@ -30,7 +30,7 @@ describe('API rest - API - GET /api/session', { env: { hideCredendials: true } }
   it('Status Code is 401 e 403', () => {
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}/${PATH_API}`,
+      url: `${BASE_URL}/${PATH}`,
       headers: { Authorization: AUTHORIZATION_INVALID },
       failOnStatusCode: false
     }).should((response) => {

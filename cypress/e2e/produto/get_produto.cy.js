@@ -1,5 +1,5 @@
 const BASE_URL = Cypress.env('BASE_URL');
-const PATH_API = '/Produto/v2_produto_get';
+const PATH = '/Produto/v2_produto_get';
 const Authorization = Cypress.env('API.PRAGMA');
 
 const termo = "12345678910"; 
@@ -14,7 +14,7 @@ describe('API rest - Produto - GET - /Produto/v2_produto_get', { env: { hideCred
 
     cy.api({
       method: 'GET', 
-      url: `${BASE_URL}/${PATH_API}/${termo}/${departamento}/${marca}/${so_promocao}/${so_servico}`, 
+      url: `${BASE_URL}/${PATH}/${termo}/${departamento}/${marca}/${so_promocao}/${so_servico}`, 
       headers: { Authorization },
       failOnStatusCode: false
     })

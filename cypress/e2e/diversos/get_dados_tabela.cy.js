@@ -1,5 +1,5 @@
 const BASE_URL = Cypress.env('BASE_URL');
-const PATH_API = '/Diversos/v2_diversos_dados_tabela';
+const PATH = '/Diversos/v2_diversos_dados_tabela';
 const Authorization = Cypress.env('API.PRAGMA');
 
 const tabelaSemDados = "tabela_inexistente";
@@ -11,7 +11,7 @@ describe('API rest - Diversos - GET /Diversos/v2_diversos_dados_tabela', { env: 
   it('Status Code is 200', () => {
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}${PATH_API}/${tabelaValida}`,
+      url: `${BASE_URL}${PATH}/${tabelaValida}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).then((response) => {
@@ -26,7 +26,7 @@ describe('API rest - Diversos - GET /Diversos/v2_diversos_dados_tabela', { env: 
   it('Status Code is 204', () => {
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}${PATH_API}/${tabelaSemDados}`,
+      url: `${BASE_URL}${PATH}/${tabelaSemDados}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).then((response) => {
@@ -38,7 +38,7 @@ describe('API rest - Diversos - GET /Diversos/v2_diversos_dados_tabela', { env: 
   it('Status Code is 412', () => {
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}${PATH_API}/${tabelaInvalida}`,
+      url: `${BASE_URL}${PATH}/${tabelaInvalida}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).then((response) => {

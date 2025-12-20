@@ -1,5 +1,5 @@
 const BASE_URL = Cypress.env('BASE_URL');
-const PATH_API = '/E-commerce/v3_ecommerce_finalizar';
+const PATH = '/E-commerce/v3_ecommerce_finalizar';
 const Authorization = Cypress.env('API.PRAGMA');
 
 describe('API rest - E-commerce - POST /E-commerce/v3_ecommerce_finalizar', { env: { hideCredentials: true } }, () => {
@@ -7,7 +7,7 @@ describe('API rest - E-commerce - POST /E-commerce/v3_ecommerce_finalizar', { en
   it('Status Code is 200', () => {
     cy.api({
       method: 'POST',
-      url: `${BASE_URL}/${PATH_API}`,
+      url: `${BASE_URL}/${PATH}`,
       headers: { Authorization },
       failOnStatusCode: false,
       body: {
@@ -33,7 +33,7 @@ describe('API rest - E-commerce - POST /E-commerce/v3_ecommerce_finalizar', { en
   it('Status Code is 412', () => {
     cy.api({
       method: 'POST',
-      url: `${BASE_URL}/${PATH_API}`,
+      url: `${BASE_URL}/${PATH}`,
       headers: { Authorization },
       failOnStatusCode: false,
       body: {

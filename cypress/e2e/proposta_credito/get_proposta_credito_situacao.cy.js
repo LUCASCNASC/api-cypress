@@ -1,5 +1,5 @@
 const BASE_URL = Cypress.env('BASE_URL');
-const PATH_API = '/Proposta%20crédito/v2_proposta_credito_situacao';
+const PATH = '/Proposta%20crédito/v2_proposta_credito_situacao';
 const Authorization = Cypress.env('API.PRAGMA');
 
 const codigo = "12345678910"; 
@@ -9,7 +9,7 @@ describe('API rest - Proposta crédito - GET - /Proposta%20crédito/v2_proposta_
   it('Status Code is 200', () => {
     cy.api({
       method: 'GET', 
-      url: `${BASE_URL}/${PATH_API}/${codigo}`, 
+      url: `${BASE_URL}/${PATH}/${codigo}`, 
       headers: { Authorization },
       failOnStatusCode: false
     })

@@ -1,5 +1,5 @@
 const BASE_URL = Cypress.env('BASE_URL');
-const PATH_API = '/Logística/v3_post_gravar_itens_nota_transferida_coletados';
+const PATH = '/Logística/v3_post_gravar_itens_nota_transferida_coletados';
 const Authorization = Cypress.env('API.PRAGMA');
 
 describe('API rest - Logística - POST - /Logística/v3_post_gravar_itens_nota_transferida_coletados', { env: { hideCredendials: true } }, () => {
@@ -7,7 +7,7 @@ describe('API rest - Logística - POST - /Logística/v3_post_gravar_itens_nota_t
   it('Status Code is 200', () => {
     cy.api({
       method: 'POST', 
-      url: `${BASE_URL}/${PATH_API}`, 
+      url: `${BASE_URL}/${PATH}`, 
       headers: { Authorization },
       failOnStatusCode: false
     })

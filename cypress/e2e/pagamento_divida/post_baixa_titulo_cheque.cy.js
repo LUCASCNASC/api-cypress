@@ -1,5 +1,5 @@
 const BASE_URL = Cypress.env('BASE_URL');
-const PATH_API = '/Pagamento%20divida/v2_divida_baixa_titulo_cheque';
+const PATH = '/Pagamento%20divida/v2_divida_baixa_titulo_cheque';
 const Authorization = Cypress.env('API.PRAGMA');
 
 describe('API rest - Pagamento divida - POST - /Pagamento%20divida/v2_divida_baixa_titulo_cheque', { env: { hideCredendials: true } }, () => {
@@ -7,7 +7,7 @@ describe('API rest - Pagamento divida - POST - /Pagamento%20divida/v2_divida_bai
   it('Status Code is 200', () => {
     cy.api({
       method: 'POST', 
-      url: `${BASE_URL}/${PATH_API}`, 
+      url: `${BASE_URL}/${PATH}`, 
       headers: { Authorization },
       failOnStatusCode: false
     })

@@ -1,5 +1,5 @@
 const BASE_URL = Cypress.env('BASE_URL');
-const PATH_API = '/v3/caixa_rotina_diaria_filial';
+const PATH = '/v3/caixa_rotina_diaria_filial';
 const Authorization = Cypress.env('API.PRAGMA');
  
 const idFilialSemDados = Cypress.env('ID_FILIAL_SEM_DADOS');
@@ -14,7 +14,7 @@ describe('API rest - Caixa - GET /v3/caixa_rotina_diaria_filial', { env: { hideC
   it('Status Code is 200', () => {
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}${PATH_API}/${idFilialValido}/${dataAberturaValida}`,
+      url: `${BASE_URL}${PATH}/${idFilialValido}/${dataAberturaValida}`,
       headers: { Authorization }
     }).should((response) => {
       expect(response.status, 'Status Code is deve ser 200').to.equal(200);
@@ -26,7 +26,7 @@ describe('API rest - Caixa - GET /v3/caixa_rotina_diaria_filial', { env: { hideC
   it('Status Code is 204', () => {
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}${PATH_API}/${idFilialSemDados}/${dataSemMovimentacao}`,
+      url: `${BASE_URL}${PATH}/${idFilialSemDados}/${dataSemMovimentacao}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).should((response) => {
@@ -38,7 +38,7 @@ describe('API rest - Caixa - GET /v3/caixa_rotina_diaria_filial', { env: { hideC
   it('Status Code is 412', () => {
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}${PATH_API}/${idFilialInvalido}/${dataAberturaInvalida}`,
+      url: `${BASE_URL}${PATH}/${idFilialInvalido}/${dataAberturaInvalida}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).should((response) => {

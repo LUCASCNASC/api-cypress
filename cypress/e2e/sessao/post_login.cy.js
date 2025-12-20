@@ -1,5 +1,5 @@
 const BASE_URL = Cypress.env('BASE_URL');
-const PATH_API = '/Sessão/v3_sessao_login_post';
+const PATH = '/Sessão/v3_sessao_login_post';
 const Authorization = Cypress.env('API.PRAGMA');
 
 describe('API rest - Sessão - POST - /Sessão/v3_sessao_login_post', { env: { hideCredendials: true } }, () => {
@@ -7,7 +7,7 @@ describe('API rest - Sessão - POST - /Sessão/v3_sessao_login_post', { env: { h
   it('Status Code is 204', () => {
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}/${PATH_API}`,
+      url: `${BASE_URL}/${PATH}`,
       headers: { Authorization },
       failOnStatusCode: false
     })

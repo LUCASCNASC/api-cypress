@@ -1,5 +1,5 @@
 const BASE_URL = Cypress.env('BASE_URL');
-const PATH_API = '/Produto/v2_produto_tambem_compraram';
+const PATH = '/Produto/v2_produto_tambem_compraram';
 const Authorization = Cypress.env('API.PRAGMA');
 
 const lista = "12345678910";
@@ -9,7 +9,7 @@ describe('API rest - Produto - GET - /Produto/v2_produto_tambem_compraram', { en
   it('Status Code is 200', () => {
     cy.api({
       method: 'GET', 
-      url: `${BASE_URL}/${PATH_API}/${lista}`, 
+      url: `${BASE_URL}/${PATH}/${lista}`, 
       headers: { Authorization },
       failOnStatusCode: false
     })

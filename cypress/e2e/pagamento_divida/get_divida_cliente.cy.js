@@ -1,5 +1,5 @@
 const BASE_URL = Cypress.env('BASE_URL');
-const PATH_API = '/Pagamento%20divida/v2_divida_cliente';
+const PATH = '/Pagamento%20divida/v2_divida_cliente';
 const Authorization = Cypress.env('API.PRAGMA');
 
 const filial = "12345678910";
@@ -10,7 +10,7 @@ describe('API rest - Pagamento divida - GET - /Pagamento%20divida/v2_divida_clie
   it('Status Code is 200', () => {
     cy.api({
       method: 'GET', 
-      url: `${BASE_URL}/${PATH_API}/${filial}/${cliente}`, 
+      url: `${BASE_URL}/${PATH}/${filial}/${cliente}`, 
       headers: { Authorization },
       
       failOnStatusCode: false

@@ -1,5 +1,5 @@
 const BASE_URL = Cypress.env('BASE_URL');
-const PATH_API = '/Diversos/v2_diversos_estado';
+const PATH = '/Diversos/v2_diversos_estado';
 const Authorization = Cypress.env('API.PRAGMA');
 
 describe('API rest - Diversos - GET /Diversos/v2_diversos_estado', { env: { hideCredentials: true } }, () => {
@@ -7,7 +7,7 @@ describe('API rest - Diversos - GET /Diversos/v2_diversos_estado', { env: { hide
   it('Status Code is 200', () => {
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}/${PATH_API}`,
+      url: `${BASE_URL}/${PATH}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).then((response) => {

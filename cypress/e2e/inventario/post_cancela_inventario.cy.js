@@ -1,5 +1,5 @@
 const BASE_URL = Cypress.env('BASE_URL');
-const PATH_API = '/Inventário/v3_post_cancela_inventario';
+const PATH = '/Inventário/v3_post_cancela_inventario';
 const Authorization = Cypress.env('API.PRAGMA');
 
 const idFilial = "123123123";
@@ -10,7 +10,7 @@ describe('API rest - Inventário - POST /Inventário/v3_post_cancela_inventario'
   it('Status Code is 200', () => {
     cy.api({
       method: 'POST', 
-      url: `${BASE_URL}/${PATH_API}`, 
+      url: `${BASE_URL}/${PATH}`, 
       headers: { Authorization },
       failOnStatusCode: false
     })

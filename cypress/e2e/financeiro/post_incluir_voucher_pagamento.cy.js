@@ -1,5 +1,5 @@
 const BASE_URL = Cypress.env('BASE_URL');
-const PATH_API = '/Financeiro/v3_financeiro_incluir_voucher_pagamento';
+const PATH = '/Financeiro/v3_financeiro_incluir_voucher_pagamento';
 const Authorization = Cypress.env('API.PRAGMA');
 
 describe('API rest - Financeiro - POST /Financeiro/v3_financeiro_incluir_voucher_pagamento', { env: { hideCredentials: true } }, () => {
@@ -7,7 +7,7 @@ describe('API rest - Financeiro - POST /Financeiro/v3_financeiro_incluir_voucher
   it('Status Code is 201', () => {
     cy.api({
       method: 'POST',
-      url: `${BASE_URL}/${PATH_API}`,
+      url: `${BASE_URL}/${PATH}`,
       headers: { Authorization },
       failOnStatusCode: false,
       body: {
@@ -28,7 +28,7 @@ describe('API rest - Financeiro - POST /Financeiro/v3_financeiro_incluir_voucher
   it('Status Code is 412', () => {
     cy.api({
       method: 'POST',
-      url: `${BASE_URL}/${PATH_API}`,
+      url: `${BASE_URL}/${PATH}`,
       headers: { Authorization },
       failOnStatusCode: false,
       body: {

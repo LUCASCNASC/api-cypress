@@ -1,5 +1,5 @@
 const BASE_URL = Cypress.env('BASE_URL');
-const PATH_API = '/Sessão/v2_sessao_login';
+const PATH = '/Sessão/v2_sessao_login';
 const Authorization = Cypress.env('API.PRAGMA');
 
 const usuario = "12345678910"; 
@@ -11,7 +11,7 @@ describe('API rest - Sessão - GET - /Sessão/v2_sessao_login', { env: { hideCre
   it('Status Code is 204', () => {
     cy.api({
       method: 'GET', 
-      url: `${BASE_URL}/${PATH_API}/${usuario}/${senha}/${codigoverificacao}`, 
+      url: `${BASE_URL}/${PATH}/${usuario}/${senha}/${codigoverificacao}`, 
       headers: { Authorization },
       failOnStatusCode: false
     })

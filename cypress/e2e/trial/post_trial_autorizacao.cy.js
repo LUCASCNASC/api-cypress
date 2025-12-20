@@ -1,5 +1,5 @@
 const BASE_URL = Cypress.env('BASE_URL');
-const PATH_API = '/Trial/v3_post_trial_autorizacao';
+const PATH = '/Trial/v3_post_trial_autorizacao';
 const Authorization = Cypress.env('API.PRAGMA');
 
 describe('API rest - Trial - POST - /Trial/v3_post_trial_autorizacao', { env: { hideCredendials: true } }, () => {
@@ -8,7 +8,7 @@ describe('API rest - Trial - POST - /Trial/v3_post_trial_autorizacao', { env: { 
 
     cy.api({
       method: 'POST', 
-      url: `${BASE_URL}/${PATH_API}`, 
+      url: `${BASE_URL}/${PATH}`, 
       headers: { Authorization },
       failOnStatusCode: false
     })

@@ -1,5 +1,5 @@
 const BASE_URL = Cypress.env('BASE_URL');
-const PATH_API = '/LGPD/v3_get_lgpd_dados_titular';
+const PATH = '/LGPD/v3_get_lgpd_dados_titular';
 const Authorization = Cypress.env('API.PRAGMA');
 
 const cpf = "123123123";
@@ -9,7 +9,7 @@ describe('API rest - LGPD - GET /LGPD/v3_get_lgpd_dados_titular', { env: { hideC
   it('Status Code is 200', () => {
     cy.api({
       method: 'GET', 
-      url: `${BASE_URL}/${PATH_API}/${cpf}`, 
+      url: `${BASE_URL}/${PATH}/${cpf}`, 
       headers: { Authorization },
       failOnStatusCode: false
     })

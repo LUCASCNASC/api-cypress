@@ -1,5 +1,5 @@
 const BASE_URL = Cypress.env('BASE_URL');
-const PATH_API = '/Trial/v2_trial_get_post1';
+const PATH = '/Trial/v2_trial_get_post1';
 const Authorization = Cypress.env('API.PRAGMA');
 
 const idFilial = "12345678910"; 
@@ -13,7 +13,7 @@ describe('API rest - Trial - GET - /Trial/v2_trial_get_post1', { env: { hideCred
   it('Status Code is 200', () => {
     cy.api({
       method: 'GET', 
-      url: `${BASE_URL}/${PATH_API}/${idFilial}/${pedido}/${vendedor}/${limit}/${offset}`, 
+      url: `${BASE_URL}/${PATH}/${idFilial}/${pedido}/${vendedor}/${limit}/${offset}`, 
       headers: { Authorization },
       failOnStatusCode: false
     })

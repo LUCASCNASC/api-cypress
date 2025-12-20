@@ -1,5 +1,5 @@
 const BASE_URL = Cypress.env('BASE_URL');
-const PATH_API = '/Financeiro/v3_financeiro_banco_delete';
+const PATH = '/Financeiro/v3_financeiro_banco_delete';
 const Authorization = Cypress.env('API.PRAGMA');
 
 const codigoValido = "123123123";
@@ -10,7 +10,7 @@ describe('API rest - Financeiro - DELETE /Financeiro/v3_financeiro_banco_delete'
   it('Status Code is 200', () => {
     cy.api({
       method: 'DELETE',
-      url: `${BASE_URL}/${PATH_API}/${codigoValido}`,
+      url: `${BASE_URL}/${PATH}/${codigoValido}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).then((response) => {
@@ -22,7 +22,7 @@ describe('API rest - Financeiro - DELETE /Financeiro/v3_financeiro_banco_delete'
   it('Status Code is 404 e 412', () => {
     cy.api({
       method: 'DELETE',
-      url: `${BASE_URL}/${PATH_API}/${codigoInvalido}`,
+      url: `${BASE_URL}/${PATH}/${codigoInvalido}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).then((response) => {

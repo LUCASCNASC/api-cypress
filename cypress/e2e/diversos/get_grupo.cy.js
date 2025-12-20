@@ -1,5 +1,5 @@
 const BASE_URL = Cypress.env('BASE_URL');
-const PATH_API = '/Diversos/v3_diversos_grupo';
+const PATH = '/Diversos/v3_diversos_grupo';
 const Authorization = Cypress.env('API.PRAGMA');
 
 const idtipogrupoInvalido = "abc";
@@ -11,7 +11,7 @@ describe('API rest - Diversos - GET /Diversos/v3_diversos_grupo', { env: { hideC
   it('Status Code is 200', () => {
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}${PATH_API}/${idtipogrupoValido}`,
+      url: `${BASE_URL}${PATH}/${idtipogrupoValido}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).then((response) => {
@@ -29,7 +29,7 @@ describe('API rest - Diversos - GET /Diversos/v3_diversos_grupo', { env: { hideC
   it('Status Code is 204', () => {
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}${PATH_API}/${idtipogrupoSemGrupo}`,
+      url: `${BASE_URL}${PATH}/${idtipogrupoSemGrupo}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).then((response) => {
@@ -41,7 +41,7 @@ describe('API rest - Diversos - GET /Diversos/v3_diversos_grupo', { env: { hideC
   it('Status Code is 412', () => {
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}${PATH_API}/${idtipogrupoInvalido}`,
+      url: `${BASE_URL}${PATH}/${idtipogrupoInvalido}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).then((response) => {

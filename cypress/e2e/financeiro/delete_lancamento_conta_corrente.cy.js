@@ -1,5 +1,5 @@
 const BASE_URL = Cypress.env('BASE_URL');
-const PATH_API = '/Financeiro/v3_financeiro_lancamento_conta_corrente_delete';
+const PATH = '/Financeiro/v3_financeiro_lancamento_conta_corrente_delete';
 const Authorization = Cypress.env('API.PRAGMA');
 
 const idFilialValido = "123123123";
@@ -12,7 +12,7 @@ describe('API rest - Financeiro - DELETE /Financeiro/v3_financeiro_lancamento_co
   it('Status Code is 201', () => {
     cy.api({
       method: 'DELETE',
-      url: `${BASE_URL}/${PATH_API}/${idFilialValido}/${idLancamentoContaCorrenteValido}`,
+      url: `${BASE_URL}/${PATH}/${idFilialValido}/${idLancamentoContaCorrenteValido}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).then((response) => {
@@ -24,7 +24,7 @@ describe('API rest - Financeiro - DELETE /Financeiro/v3_financeiro_lancamento_co
   it('Status Code is 500', () => {
     cy.api({
       method: 'DELETE',
-      url: `${BASE_URL}/${PATH_API}/${idFilialInvalido}/${idLancamentoContaCorrenteInvalido}`,
+      url: `${BASE_URL}/${PATH}/${idFilialInvalido}/${idLancamentoContaCorrenteInvalido}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).then((response) => {

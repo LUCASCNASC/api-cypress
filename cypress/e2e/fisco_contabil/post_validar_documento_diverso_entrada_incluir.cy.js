@@ -1,5 +1,5 @@
 const BASE_URL = Cypress.env('BASE_URL');
-const PATH_API = '/Fisco/Contabil/v3_validar_documento_diverso_entrada_incluir';
+const PATH = '/Fisco/Contabil/v3_validar_documento_diverso_entrada_incluir';
 const Authorization = Cypress.env('API.PRAGMA');
 
 describe('API rest - Fisco/Contábil - POST /Fisco/Contabil/v3_validar_documento_diverso_entrada_incluir', { env: { hideCredendials: true } }, () => {
@@ -7,7 +7,7 @@ describe('API rest - Fisco/Contábil - POST /Fisco/Contabil/v3_validar_documento
   it('Status Code is 200', () => {
     cy.api({
       method: 'POST',
-      url: `${BASE_URL}/${PATH_API}`,
+      url: `${BASE_URL}/${PATH}`,
       headers: { Authorization },
       failOnStatusCode: false,
       body: {

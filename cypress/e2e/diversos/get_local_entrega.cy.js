@@ -1,5 +1,5 @@
 const BASE_URL = Cypress.env('BASE_URL');
-const PATH_API = '/Diversos/v2_diversos_local_entrega';
+const PATH = '/Diversos/v2_diversos_local_entrega';
 const Authorization = Cypress.env('API.PRAGMA');
 
 const rotaInvalida = "abc";
@@ -11,7 +11,7 @@ describe('API rest - Diversos - GET /Diversos/v2_diversos_local_entrega', { env:
   it('Status Code is 200', () => {
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}${PATH_API}/${rotaValida}`,
+      url: `${BASE_URL}${PATH}/${rotaValida}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).then((response) => {
@@ -33,7 +33,7 @@ describe('API rest - Diversos - GET /Diversos/v2_diversos_local_entrega', { env:
   it('Status Code is 204', () => {
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}${PATH_API}/${rotaSemDados}`,
+      url: `${BASE_URL}${PATH}/${rotaSemDados}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).then((response) => {
@@ -45,7 +45,7 @@ describe('API rest - Diversos - GET /Diversos/v2_diversos_local_entrega', { env:
   it('Status Code is 412', () => {
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}${PATH_API}/${rotaInvalida}`,
+      url: `${BASE_URL}${PATH}/${rotaInvalida}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).then((response) => {

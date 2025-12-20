@@ -1,5 +1,5 @@
 const BASE_URL = Cypress.env('BASE_URL');
-const PATH_API = '/Recarga/v3_get_recarga';
+const PATH = '/Recarga/v3_get_recarga';
 const Authorization = Cypress.env('API.PRAGMA');
 
 const idFilial = "12345678910"; 
@@ -10,7 +10,7 @@ describe('API rest - Recarga - GET - /Recarga/v3_get_recarga', { env: { hideCred
   it('Status Code is 200', () => {
     cy.api({
       method: 'GET', 
-      url: `${BASE_URL}/${PATH_API}/${idFilial}/${idItemServico}`, 
+      url: `${BASE_URL}/${PATH}/${idFilial}/${idItemServico}`, 
       headers: { Authorization },
       failOnStatusCode: false
     })

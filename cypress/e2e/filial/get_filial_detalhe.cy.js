@@ -1,5 +1,5 @@
 const BASE_URL = Cypress.env('BASE_URL');
-const PATH_API = '/Filial/v2_filial_detalhe';
+const PATH = '/Filial/v2_filial_detalhe';
 const Authorization = Cypress.env('API.PRAGMA');
 
 const filialValida = 10050; 
@@ -10,7 +10,7 @@ describe('API rest - Filial - GET /Filial/v2_filial_detalhe', { env: { hideCrede
   it('Status Code is 200', () => {
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}/${PATH_API}/${filialValida}`,
+      url: `${BASE_URL}/${PATH}/${filialValida}`,
       headers: { Authorization }
     }).then((response) => {
       expect(response.status).to.equal(200);
@@ -46,7 +46,7 @@ describe('API rest - Filial - GET /Filial/v2_filial_detalhe', { env: { hideCrede
   it('Status Code is 204', () => {
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}/${PATH_API}/${filialSemDados}`,
+      url: `${BASE_URL}/${PATH}/${filialSemDados}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).then((response) => {
@@ -60,7 +60,7 @@ describe('API rest - Filial - GET /Filial/v2_filial_detalhe', { env: { hideCrede
 
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}${PATH_API}/${filialInvalida}`,
+      url: `${BASE_URL}${PATH}/${filialInvalida}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).then((response) => {

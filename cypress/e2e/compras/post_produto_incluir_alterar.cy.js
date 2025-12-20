@@ -1,5 +1,5 @@
 const BASE_URL = Cypress.env('BASE_URL');
-const PATH_API = '/Compras/v3_post_produto_incluir_alterar';
+const PATH = '/Compras/v3_post_produto_incluir_alterar';
 const Authorization = Cypress.env('API.PRAGMA');
 
 describe('API rest - Compras - POST /Compras/v3_post_produto_incluir_alterar', { env: { hideCredentials: true } }, () => {
@@ -7,7 +7,7 @@ describe('API rest - Compras - POST /Compras/v3_post_produto_incluir_alterar', {
   it('Status Code is 200', () => {
     cy.api({
       method: 'POST',
-      url: `${BASE_URL}/${PATH_API}`,
+      url: `${BASE_URL}/${PATH}`,
       headers: { Authorization },
       failOnStatusCode: false,
       body: {
@@ -23,7 +23,7 @@ describe('API rest - Compras - POST /Compras/v3_post_produto_incluir_alterar', {
   it('Status Code is 412', () => {
     cy.api({
       method: 'POST',
-      url: `${BASE_URL}/${PATH_API}`,
+      url: `${BASE_URL}/${PATH}`,
       headers: { Authorization },
       failOnStatusCode: false,
       body: {

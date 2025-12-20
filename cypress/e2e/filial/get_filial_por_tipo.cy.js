@@ -1,5 +1,5 @@
 const BASE_URL = Cypress.env('BASE_URL');
-const PATH_API = '/Filial/v3_get_filial_por_tipo';
+const PATH = '/Filial/v3_get_filial_por_tipo';
 const Authorization = Cypress.env('API.PRAGMA');
 
 const ufValida = 'PR';
@@ -17,7 +17,7 @@ describe('API rest - Filial - GET /Filial/v3_get_filial_por_tipo', { env: { hide
   it('Status Code is 200', () => {
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}/${PATH_API}/${ufValida}/${municipioValido}/${tipoValido}`,
+      url: `${BASE_URL}/${PATH}/${ufValida}/${municipioValido}/${tipoValido}`,
       headers: { Authorization }
     }).then((response) => {
       expect(response.status).to.equal(200);
@@ -40,7 +40,7 @@ describe('API rest - Filial - GET /Filial/v3_get_filial_por_tipo', { env: { hide
   it('Status Code is 204', () => {
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}/${PATH_API}/${ufSemFilial}/${municipioSemFilial}/${tipoSemFilial}`,
+      url: `${BASE_URL}/${PATH}/${ufSemFilial}/${municipioSemFilial}/${tipoSemFilial}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).then((response) => {
@@ -52,7 +52,7 @@ describe('API rest - Filial - GET /Filial/v3_get_filial_por_tipo', { env: { hide
   it('Status Code is 412', () => {
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}/${PATH_API}/${ufInvalida}/${municipioInvalido}/${tipoInvalido}`,
+      url: `${BASE_URL}/${PATH}/${ufInvalida}/${municipioInvalido}/${tipoInvalido}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).then((response) => {

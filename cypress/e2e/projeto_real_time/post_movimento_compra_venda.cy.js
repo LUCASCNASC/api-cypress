@@ -1,5 +1,5 @@
 const BASE_URL = Cypress.env('BASE_URL');
-const PATH_API = '/Projeto%20Real%20Time/v3_post_movimento_compra_venda';
+const PATH = '/Projeto%20Real%20Time/v3_post_movimento_compra_venda';
 const Authorization = Cypress.env('API.PRAGMA');
 
 describe('API rest - Projeto Real Time - POST - /Projeto%20Real%20Time/v3_post_movimento_compra_venda', () => {
@@ -7,7 +7,7 @@ describe('API rest - Projeto Real Time - POST - /Projeto%20Real%20Time/v3_post_m
   it('Status Code is 200', { env: { hideCredendials: true } }, () => {
     cy.api({
       method: 'POST', 
-      url: `${BASE_URL}/${PATH_API}`, 
+      url: `${BASE_URL}/${PATH}`, 
       headers: { Authorization },
       failOnStatusCode: false
     })

@@ -1,5 +1,5 @@
 const BASE_URL = Cypress.env('BASE_URL');
-const PATH_API = '/Logística/v3_get_carregar_nota_transferida_coletor';
+const PATH = '/Logística/v3_get_carregar_nota_transferida_coletor';
 const Authorization = Cypress.env('API.PRAGMA');
 
 const idFilial = "123123123";
@@ -11,7 +11,7 @@ describe('API rest - Logística - GET - /Logística/v3_get_carregar_nota_transfe
 
     cy.api({
       method: 'GET', 
-      url: `${BASE_URL}/${PATH_API}/${idFilial}`, 
+      url: `${BASE_URL}/${PATH}/${idFilial}`, 
       headers: { Authorization },
       failOnStatusCode: false
     })

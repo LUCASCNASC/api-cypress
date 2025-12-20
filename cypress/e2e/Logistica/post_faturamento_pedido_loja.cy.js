@@ -1,5 +1,5 @@
 const BASE_URL = Cypress.env('BASE_URL');
-const PATH_API = '/Logística/v3_post_logistica_faturamentopedidolojaporfilial';
+const PATH = '/Logística/v3_post_logistica_faturamentopedidolojaporfilial';
 const Authorization = Cypress.env('API.PRAGMA');
 
 describe('API rest - Logística - POST - /Logística/v3_post_logistica_faturamentopedidolojaporfilial', { env: { hideCredendials: true } }, () => {

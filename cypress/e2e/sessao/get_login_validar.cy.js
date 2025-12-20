@@ -1,5 +1,5 @@
 const BASE_URL = Cypress.env('BASE_URL');
-const PATH_API = '/Sessão/v3_sessao_login_validar';
+const PATH = '/Sessão/v3_sessao_login_validar';
 const Authorization = Cypress.env('API.PRAGMA');
 
 describe('API rest - Sessão - GET - /Sessão/v3_sessao_login_validar', { env: { hideCredendials: true } }, () => {
@@ -9,7 +9,7 @@ describe('API rest - Sessão - GET - /Sessão/v3_sessao_login_validar', { env: {
 
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}/${PATH_API}/`,
+      url: `${BASE_URL}/${PATH}/`,
       headers: { Authorization },
       failOnStatusCode: false
     })

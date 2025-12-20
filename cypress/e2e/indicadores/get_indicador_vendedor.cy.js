@@ -1,5 +1,5 @@
 const BASE_URL = Cypress.env('BASE_URL');
-const PATH_API = '/Indicadores/v3_indicador_vendedor';
+const PATH = '/Indicadores/v3_indicador_vendedor';
 const Authorization = Cypress.env('API.PRAGMA');
 
 const ano = "123123123";
@@ -11,7 +11,7 @@ describe('API rest - Indicadores - GET /Indicadores/v3_indicador_vendedor', { en
   it('Status Code is 200', () => {
     cy.api({
       method: 'GET', 
-      url: `${BASE_URL}/${PATH_API}/${ano}/${mes}/${dia}`, 
+      url: `${BASE_URL}/${PATH}/${ano}/${mes}/${dia}`, 
       headers: { Authorization },
       failOnStatusCode: false
     })

@@ -1,5 +1,5 @@
 const BASE_URL = Cypress.env('BASE_URL');
-const PATH_API = '/Logística/v3_get_logistica_lista_mapa_carga_cliente_lote';
+const PATH = '/Logística/v3_get_logistica_lista_mapa_carga_cliente_lote';
 const Authorization = Cypress.env('API.PRAGMA');
 
 const idFilial = "123123123"; 
@@ -11,7 +11,7 @@ describe('API rest - Logística - GET - /Logística/v3_get_logistica_lista_mapa_
   it('Status Code is 200', () => {
     cy.api({
       method: 'GET', 
-      url: `${BASE_URL}/${PATH_API}/${idFilial}/${idMapaCargaInicial}/${idMapaCargaFinal}`, 
+      url: `${BASE_URL}/${PATH}/${idFilial}/${idMapaCargaInicial}/${idMapaCargaFinal}`, 
       headers: { Authorization },
       failOnStatusCode: false
     })

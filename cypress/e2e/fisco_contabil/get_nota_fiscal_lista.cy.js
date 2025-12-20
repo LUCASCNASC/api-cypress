@@ -1,5 +1,5 @@
 const BASE_URL = Cypress.env('BASE_URL');
-const PATH_API = '/Fisco/Contabil/v3_nota_fiscal_lista';
+const PATH = '/Fisco/Contabil/v3_nota_fiscal_lista';
 const Authorization = Cypress.env('API.PRAGMA');
 
 const Filial = "123123123";
@@ -13,7 +13,7 @@ describe('API rest - Fisco/Contábil - GET - /Fisco/Contabil/v3_nota_fiscal_list
   it('Status Code is 200', () => {
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}/${PATH_API}/${Filial}/${Registro_Nota}/${Data_Inicial}/${Data_Final}/${CNPJ_CPF}`,
+      url: `${BASE_URL}/${PATH}/${Filial}/${Registro_Nota}/${Data_Inicial}/${Data_Final}/${CNPJ_CPF}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).then((response) => {

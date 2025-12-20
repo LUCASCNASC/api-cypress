@@ -1,5 +1,5 @@
 const BASE_URL = Cypress.env('BASE_URL');
-const PATH_API = '/Financeiro/v3_financeiro_dividas_a_receber';
+const PATH = '/Financeiro/v3_financeiro_dividas_a_receber';
 const Authorization = Cypress.env('API.PRAGMA');
 
 const idFilialValido = "123123123";
@@ -17,7 +17,7 @@ describe('API rest - Financeiro - GET /Financeiro/v3_financeiro_dividas_a_recebe
   it('Status Code is 200', () => {
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}/${PATH_API}/${idFilialValido}/${cpf_cnpjValido}/${separarvinculados}/${limit}/${offset}`,
+      url: `${BASE_URL}/${PATH}/${idFilialValido}/${cpf_cnpjValido}/${separarvinculados}/${limit}/${offset}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).then((response) => {
@@ -71,7 +71,7 @@ describe('API rest - Financeiro - GET /Financeiro/v3_financeiro_dividas_a_recebe
   it('Status Code is 204', () => {
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}/${PATH_API}/${idFilialSemTitulos}/${cpf_cnpjSemTitulos}/${separarvinculados}/${limit}/${offset}`,
+      url: `${BASE_URL}/${PATH}/${idFilialSemTitulos}/${cpf_cnpjSemTitulos}/${separarvinculados}/${limit}/${offset}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).then((response) => {
@@ -83,7 +83,7 @@ describe('API rest - Financeiro - GET /Financeiro/v3_financeiro_dividas_a_recebe
   it('Status Code is 412', () => {
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}/${PATH_API}/${idFilialInvalido}/${cpf_cnpjInvalido}/${separarvinculados}/${limit}/${offset}`,
+      url: `${BASE_URL}/${PATH}/${idFilialInvalido}/${cpf_cnpjInvalido}/${separarvinculados}/${limit}/${offset}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).then((response) => {

@@ -1,5 +1,5 @@
 const BASE_URL = Cypress.env('BASE_URL');
-const PATH_API = '/Pedido/v3_post_pedido_venda_previsao_entrega';
+const PATH = '/Pedido/v3_post_pedido_venda_previsao_entrega';
 const Authorization = Cypress.env('API.PRAGMA');
 
 describe('API rest - Pedido - POST - /Pedido/v3_post_pedido_venda_previsao_entrega', { env: { hideCredendials: true } }, () => {
@@ -7,7 +7,7 @@ describe('API rest - Pedido - POST - /Pedido/v3_post_pedido_venda_previsao_entre
   it('Status Code is 200', () => {
     cy.api({
       method: 'POST', 
-      url: `${BASE_URL}/${PATH_API}`, 
+      url: `${BASE_URL}/${PATH}`, 
       headers: { Authorization },
       failOnStatusCode: false
     })

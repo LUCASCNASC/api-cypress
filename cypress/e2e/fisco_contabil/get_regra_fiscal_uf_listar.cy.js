@@ -1,5 +1,5 @@
 const BASE_URL = Cypress.env('BASE_URL');
-const PATH_API = '/Fisco/Contabil/v3_regra_fiscal_uf_get';
+const PATH = '/Fisco/Contabil/v3_regra_fiscal_uf_get';
 const Authorization = Cypress.env('API.PRAGMA');
 
 const UFOrigem = "123123123";
@@ -10,7 +10,7 @@ describe('API rest - Fisco/Contábil - GET - /Fisco/Contabil/v3_regra_fiscal_uf_
   it('Status Code is 200', () => {
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}/${PATH_API}/${UFOrigem}/${OrigemProduto}`,
+      url: `${BASE_URL}/${PATH}/${UFOrigem}/${OrigemProduto}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).then((response) => {

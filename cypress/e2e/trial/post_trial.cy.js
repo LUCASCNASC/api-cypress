@@ -1,5 +1,5 @@
 const BASE_URL = Cypress.env('BASE_URL');
-const PATH_API = '/Trial/v2_trial_get_post2';
+const PATH = '/Trial/v2_trial_get_post2';
 const Authorization = Cypress.env('API.PRAGMA');
 
 describe('API rest - Trial - POST - /Trial/v2_trial_get_post2', { env: { hideCredendials: true } }, () => {
@@ -7,7 +7,7 @@ describe('API rest - Trial - POST - /Trial/v2_trial_get_post2', { env: { hideCre
   it('Status Code is 200', () => {
     cy.api({
       method: 'POST', 
-      url: `${BASE_URL}/${PATH_API}`, 
+      url: `${BASE_URL}/${PATH}`, 
       headers: { Authorization },
       failOnStatusCode: false
     })

@@ -1,5 +1,5 @@
 const BASE_URL = Cypress.env('BASE_URL');
-const PATH_API = '/Cliente/v3_cliente_servico_vinculado';
+const PATH = '/Cliente/v3_cliente_servico_vinculado';
 const Authorization = Cypress.env('API.PRAGMA');
 
 const clienteSemServico = "00000000000000";
@@ -12,7 +12,7 @@ describe('API rest - Cliente - GET /Cliente/v3_cliente_servico_vinculado', { env
   it('Status Code is 200', () => {
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}${PATH_API}/${clienteValido}/${processoValido}`,
+      url: `${BASE_URL}${PATH}/${clienteValido}/${processoValido}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).then((response) => {
@@ -34,7 +34,7 @@ describe('API rest - Cliente - GET /Cliente/v3_cliente_servico_vinculado', { env
   it('Status Code is 204', () => {
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}${PATH_API}/${clienteSemServico}/${processoSemServico}`,
+      url: `${BASE_URL}${PATH}/${clienteSemServico}/${processoSemServico}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).then((response) => {

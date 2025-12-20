@@ -1,5 +1,5 @@
 const BASE_URL = Cypress.env('BASE_URL');
-const PATH_API = '/Projeto%20Real%20Time/v3_get_filial_lista';
+const PATH = '/Projeto%20Real%20Time/v3_get_filial_lista';
 const Authorization = Cypress.env('API.PRAGMA');
 
 describe('API rest - Projeto Real Time - GET - /Projeto%20Real%20Time/v3_get_filial_lista', { env: { hideCredendials: true } }, () => {
@@ -7,7 +7,7 @@ describe('API rest - Projeto Real Time - GET - /Projeto%20Real%20Time/v3_get_fil
   it('Status Code is 200', () => {
     cy.api({
       method: 'GET', 
-      url: `${BASE_URL}/${PATH_API}`, 
+      url: `${BASE_URL}/${PATH}`, 
       headers: { Authorization },
       failOnStatusCode: false
     })

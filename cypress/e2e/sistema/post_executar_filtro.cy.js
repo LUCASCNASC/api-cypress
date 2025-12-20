@@ -1,5 +1,5 @@
 const BASE_URL = Cypress.env('BASE_URL');
-const PATH_API = '/Sistema/v2_sistema_executar_filtro';
+const PATH = '/Sistema/v2_sistema_executar_filtro';
 const Authorization = Cypress.env('API.PRAGMA');
 
 describe('API rest - Sistema - POST - /Sistema/v2_sistema_executar_filtro', { env: { hideCredendials: true } }, () => {
@@ -7,7 +7,7 @@ describe('API rest - Sistema - POST - /Sistema/v2_sistema_executar_filtro', { en
   it('Status Code is 200', () => {
     cy.api({
       method: 'POST', 
-      url: `${BASE_URL}/${PATH_API}`, 
+      url: `${BASE_URL}/${PATH}`, 
       headers: { Authorization },
       failOnStatusCode: false
     })

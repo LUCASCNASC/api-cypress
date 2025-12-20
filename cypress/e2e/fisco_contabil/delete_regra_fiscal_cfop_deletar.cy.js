@@ -1,5 +1,5 @@
 const BASE_URL = Cypress.env('BASE_URL');
-const PATH_API = '/Fisco/Contabil/v3_regra_fiscal_cfop_delete';
+const PATH = '/Fisco/Contabil/v3_regra_fiscal_cfop_delete';
 const Authorization = Cypress.env('API.PRAGMA');
 
 const idBaseFiscalCFOP = "123";
@@ -9,7 +9,7 @@ describe('API rest - Fisco/Contábil - DELETE - /Fisco/Contabil/v3_regra_fiscal_
   it('Status Code is 200', () => {
     cy.api({
       method: 'DELETE',
-      url: `${BASE_URL}/${PATH_API}/${idBaseFiscalCFOP}`,
+      url: `${BASE_URL}/${PATH}/${idBaseFiscalCFOP}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).then((response) => {

@@ -1,5 +1,5 @@
 const BASE_URL = Cypress.env('BASE_URL');
-const PATH_API = '/Pagamento%20pedido/v2_pag_pedido_contrato_servico';
+const PATH = '/Pagamento%20pedido/v2_pag_pedido_contrato_servico';
 const Authorization = Cypress.env('API.PRAGMA');
 
 const filial = "12345678910";
@@ -10,7 +10,7 @@ describe('API rest - Pagamento pedido - GET - /Pagamento%20pedido/v2_pag_pedido_
   it('Status Code is 200', () => {
     cy.api({
       method: 'GET', 
-      url: `${BASE_URL}/${PATH_API}/${filial}/${pedido}`, 
+      url: `${BASE_URL}/${PATH}/${filial}/${pedido}`, 
       headers: { Authorization },
       failOnStatusCode: false
     })

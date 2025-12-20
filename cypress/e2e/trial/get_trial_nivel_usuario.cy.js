@@ -1,5 +1,5 @@
 const BASE_URL = Cypress.env('BASE_URL');
-const PATH_API = '/Trial/v3_get_trial_nivel_usuario';
+const PATH = '/Trial/v3_get_trial_nivel_usuario';
 const Authorization = Cypress.env('API.PRAGMA');
 
 const idTrial = "12345678910";
@@ -10,7 +10,7 @@ describe('API rest - Trial - GET - /Trial/v3_get_trial_nivel_usuario', { env: { 
   it('Status Code is 200', () => {
     cy.api({
       method: 'GET', 
-      url: `${BASE_URL}/${PATH_API}/${idTrial}/${quantidadeNivel}`, 
+      url: `${BASE_URL}/${PATH}/${idTrial}/${quantidadeNivel}`, 
       headers: { Authorization },
       failOnStatusCode: false
     })  

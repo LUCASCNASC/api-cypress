@@ -1,5 +1,5 @@
 const BASE_URL = Cypress.env('BASE_URL');
-const PATH_API = '/Inventário/v3_get_itens_inventario';
+const PATH = '/Inventário/v3_get_itens_inventario';
 const Authorization = Cypress.env('API.PRAGMA');
 
 const idFilial = "123123123";
@@ -10,7 +10,7 @@ describe('API rest - Inventário - GET /Inventário/v3_get_itens_inventario', { 
   it('Status Code is 200', () => {
     cy.api({
       method: 'GET', 
-      url: `${BASE_URL}/${PATH_API}/${idFilial}/${idInventario}`, 
+      url: `${BASE_URL}/${PATH}/${idFilial}/${idInventario}`, 
       headers: { Authorization },
       failOnStatusCode: false
     })

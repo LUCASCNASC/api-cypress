@@ -1,5 +1,5 @@
 const BASE_URL = Cypress.env('BASE_URL');
-const PATH_API = '/Logística/v3_delete_excluir_dado_coletado_nota_transferida';
+const PATH = '/Logística/v3_delete_excluir_dado_coletado_nota_transferida';
 const Authorization = Cypress.env('API.PRAGMA');
 
 const idFilialOrigem = "123123123"; 
@@ -10,7 +10,7 @@ describe('API rest - Logística - DELETE - /Logística/v3_delete_excluir_dado_co
   it('Status Code is 200', () => {
     cy.api({
       method: 'DELETE', 
-      url: `${BASE_URL}/${PATH_API}/${idFilialOrigem}/${idRegistroNotaOrigem}`, 
+      url: `${BASE_URL}/${PATH}/${idFilialOrigem}/${idRegistroNotaOrigem}`, 
       headers: { Authorization },
       failOnStatusCode: false
     })

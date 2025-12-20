@@ -1,5 +1,5 @@
 const BASE_URL = Cypress.env('BASE_URL');
-const PATH_API = '/Financeiro/v3_financeiro_historicocontacorrente';
+const PATH = '/Financeiro/v3_financeiro_historicocontacorrente';
 const Authorization = Cypress.env('API.PRAGMA');
 
 const idTipoContaCorrente = "123123123";
@@ -14,7 +14,7 @@ describe('API rest - Financeiro - GET /Financeiro/v3_financeiro_historicocontaco
   it('Status Code is 200', () => {
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}/${PATH_API}/${idTipoContaCorrente}/${idContaCorrente}`,
+      url: `${BASE_URL}/${PATH}/${idTipoContaCorrente}/${idContaCorrente}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).then((response) => {
@@ -31,7 +31,7 @@ describe('API rest - Financeiro - GET /Financeiro/v3_financeiro_historicocontaco
   it('Status Code is 204', () => {
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}${PATH_API}/${idTipoContaCorrenteSemDados}/${idContaCorrenteSemDados}`,
+      url: `${BASE_URL}${PATH}/${idTipoContaCorrenteSemDados}/${idContaCorrenteSemDados}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).then((response) => {
@@ -43,7 +43,7 @@ describe('API rest - Financeiro - GET /Financeiro/v3_financeiro_historicocontaco
   it('Status Code is 412', () => {
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}${PATH_API}/${idTipoContaCorrenteInvalido}/${idContaCorrenteInvalido}`,
+      url: `${BASE_URL}${PATH}/${idTipoContaCorrenteInvalido}/${idContaCorrenteInvalido}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).then((response) => {

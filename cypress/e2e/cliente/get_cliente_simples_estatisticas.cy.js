@@ -1,5 +1,5 @@
 const BASE_URL = Cypress.env('BASE_URL');
-const PATH_API = '/Cliente/v2_cliente_simples_estatisticas';
+const PATH = '/Cliente/v2_cliente_simples_estatisticas';
 const Authorization = Cypress.env('API.PRAGMA');
 
 const idpessoaSemEstatistica = "000000";
@@ -12,7 +12,7 @@ describe('API rest - Cliente - GET /Cliente/v2_cliente_simples_estatisticas', { 
   it('Status Code is 200', () => {
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}${PATH_API}/${idpessoaValido}`,
+      url: `${BASE_URL}${PATH}/${idpessoaValido}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).then((response) => {
@@ -62,7 +62,7 @@ describe('API rest - Cliente - GET /Cliente/v2_cliente_simples_estatisticas', { 
   it('Status Code is 204', () => {
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}${PATH_API}/${idpessoaSemEstatistica}`,
+      url: `${BASE_URL}${PATH}/${idpessoaSemEstatistica}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).then((response) => {
@@ -74,7 +74,7 @@ describe('API rest - Cliente - GET /Cliente/v2_cliente_simples_estatisticas', { 
   it('Status Code is 401', () => {
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}${PATH_API}/123456`,
+      url: `${BASE_URL}${PATH}/123456`,
       headers: { Authorization: AUTHORIZATION_INVALID },
       failOnStatusCode: false
     }).then((response) => {
@@ -85,7 +85,7 @@ describe('API rest - Cliente - GET /Cliente/v2_cliente_simples_estatisticas', { 
   it('Status Code is 412', () => {
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}${PATH_API}/${idpessoaInvalido}`,
+      url: `${BASE_URL}${PATH}/${idpessoaInvalido}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).then((response) => {

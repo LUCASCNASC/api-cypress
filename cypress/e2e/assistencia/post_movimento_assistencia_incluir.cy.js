@@ -1,5 +1,5 @@
 const BASE_URL = Cypress.env('BASE_URL');
-const PATH_API = '/Assistencia/v3_post_movimento_assistencia_incluir';
+const PATH = '/Assistencia/v3_post_movimento_assistencia_incluir';
 const AUTHORIZATION = Cypress.env('API.PRAGMA');
 
 const AUTHORIZATION_INVALID = Cypress.env('API.PRAGMA_INVALID');

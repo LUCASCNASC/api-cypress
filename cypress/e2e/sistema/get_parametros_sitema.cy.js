@@ -1,5 +1,5 @@
 const BASE_URL = Cypress.env('BASE_URL');
-const PATH_API = '/Sistema/v2_sistema_parametro_sistema';
+const PATH = '/Sistema/v2_sistema_parametro_sistema';
 const Authorization = Cypress.env('API.PRAGMA');
 
 describe('API rest - Sistema - GET - /Sistema/v2_sistema_parametro_sistema', { env: { hideCredendials: true } }, () => {
@@ -7,7 +7,7 @@ describe('API rest - Sistema - GET - /Sistema/v2_sistema_parametro_sistema', { e
   it('Status Code is 200', () => {
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}/${PATH_API}`,
+      url: `${BASE_URL}/${PATH}`,
       headers: { Authorization },
       failOnStatusCode: false
     })

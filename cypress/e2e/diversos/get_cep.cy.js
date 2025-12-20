@@ -1,5 +1,5 @@
 const BASE_URL = Cypress.env('BASE_URL');
-const PATH_API = '/Diversos/v2_diversos_cep';
+const PATH = '/Diversos/v2_diversos_cep';
 const Authorization = Cypress.env('API.PRAGMA');
 
 const cepSemDados = "00000000";
@@ -11,7 +11,7 @@ describe('API rest - Diversos - GET /Diversos/v2_diversos_cep', { env: { hideCre
   it('Status Code is 200', () => {
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}${PATH_API}/${cepValido}`,
+      url: `${BASE_URL}${PATH}/${cepValido}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).then((response) => {
@@ -30,7 +30,7 @@ describe('API rest - Diversos - GET /Diversos/v2_diversos_cep', { env: { hideCre
   it('Status Code is 204', () => {
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}${PATH_API}/${cepSemDados}`,
+      url: `${BASE_URL}${PATH}/${cepSemDados}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).then((response) => {
@@ -42,7 +42,7 @@ describe('API rest - Diversos - GET /Diversos/v2_diversos_cep', { env: { hideCre
   it('Status Code is 412', () => {
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}${PATH_API}/${cepInvalido}`,
+      url: `${BASE_URL}${PATH}/${cepInvalido}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).then((response) => {

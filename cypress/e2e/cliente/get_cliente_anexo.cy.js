@@ -1,5 +1,5 @@
 const BASE_URL = Cypress.env('BASE_URL');
-const PATH_API = '/Cliente/v3_cliente_anexo';
+const PATH = '/Cliente/v3_cliente_anexo';
 const Authorization = Cypress.env('API.PRAGMA');
 
 const idcnpj_cpfSemAnexo = Cypress.env('ID_CNPJ_CPF_SEM_ANEXO');
@@ -11,7 +11,7 @@ describe('API rest - Cliente - GET /Cliente/v3_cliente_anexo', { env: { hideCred
   it('Status Code is 200', () => {
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}${PATH_API}/${idcnpj_cpfValido}`,
+      url: `${BASE_URL}${PATH}/${idcnpj_cpfValido}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).then((response) => {
@@ -29,7 +29,7 @@ describe('API rest - Cliente - GET /Cliente/v3_cliente_anexo', { env: { hideCred
   it('Status Code is 204', () => {
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}${PATH_API}/${idcnpj_cpfSemAnexo}`,
+      url: `${BASE_URL}${PATH}/${idcnpj_cpfSemAnexo}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).then((response) => {
@@ -41,7 +41,7 @@ describe('API rest - Cliente - GET /Cliente/v3_cliente_anexo', { env: { hideCred
   it('Status Code is 412', () => {
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}${PATH_API}/${idcnpj_cpfInvalido}`,
+      url: `${BASE_URL}${PATH}/${idcnpj_cpfInvalido}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).then((response) => {

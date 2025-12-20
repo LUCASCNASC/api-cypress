@@ -1,5 +1,5 @@
 const BASE_URL = Cypress.env('BASE_URL');
-const PATH_API = '/api/API/api_swagger';
+const PATH = '/api/API/api_swagger';
 const AUTHORIZATION = Cypress.env('API.PRAGMA');
 
 const VERSAO = Cypress.env('VERSAO');
@@ -9,7 +9,7 @@ describe('API rest - API - GET /api/swagger', { env: { hideCredentials: true } }
   it('Status Code is 200', () => {
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}${PATH_API}/${VERSAO}`,
+      url: `${BASE_URL}${PATH}/${VERSAO}`,
       headers: { Authorization: AUTHORIZATION },
       failOnStatusCode: false
     }).should((response) => {
@@ -23,7 +23,7 @@ describe('API rest - API - GET /api/swagger', { env: { hideCredentials: true } }
   it('Status Code is 401 e 403', () => {
     cy.api({
       method: 'GET',
-      url: `${BASE_URL}${PATH_API}/${VERSAO}`,
+      url: `${BASE_URL}${PATH}/${VERSAO}`,
       failOnStatusCode: false
     }).should((response) => {
       expect([401, 403]).to.include(response.status);

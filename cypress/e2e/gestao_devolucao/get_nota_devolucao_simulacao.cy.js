@@ -1,5 +1,5 @@
 const BASE_URL = Cypress.env('BASE_URL');
-const PATH_API = '/Gestão%20Devolução/v2_gestao_devolucao_nota_devolucao_simulacao';
+const PATH = '/Gestão%20Devolução/v2_gestao_devolucao_nota_devolucao_simulacao';
 const Authorization = Cypress.env('API.PRAGMA');
 
 const filial = "123123123"; 
@@ -11,9 +11,8 @@ describe('API rest - Gestão Devolução - GET /Gestão%20Devolução/v2_gestao_
   it('Status Code is 200', () => {
     cy.api({
       method: 'GET', 
-      url: `${BASE_URL}/${PATH_API}/${filial}/${solicitacao}/${Authorization}`, 
+      url: `${BASE_URL}/${PATH}/${filial}/${solicitacao}/${Authorization}`, 
       headers: { Authorization },
-      
       failOnStatusCode: false
     })
       .then((response) => {

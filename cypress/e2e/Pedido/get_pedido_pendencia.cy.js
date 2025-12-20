@@ -1,5 +1,5 @@
 const BASE_URL = Cypress.env('BASE_URL');
-const PATH_API = '/Pedido/v2_pedido_pendencia';
+const PATH = '/Pedido/v2_pedido_pendencia';
 const Authorization = Cypress.env('API.PRAGMA');
 
 const idpedidovenda = "12345678910"; 
@@ -12,7 +12,7 @@ describe('API rest - Pedido - GET - /Pedido/v2_pedido_pendencia', { env: { hideC
   it('Status Code is 200', () => {
     cy.api({
       method: 'GET', 
-      url: `${BASE_URL}/${PATH_API}/${idpedidovenda}/${idvendedor}/${cnpj_cpf}/${listapedidovenda}`, 
+      url: `${BASE_URL}/${PATH}/${idpedidovenda}/${idvendedor}/${cnpj_cpf}/${listapedidovenda}`, 
       headers: { Authorization },
       failOnStatusCode: false
     })

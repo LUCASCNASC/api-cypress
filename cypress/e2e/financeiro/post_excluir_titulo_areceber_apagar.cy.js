@@ -1,5 +1,5 @@
 const BASE_URL = Cypress.env('BASE_URL');
-const PATH_API = '/Financeiro/v3_excluir_titulo_areceber_apagar';
+const PATH = '/Financeiro/v3_excluir_titulo_areceber_apagar';
 const Authorization = Cypress.env('API.PRAGMA');
 
 describe('API rest - Financeiro - POST /Financeiro/v3_excluir_titulo_areceber_apagar', { env: { hideCredentials: true } }, () => {
@@ -7,7 +7,7 @@ describe('API rest - Financeiro - POST /Financeiro/v3_excluir_titulo_areceber_ap
   it('Status Code is 200', () => {
     cy.api({
       method: 'POST',
-      url: `${BASE_URL}/${PATH_API}`,
+      url: `${BASE_URL}/${PATH}`,
       headers: { Authorization },
       failOnStatusCode: false,
       body: {
@@ -28,7 +28,7 @@ describe('API rest - Financeiro - POST /Financeiro/v3_excluir_titulo_areceber_ap
   it('Status Code is 412', () => {
     cy.api({
       method: 'POST',
-      url: `${BASE_URL}/${PATH_API}`,
+      url: `${BASE_URL}/${PATH}`,
       headers: { Authorization },
       failOnStatusCode: false,
       body: {
