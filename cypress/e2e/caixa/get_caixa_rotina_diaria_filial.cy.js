@@ -17,7 +17,7 @@ describe('API rest - Caixa - GET /v3/caixa_rotina_diaria_filial', { env: { hideC
       url: `${BASE_URL}${PATH}/${idFilialValido}/${dataAberturaValida}`,
       headers: { Authorization }
     }).should((response) => {
-      expect(response.status, 'Status Code is deve ser 200').to.equal(200);
+      expect(response.status, 'Status code: 200').to.equal(200);
       expect(response.duration, 'Tempo de resposta deve ser < 2s').to.be.lessThan(2000);
       
     });
@@ -30,7 +30,7 @@ describe('API rest - Caixa - GET /v3/caixa_rotina_diaria_filial', { env: { hideC
       headers: { Authorization },
       failOnStatusCode: false
     }).should((response) => {
-      expect(response.status, 'Status Code is deve ser 204').to.equal(204);
+      expect(response.status, 'Status code: 204').to.equal(204);
       expect(response.body, 'Corpo deve ser vazio').to.be.empty;
     });
   });

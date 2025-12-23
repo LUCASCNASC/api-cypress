@@ -19,7 +19,7 @@ describe('API rest - Assistência - POST /Assistencia/v3_post_movimento_assisten
         Qtde_Assistencias: 1
       }
     }).should((response) => {
-      expect(response.status, 'Status deve ser 200').to.eq(200);
+      expect(response.status, 'Status code: 200').to.eq(200);
       expect(response.duration, 'Deve responder em menos de 2s').to.be.lessThan(2000);
       expect(response.body, 'Deve conter propriedade retorno').to.have.property('retorno');
       expect(response.body.retorno, 'Retorno deve ser array não vazio').to.be.an('array').and.not.be.empty;
