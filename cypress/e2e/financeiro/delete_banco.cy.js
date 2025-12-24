@@ -8,6 +8,7 @@ const codigoInvalido = "99999";
 describe('API rest - Financeiro - DELETE /Financeiro/v3_financeiro_banco_delete', { env: { hideCredentials: true } }, () => {
 
   it('Status Code is 200', () => {
+
     cy.api({
       method: 'DELETE',
       url: `${BASE_URL}/${PATH}/${codigoValido}`,
@@ -20,6 +21,7 @@ describe('API rest - Financeiro - DELETE /Financeiro/v3_financeiro_banco_delete'
   });
 
   it('Status Code is 404 e 412', () => {
+
     cy.api({
       method: 'DELETE',
       url: `${BASE_URL}/${PATH}/${codigoInvalido}`,

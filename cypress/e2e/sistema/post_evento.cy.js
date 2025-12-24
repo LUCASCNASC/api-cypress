@@ -5,6 +5,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 describe('API rest - Sistema - POST - /Sistema/v2_sistema_evento', { env: { hideCredendials: true } }, () => {
   
   it('Status Code is 201', () => {
+
     cy.api({
       method: 'POST', 
       url: `${BASE_URL}/${PATH}`, 

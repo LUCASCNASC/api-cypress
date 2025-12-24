@@ -7,6 +7,7 @@ const AUTHORIZATION_INVALID = Cypress.env('API.PRAGMA_INVALID');
 describe('API rest - Assistência - POST /Assistencia/v3_post_movimento_assistencia_incluir', { env: { hideCredendials: true } }, () => {
 
   it('Status Code is 200', () => {
+
     cy.api({
       method: 'POST',
       url,
@@ -35,6 +36,7 @@ describe('API rest - Assistência - POST /Assistencia/v3_post_movimento_assisten
   });
 
   it('Status Code is 402', () => {
+
     cy.api({
       method: 'POST',
       url,
@@ -51,6 +53,7 @@ describe('API rest - Assistência - POST /Assistencia/v3_post_movimento_assisten
   });
 
   it('Status Code is 401 e 403', () => {
+
     cy.api({
       method: 'POST',
       url,
@@ -68,6 +71,7 @@ describe('API rest - Assistência - POST /Assistencia/v3_post_movimento_assisten
   });
 
   it('Status Code is 401 e 403', () => {
+
     cy.api({
       method: 'POST',
       url,

@@ -5,6 +5,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 describe('API rest - Trial - POST - /Trial/v3_post_gerador_trial', { env: { hideCredendials: true } }, () => {
   
   it('Status Code is 200', () => {
+
     cy.api({
       method: 'POST', 
       url: `${BASE_URL}/${PATH}`, 

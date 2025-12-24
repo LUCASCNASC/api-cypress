@@ -6,6 +6,7 @@ describe('API rest - Logística - POST - /Logística/v3_post_gravar_mapa_carga_c
   ', { env: { hideCredendials: true } }, () => {
   
   it('Status Code is 200', () => {
+
     cy.api({
       method: 'POST', 
       url: `${BASE_URL}/${PATH}`, 

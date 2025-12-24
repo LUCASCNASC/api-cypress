@@ -25,6 +25,7 @@ describe('API rest - GET /api/version', { env: { hideCredendials: true } }, () =
   });
 
   it('Status Code is 401 e 403', () => {
+
     cy.api({
       method: 'GET',
       url: `${BASE_URL}/${PATH}`,

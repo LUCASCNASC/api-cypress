@@ -5,6 +5,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 describe('API rest - Projeto Real Time - GET - /Projeto%20Real%20Time/v3_get_filial_lista', { env: { hideCredendials: true } }, () => {
   
   it('Status Code is 200', () => {
+
     cy.api({
       method: 'GET', 
       url: `${BASE_URL}/${PATH}`, 

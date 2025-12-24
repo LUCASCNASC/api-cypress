@@ -7,6 +7,7 @@ const idFilial = "12345678910";
 describe('API rest - Pedido - GET - /Pedido/v3_gerente_filial', { env: { hideCredendials: true } }, () => {
   
   it('Status Code is 200', () => {
+
     cy.api({
       method: 'GET', 
       url: `${BASE_URL}/${PATH}/${idFilial}`, 

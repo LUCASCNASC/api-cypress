@@ -12,6 +12,7 @@ const sort = "123";
 describe('API rest - Diversos - GET /Diversos/v2_diversos_cnae', { env: { hideCredentials: true } }, () => {
 
   it('Status Code is 200', () => {
+
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH}/${termoValido}/${limit}/${offset}/${sort}`,
@@ -28,6 +29,7 @@ describe('API rest - Diversos - GET /Diversos/v2_diversos_cnae', { env: { hideCr
   });
 
   it('Status Code is 204', () => {
+
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH}/${termoSemDados}/${limit}/${offset}/${sort}`,
@@ -40,6 +42,7 @@ describe('API rest - Diversos - GET /Diversos/v2_diversos_cnae', { env: { hideCr
   });
 
   it('Status Code is 412', () => {
+
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH}/${termoInvalido}/${limit}/${offset}/${sort}`,

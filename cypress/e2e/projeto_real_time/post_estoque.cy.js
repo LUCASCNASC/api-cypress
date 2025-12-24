@@ -5,6 +5,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 describe('API rest - Projeto Real Time - POST - /Projeto%20Real%20Time/v3_post_estoque', { env: { hideCredendials: true } }, () => {
   
   it('Status Code is 200', () => {
+
     cy.api({
       method: 'POST', 
       url: `${BASE_URL}/${PATH}`, 

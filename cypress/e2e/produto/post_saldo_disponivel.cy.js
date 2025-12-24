@@ -5,6 +5,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 describe('API rest - Produto - POST - /Produto/v3_produto_saldo_disponivel', { env: { hideCredendials: true } }, () => {
 
   it('Status Code is 200', () => {
+
     cy.api({
       method: 'POST', 
       url: `${BASE_URL}/${PATH}`,
