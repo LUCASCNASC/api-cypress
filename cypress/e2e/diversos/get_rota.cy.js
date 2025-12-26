@@ -12,8 +12,7 @@ const idrotacidade = "123";
 describe('API rest - Diversos - GET /Diversos/v3_diversos_rota', { env: { hideCredentials: true } }, () => {
 
   it('Status Code is 200', () => {
-
-    cy.api({
+    cy.api({({
       method: 'GET',
       url: `${BASE_URL}/${PATH}/${idgruporota}/${idrota}/${idrotacidade}`,
       headers: { Authorization },
@@ -36,8 +35,7 @@ describe('API rest - Diversos - GET /Diversos/v3_diversos_rota', { env: { hideCr
   });
 
   it('Status Code is 204', () => {
-
-    cy.api({
+    cy.api({({
       method: 'GET',
       url: `${BASE_URL}/${PATH}/${idgruporotaSemRota}/${idrotaSemRota}/${idrotacidadeSemRota}`,
       headers: { Authorization },

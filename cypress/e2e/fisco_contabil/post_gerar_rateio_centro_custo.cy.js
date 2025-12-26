@@ -5,8 +5,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 describe('API rest - Fisco/Contábil - POST - /Fisco/Contabil/v3_post_gerar_rateio_centro_custo', { env: { hideCredendials: true } }, () => {
   
   it('Status Code is 200', () => {
-
-    cy.api({
+    cy.api({({
       method: 'POST',
       url: `${BASE_URL}/${PATH}`,
       headers: { Authorization },

@@ -11,8 +11,7 @@ const offset = "12345678910";
 describe('API rest - Trial - GET - /Trial/v2_trial_get_post1', { env: { hideCredendials: true } }, () => {
   
   it('Status Code is 200', () => {
-
-    cy.api({
+    cy.api({({
       method: 'GET', 
       url: `${BASE_URL}/${PATH}/${idFilial}/${pedido}/${vendedor}/${limit}/${offset}`, 
       headers: { Authorization },

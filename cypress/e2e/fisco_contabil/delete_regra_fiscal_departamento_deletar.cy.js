@@ -7,8 +7,7 @@ const idBaseFiscalDepartamento = "123123123";
 describe('API rest - Fisco/Contábil - DELETE - /Fisco/Contabil/v3_regra_fiscal_departamento_delete', { env: { hideCredendials: true } }, () => {
 
   it('Status Code is 200', () => {
-
-    cy.api({
+    cy.api({({
       method: 'DELETE',
       url: `${BASE_URL}/${PATH}/${idBaseFiscalDepartamento}`,
       headers: { Authorization },

@@ -10,8 +10,7 @@ const processo = "12345678910";
 describe('API rest - Produto - GET - /Produto/v2_produto_servico_vinculado', { env: { hideCredendials: true } }, () => {
 
   it('Status Code is 200', () => {
-
-    cy.api({
+    cy.api({({
       method: 'GET', 
       url: `${BASE_URL}/${PATH}/${sku}/${valor}/${tipo_servico}/${processo}`, 
       headers: { Authorization },

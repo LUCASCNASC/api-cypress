@@ -12,8 +12,7 @@ const idpessoaanexoValido = Cypress.env('ID_PESSOA_ANEXO_VALIDO');
 describe('API rest - Cliente - DELETE /Cliente/v3_cliente_anexo_delete', { env: { hideCredentials: true } }, () => {
 
   it('Status Code is 200', () => {
-
-    cy.api({
+    cy.api({({
       method: 'DELETE',
       url: `${BASE_URL}${PATH}/${idcnpj_cpfValido}/${idpessoaanexoValido}`,
       headers: { Authorization },
@@ -25,8 +24,7 @@ describe('API rest - Cliente - DELETE /Cliente/v3_cliente_anexo_delete', { env: 
   });
 
   it('Status Code is 204', () => {
-
-    cy.api({
+    cy.api({({
       method: 'DELETE',
       url: `${BASE_URL}${PATH}/${idcnpj_cpfSemAnexo}/${idpessoaanexoSemAnexo}`,
       headers: { Authorization },
@@ -38,8 +36,7 @@ describe('API rest - Cliente - DELETE /Cliente/v3_cliente_anexo_delete', { env: 
   });
 
   it('Status Code is 412', () => {
-
-    cy.api({
+    cy.api({({
       method: 'DELETE',
       url: `${BASE_URL}${PATH}/${idcnpj_cpfInvalido}/${idpessoaanexoInvalido}`,
       headers: { Authorization },

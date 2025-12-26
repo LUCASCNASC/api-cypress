@@ -5,8 +5,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 describe('API rest - Pedido - POST - /Pedido/v3_post_pedido_venda_cancelar', { env: { hideCredendials: true } }, () => {
 
   it('Status Code is 200', () => {
-
-    cy.api({
+    cy.api({({
       method: 'POST', 
       url: `${BASE_URL}/${PATH}`, 
       headers: { Authorization },

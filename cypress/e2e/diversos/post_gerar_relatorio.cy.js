@@ -5,8 +5,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 describe('API rest - Diversos - POST /Diversos/v2_diversos_gerar_relatorio', { env: { hideCredentials: true } }, () => {
   
   it('Status Code is 200', () => {
-
-    cy.api({
+    cy.api({({
       method: 'POST',
       url: `${BASE_URL}/${PATH}`,
       headers: { Authorization },
@@ -27,8 +26,7 @@ describe('API rest - Diversos - POST /Diversos/v2_diversos_gerar_relatorio', { e
   });
 
   it('Status Code is 412', () => {
-
-    cy.api({
+    cy.api({({
       method: 'POST',
       url: `${BASE_URL}/${PATH}`,
       headers: { Authorization },

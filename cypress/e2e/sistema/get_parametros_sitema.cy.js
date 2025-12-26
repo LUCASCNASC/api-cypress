@@ -5,8 +5,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 describe('API rest - Sistema - GET - /Sistema/v2_sistema_parametro_sistema', { env: { hideCredendials: true } }, () => {
   
   it('Status Code is 200', () => {
-
-    cy.api({
+    cy.api({({
       method: 'GET',
       url: `${BASE_URL}/${PATH}`,
       headers: { Authorization },

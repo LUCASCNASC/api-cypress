@@ -9,8 +9,7 @@ const clienteValido = "12345678901234";
 describe('API rest - Cliente - GET /Cliente/v2_cliente_get_delete_get', { env: { hideCredentials: true } }, () => {
    
   it('Status Code is 200', () => {
-
-    cy.api({
+    cy.api({({
       method: 'GET',
       url: `${BASE_URL}${PATH}/${clienteValido}`,
       headers: { Authorization },
@@ -27,8 +26,7 @@ describe('API rest - Cliente - GET /Cliente/v2_cliente_get_delete_get', { env: {
   });
 
   it('Status Code is 204', () => {
-
-    cy.api({
+    cy.api({({
       method: 'GET',
       url: `${BASE_URL}${PATH}/${clienteSemDados}`,
       headers: { Authorization },
@@ -40,8 +38,7 @@ describe('API rest - Cliente - GET /Cliente/v2_cliente_get_delete_get', { env: {
   });
 
   it('Status Code is 412', () => {
-
-    cy.api({
+    cy.api({({
       method: 'GET',
       url: `${BASE_URL}${PATH}/${clienteInvalido}`,
       headers: { Authorization },

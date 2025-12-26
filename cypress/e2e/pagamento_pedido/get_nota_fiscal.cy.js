@@ -9,8 +9,7 @@ const registro_nota = "12345678910";
 describe('API rest - Pagamento pedido - GET - /Pagamento%20pedido/v2_pag_pedido_nota_fiscal', { env: { hideCredendials: true } }, () => {
   
   it('Status Code is 200', () => {
-
-    cy.api({
+    cy.api({({
       method: 'GET', 
       url: `${BASE_URL}/${PATH}/${filial}/${pedido}/${registro_nota}`, 
       headers: { Authorization },

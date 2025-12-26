@@ -12,8 +12,7 @@ const dataAberturaInvalida = Cypress.env('DATA_ABERTURA_INVALIDA');
 describe('API rest - Caixa - GET /v3/caixa_rotina_diaria_filial', { env: { hideCredentials: true } }, () => {
 
   it('Status Code is 200', () => {
-
-    cy.api({
+    cy.api({({
       method: 'GET',
       url: `${BASE_URL}${PATH}/${idFilialValido}/${dataAberturaValida}`,
       headers: { Authorization }
@@ -25,8 +24,7 @@ describe('API rest - Caixa - GET /v3/caixa_rotina_diaria_filial', { env: { hideC
   });
 
   it('Status Code is 204', () => {
-
-    cy.api({
+    cy.api({({
       method: 'GET',
       url: `${BASE_URL}${PATH}/${idFilialSemDados}/${dataSemMovimentacao}`,
       headers: { Authorization },
@@ -38,8 +36,7 @@ describe('API rest - Caixa - GET /v3/caixa_rotina_diaria_filial', { env: { hideC
   });
 
   it('Status Code is 412', () => {
-
-    cy.api({
+    cy.api({({
       method: 'GET',
       url: `${BASE_URL}${PATH}/${idFilialInvalido}/${dataAberturaInvalida}`,
       headers: { Authorization },

@@ -9,8 +9,7 @@ const TipoMapaCarga = "123123123";
 describe('API rest - Logística - DELETE - /Logística/v3_delete_mapa_carga_coletado', { env: { hideCredendials: true } }, () => {
 
   it('Status Code is 200', () => {
-
-    cy.api({
+    cy.api({({
       method: 'DELETE', 
       url: `${BASE_URL}/${PATH}/${idFilial}/${idMapaCarga}/${TipoMapaCarga}`, 
       headers: { Authorization },
