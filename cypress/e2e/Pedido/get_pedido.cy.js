@@ -9,7 +9,7 @@ const validarsituacaopedido = "12345678910";
 describe('API rest - Pedido - GET - /Pedido/v2_pedido_get_delete1', { env: { hideCredendials: true } }, () => {
   
   it('Status Code is 200', () => {
-    cy.api({({
+    cy.api({
       method: 'GET', 
       url: `${BASE_URL}/${PATH}/${idFilial}/${codigo}/${validarsituacaopedido}`, 
       headers: { Authorization },

@@ -9,7 +9,7 @@ const tabelaValida = "123";
 describe('API rest - Diversos - GET /Diversos/v2_diversos_dados_tabela', { env: { hideCredentials: true } }, () => {
 
   it('Status Code is 200', () => {
-    cy.api({({
+    cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH}/${tabelaValida}`,
       headers: { Authorization },
@@ -24,7 +24,7 @@ describe('API rest - Diversos - GET /Diversos/v2_diversos_dados_tabela', { env: 
   });
 
   it('Status Code is 204', () => {
-    cy.api({({
+    cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH}/${tabelaSemDados}`,
       headers: { Authorization },
@@ -36,7 +36,7 @@ describe('API rest - Diversos - GET /Diversos/v2_diversos_dados_tabela', { env: 
   });
 
   it('Status Code is 412', () => {
-    cy.api({({
+    cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH}/${tabelaInvalida}`,
       headers: { Authorization },

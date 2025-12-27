@@ -9,7 +9,7 @@ const rotaValida = "123";
 describe('API rest - Diversos - GET /Diversos/v2_diversos_local_entrega', { env: { hideCredentials: true } }, () => {
 
   it('Status Code is 200', () => {
-    cy.api({({
+    cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH}/${rotaValida}`,
       headers: { Authorization },
@@ -31,7 +31,7 @@ describe('API rest - Diversos - GET /Diversos/v2_diversos_local_entrega', { env:
   });
 
   it('Status Code is 204', () => {
-    cy.api({({
+    cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH}/${rotaSemDados}`,
       headers: { Authorization },
@@ -43,7 +43,7 @@ describe('API rest - Diversos - GET /Diversos/v2_diversos_local_entrega', { env:
   });
 
   it('Status Code is 412', () => {
-    cy.api({({
+    cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH}/${rotaInvalida}`,
       headers: { Authorization },

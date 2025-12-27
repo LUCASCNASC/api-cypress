@@ -12,7 +12,7 @@ const idContaCorrenteInvalido = "xyz";
 describe('API rest - Financeiro - GET /Financeiro/v3_financeiro_historicocontacorrente', { env: { hideCredentials: true } }, () => {
 
   it('Status Code is 200', () => {
-    cy.api({({
+    cy.api({
       method: 'GET',
       url: `${BASE_URL}/${PATH}/${idTipoContaCorrente}/${idContaCorrente}`,
       headers: { Authorization },
@@ -29,7 +29,7 @@ describe('API rest - Financeiro - GET /Financeiro/v3_financeiro_historicocontaco
   });
 
   it('Status Code is 204', () => {
-    cy.api({({
+    cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH}/${idTipoContaCorrenteSemDados}/${idContaCorrenteSemDados}`,
       headers: { Authorization },
@@ -41,7 +41,7 @@ describe('API rest - Financeiro - GET /Financeiro/v3_financeiro_historicocontaco
   });
 
   it('Status Code is 412', () => {
-    cy.api({({
+    cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH}/${idTipoContaCorrenteInvalido}/${idContaCorrenteInvalido}`,
       headers: { Authorization },

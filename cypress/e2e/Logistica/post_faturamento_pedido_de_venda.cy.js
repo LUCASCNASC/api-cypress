@@ -5,7 +5,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 describe('API rest - Logística - POST - /Logística/v3_post_logistica_faturamentopedidovendaporcliente', { env: { hideCredendials: true } }, () => {
   
   it('Status Code is 200', () => {
-    cy.api({({
+    cy.api({
       method: 'POST', 
       url: `${BASE_URL}/${PATH}`, 
       headers: { Authorization },

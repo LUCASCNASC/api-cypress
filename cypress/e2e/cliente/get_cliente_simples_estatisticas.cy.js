@@ -10,7 +10,7 @@ const idpessoaValido = "12334";
 describe('API rest - Cliente - GET /Cliente/v2_cliente_simples_estatisticas', { env: { hideCredentials: true } }, () => {
   
   it('Status Code is 200', () => {
-    cy.api({({
+    cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH}/${idpessoaValido}`,
       headers: { Authorization },
@@ -60,7 +60,7 @@ describe('API rest - Cliente - GET /Cliente/v2_cliente_simples_estatisticas', { 
   });
 
   it('Status Code is 204', () => {
-    cy.api({({
+    cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH}/${idpessoaSemEstatistica}`,
       headers: { Authorization },
@@ -72,7 +72,7 @@ describe('API rest - Cliente - GET /Cliente/v2_cliente_simples_estatisticas', { 
   });
 
   it('Status Code is 401', () => {
-    cy.api({({
+    cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH}/123456`,
       headers: { Authorization: AUTHORIZATION_INVALID },
@@ -83,7 +83,7 @@ describe('API rest - Cliente - GET /Cliente/v2_cliente_simples_estatisticas', { 
   });
 
   it('Status Code is 412', () => {
-    cy.api({({
+    cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH}/${idpessoaInvalido}`,
       headers: { Authorization },

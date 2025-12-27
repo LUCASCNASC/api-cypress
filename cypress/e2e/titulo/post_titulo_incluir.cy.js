@@ -5,7 +5,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 describe('API rest - Titulo - POST - /Titulo/v3_post_titulo_incluir', { env: { hideCredendials: true } }, () => {
   
   it('Status Code is 200', () => {
-    cy.api({({
+    cy.api({
       method: 'GET', 
       url: `${BASE_URL}/${PATH}`, 
       headers: { Authorization },

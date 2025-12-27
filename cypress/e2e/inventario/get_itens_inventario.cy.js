@@ -8,7 +8,7 @@ const idInventario = "123123123";
 describe('API rest - Inventário - GET /Inventário/v3_get_itens_inventario', { env: { hideCredendials: true } }, () => {
 
   it('Status Code is 200', () => {
-    cy.api({({
+    cy.api({
       method: 'GET', 
       url: `${BASE_URL}/${PATH}/${idFilial}/${idInventario}`, 
       headers: { Authorization },

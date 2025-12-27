@@ -7,7 +7,7 @@ const cpf = "123123123";
 describe('API rest - LGPD - GET /LGPD/v3_get_lgpd_dados_titular', { env: { hideCredendials: true } } , () => {
   
   it('Status Code is 200', () => {
-    cy.api({({
+    cy.api({
       method: 'GET', 
       url: `${BASE_URL}/${PATH}/${cpf}`, 
       headers: { Authorization },

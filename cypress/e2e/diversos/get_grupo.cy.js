@@ -9,7 +9,7 @@ const idtipogrupoValido = "123";
 describe('API rest - Diversos - GET /Diversos/v3_diversos_grupo', { env: { hideCredentials: true } }, () => {
 
   it('Status Code is 200', () => {
-    cy.api({({
+    cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH}/${idtipogrupoValido}`,
       headers: { Authorization },
@@ -27,7 +27,7 @@ describe('API rest - Diversos - GET /Diversos/v3_diversos_grupo', { env: { hideC
   });
 
   it('Status Code is 204', () => {
-    cy.api({({
+    cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH}/${idtipogrupoSemGrupo}`,
       headers: { Authorization },
@@ -39,7 +39,7 @@ describe('API rest - Diversos - GET /Diversos/v3_diversos_grupo', { env: { hideC
   });
 
   it('Status Code is 412', () => {
-    cy.api({({
+    cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH}/${idtipogrupoInvalido}`,
       headers: { Authorization },

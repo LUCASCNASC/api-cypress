@@ -12,7 +12,7 @@ const cpf_cnpjSemTitulos = "00000000000000";
 describe('API rest - Financeiro - GET /Financeiro/v3_financeiro_dividas_pagar', { env: { hideCredentials: true } }, () => {
 
   it('Status Code is 200', () => {
-    cy.api({({
+    cy.api({
       method: 'GET',
       url: `${BASE_URL}/${PATH}/${idFilialValido}/${cpf_cnpjValido}`,
       headers: { Authorization },
@@ -31,7 +31,7 @@ describe('API rest - Financeiro - GET /Financeiro/v3_financeiro_dividas_pagar', 
   });
 
   it('Status Code is 204', () => {
-    cy.api({({
+    cy.api({
       method: 'GET',
       url: `${BASE_URL}/${PATH}/${idFilialSemTitulos}/${cpf_cnpjSemTitulos}`,
       headers: { Authorization },
@@ -43,7 +43,7 @@ describe('API rest - Financeiro - GET /Financeiro/v3_financeiro_dividas_pagar', 
   });
 
   it('Status Code is 412', () => {
-    cy.api({({
+    cy.api({
       method: 'GET',
       url: `${BASE_URL}/${PATH}/${idFilialInvalido}/${cpf_cnpjInvalido}`,
       headers: { Authorization },

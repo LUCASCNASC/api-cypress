@@ -5,7 +5,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 describe('API rest - Inventário - GET /Inventário/v3_get_inventario', { env: { hideCredendials: true } } , () => {
   
   it('Status Code is 200', () => {
-    cy.api({({
+    cy.api({
       method: 'GET', 
       url: `${BASE_URL}/${PATH}`, 
       headers: { Authorization },

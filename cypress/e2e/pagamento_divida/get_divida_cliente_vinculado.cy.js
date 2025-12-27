@@ -9,7 +9,7 @@ describe('API rest - Pagamento divida - GET - /Pagamento%20divida/v2_divida_clie
   ', { env: { hideCredendials: true } }, () => {
 
   it('Status Code is 200', () => {
-    cy.api({({
+    cy.api({
       method: 'GET', 
       url: `${BASE_URL}${PATH}/${filial}/${cliente}`, 
       headers: { Authorization },

@@ -5,7 +5,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 describe('API rest - Cliente - POST /Cliente/v3_cliente_post', { env: { hideCredentials: true } }, () => {
   
   it('Status Code is 200 ou 201', () => {
-    cy.api({({
+    cy.api({
       method: 'POST',
       url: `${BASE_URL}/${PATH}`,
       headers: { Authorization },
@@ -21,7 +21,7 @@ describe('API rest - Cliente - POST /Cliente/v3_cliente_post', { env: { hideCred
   });
 
   it('Status Code is 412', () => {
-    cy.api({({
+    cy.api({
       method: 'POST',
       url: `${BASE_URL}/${PATH}`,
       headers: { Authorization },

@@ -10,7 +10,7 @@ const codigoAgenciaInvalida = "99999";
 describe('API rest - Financeiro - DELETE /Financeiro/v3_financeiro_agencia_delete', { env: { hideCredentials: true } }, () => {
   
   it('Status Code is 200', () => {
-    cy.api({({
+    cy.api({
       method: 'DELETE',
       url: `${BASE_URL}/${PATH}/${codigoBancoValido}/${codigoAgenciaValido}`,
       headers: { Authorization },
@@ -22,7 +22,7 @@ describe('API rest - Financeiro - DELETE /Financeiro/v3_financeiro_agencia_delet
   });
 
   it('Status Code is 404 e 412', () => {
-    cy.api({({
+    cy.api({
       method: 'DELETE',
       url: `${BASE_URL}/${PATH}/${codigoBancoInvalido}/${codigoAgenciaInvalida}`,
       headers: { Authorization },

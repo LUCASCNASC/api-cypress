@@ -5,7 +5,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 describe('API rest - Financeiro - POST /Financeiro/v3_financeiro_agencia1', { env: { hideCredentials: true } }, () => {
   
   it('Status Code is 201', () => {
-    cy.api({({
+    cy.api({
       method: 'POST',
       url: `${BASE_URL}/${PATH}`,
       headers: { Authorization },
@@ -23,7 +23,7 @@ describe('API rest - Financeiro - POST /Financeiro/v3_financeiro_agencia1', { en
   });
 
   it('Status Code is 500', () => {
-    cy.api({({
+    cy.api({
       method: 'POST',
       url: `${BASE_URL}/${PATH}`,
       headers: { Authorization },

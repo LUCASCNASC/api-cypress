@@ -5,7 +5,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 describe('API rest - Sessão - POST - /Sessão/v3_sessao_login_post', { env: { hideCredendials: true } }, () => {
   
   it('Status Code is 204', () => {
-    cy.api({({
+    cy.api({
       method: 'GET',
       url: `${BASE_URL}/${PATH}`,
       headers: { Authorization },
