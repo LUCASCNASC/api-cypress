@@ -2,7 +2,7 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Pós-venda/v2_pos_venda_qualificacao';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('API rest - Pós-venda - GET - /Pós-venda/v2_pos_venda_qualificacao', { env: { hideCredendials: true } }, () => {
+describe('Pós-venda - GET - /Pós-venda/v2_pos_venda_qualificacao', { env: { hideCredendials: true } }, () => {
   
   it('Status Code is 200', () => {
     cy.api({

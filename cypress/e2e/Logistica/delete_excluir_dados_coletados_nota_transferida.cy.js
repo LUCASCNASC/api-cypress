@@ -5,7 +5,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 const idFilialOrigem = "123123123"; 
 const idRegistroNotaOrigem = "123123123"; 
 
-describe('API rest - Logística - DELETE - /Logística/v3_delete_excluir_dado_coletado_nota_transferida', { env: { hideCredendials: true } } , () => {
+describe('Logística - DELETE - /Logística/v3_delete_excluir_dado_coletado_nota_transferida', { env: { hideCredendials: true } } , () => {
 
   it('Status Code is 200', () => {
     cy.api({

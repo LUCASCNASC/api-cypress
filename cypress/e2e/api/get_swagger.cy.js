@@ -4,7 +4,7 @@ const AUTHORIZATION = Cypress.env('API.PRAGMA');
 
 const VERSAO = Cypress.env('VERSAO');
 
-describe('API rest - API - GET /api/swagger', { env: { hideCredentials: true } }, () => {
+describe('API - GET /api/swagger', { env: { hideCredentials: true } }, () => {
   
   it('Status Code is 200', () => {
     cy.api({

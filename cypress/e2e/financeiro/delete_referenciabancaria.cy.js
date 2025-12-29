@@ -7,7 +7,7 @@ const idReferenciaBancariaValido = "123123123";
 const cnpjCpfInvalido = "00000000000000";
 const idReferenciaBancariaInvalido = "999999";
 
-describe('API rest - Financeiro - DELETE /Financeiro/v3_financeiro_referencia_bancaria_delete', { env: { hideCredentials: true } }, () => {
+describe('Financeiro - DELETE /Financeiro/v3_financeiro_referencia_bancaria_delete', { env: { hideCredentials: true } }, () => {
 
   it('Status Code is 200', () => {
     cy.api({

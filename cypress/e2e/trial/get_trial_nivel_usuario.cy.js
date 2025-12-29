@@ -5,7 +5,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 const idTrial = "12345678910";
 const quantidadeNivel = "12345678910"; 
 
-describe('API rest - Trial - GET - /Trial/v3_get_trial_nivel_usuario', { env: { hideCredendials: true } }, () => {
+describe('Trial - GET - /Trial/v3_get_trial_nivel_usuario', { env: { hideCredendials: true } }, () => {
   
   it('Status Code is 200', () => {
     cy.api({

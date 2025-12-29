@@ -12,7 +12,7 @@ const ufInvalida = "1";
 const municipioInvalido = "abc";
 const tipoInvalido = "xyz";
 
-describe('API rest - Filial - GET /Filial/v3_get_filial_por_tipo', { env: { hideCredentials: true } }, () => {
+describe('Filial - GET /Filial/v3_get_filial_por_tipo', { env: { hideCredentials: true } }, () => {
 
   it('Status Code is 200', () => {
     cy.api({

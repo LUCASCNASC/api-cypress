@@ -5,7 +5,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 const Filial = "123123123";
 const RegistroNota = "123123123";
 
-describe('API rest - Fisco/Contábil - GET - /Fisco/Contabil/v3_nota_fiscal_inutilizar_conhecimento_saida', { env: { hideCredendials: true } }, () => {
+describe('Fisco/Contábil - GET - /Fisco/Contabil/v3_nota_fiscal_inutilizar_conhecimento_saida', { env: { hideCredendials: true } }, () => {
   
   it('Status Code is 200', () => {
     cy.api({

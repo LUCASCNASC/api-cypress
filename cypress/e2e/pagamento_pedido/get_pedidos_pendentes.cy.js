@@ -9,7 +9,7 @@ const cnpjCpf = "12345678910";
 const limit = "12345678910"; 
 const offset = "12345678910";
 
-describe('API rest - Pagamento pedido - GET - /Pagamento%20pedido/v3_pag_pedidos_pendentes', { env: { hideCredendials: true } }, () => {
+describe('Pagamento pedido - GET - /Pagamento%20pedido/v3_pag_pedidos_pendentes', { env: { hideCredendials: true } }, () => {
   
   it('Status Code is 200', () => {
     cy.api({

@@ -9,7 +9,7 @@ const idpessoaanexoSemAnexo = Cypress.env('ID_PESSOA_ANEXO_SEM_ANEXO');
 const idcnpj_cpfValido = Cypress.env('ID_CNPJ_CPF_VALIDO');
 const idpessoaanexoValido = Cypress.env('ID_PESSOA_ANEXO_VALIDO');
 
-describe('API rest - Cliente - DELETE /Cliente/v3_cliente_anexo_delete', { env: { hideCredentials: true } }, () => {
+describe('Cliente - DELETE /Cliente/v3_cliente_anexo_delete', { env: { hideCredentials: true } }, () => {
 
   it('Status Code is 200', () => {
     cy.api({

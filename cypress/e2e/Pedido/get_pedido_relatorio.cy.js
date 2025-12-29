@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 const codigo = "12345678910";
 
-describe('API rest - Pedido - GET - /Pedido/v2_pedido_relatorio', { env: { hideCredendials: true } }, () => {
+describe('Pedido - GET - /Pedido/v2_pedido_relatorio', { env: { hideCredendials: true } }, () => {
 
   it('Status Code is 200', () => {
     cy.api({

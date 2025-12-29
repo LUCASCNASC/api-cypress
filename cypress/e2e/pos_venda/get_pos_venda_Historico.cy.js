@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 const codigo = "12345678910";
 
-describe('API rest - Pós-venda - GET - /Pós-venda/v2_pos_venda_Historico', { env: { hideCredendials: true } }, () => {
+describe('Pós-venda - GET - /Pós-venda/v2_pos_venda_Historico', { env: { hideCredendials: true } }, () => {
   
   it('Status Code is 200', () => {
     cy.api({

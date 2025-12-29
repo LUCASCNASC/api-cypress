@@ -2,7 +2,7 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Financeiro/v3_financeiro_lancamento_conta_corrente';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('API rest - Financeiro - POST /Financeiro/v3_financeiro_lancamento_conta_corrente', { env: { hideCredentials: true } }, () => {
+describe('Financeiro - POST /Financeiro/v3_financeiro_lancamento_conta_corrente', { env: { hideCredentials: true } }, () => {
   
   it('Status Code is 201', () => {
     cy.api({

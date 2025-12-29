@@ -2,7 +2,7 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/api/version';
 const AUTHORIZATION = Cypress.env('API.PRAGMA');
 
-describe('API rest - GET /api/version', { env: { hideCredendials: true } }, () => {
+describe('GET /api/version', { env: { hideCredendials: true } }, () => {
   
   it('Status Code is 200', () => {
     cy.api({

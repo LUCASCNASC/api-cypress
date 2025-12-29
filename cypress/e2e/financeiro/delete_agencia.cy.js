@@ -7,7 +7,7 @@ const codigoAgenciaValido = "123456";
 const codigoBancoInvalido = "99999";
 const codigoAgenciaInvalida = "99999";
 
-describe('API rest - Financeiro - DELETE /Financeiro/v3_financeiro_agencia_delete', { env: { hideCredentials: true } }, () => {
+describe('Financeiro - DELETE /Financeiro/v3_financeiro_agencia_delete', { env: { hideCredentials: true } }, () => {
   
   it('Status Code is 200', () => {
     cy.api({

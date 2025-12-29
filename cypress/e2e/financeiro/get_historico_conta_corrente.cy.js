@@ -9,7 +9,7 @@ const idContaCorrenteSemDados = "99999";
 const idTipoContaCorrenteInvalido = "abc";
 const idContaCorrenteInvalido = "xyz";
 
-describe('API rest - Financeiro - GET /Financeiro/v3_financeiro_historicocontacorrente', { env: { hideCredentials: true } }, () => {
+describe('Financeiro - GET /Financeiro/v3_financeiro_historicocontacorrente', { env: { hideCredentials: true } }, () => {
 
   it('Status Code is 200', () => {
     cy.api({

@@ -6,7 +6,7 @@ const filial = "12345678910";
 const termo = "12345678910";
 const idtipotef = "12345678910";
 
-describe('API rest - Pagamento pedido - GET - /Pagamento%20pedido/v2_pag_pedido_divida', { env: { hideCredendials: true } }, () => { 
+describe('Pagamento pedido - GET - /Pagamento%20pedido/v2_pag_pedido_divida', { env: { hideCredendials: true } }, () => { 
     
   it('Status Code is 200', () => {
     cy.api({

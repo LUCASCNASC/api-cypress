@@ -2,7 +2,7 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Diversos/v2_diversos_gerar_relatorio';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('API rest - Diversos - POST /Diversos/v2_diversos_gerar_relatorio', { env: { hideCredentials: true } }, () => {
+describe('Diversos - POST /Diversos/v2_diversos_gerar_relatorio', { env: { hideCredentials: true } }, () => {
   
   it('Status Code is 200', () => {
     cy.api({

@@ -5,7 +5,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 const datainicial = "2025-11-01"; 
 const datafinal = "2025-11-30";
 
-describe('API rest - Pós-venda - GET - /Pós-venda/v3_pos_venda_get_post1', { env: { hideCredendials: true } }, () => {
+describe('Pós-venda - GET - /Pós-venda/v3_pos_venda_get_post1', { env: { hideCredendials: true } }, () => {
   
   it('Status Code is 200', () => {
     cy.api({

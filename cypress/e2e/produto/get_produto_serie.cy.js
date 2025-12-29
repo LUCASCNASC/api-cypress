@@ -6,7 +6,7 @@ const filial_saldo = "12345678910";
 const sku = "12345678910";
 const pedido = "12345678910"; 
 
-describe('API rest - Produto - GET - /Produto/v2_produto_serie', { env: { hideCredendials: true } }, () => {
+describe('Produto - GET - /Produto/v2_produto_serie', { env: { hideCredendials: true } }, () => {
   
   it('Status Code is 200', () => {
     cy.api({

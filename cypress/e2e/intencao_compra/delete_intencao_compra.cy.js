@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 const codigo = "123123123";
 
-describe('API rest - Intenção compra - DELETE /Intenção%20compra/v2_intencao_compra_delete', { env: { hideCredendials: true } } , () => {
+describe('Intenção compra - DELETE /Intenção%20compra/v2_intencao_compra_delete', { env: { hideCredendials: true } } , () => {
 
   it('Status Code is 200', () => {
     cy.api({

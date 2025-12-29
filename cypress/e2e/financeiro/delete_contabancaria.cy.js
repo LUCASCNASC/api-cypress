@@ -9,7 +9,7 @@ const codigoBancoInvalido = "99999";
 const codigoAgenciaInvalido = "99999";
 const codigoContaInvalido = "99999999";
 
-describe('API rest - Financeiro - DELETE /Financeiro/v3_financeiro_conta_bancaria_delete', { env: { hideCredentials: true } }, () => {
+describe('Financeiro - DELETE /Financeiro/v3_financeiro_conta_bancaria_delete', { env: { hideCredentials: true } }, () => {
 
   it('Status Code is 200', () => {
     cy.api({

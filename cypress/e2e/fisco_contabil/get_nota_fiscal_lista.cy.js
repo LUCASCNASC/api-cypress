@@ -8,7 +8,7 @@ const Data_Inicial = "123123123";
 const Data_Final = "123123123";
 const CNPJ_CPF = "123123123";
 
-describe('API rest - Fisco/Contábil - GET - /Fisco/Contabil/v3_nota_fiscal_lista', { env: { hideCredendials: true } }, () => {
+describe('Fisco/Contábil - GET - /Fisco/Contabil/v3_nota_fiscal_lista', { env: { hideCredendials: true } }, () => {
 
   it('Status Code is 200', () => {
     cy.api({

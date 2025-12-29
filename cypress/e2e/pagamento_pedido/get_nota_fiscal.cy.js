@@ -6,7 +6,7 @@ const filial = "12345678910";
 const pedido = "12345678910";
 const registro_nota = "12345678910"; 
 
-describe('API rest - Pagamento pedido - GET - /Pagamento%20pedido/v2_pag_pedido_nota_fiscal', { env: { hideCredendials: true } }, () => {
+describe('Pagamento pedido - GET - /Pagamento%20pedido/v2_pag_pedido_nota_fiscal', { env: { hideCredendials: true } }, () => {
   
   it('Status Code is 200', () => {
     cy.api({

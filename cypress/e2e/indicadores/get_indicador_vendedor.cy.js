@@ -6,7 +6,7 @@ const ano = "123123123";
 const mes = "123123123"; 
 const dia = "123123123";
 
-describe('API rest - Indicadores - GET /Indicadores/v3_indicador_vendedor', { env: { hideCredendials: true } } , () => {
+describe('Indicadores - GET /Indicadores/v3_indicador_vendedor', { env: { hideCredendials: true } } , () => {
 
   it('Status Code is 200', () => {
     cy.api({

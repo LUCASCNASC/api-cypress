@@ -2,7 +2,7 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Pagamento%20divida/v2_divida_processar_proxima_baixa_pendente';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('API rest - Pagamento divida - POST - /Pagamento%20divida/v2_divida_processar_proxima_baixa_pendente', { env: { hideCredendials: true } }, () => {
+describe('Pagamento divida - POST - /Pagamento%20divida/v2_divida_processar_proxima_baixa_pendente', { env: { hideCredendials: true } }, () => {
   
   it('Status Code is 200', () => {
     cy.api({

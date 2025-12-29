@@ -6,7 +6,7 @@ const idFilial = "12345678910";
 const idUsuario = "12345678910";
 const triais = "12345678910";   
 
-describe('API rest - Trial - GET - /Trial/v3_get_trial_autorizacao', { env: { hideCredendials: true } }, () => {
+describe('Trial - GET - /Trial/v3_get_trial_autorizacao', { env: { hideCredendials: true } }, () => {
   
   it('Status Code is 200', () => {
     cy.api({

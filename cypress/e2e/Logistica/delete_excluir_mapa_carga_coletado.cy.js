@@ -6,7 +6,7 @@ const idFilial = "123123123";
 const idMapaCarga = "123123123"; 
 const TipoMapaCarga = "123123123";
 
-describe('API rest - Logística - DELETE - /Logística/v3_delete_mapa_carga_coletado', { env: { hideCredendials: true } }, () => {
+describe('Logística - DELETE - /Logística/v3_delete_mapa_carga_coletado', { env: { hideCredendials: true } }, () => {
 
   it('Status Code is 200', () => {
     cy.api({

@@ -2,7 +2,7 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Pedido/v2_pedido_fechar';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('API rest - Pedido - POST - /Pedido/v2_pedido_fechar', { env: { hideCredendials: true } }, () => {
+describe('Pedido - POST - /Pedido/v2_pedido_fechar', { env: { hideCredendials: true } }, () => {
   
   it('Status Code is 200', () => {
     cy.api({

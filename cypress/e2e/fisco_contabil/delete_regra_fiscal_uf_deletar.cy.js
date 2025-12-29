@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 const idBaseFiscalUF = "123123123"; 
 
-describe('API rest - Fisco/Contábil - DELETE - /Fisco/Contabil/v3_regra_fiscal_uf_delete', { env: { hideCredendials: true } }, () => {
+describe('Fisco/Contábil - DELETE - /Fisco/Contabil/v3_regra_fiscal_uf_delete', { env: { hideCredendials: true } }, () => {
 
   it('Status Code is 200', () => {
     cy.api({

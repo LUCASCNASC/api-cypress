@@ -7,7 +7,7 @@ const idpessoaInvalido = "id_invalido";
 const AUTHORIZATION_INVALID = Cypress.env('API.PRAGMA_INVALID');
 const idpessoaValido = "12334";
 
-describe('API rest - Cliente - GET /Cliente/v2_cliente_simples_estatisticas', { env: { hideCredentials: true } }, () => {
+describe('Cliente - GET /Cliente/v2_cliente_simples_estatisticas', { env: { hideCredentials: true } }, () => {
   
   it('Status Code is 200', () => {
     cy.api({

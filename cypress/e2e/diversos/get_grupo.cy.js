@@ -6,7 +6,7 @@ const idtipogrupoInvalido = "abc";
 const idtipogrupoSemGrupo = "9999";
 const idtipogrupoValido = "123"; 
 
-describe('API rest - Diversos - GET /Diversos/v3_diversos_grupo', { env: { hideCredentials: true } }, () => {
+describe('Diversos - GET /Diversos/v3_diversos_grupo', { env: { hideCredentials: true } }, () => {
 
   it('Status Code is 200', () => {
     cy.api({

@@ -2,7 +2,7 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Proposta%20crédito/v2_proposta_credito_agrupar';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('API rest - Proposta crédito - POST - /Proposta%20crédito/v2_proposta_credito_agrupar', { env: { hideCredendials: true } }, () => {
+describe('Proposta crédito - POST - /Proposta%20crédito/v2_proposta_credito_agrupar', { env: { hideCredendials: true } }, () => {
   
   it('Status Code is 200', () => {
     cy.api({

@@ -6,7 +6,7 @@ const idFilialSaldo = "12345678910";
 const sku = "12345678910";
 const idTipoSaldoProduto = "12345678910"; 
 
-describe('API rest - Produto - GET - /Produto/v3_produto_tipo_saldo_detalhe', { env: { hideCredendials: true } }, () => {
+describe('Produto - GET - /Produto/v3_produto_tipo_saldo_detalhe', { env: { hideCredendials: true } }, () => {
   
   it('Status Code is 200', () => {
     cy.api({

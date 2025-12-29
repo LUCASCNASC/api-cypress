@@ -6,7 +6,7 @@ const rotaInvalida = "abc";
 const rotaSemDados = "9999";
 const rotaValida = "123";
 
-describe('API rest - Diversos - GET /Diversos/v2_diversos_local_entrega', { env: { hideCredentials: true } }, () => {
+describe('Diversos - GET /Diversos/v2_diversos_local_entrega', { env: { hideCredentials: true } }, () => {
 
   it('Status Code is 200', () => {
     cy.api({

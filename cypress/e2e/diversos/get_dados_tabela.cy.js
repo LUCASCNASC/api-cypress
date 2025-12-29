@@ -6,7 +6,7 @@ const tabelaSemDados = "tabela_inexistente";
 const tabelaInvalida = "!@#";
 const tabelaValida = "123";
 
-describe('API rest - Diversos - GET /Diversos/v2_diversos_dados_tabela', { env: { hideCredentials: true } }, () => {
+describe('Diversos - GET /Diversos/v2_diversos_dados_tabela', { env: { hideCredentials: true } }, () => {
 
   it('Status Code is 200', () => {
     cy.api({

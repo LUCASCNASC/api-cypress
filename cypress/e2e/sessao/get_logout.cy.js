@@ -2,7 +2,7 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Sessão/v2_sessao_logout';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('API rest - Sessão - GET - /Sessão/v2_sessao_logout', { env: { hideCredendials: true } }, () => {
+describe('Sessão - GET - /Sessão/v2_sessao_logout', { env: { hideCredendials: true } }, () => {
   
   it('Status Code is 204', () => {
     cy.api({

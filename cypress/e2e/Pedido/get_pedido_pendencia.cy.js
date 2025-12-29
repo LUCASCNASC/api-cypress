@@ -7,7 +7,7 @@ const idvendedor = "12345678910";
 const cnpj_cpf = "12345678910";
 const listapedidovenda = "12345678910";
 
-describe('API rest - Pedido - GET - /Pedido/v2_pedido_pendencia', { env: { hideCredendials: true } }, () => {
+describe('Pedido - GET - /Pedido/v2_pedido_pendencia', { env: { hideCredendials: true } }, () => {
   
   it('Status Code is 200', () => {
     cy.api({

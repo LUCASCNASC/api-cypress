@@ -5,7 +5,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 const clienteSemDados = Cypress.env('00000000000000');
 const clienteValido = "12345678901234";
 
-describe('API rest - Cliente - GET /Cliente/v2_cliente_simples_get', { env: { hideCredentials: true } }, () => {
+describe('Cliente - GET /Cliente/v2_cliente_simples_get', { env: { hideCredentials: true } }, () => {
 
   it('Status Code is 200', () => {
     cy.api({

@@ -6,7 +6,7 @@ const idFilial = "123123123";
 const idMapaCargaInicial = "123123123";
 const idMapaCargaFinal = "123123123";
 
-describe('API rest - Logística - GET - /Logística/v3_get_logistica_lista_mapa_carga_cliente_lote', { env: { hideCredendials: true } } , () => {
+describe('Logística - GET - /Logística/v3_get_logistica_lista_mapa_carga_cliente_lote', { env: { hideCredendials: true } } , () => {
 
   it('Status Code is 200', () => {
     cy.api({

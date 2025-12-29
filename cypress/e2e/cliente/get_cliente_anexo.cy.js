@@ -6,7 +6,7 @@ const idcnpj_cpfSemAnexo = Cypress.env('ID_CNPJ_CPF_SEM_ANEXO');
 const idcnpj_cpfInvalido = Cypress.env('ID_CNPJ_CPF_INVALIDO');
 const idcnpj_cpfValido = "100002139114930";
 
-describe('API rest - Cliente - GET /Cliente/v3_cliente_anexo', { env: { hideCredentials: true } }, () => {
+describe('Cliente - GET /Cliente/v3_cliente_anexo', { env: { hideCredentials: true } }, () => {
   
   it('Status Code is 200', () => {
     cy.api({

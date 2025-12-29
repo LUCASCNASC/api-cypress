@@ -5,7 +5,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 const idFilial = "12345678910"; 
 const idPedidoVenda = "12345678910";
 
-describe('API rest - Pedido - GET - /Pedido/v3_pedido_saldo_disponivel', { env: { hideCredendials: true } }, () => {
+describe('Pedido - GET - /Pedido/v3_pedido_saldo_disponivel', { env: { hideCredendials: true } }, () => {
   
   it('Status Code is 200', () => {
     cy.api({

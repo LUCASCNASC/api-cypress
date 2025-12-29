@@ -2,7 +2,7 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Sessão/v3_sessao_login_validar';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('API rest - Sessão - GET - /Sessão/v3_sessao_login_validar', { env: { hideCredendials: true } }, () => {
+describe('Sessão - GET - /Sessão/v3_sessao_login_validar', { env: { hideCredendials: true } }, () => {
   
   it('Status Code is 200', () => {
     const requestBody = {}

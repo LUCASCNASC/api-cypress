@@ -2,7 +2,7 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Logística/v3_post_logistica_faturamentopedidolojaporfilial';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('API rest - Logística - POST - /Logística/v3_post_logistica_faturamentopedidolojaporfilial', { env: { hideCredendials: true } }, () => {
+describe('Logística - POST - /Logística/v3_post_logistica_faturamentopedidolojaporfilial', { env: { hideCredendials: true } }, () => {
   
   it('Status Code is 200', () => {
     cy.api({

@@ -5,7 +5,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 const filialValida = 10050; 
 const filialSemDados = 99999;
 
-describe('API rest - Filial - GET /Filial/v2_filial_detalhe', { env: { hideCredentials: true } }, () => {
+describe('Filial - GET /Filial/v2_filial_detalhe', { env: { hideCredentials: true } }, () => {
   
   it('Status Code is 200', () => {
     cy.api({

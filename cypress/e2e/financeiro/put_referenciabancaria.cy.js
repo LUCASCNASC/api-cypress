@@ -2,7 +2,7 @@ const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Financeiro/v3_financeiro_referencia_bancaria2';
 const Authorization = Cypress.env('API.PRAGMA');
 
-describe('API rest - Financeiro - PUT /Financeiro/v3_financeiro_referencia_bancaria2', { env: { hideCredentials: true } }, () => {
+describe('Financeiro - PUT /Financeiro/v3_financeiro_referencia_bancaria2', { env: { hideCredentials: true } }, () => {
   
   it('Status Code is 201', () => {
     cy.api({

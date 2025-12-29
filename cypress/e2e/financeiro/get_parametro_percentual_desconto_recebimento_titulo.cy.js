@@ -6,7 +6,7 @@ const idFilial = "123123123";
 const idFilialInvalido = "abc";
 const idFilialSemParametro = "99999";
 
-describe('API rest - Financeiro - GET /Financeiro/v3_financeiro_parametro_percentual_desconto_recebimento_titulo', { env: { hideCredentials: true } }, () => {
+describe('Financeiro - GET /Financeiro/v3_financeiro_parametro_percentual_desconto_recebimento_titulo', { env: { hideCredentials: true } }, () => {
 
   it('Status Code is 200', () => {
     cy.api({

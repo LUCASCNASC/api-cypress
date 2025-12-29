@@ -4,7 +4,7 @@ const AUTHORIZATION = Cypress.env('API.PRAGMA');
 
 const AUTHORIZATION_INVALID = Cypress.env('API.PRAGMA_INVALID');
 
-describe('API rest - API - GET /api/session', { env: { hideCredendials: true } }, () => {
+describe('API - GET /api/session', { env: { hideCredendials: true } }, () => {
   
   it('Status Code is 200', () => {
     cy.api({
