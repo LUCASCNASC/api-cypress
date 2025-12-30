@@ -20,7 +20,7 @@ describe('API - GET /api/swagger', { env: { hideCredentials: true } }, () => {
     });
   });
 
-  it('Status Code is 401 e 403', () => {
+  it('Status Code is 401 and 403', () => {
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH}/${VERSAO}`,

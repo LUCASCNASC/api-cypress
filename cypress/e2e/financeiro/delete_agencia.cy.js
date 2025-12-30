@@ -21,7 +21,7 @@ describe('Financeiro - DELETE /Financeiro/v3_financeiro_agencia_delete', { env: 
     });
   });
 
-  it('Status Code is 404 e 412', () => {
+  it('Status Code is 404 and 412', () => {
     cy.api({
       method: 'DELETE',
       url: `${BASE_URL}/${PATH}/${codigoBancoInvalido}/${codigoAgenciaInvalida}`,

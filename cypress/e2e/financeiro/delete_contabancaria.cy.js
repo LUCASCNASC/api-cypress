@@ -23,7 +23,7 @@ describe('Financeiro - DELETE /Financeiro/v3_financeiro_conta_bancaria_delete', 
     });
   });
 
-  it('Status Code is 404 e 412', () => {
+  it('Status Code is 404 and 412', () => {
   
     cy.api({
       method: 'DELETE',

@@ -50,7 +50,7 @@ describe('Assistência - POST /Assistencia/v3_post_movimento_assistencia_incluir
     });
   });
 
-  it('Status Code is 401 e 403', () => {
+  it('Status Code is 401 and 403', () => {
     cy.api({
       method: 'POST',
       url,
@@ -67,7 +67,7 @@ describe('Assistência - POST /Assistencia/v3_post_movimento_assistencia_incluir
     });
   });
 
-  it('Status Code is 401 e 403', () => {
+  it('Status Code is 401 and 403', () => {
     cy.api({
       method: 'POST',
       url,

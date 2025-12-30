@@ -2,8 +2,8 @@
 Projeto de automação de testes de API utilizando [Cypress](https://www.cypress.io/).
 
 ## Sobre
-Este projeto foi criado para automatizar testes de API, garantindo qualidade e confiabilidade nos endpoints de backend.  
-O repositório está configurado para manter informações sensíveis, como URLs de ambiente, protegidas e fora do controle de versão.
+Este projeto foi criado para automatizar testes de API, garantindo qualidadeandconfiabilidade nos endpoints de backend.  
+O repositório está configurado para manter informações sensíveis, como URLs de ambiente, protegidasandfora do controle de versão.
 
 ## Como começar
 1. **Clone o repositório**
@@ -14,7 +14,7 @@ O repositório está configurado para manter informações sensíveis, como URLs
    ```
 2. **Crie seu arquivo `.env`**
 
-   Copie o arquivo de exemplo e edite com as informações corretas:
+   Copie o arquivo de exemploandedite com as informações corretas:
    ```sh
    cp .env.example .env
    ```
@@ -32,7 +32,7 @@ O repositório está configurado para manter informações sensíveis, como URLs
    ```
 ## Estrutura
 - `cypress.config.js`: Arquivo de configuração do Cypress.
-- `.env` e `.env.example`: Arquivos para configurar variáveis de ambiente (API_URL).
+- `.env`and`.env.example`: Arquivos para configurar variáveis de ambiente (API_URL).
 - `.gitignore`: Impede que arquivos sensíveis sejam versionados.
 
 ## Boas práticas
