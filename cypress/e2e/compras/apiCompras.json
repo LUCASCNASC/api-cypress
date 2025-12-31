@@ -1,0 +1,5 @@
+{
+    "post_pedido_compra_baixar": "/Compras/v3_post_pedido_compra_baixar",
+    "post_pedido_compra_incluir": "/Compras/v3_post_pedido_compra_incluir",
+    "post_produto_incluir_alterar": "/Compras/v3_post_produto_incluir_alterar"
+}

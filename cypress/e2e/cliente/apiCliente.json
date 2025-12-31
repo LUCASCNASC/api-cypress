@@ -1,0 +1,14 @@
+{
+    "delete_cliente_anexo": "/Cliente/v3_cliente_anexo_delete",
+    "delete_cliente": "/Cliente/v2_cliente_get_delete_delete",
+    "get_cliente_anexo": "/Cliente/v3_cliente_anexo",
+    "get_cliente_por_cnpj_cpf_ou_nome": "/Cliente/v2_cliente_get_delete_get",
+    "get_cliente_renovacao": "/Cliente/v2_cliente_renovacao",
+    "get_cliente_servico_vinculado": "/Cliente/v3_cliente_servico_vinculado",
+    "get_cliente_simples_estatisticas": "/Cliente/v2_cliente_simples_estatisticas",
+    "get_cliente_simples": "/Cliente/v2_cliente_simples_get",
+    "get_cliente": "/Cliente/v2_cliente_get_delete_get",
+    "post_cliente_anexo": "/Cliente/v3_cliente_anexo_post",
+    "post_cliente_simples": "/Cliente/v3_cliente_simples_post",
+    "post_cliente": "/Cliente/v3_cliente_post"
+}

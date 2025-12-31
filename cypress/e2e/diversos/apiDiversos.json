@@ -1,0 +1,19 @@
+{
+    "get_cbo": "/Diversos/v2_diversos_cbo",
+    "get_cep": "/Diversos/v2_diversos_cep",
+    "get_cidade": "/Diversos/v2_diversos_cidade",
+    "get_cnae": "/Diversos/v2_diversos_cnae",
+    "get_dados_tabela": "/Diversos/v2_diversos_dados_tabela",
+    "get_estado": "/Diversos/v2_diversos_estado",
+    "get_forma_pagamento": "/Diversos/v2_diversos_cnae",
+    "get_grupo": "/Diversos/v3_diversos_grupo",
+    "get_local_entrega_por_cep": "/Diversos/v3_diversos_local_entrega_por_cep",
+    "get_local_entrega": "/Diversos/v2_diversos_local_entrega",
+    "get_observacao": "/Diversos/v3_diversos_observacao",
+    "get_operacoes_tef": "/Diversos/v3_diversos_operacoes_tef",
+    "get_processo": "/Diversos/v2_diversos_processo",
+    "get_rota_cidade": "/Diversos/v3_diversos_rota_cidade",
+    "get_rota": "/Diversos/v3_diversos_rota",
+    "get_vendedor": "/Diversos/v2_diversos_vendedor",
+    "post_gerar_relatorio": "/Diversos/v2_diversos_gerar_relatorio"
+}

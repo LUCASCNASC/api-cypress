@@ -1,0 +1,4 @@
+{
+    "get_filial_detalhe": "/Filial/v2_filial_detalhe",
+    "get_filial_por_tipo": "/Filial/v3_get_filial_por_tipo"
+}

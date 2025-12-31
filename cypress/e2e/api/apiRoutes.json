@@ -1,0 +1,5 @@
+{
+    "get_session": "/api/session",
+    "get_swagger": "/api/API/api_swagger",
+    "get_version": "/api/version"
+}
