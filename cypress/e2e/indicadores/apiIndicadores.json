@@ -1,0 +1,4 @@
+{
+    "get_indicador_vendedor_periodo": "/Indicadores/v3_indicador_vendedor_periodo",
+    "get_indicador_vendedor": "/Indicadores/v3_indicador_vendedor"
+}

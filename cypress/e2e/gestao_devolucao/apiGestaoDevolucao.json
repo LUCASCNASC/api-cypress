@@ -1,0 +1,4 @@
+{
+    "get_nota_devolucao_simulacao": "/Gestão%20Devolução/v2_gestao_devolucao_nota_devolucao_simulacao",
+    "post_efetivar_proposta_abatimento": "/Gestão%20Devolução/v2_gestao_devolucao_efetivar_proposta_abatimento"
+}
