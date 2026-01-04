@@ -1,0 +1,7 @@
+{
+    "delete_intencao_compra": "/Intenção%20compra/v2_intencao_compra_delete",
+    "get_intencao_compra_detalhe": "/Intenção%20compra/v2_intencao_compra_detalhe",
+    "get_intencao_compra_motivo": "/Intenção%20compra/v2_intencao_compra_motivo",
+    "get_intencao_compra": "/Intenção%20compra/v2_intencao_compra_get_post1",
+    "post_intencao_compra": "/Intenção%20compra/v2_intencao_compra_get_post2"
+}

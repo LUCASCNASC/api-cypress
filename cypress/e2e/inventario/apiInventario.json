@@ -1,0 +1,7 @@
+{
+    "get_inventario": "/Inventário/v3_get_inventario",
+    "get_itens_inventario": "/Inventário/v3_get_itens_inventario",
+    "post_apaga_usuario_inventario": "/Inventário/v3_post_apaga_usuario_inventario",
+    "post_cancela_inventario": "/Inventário/v3_post_cancela_inventario",
+    "post_finaliza_inventario": "/Inventário/v3_post_finaliza_inventario"
+}

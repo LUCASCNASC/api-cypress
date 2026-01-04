@@ -1,0 +1,4 @@
+{
+    "get_dados_titular": "/LGPD/v3_get_lgpd_dados_titular",
+    "post_dados_titular_excluir": "/LGPD/v3_post_lgpd_dados_titular_excluir"
+}
