@@ -1,0 +1,9 @@
+{
+    "get_trial_autorizacao": "/Trial/v3_get_trial_autorizacao",
+    "get_trial_lista_usuario": "/Trial/v3_get_lista_trial_usuario",
+    "get_trial_nivel_usuario": "/Trial/v3_get_trial_nivel_usuario",
+    "get_trial": "/Trial/v2_trial_get_post1",
+    "post_gerador_trial": "/Trial/v3_post_gerador_trial",
+    "post_trial_autorizacao": "/Trial/v3_post_trial_autorizacao",
+    "post_trial": "/Trial/v2_trial_get_post2"
+}

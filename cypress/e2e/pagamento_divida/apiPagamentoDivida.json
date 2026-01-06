@@ -1,0 +1,11 @@
+{
+    "get_divida_cliente_vinculado": "/Pagamento%20divida/v2_divida_cliente_vinculado",
+    "get_divida_cliente": "/Pagamento%20divida/v2_divida_cliente",
+    "post_baixa_divida_cliente": "/Pagamento%20divida/v2_divida_baixa_cliente",
+    "post_baixa_titulo_cartao": "/Pagamento%20divida/v2_divida_baixa_titulo",
+    "post_baixa_titulo_cheque": "/Pagamento%20divida/v2_divida_baixa_titulo_cheque",
+    "post_baixa_titulo_dinheiro": "/Pagamento%20divida/v2_divida_baixa_titulo",
+    "post_baixa_titulo_encontro_contas": "/Pagamento%20divida/v2_divida_baixa_titulo_encontro_contas",
+    "post_baixa_titulo_multiplos": "/Pagamento%20divida/v2_divida_baixa_titulo_multiplos",
+    "post_processar_proxima_baixa_pendente": "/Pagamento%20divida/v2_divida_processar_proxima_baixa_pendente"
+}

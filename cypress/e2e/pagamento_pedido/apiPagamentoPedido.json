@@ -1,0 +1,13 @@
+{
+    "get_carne_pedido": "/Pagamento%20pedido/v3_pag_pedido_carne_pedido",
+    "get_contrato_compra_e_venda": "/Pagamento%20pedido/v2_pag_pedido_contrato_compra_e_venda",
+    "get_contrato_servico": "/Pagamento%20pedido/v2_pag_pedido_contrato_servico",
+    "get_nota_fiscal": "/Pagamento%20pedido/v2_pag_pedido_nota_fiscal",
+    "get_pedido_detalhe": "/Pagamento%20pedido/v3_pag_pedido_detalhe",
+    "get_pedido_divida": "/Pagamento%20pedido/v2_pag_pedido_divida",
+    "get_pedidos_pendentes": "/Pagamento%20pedido/v3_pag_pedidos_pendentes",
+    "post_baixa_pedido": "/Pagamento%20pedido/v2_pag_pedido_baixa_pedido",
+    "post_estornar_baixa_pedido": "/Pagamento%20pedido/v2_pag_pedido_estornar_baixa_pedido",
+    "post_finaliza_pagamento_pedido": "/Pagamento%20pedido/v2_pag_pedido_finaliza_pagamento_pedido",
+    "post_pedido_fechar_baixar_caixa": "/Pagamento%20pedido/v3_pag_pedido_fechar_baixar_caixa"
+}

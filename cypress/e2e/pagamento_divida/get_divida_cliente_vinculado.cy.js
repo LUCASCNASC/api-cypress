@@ -5,8 +5,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 const filial = "12345678910"; 
 const cliente = "456";
 
-describe('Pagamento divida - GET - /Pagamento%20divida/v2_divida_cliente_vinculado
-  ', { env: { hideCredendials: true } }, () => {
+describe('Pagamento divida - GET - /Pagamento%20divida/v2_divida_cliente_vinculado', { env: { hideCredendials: true } }, () => {
 
   it('Status Code is 200', () => {
     cy.api({
