@@ -1,0 +1,5 @@
+{
+    "get_configuracao_recarga": "/Recarga/v3_configuracao_recarga",
+    "get_recarga": "/Recarga/v3_get_recarga",
+    "post_recarga": "/Recarga/v3_post_recarga"
+}

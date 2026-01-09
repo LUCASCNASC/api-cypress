@@ -1,0 +1,6 @@
+{
+    "get_proposta_credito_situacao": "/Proposta%20crédito/v2_proposta_credito_situacao",
+    "get_proposta_credito": "/Proposta%20crédito/v2_proposta_credito_get",
+    "post_proposta_credito_agrupar": "/Proposta%20crédito/v2_proposta_credito_agrupar",
+    "post_proposta_credito": "/Proposta%20crédito/v2_proposta_credito_post"
+}

@@ -1,0 +1,18 @@
+{
+    "get_departamento": "/Produto/v2_produto_departamento",
+    "get_local_saldo": "/Produto/v2_produto_local_saldo",
+    "get_produto_bloqueio": "/Produto/v2_produto_bloqueio",
+    "get_produto_composicao_saldo": "/Produto/v2_produto_composicao_saldo",
+    "get_produto_destaque": "/Produto/v2_produto_destaque",
+    "get_produto_detalhe_promocao": "/Produto/v2_produto_detalhe_promocao",
+    "get_produto_detalhe": "/Produto/v2_produto_detalhe",
+    "get_produto_previsao_entrega": "/Produto/v2_produto_previsao_entrega",
+    "get_produto_relacionado": "/Produto/v2_produto_relacionado",
+    "get_produto_serie": "/Produto/v2_produto_serie",
+    "get_produto_servico_vinculado": "/Produto/v2_produto_servico_vinculado",
+    "get_produto_servico": "/Produto/v2_produto_servico",
+    "get_produto_tambem_compraram": "/Produto/v2_produto_tambem_compraram",
+    "get_produto_tipo_saldo_detalhe": "/Produto/v3_produto_tipo_saldo_detalhe",
+    "get_produto": "/Produto/v2_produto_get",
+    "post_saldo_disponivel": "/Produto/v3_produto_saldo_disponivel"
+}
