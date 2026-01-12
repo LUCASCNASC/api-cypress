@@ -1,0 +1,9 @@
+{
+    "get_login_complementos": "/Sessão/v2_sessao_login_complementos",
+    "get_login_validar": "/Sessão/v3_sessao_login_validar",
+    "get_login": "/Sessão/v2_sessao_login",
+    "get_logout": "/Sessão/v2_sessao_logout",
+    "post_login": "/Sessão/v3_sessao_login_post",
+    "post_redefinir_senha": "/Sessão/v3_post_redefinir_senha",
+    "post_sessao_login_altera_senha": "/Sessão/v3_post_sessao_login_altera_senha"
+}
