@@ -1,0 +1,9 @@
+{
+    "delete_key_value": "/Sistema/v2_sistema_key_value_delete",
+    "get_key_value": "/Sistema/v2_sistema_key_value",
+    "get_parametros_sitema": "/Sistema/v2_sistema_parametro_sistema",
+    "post_envio_email": "/Sistema/v3_sistema_envio_email_post",
+    "post_evento": "/Sistema/v2_sistema_evento",
+    "post_executar_filtro": "/Sistema/v2_sistema_executar_filtro",
+    "post_key_value": "/Sistema/v2_sistema_key_value_post"
+}

@@ -1,0 +1,5 @@
+{
+    "delete_titulo_remover": "/Titulo/v3_delete_titulo_remover",
+    "post_titulo_incluir": "/Titulo/v3_post_titulo_incluir",
+    "put_titulo_alterar": "/Titulo/v3_put_titulo_alterar"
+}
