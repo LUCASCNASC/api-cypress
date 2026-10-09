@@ -6,7 +6,7 @@ const VERSAO = Cypress.env('VERSAO');
 
 describe('API - GET /api/swagger', { env: { hideCredentials: true } }, () => {
   
-  it('Status Code is 200', () => {
+  it(' Status Code 200', () => {
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH}/${VERSAO}`,
@@ -20,7 +20,7 @@ describe('API - GET /api/swagger', { env: { hideCredentials: true } }, () => {
     });
   });
 
-  it('Status Code is 401 and 403', () => {
+  it(' Status Code 401 and 403', () => {
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH}/${VERSAO}`,

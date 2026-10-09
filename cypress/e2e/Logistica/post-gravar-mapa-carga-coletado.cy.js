@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 describe('Logística - POST - /Logística/v3_post_gravar_mapa_carga_coletado', { env: { hideCredendials: true } }, () => {
   
-  it('Status Code is 200', () => {
+  it(' Status Code 200', () => {
     cy.api({
       method: 'POST', 
       url: `${BASE_URL}/${PATH}`, 

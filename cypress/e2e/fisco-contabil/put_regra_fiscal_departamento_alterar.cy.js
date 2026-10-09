@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 describe('Fisco/Contábil - PUT /Fisco/Contabil/v3_regra_fiscal_departamento_put', { env: { hideCredendials: true } }, () => {
   
-  it('Status Code is 200', () => {
+  it(' Status Code 200', () => {
     cy.api({
       method: 'PUT',
       url: `${BASE_URL}/${PATH}`,

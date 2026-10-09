@@ -8,7 +8,7 @@ const situacao = "123123123";
 
 describe('Intenção compra - GET /Intenção%20compra/v2_intencao_compra_detalhe', { env: { hideCredendials: true } }, () => {
 
-    it('Status Code is 200', () => {
+    it(' Status Code 200', () => {
       
       cy.api({
         method: 'GET', 

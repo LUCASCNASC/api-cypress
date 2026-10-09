@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 describe('Sessão - POST - /Sessão/v3_post_redefinir_senha', { env: { hideCredendials: true } }, () => {
   
-  it('Status Code is 200', () => {
+  it(' Status Code 200', () => {
     cy.api({
       method: 'GET',
       url: `${BASE_URL}/${PATH}`,

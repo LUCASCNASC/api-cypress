@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 describe('E-commerce - POST /E-commerce/v3_ecommerce_finalizar', { env: { hideCredentials: true } }, () => {
   
-  it('Status Code is 200', () => {
+  it(' Status Code 200', () => {
     cy.api({
       method: 'POST',
       url: `${BASE_URL}/${PATH}`,
@@ -30,7 +30,7 @@ describe('E-commerce - POST /E-commerce/v3_ecommerce_finalizar', { env: { hideCr
     });
   });
 
-  it('Status Code is 412', () => {
+  it(' Status Code 412', () => {
     cy.api({
       method: 'POST',
       url: `${BASE_URL}/${PATH}`,

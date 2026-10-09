@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 describe('Pedido - POST - /Pedido/v3_pedido_validar_cliente', { env: { hideCredendials: true } }, () => {
   
-    it('Status Code is 200', () => {
+    it(' Status Code 200', () => {
       
       cy.api({
         method: 'POST', 

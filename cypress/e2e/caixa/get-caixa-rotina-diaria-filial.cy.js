@@ -11,7 +11,7 @@ const dataAberturaInvalida = Cypress.env('DATA_ABERTURA_INVALIDA');
 
 describe('Caixa - GET /v3/caixa_rotina_diaria_filial', { env: { hideCredentials: true } }, () => {
 
-  it('Status Code is 200', () => {
+  it(' Status Code 200', () => {
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH}/${idFilialValido}/${dataAberturaValida}`,
@@ -23,7 +23,7 @@ describe('Caixa - GET /v3/caixa_rotina_diaria_filial', { env: { hideCredentials:
     });
   });
 
-  it('Status Code is 204', () => {
+  it(' Status Code 204', () => {
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH}/${idFilialSemDados}/${dataSemMovimentacao}`,
@@ -35,14 +35,14 @@ describe('Caixa - GET /v3/caixa_rotina_diaria_filial', { env: { hideCredentials:
     });
   });
 
-  it('Status Code is 412', () => {
+  it(' Status Code 412', () => {
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH}/${idFilialInvalido}/${dataAberturaInvalida}`,
       headers: { Authorization },
       failOnStatusCode: false
     }).should((response) => {
-      expect(response.status, 'Status Code is deve ser 412').to.equal(412);
+      expect(response.status, ' Status Code deve ser 412').to.equal(412);
       expect(response.body).to.exist;
     });
   });

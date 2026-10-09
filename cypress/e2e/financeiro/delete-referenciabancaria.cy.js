@@ -9,7 +9,7 @@ const idReferenciaBancariaInvalido = "999999";
 
 describe('Financeiro - DELETE /Financeiro/v3_financeiro_referencia_bancaria_delete', { env: { hideCredentials: true } }, () => {
 
-  it('Status Code is 200', () => {
+  it(' Status Code 200', () => {
     cy.api({
       method: 'DELETE',
       url: `${BASE_URL}/${PATH}/${cnpjCpfValido}/${idReferenciaBancariaValido}`,
@@ -21,7 +21,7 @@ describe('Financeiro - DELETE /Financeiro/v3_financeiro_referencia_bancaria_dele
     });
   });
 
-  it('Status Code is 404 and 412', () => {
+  it(' Status Code 404 and 412', () => {
     cy.api({
       method: 'DELETE',
       url: `${BASE_URL}/${PATH}/${cnpjCpfInvalido}/${idReferenciaBancariaInvalido}`,

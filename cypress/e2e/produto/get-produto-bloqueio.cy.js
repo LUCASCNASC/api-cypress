@@ -8,7 +8,7 @@ const id_cnpj_cpf = "12345678910";
 
 describe('Produto - GET - /Produto/v2_produto_bloqueio', { env: { hideCredendials: true } }, () => {
   
-  it('Status Code is 200', () => {
+  it(' Status Code 200', () => {
     cy.api({
       method: 'GET', 
       url: `${BASE_URL}/${PATH}/${filial}/${sku}/${id_cnpj_cpf}`, 

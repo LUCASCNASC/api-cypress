@@ -9,7 +9,7 @@ const listapedidovenda = "12345678910";
 
 describe('Pedido - GET - /Pedido/v2_pedido_pendencia', { env: { hideCredendials: true } }, () => {
   
-  it('Status Code is 200', () => {
+  it(' Status Code 200', () => {
     cy.api({
       method: 'GET', 
       url: `${BASE_URL}/${PATH}/${idpedidovenda}/${idvendedor}/${cnpj_cpf}/${listapedidovenda}`, 

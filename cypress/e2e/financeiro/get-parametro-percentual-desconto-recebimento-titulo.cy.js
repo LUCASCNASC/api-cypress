@@ -8,7 +8,7 @@ const idFilialSemParametro = "99999";
 
 describe('Financeiro - GET /Financeiro/v3_financeiro_parametro_percentual_desconto_recebimento_titulo', { env: { hideCredentials: true } }, () => {
 
-  it('Status Code is 200', () => {
+  it(' Status Code 200', () => {
     cy.api({
       method: 'GET',
       url: `${BASE_URL}/${PATH}/${idFilial}`,
@@ -22,7 +22,7 @@ describe('Financeiro - GET /Financeiro/v3_financeiro_parametro_percentual_descon
     });
   });
 
-  it('Status Code is 204', () => {
+  it(' Status Code 204', () => {
     cy.api({
       method: 'GET',
       url: `${BASE_URL}/${PATH}/${idFilialSemParametro}`,
@@ -34,7 +34,7 @@ describe('Financeiro - GET /Financeiro/v3_financeiro_parametro_percentual_descon
     });
   });
 
-  it('Status Code is 412', () => {
+  it(' Status Code 412', () => {
     cy.api({
       method: 'GET',
       url: `${BASE_URL}/${PATH}/${idFilialInvalido}`,

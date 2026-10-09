@@ -8,7 +8,7 @@ const triais = "12345678910";
 
 describe('Trial - GET - /Trial/v3_get_trial_autorizacao', { env: { hideCredendials: true } }, () => {
   
-  it('Status Code is 200', () => {
+  it(' Status Code 200', () => {
     cy.api({
       method: 'GET', 
       url: `${BASE_URL}/${PATH}/${idFilial}/${idUsuario}/${triais}`, 

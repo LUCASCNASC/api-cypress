@@ -4,7 +4,7 @@ const Authorization = Cypress.env('API.PRAGMA');
 
 describe('Pagamento pedido - POST - /Pagamento%20pedido/v3_pag_pedido_fechar_baixar_caixa', { env: { hideCredendials: true } }, () => {
   
-  it('Status Code is 200', () => {
+  it(' Status Code 200', () => {
     cy.api({
       method: 'POST', 
       url: `${BASE_URL}/${PATH}`,

@@ -9,7 +9,7 @@ const idFilialInvalido = "99999";
 
 describe('Financeiro - DELETE /Financeiro/v3_financeiro_lancamento_conta_corrente_delete', { env: { hideCredentials: true } }, () => {
 
-  it('Status Code is 201', () => {
+  it(' Status Code 201', () => {
     cy.api({
       method: 'DELETE',
       url: `${BASE_URL}/${PATH}/${idFilialValido}/${idLancamentoContaCorrenteValido}`,
@@ -21,7 +21,7 @@ describe('Financeiro - DELETE /Financeiro/v3_financeiro_lancamento_conta_corrent
     });
   });
 
-  it('Status Code is 500', () => {
+  it(' Status Code 500', () => {
     cy.api({
       method: 'DELETE',
       url: `${BASE_URL}/${PATH}/${idFilialInvalido}/${idLancamentoContaCorrenteInvalido}`,

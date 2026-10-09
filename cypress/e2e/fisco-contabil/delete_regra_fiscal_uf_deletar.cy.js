@@ -6,7 +6,7 @@ const idBaseFiscalUF = "123123123";
 
 describe('Fisco/Contábil - DELETE - /Fisco/Contabil/v3_regra_fiscal_uf_delete', { env: { hideCredendials: true } }, () => {
 
-  it('Status Code is 200', () => {
+  it(' Status Code 200', () => {
     cy.api({
       method: 'DELETE',
       url: `${BASE_URL}/${PATH}/${idBaseFiscalUF}`,
