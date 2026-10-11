@@ -60,3 +60,4 @@ describe('Intenção compra - GET /Intenção%20compra/v2_intencao_compra_detalh
         });
     });
   });
+  
