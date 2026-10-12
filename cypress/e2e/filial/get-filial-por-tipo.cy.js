@@ -14,7 +14,7 @@ const tipoInvalido = "xyz";
 
 describe('Filial - GET /Filial/v3_get_filial_por_tipo', { env: { hideCredentials: true } }, () => {
 
-  it(' Status Code 200', () => {
+  it('status code 200', () => {
     cy.api({
       method: 'GET',
       url: `${BASE_URL}/${PATH}/${ufValida}/${municipioValido}/${tipoValido}`,
@@ -37,7 +37,7 @@ describe('Filial - GET /Filial/v3_get_filial_por_tipo', { env: { hideCredentials
     });
   });
 
-  it(' Status Code 204', () => {
+  it('status code 204', () => {
     cy.api({
       method: 'GET',
       url: `${BASE_URL}/${PATH}/${ufSemFilial}/${municipioSemFilial}/${tipoSemFilial}`,
@@ -49,7 +49,7 @@ describe('Filial - GET /Filial/v3_get_filial_por_tipo', { env: { hideCredentials
     });
   });
 
-  it(' Status Code 412', () => {
+  it('status code 412', () => {
     cy.api({
       method: 'GET',
       url: `${BASE_URL}/${PATH}/${ufInvalida}/${municipioInvalido}/${tipoInvalido}`,

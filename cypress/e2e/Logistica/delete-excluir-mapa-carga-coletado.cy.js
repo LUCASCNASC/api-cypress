@@ -8,7 +8,7 @@ const TipoMapaCarga = "123123123";
 
 describe('Logística - DELETE - /Logística/v3_delete_mapa_carga_coletado', { env: { hideCredendials: true } }, () => {
 
-  it(' Status Code 200', () => {
+  it('status code 200', () => {
     cy.api({
       method: 'DELETE', 
       url: `${BASE_URL}/${PATH}/${idFilial}/${idMapaCarga}/${TipoMapaCarga}`, 

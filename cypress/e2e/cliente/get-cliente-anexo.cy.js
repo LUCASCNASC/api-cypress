@@ -8,7 +8,7 @@ const idcnpj_cpfValido = "100002139114930";
 
 describe('Cliente - GET /Cliente/v3_cliente_anexo', { env: { hideCredentials: true } }, () => {
   
-  it(' Status Code 200', () => {
+  it('status code 200', () => {
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH}/${idcnpj_cpfValido}`,
@@ -26,7 +26,7 @@ describe('Cliente - GET /Cliente/v3_cliente_anexo', { env: { hideCredentials: tr
     });
   });
 
-  it(' Status Code 204', () => {
+  it('status code 204', () => {
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH}/${idcnpj_cpfSemAnexo}`,
@@ -38,7 +38,7 @@ describe('Cliente - GET /Cliente/v3_cliente_anexo', { env: { hideCredentials: tr
     });
   });
 
-  it(' Status Code 412', () => {
+  it('status code 412', () => {
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH}/${idcnpj_cpfInvalido}`,

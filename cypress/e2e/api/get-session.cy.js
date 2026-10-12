@@ -6,14 +6,14 @@ const AUTHORIZATION_INVALID = Cypress.env('API.PRAGMA_INVALID');
 
 describe('API - GET /api/session', { env: { hideCredendials: true } }, () => {
   
-  it(' Status Code 200', () => {
+  it('status code 200', () => {
     cy.api({
       method: 'GET',
       url: `${BASE_URL}/${PATH}`,
       headers: { Authorization: AUTHORIZATION },
       failOnStatusCode: false
     }).should((response) => {
-      expect(response.status, 'Status code: 200').to.eq(200);
+      expect(response.status, 'status code: 200').to.eq(200);
       expect(response.duration, 'Tempo de resposta deve ser inferior a 2000ms').to.be.lessThan(2000);
       expect(response.body, 'Body deve conter a propriedade retorno').to.have.property('retorno');
       expect(response.body.retorno, 'Retorno deve ser array não vazio').to.be.an('array').and.not.be.empty;
@@ -27,7 +27,7 @@ describe('API - GET /api/session', { env: { hideCredendials: true } }, () => {
     });
   });
 
-  it(' Status Code 401 and 403', () => {
+  it('status code 401 and 403', () => {
     cy.api({
       method: 'GET',
       url: `${BASE_URL}/${PATH}`,

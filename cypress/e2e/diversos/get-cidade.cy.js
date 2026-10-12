@@ -8,7 +8,7 @@ const ufValido = "123";
 
 describe('Diversos - GET /Diversos/v2_diversos_cidade', { env: { hideCredentials: true } }, () => {
 
-  it(' Status Code 200', () => {
+  it('status code 200', () => {
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH}/${ufValido}`,
@@ -23,7 +23,7 @@ describe('Diversos - GET /Diversos/v2_diversos_cidade', { env: { hideCredentials
     });
   });
 
-  it(' Status Code 204', () => {
+  it('status code 204', () => {
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH}/${ufSemCidades}`,
@@ -35,7 +35,7 @@ describe('Diversos - GET /Diversos/v2_diversos_cidade', { env: { hideCredentials
     });
   });
 
-  it(' Status Code 412', () => {
+  it('status code 412', () => {
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH}/${ufInvalido}`,

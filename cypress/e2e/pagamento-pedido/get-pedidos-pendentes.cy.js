@@ -11,7 +11,7 @@ const offset = "12345678910";
 
 describe('Pagamento pedido - GET - /Pagamento%20pedido/v3_pag_pedidos_pendentes', { env: { hideCredendials: true } }, () => {
   
-  it(' Status Code 200', () => {
+  it('status code 200', () => {
     cy.api({
       method: 'GET', 
       url: `${BASE_URL}/${PATH}/${filial}/${data}/${numeroPedido}/${cnpjCpf}/${limit}/${offset}`, 

@@ -7,7 +7,7 @@ const idPedidoVenda = "12345678910";
 
 describe('Pedido - GET - /Pedido/v3_pedido_saldo_disponivel', { env: { hideCredendials: true } }, () => {
   
-  it(' Status Code 200', () => {
+  it('status code 200', () => {
     cy.api({
       method: 'GET', 
       url: `${BASE_URL}/${PATH}/${idFilial}/${idPedidoVenda}`, 

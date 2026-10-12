@@ -9,7 +9,7 @@ const numeroTitulo = "12345678910";
 
 describe('Titulo - DELETE - /Titulo/v3_delete_titulo_remover, { env: { hideCredendials: true } }', () => {
   
-  it(' Status Code 200', () => {
+  it('status code 200', () => {
     cy.api({
       method: 'DELETE', 
       url: `${BASE_URL}/${PATH}/${numeroEmpresa}/${numeroFilial}/${tipoTitulo}/${numeroTitulo}`, 

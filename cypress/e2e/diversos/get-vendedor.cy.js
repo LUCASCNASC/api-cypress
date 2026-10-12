@@ -9,7 +9,7 @@ const sort = "123";
 
 describe('Diversos - GET /Diversos/v2_diversos_vendedor', { env: { hideCredentials: true } }, () => {
 
-  it(' Status Code 200', () => {
+  it('status code 200', () => {
     cy.api({
       method: 'GET',
       url: `${BASE_URL}/${PATH}/${termoValido}/${limit}/${offset}/${sort}`,
@@ -25,7 +25,7 @@ describe('Diversos - GET /Diversos/v2_diversos_vendedor', { env: { hideCredentia
     });
   });
 
-  it(' Status Code 412', () => {
+  it('status code 412', () => {
     cy.api({
       method: 'GET',
       url: `${BASE_URL}/${PATH}/${termoInvalido}/${limit}/${offset}/${sort}`,

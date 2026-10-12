@@ -6,7 +6,7 @@ const idBaseFiscalCFOP = "123";
 
 describe('Fisco/Contábil - DELETE - /Fisco/Contabil/v3_regra_fiscal_cfop_delete', { env: { hideCredendials: true } }, () => {
 
-  it(' Status Code 200', () => {
+  it('status code 200', () => {
     cy.api({
       method: 'DELETE',
       url: `${BASE_URL}/${PATH}/${idBaseFiscalCFOP}`,

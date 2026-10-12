@@ -7,7 +7,7 @@ const idRegistroNota = "123123123";
 
 describe('Fisco/Contábil - GET - /Fisco/Contabil/v3_nota_fiscal_excluir', { env: { hideCredendials: true } }, () => {
 
-  it(' Status Code 200', () => {
+  it('status code 200', () => {
     cy.api({
       method: 'GET',
       url: `${BASE_URL}/${PATH}/${idFilial}/${idRegistroNota}`,

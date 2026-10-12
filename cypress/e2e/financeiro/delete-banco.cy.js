@@ -7,7 +7,7 @@ const codigoInvalido = "99999";
 
 describe('Financeiro - DELETE /Financeiro/v3_financeiro_banco_delete', { env: { hideCredentials: true } }, () => {
 
-  it(' Status Code 200', () => {
+  it('status code 200', () => {
     cy.api({
       method: 'DELETE',
       url: `${BASE_URL}/${PATH}/${codigoValido}`,
@@ -19,7 +19,7 @@ describe('Financeiro - DELETE /Financeiro/v3_financeiro_banco_delete', { env: { 
     });
   });
 
-  it(' Status Code 404 and 412', () => {
+  it('status code 404 and 412', () => {
     cy.api({
       method: 'DELETE',
       url: `${BASE_URL}/${PATH}/${codigoInvalido}`,

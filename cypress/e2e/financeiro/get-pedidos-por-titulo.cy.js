@@ -14,7 +14,7 @@ const idTipoTituloSemPedidos = "99999";
 
 describe('Financeiro - GET /Financeiro/v3_financeiro_pedidos_por_titulo', { env: { hideCredentials: true } }, () => {
 
-  it(' Status Code 200', () => {
+  it('status code 200', () => {
     cy.api({
       method: 'GET',
       url: `${BASE_URL}/${PATH}/${idFilial}/${idTitulo}/${idTipoTitulo}`,
@@ -29,7 +29,7 @@ describe('Financeiro - GET /Financeiro/v3_financeiro_pedidos_por_titulo', { env:
     });
   });
 
-  it(' Status Code 204', () => {
+  it('status code 204', () => {
     cy.api({
       method: 'GET',
       url: `${BASE_URL}/${PATH}/${idFilialSemPedidos}/${idTituloSemPedidos}/${idTipoTituloSemPedidos}`,
@@ -41,7 +41,7 @@ describe('Financeiro - GET /Financeiro/v3_financeiro_pedidos_por_titulo', { env:
     });
   });
 
-  it(' Status Code 412', () => {
+  it('status code 412', () => {
     cy.api({
       method: 'GET',
       url: `${BASE_URL}/${PATH}/${idFilialInvalido}/${idTituloInvalido}/${idTipoTituloInvalido}`,

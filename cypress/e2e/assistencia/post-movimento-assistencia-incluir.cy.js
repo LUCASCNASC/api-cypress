@@ -6,7 +6,7 @@ const AUTHORIZATION_INVALID = Cypress.env('API.PRAGMA_INVALID');
 
 describe('Assistência - POST /Assistencia/v3_post_movimento_assistencia_incluir', { env: { hideCredendials: true } }, () => {
 
-  it(' Status Code 200', () => {
+  it('status code 200', () => {
     cy.api({
       method: 'POST',
       url,
@@ -19,7 +19,7 @@ describe('Assistência - POST /Assistencia/v3_post_movimento_assistencia_incluir
         Qtde_Assistencias: 1
       }
     }).should((response) => {
-      expect(response.status, 'Status code: 200').to.eq(200);
+      expect(response.status, 'status code: 200').to.eq(200);
       expect(response.duration, 'Deve responder em menos de 2s').to.be.lessThan(2000);
       expect(response.body, 'Deve conter propriedade retorno').to.have.property('retorno');
       expect(response.body.retorno, 'Retorno deve ser array não vazio').to.be.an('array').and.not.be.empty;
@@ -34,7 +34,7 @@ describe('Assistência - POST /Assistencia/v3_post_movimento_assistencia_incluir
     });
   });
 
-  it(' Status Code 402', () => {
+  it('status code 402', () => {
     cy.api({
       method: 'POST',
       url,
@@ -50,7 +50,7 @@ describe('Assistência - POST /Assistencia/v3_post_movimento_assistencia_incluir
     });
   });
 
-  it(' Status Code 401 and 403', () => {
+  it('status code 401 and 403', () => {
     cy.api({
       method: 'POST',
       url,
@@ -67,7 +67,7 @@ describe('Assistência - POST /Assistencia/v3_post_movimento_assistencia_incluir
     });
   });
 
-  it(' Status Code 401 and 403', () => {
+  it('status code 401 and 403', () => {
     cy.api({
       method: 'POST',
       url,

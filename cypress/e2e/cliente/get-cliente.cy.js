@@ -8,7 +8,7 @@ const clienteValido = "12345678901234";
 
 describe('Cliente - GET /Cliente/v2_cliente_get_delete_get', { env: { hideCredentials: true } }, () => {
 
-  it(' Status Code 200', () => {
+  it('status code 200', () => {
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH}/${clienteValido}`,
@@ -21,7 +21,7 @@ describe('Cliente - GET /Cliente/v2_cliente_get_delete_get', { env: { hideCreden
     });
   });
 
-  it(' Status Code 204', () => {
+  it('status code 204', () => {
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH}/${clienteSemDados}`,
@@ -33,7 +33,7 @@ describe('Cliente - GET /Cliente/v2_cliente_get_delete_get', { env: { hideCreden
     });
   });
 
-  it(' Status Code 412', () => {
+  it('status code 412', () => {
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH}/${clienteInvalido}`,

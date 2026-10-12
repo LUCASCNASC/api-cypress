@@ -6,7 +6,7 @@ const key = "12345678910";
 
 describe('Sistema - GET - /Sistema/v2_sistema_key_value', { env: { hideCredendials: true } }, () => {
   
-  it(' Status Code 200', () => {
+  it('status code 200', () => {
     cy.api({
       method: 'GET',
       url: `${BASE_URL}/${PATH}/${key}`, 

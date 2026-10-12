@@ -6,21 +6,21 @@ const VERSAO = Cypress.env('VERSAO');
 
 describe('API - GET /api/swagger', { env: { hideCredentials: true } }, () => {
   
-  it(' Status Code 200', () => {
+  it('status code 200', () => {
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH}/${VERSAO}`,
       headers: { Authorization: AUTHORIZATION },
       failOnStatusCode: false
     }).should((response) => {
-      expect(response.status, 'Status code: 200').to.eq(200);
+      expect(response.status, 'status code: 200').to.eq(200);
       expect(response.duration, 'Tempo de resposta deve ser inferior a 2000ms').to.be.lessThan(2000);
       expect(response.body, 'Body deve ser um objeto').to.be.an('object');
       expect(response.body).to.have.all.keys('swagger', 'info', 'paths');
     });
   });
 
-  it(' Status Code 401 and 403', () => {
+  it('status code 401 and 403', () => {
     cy.api({
       method: 'GET',
       url: `${BASE_URL}${PATH}/${VERSAO}`,

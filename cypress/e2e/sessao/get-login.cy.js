@@ -8,7 +8,7 @@ const codigoverificacao = "12345678910";
 
 describe('Sessão - GET - /Sessão/v2_sessao_login', { env: { hideCredendials: true } }, () => {
 
-  it(' Status Code 204', () => {
+  it('status code 204', () => {
     cy.api({
       method: 'GET', 
       url: `${BASE_URL}/${PATH}/${usuario}/${senha}/${codigoverificacao}`, 
