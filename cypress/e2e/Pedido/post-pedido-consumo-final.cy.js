@@ -17,4 +17,5 @@ describe('Pedido - POST - /Pedido/v3_pedido_consumo_final', { env: { hideCredend
         expect(response.duration).to.be.below(2000); 
       });
   });
+  
 });

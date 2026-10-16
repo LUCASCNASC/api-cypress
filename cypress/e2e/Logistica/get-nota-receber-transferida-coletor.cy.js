@@ -22,4 +22,5 @@ describe('Logística - GET - /Logística/v3_get_carregar_nota_transferida_coleto
         expect(resposta.body.retorno[0]).toHaveProperty('idFilial');
       });
   });
+  
 });

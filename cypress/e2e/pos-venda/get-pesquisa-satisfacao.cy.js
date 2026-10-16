@@ -21,4 +21,5 @@ describe('Pós-venda - GET - /Pós-venda/v3_pesquisa_satisfacao', { env: { hideC
         expect(resposta.body.retorno[0]).toHaveProperty('descricao');
       });
   });
+  
 });

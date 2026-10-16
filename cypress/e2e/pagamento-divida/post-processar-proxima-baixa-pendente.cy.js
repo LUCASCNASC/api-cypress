@@ -17,4 +17,5 @@ describe('Pagamento divida - POST - /Pagamento%20divida/v2_divida_processar_prox
         expect(response.duration).to.be.below(2000);
       });
   });
+  
 });

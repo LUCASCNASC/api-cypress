@@ -17,4 +17,5 @@ describe('Pedido - POST - /Pedido/v3_post_pedido_venda_cancelar', { env: { hideC
         expect(response.duration).to.be.below(2000); 
       });
   });
+  
 });

@@ -49,4 +49,5 @@ describe('Diversos - GET /Diversos/v3_diversos_grupo', { env: { hideCredentials:
       expect(response.body).to.exist;
     });
   });
+  
 });

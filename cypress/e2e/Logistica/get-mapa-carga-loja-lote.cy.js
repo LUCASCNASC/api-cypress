@@ -53,4 +53,5 @@ describe('Logística - GET - /Logística/v3_get_logistica_lista_mapa_carga_loja_
         expect(resposta.body.retorno[0].carga[0]).toHaveProperty('ordementrega');
       });
   });
+  
 });

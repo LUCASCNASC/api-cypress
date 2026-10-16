@@ -21,4 +21,5 @@ describe('Logística - DELETE - /Logística/v3_delete_mapa_carga_coletado', { en
         expect(response.duration).to.be.below(2000);
       });
   });
+  
 });

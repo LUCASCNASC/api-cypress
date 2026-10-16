@@ -43,4 +43,5 @@ describe('Produto - GET - /Produto/v3_produto_tipo_saldo_detalhe', { env: { hide
         expect(resposta.body.retorno[0]).toHaveProperty('descricaoSituacaoAssitencia');
       });
   });
+  
 });

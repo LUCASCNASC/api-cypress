@@ -20,4 +20,5 @@ describe('Inventário - POST /Inventário/v3_post_cancela_inventario', { env: { 
         expect(response.duration).to.be.below(2000); 
       });
   });
+  
 });

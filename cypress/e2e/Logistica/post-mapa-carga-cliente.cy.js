@@ -17,4 +17,5 @@ describe('Logística - POST - /Logística/v3_post_logistica_mapa_carga_cliente',
         expect(response.duration).to.be.below(2000);
       });
   });
+  
 });

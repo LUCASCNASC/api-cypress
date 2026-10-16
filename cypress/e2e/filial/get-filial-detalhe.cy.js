@@ -68,4 +68,5 @@ describe('Filial - GET /Filial/v2_filial_detalhe', { env: { hideCredentials: tru
       expect(response.body).to.exist;
     });
   });
+  
 });

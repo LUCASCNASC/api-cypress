@@ -54,4 +54,5 @@ describe('Diversos - GET /Diversos/v3_diversos_rota_cidade', { env: { hideCreden
       expect(response.body).to.exist;
     });
   });
+  
 });

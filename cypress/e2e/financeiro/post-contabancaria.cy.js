@@ -38,4 +38,5 @@ describe('Financeiro - POST /Financeiro/v3_financeiro_conta_bancaria1', { env: {
       expect(response.status).to.eq(500);
     });
   });
+  
 });

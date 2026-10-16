@@ -46,4 +46,5 @@ describe('Caixa - GET /v3/caixa_rotina_diaria_filial', { env: { hideCredentials:
       expect(response.body).to.exist;
     });
   });
+  
 });

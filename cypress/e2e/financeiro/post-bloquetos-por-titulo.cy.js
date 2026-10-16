@@ -35,4 +35,5 @@ describe('Financeiro - POST /Financeiro/v3_financeiro_bloquetos_por_titulo', { e
       expect(response.body).to.exist;
     });
   });
+  
 });

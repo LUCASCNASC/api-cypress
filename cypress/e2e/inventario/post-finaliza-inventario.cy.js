@@ -17,4 +17,5 @@ describe('Inventário - POST /Inventário/v3_post_finaliza_inventario', { env: {
         expect(response.duration).to.be.below(2000); // Verifica se o tempo de resposta foi abaixo de 2000ms
       });
   });
+  
 });

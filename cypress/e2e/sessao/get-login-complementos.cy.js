@@ -31,4 +31,5 @@ describe('Sessão - GET - /Sessão/v2_sessao_login_complementos', { env: { hideC
         expect(resposta.body.retorno[0]).toHaveProperty('utilizaappsabium');
       });
   });
+  
 });

@@ -17,4 +17,5 @@ describe('Proposta crédito - POST - /Proposta%20crédito/v2_proposta_credito_ag
         expect(response.duration).to.be.below(2000);
       });
   });
+  
 });

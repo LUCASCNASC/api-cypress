@@ -40,4 +40,5 @@ describe('Diversos - POST /Diversos/v2_diversos_gerar_relatorio', { env: { hideC
       expect(response.body).to.exist;
     });
   });
+  
 });

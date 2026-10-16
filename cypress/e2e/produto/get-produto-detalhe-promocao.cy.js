@@ -42,4 +42,5 @@ describe('Produto - GET - /Produto/v2_produto_detalhe_promocao', { env: { hideCr
         expect(resposta.body.retorno[0].promocao[0]).toHaveProperty('valorentradaobrigatoria');
       });
   });
+  
 });

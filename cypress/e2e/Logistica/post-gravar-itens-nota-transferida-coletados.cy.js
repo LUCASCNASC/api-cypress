@@ -17,4 +17,5 @@ describe('Logística - POST - /Logística/v3_post_gravar_itens_nota_transferida_
         expect(response.duration).to.be.below(2000);
       });
   });
+
 });

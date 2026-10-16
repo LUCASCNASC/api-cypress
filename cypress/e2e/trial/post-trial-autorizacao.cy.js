@@ -18,4 +18,5 @@ describe('Trial - POST - /Trial/v3_post_trial_autorizacao', { env: { hideCredend
         expect(response.duration).to.be.below(2000);
       });
   });
+  
 });

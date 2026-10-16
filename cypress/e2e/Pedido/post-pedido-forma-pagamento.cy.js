@@ -38,4 +38,5 @@ describe('Pedido - POST - /Pedido/v3_pedido_forma_pagamento', { env: { hideCrede
         expect(resposta.body.retorno[0].servicos[0].formasPagamentos[0].parcelas[0]).toHaveProperty('idjurofinanceirogrupo');
       });
   });
+  
 });

@@ -23,4 +23,5 @@ describe('Recarga - GET - /Recarga/v3_configuracao_recarga', { env: { hideCreden
         expect(resposta.body.retorno[0].formasPagamento[0]).toHaveProperty('tipo');
       });
   });
+  
 });

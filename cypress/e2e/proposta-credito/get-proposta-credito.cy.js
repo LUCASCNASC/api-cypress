@@ -60,4 +60,5 @@ describe('Proposta crédito - GET - /Proposta%20crédito/v2_proposta_credito_get
         expect(resposta.body.retorno[0].data[0].motivoEnvio[0]).toHaveProperty('ordem');
       });
   });
+  
 });

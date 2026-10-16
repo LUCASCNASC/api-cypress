@@ -46,4 +46,5 @@ describe('Diversos - GET /Diversos/v2_diversos_cidade', { env: { hideCredentials
       expect(response.body).to.exist;
     });
   });
+  
 });

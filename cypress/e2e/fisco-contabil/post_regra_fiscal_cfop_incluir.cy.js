@@ -23,4 +23,5 @@ describe('Fisco/Contábil - POST /Fisco/Contabil/v3_regra_fiscal_cfop_post', { e
       expect(ret).to.have.property('Erros');
     });
   });
+  
 });

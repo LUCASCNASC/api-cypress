@@ -35,4 +35,5 @@ describe('Recarga - GET - /Recarga/v3_get_recarga', { env: { hideCredendials: tr
         expect(resposta.body.retorno[0].dadosTEF[0]).toHaveProperty('valor');
       });
   });
+  
 });

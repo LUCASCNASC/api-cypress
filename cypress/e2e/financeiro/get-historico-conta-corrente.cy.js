@@ -51,4 +51,5 @@ describe('Financeiro - GET /Financeiro/v3_financeiro_historicocontacorrente', { 
       expect(response.body).to.exist;
     });
   });
+  
 });

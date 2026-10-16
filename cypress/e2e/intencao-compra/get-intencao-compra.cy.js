@@ -23,4 +23,5 @@ describe('Intenção compra - GET /Intenção%20compra/v2_intencao_compra_get_po
         expect(resposta.body.retorno[0]).toHaveProperty('dtregistrado');
       });
   });
+  
 });

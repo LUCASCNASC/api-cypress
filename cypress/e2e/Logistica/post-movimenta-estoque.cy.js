@@ -17,4 +17,5 @@ describe('Logística - POST - /Logística/v3_post_movimenta_estoque', { env: { h
         expect(response.duration).to.be.below(2000); 
       });
   });
+  
 });

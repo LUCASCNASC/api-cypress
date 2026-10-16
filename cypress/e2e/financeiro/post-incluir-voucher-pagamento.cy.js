@@ -40,4 +40,5 @@ describe('Financeiro - POST /Financeiro/v3_financeiro_incluir_voucher_pagamento'
       expect(response.body).to.exist;
     });
   });
+  
 });

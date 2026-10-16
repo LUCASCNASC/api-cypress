@@ -23,4 +23,5 @@ describe('Logística - POST - /Logística/v3_post_inclui_pedido_venda_mapa_carga
         expect(resposta.body.retorno[0].itemNaoIncluido[0]).toHaveProperty('motivo');
       });
   });
+  
 });

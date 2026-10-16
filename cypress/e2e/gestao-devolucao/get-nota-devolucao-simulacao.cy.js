@@ -85,4 +85,5 @@ describe('Gestão Devolução - GET /Gestão%20Devolução/v2_gestao_devolucao_n
         expect(resposta.body.retorno[0].total[0]).toHaveProperty('valorCOFINS');
       });
   });
+  
 });

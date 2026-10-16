@@ -20,4 +20,5 @@ describe('Fisco/Contábil - POST /Fisco/Contabil/v3_post_nota_fiscal_alterar', {
       expect(response.duration).to.be.lessThan(2000);
     });
   });
+  
 });

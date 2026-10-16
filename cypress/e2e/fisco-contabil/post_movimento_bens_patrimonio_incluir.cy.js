@@ -26,4 +26,5 @@ describe('Fisco/Contábil - POST /Fisco/Contabil/v3_post_movimento_patrimonio', 
       expect(ret).to.have.property('Erros');
     });
   });
+  
 });

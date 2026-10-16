@@ -17,4 +17,5 @@ describe('Logística - POST - /Logística/v3_post_gravar_mapa_carga_coletado', {
         expect(response.duration).to.be.below(2000); 
       });
   });
+  
 });

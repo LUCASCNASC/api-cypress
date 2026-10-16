@@ -53,4 +53,5 @@ describe('Diversos - GET /Diversos/v3_diversos_local_entrega_por_cep', { env: { 
       expect(response.body).to.exist;
     });
   });
+  
 });

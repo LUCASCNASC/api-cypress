@@ -36,4 +36,5 @@ describe('Diversos - GET /Diversos/v2_diversos_vendedor', { env: { hideCredentia
       expect(response.body).to.exist;
     });
   });
+  
 });

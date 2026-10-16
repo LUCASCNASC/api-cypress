@@ -17,4 +17,5 @@ describe('Pedido - POST - /Pedido/v2_pedido_parcela_base', { env: { hideCredendi
         expect(response.duration).to.be.below(2000); 
       });
   });
+  
 });
