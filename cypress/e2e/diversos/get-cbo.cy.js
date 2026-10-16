@@ -51,4 +51,5 @@ describe('Diversos - GET /Diversos/v2_diversos_cbo', { env: { hideCredentials: t
       expect(response.body).to.exist;
     });
   });
+  
 });

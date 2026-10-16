@@ -28,4 +28,5 @@ describe('Logística - POST - /Logística/v3_get_carregar_Itens_nota_transferida
         expect(resposta.body.retorno[0]).toHaveProperty('descricao');
       });
   });
+  
 });

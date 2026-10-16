@@ -19,4 +19,5 @@ describe('Pagamento pedido - POST - /Pagamento%20pedido/v2_pag_pedido_baixa_pedi
         expect(response.duration).to.be.below(2000);
       });
   });
+  
 });

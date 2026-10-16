@@ -20,4 +20,5 @@ describe('Fisco/Contábil - POST - /Fisco/Contabil/v3_post_documento_diverso_ent
       expect(response.duration).to.be.lessThan(2000);
     });
   });
+  
 });

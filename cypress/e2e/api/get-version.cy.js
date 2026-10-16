@@ -32,4 +32,5 @@ describe('GET /api/version', { env: { hideCredendials: true } }, () => {
       expect([401, 403]).to.include(response.status);
     });
   });
+  
 });

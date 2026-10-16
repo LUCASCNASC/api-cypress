@@ -59,4 +59,5 @@ describe('Pagamento pedido - GET - /Pagamento%20pedido/v3_pag_pedido_detalhe', {
         expect(resposta.body.retorno[0].titulos[0]).toHaveProperty('valororiginal');
       });
   });
+  
 });

@@ -41,4 +41,5 @@ describe('Financeiro - POST /Financeiro/v3_post_estornar_baixa_titulo_areceber',
       expect(response.body).to.exist;
     });
   });
+  
 });

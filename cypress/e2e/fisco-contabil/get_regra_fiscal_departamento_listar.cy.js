@@ -73,4 +73,5 @@ describe('Fisco/Contábil - GET - /Fisco/Contabil/v3_regra_fiscal_departamento_g
       expect(dep).to.have.property('Deduzir_Difal_Base');
     });
   });
+  
 });

@@ -46,4 +46,5 @@ describe('Diversos - GET /Diversos/v2_diversos_dados_tabela', { env: { hideCrede
       expect(response.body).to.exist;
     });
   });
+  
 });

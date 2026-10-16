@@ -44,4 +44,5 @@ describe('Pós-venda - GET - /Pós-venda/v3_pos_venda_get_post1', { env: { hideC
         expect(resposta.body.retorno[0].itensmontagem[0].montador[0]).toHaveProperty('numerotelefone');
       });
   });
+  
 });

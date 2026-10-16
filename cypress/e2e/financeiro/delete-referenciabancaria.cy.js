@@ -31,4 +31,5 @@ describe('Financeiro - DELETE /Financeiro/v3_financeiro_referencia_bancaria_dele
       expect([404, 412]).to.include(response.status);
     });
   });
+  
 });

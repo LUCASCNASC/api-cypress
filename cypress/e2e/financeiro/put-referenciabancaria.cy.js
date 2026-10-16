@@ -43,4 +43,5 @@ describe('Financeiro - PUT /Financeiro/v3_financeiro_referencia_bancaria2', { en
       expect(response.status).to.eq(500);
     });
   });
+  
 });

@@ -23,4 +23,5 @@ describe('Produto - GET - /Produto/v2_produto_bloqueio', { env: { hideCredendial
         expect(resposta.body.retorno[0]).toHaveProperty('ProdutoNaoLiberado');
       });
   });
+  
 });

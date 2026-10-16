@@ -37,4 +37,5 @@ describe('Financeiro - POST /Financeiro/v3_financeiro_banco1', { env: { hideCred
       expect(response.status).to.eq(500);
     });
   });
+  
 });

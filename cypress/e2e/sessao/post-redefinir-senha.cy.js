@@ -17,4 +17,5 @@ describe('Sessão - POST - /Sessão/v3_post_redefinir_senha', { env: { hideCrede
         expect(response.duration).to.be.below(2000); 
       });
   });
+  
 });

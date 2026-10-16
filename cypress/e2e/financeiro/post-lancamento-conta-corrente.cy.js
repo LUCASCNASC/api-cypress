@@ -42,4 +42,5 @@ describe('Financeiro - POST /Financeiro/v3_financeiro_lancamento_conta_corrente'
       expect(response.body).to.exist;
     });
   });
+  
 });

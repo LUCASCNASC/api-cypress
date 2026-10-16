@@ -37,4 +37,5 @@ describe('Cliente - POST /Cliente/v3_cliente_anexo_post', { env: { hideCredentia
       expect(response.body).to.exist;
     });
   });
+  
 });

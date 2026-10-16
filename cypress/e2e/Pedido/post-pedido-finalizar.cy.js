@@ -17,4 +17,5 @@ describe('Pedido - POST - /Pedido/v3_pedido_finalizar', { env: { hideCredendials
         expect(response.duration).to.be.below(2000); 
       });
   });
+  
 });

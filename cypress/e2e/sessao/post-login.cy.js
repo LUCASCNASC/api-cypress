@@ -17,4 +17,5 @@ describe('Sessão - POST - /Sessão/v3_sessao_login_post', { env: { hideCredendi
         expect(response.duration).to.be.below(2000);
       });
   });
+  
 });

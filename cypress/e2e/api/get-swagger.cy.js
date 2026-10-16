@@ -29,4 +29,5 @@ describe('API - GET /api/swagger', { env: { hideCredentials: true } }, () => {
       expect([401, 403]).to.include(response.status);
     });
   });
+  
 });

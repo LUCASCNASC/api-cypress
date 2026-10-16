@@ -17,4 +17,5 @@ describe('Trial - POST - /Trial/v3_post_gerador_trial', { env: { hideCredendials
         expect(response.duration).to.be.below(2000);
       });
   });
+  
 });

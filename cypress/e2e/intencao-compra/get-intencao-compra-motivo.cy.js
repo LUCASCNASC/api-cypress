@@ -19,4 +19,5 @@ describe('Intenção compra - GET /Intenção%20compra/v2_intencao_compra_motivo
         expect(resposta.body.retorno[0]).toHaveProperty('descricao');
       });
   });
+  
 });

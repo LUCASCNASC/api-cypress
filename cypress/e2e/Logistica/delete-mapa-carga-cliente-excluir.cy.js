@@ -22,4 +22,5 @@ describe('Logística - DELETE - /Logística/v3_delete_logistica_mapa_carga_clien
         expect(response.duration).to.be.below(2000);
       });
   });
+  
 });

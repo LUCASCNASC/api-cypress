@@ -23,4 +23,5 @@ describe('Fisco/Contábil - POST /Fisco/Contabil/v3_post_gerar_sped_fiscal', { e
       expect(ret).to.have.property('IdProcessamento');
     });
   });
+  
 });

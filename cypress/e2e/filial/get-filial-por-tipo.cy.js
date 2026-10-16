@@ -60,4 +60,5 @@ describe('Filial - GET /Filial/v3_get_filial_por_tipo', { env: { hideCredentials
       expect(response.body).to.exist;
     });
   });
+  
 });

@@ -19,4 +19,5 @@ describe('Intenção compra - DELETE /Intenção%20compra/v2_intencao_compra_del
         expect(response.duration).to.be.below(2000);
       });
   });
+  
 });

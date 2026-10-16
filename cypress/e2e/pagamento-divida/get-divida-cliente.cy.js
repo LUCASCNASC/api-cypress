@@ -33,4 +33,5 @@ describe('Pagamento divida - GET - /Pagamento%20divida/v2_divida_cliente', { env
         expect(resposta.body.retorno[0]).toHaveProperty('valor_vinculado');
       });
   });
+  
 });

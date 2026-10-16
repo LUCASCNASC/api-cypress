@@ -23,4 +23,5 @@ describe('Pagamento pedido - GET - /Pagamento%20pedido/v2_pag_pedido_contrato_co
         expect(resposta.body.retorno[0]).toHaveProperty('size');
       });
   });
+  
 });

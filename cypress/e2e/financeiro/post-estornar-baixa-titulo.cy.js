@@ -34,4 +34,5 @@ describe('Financeiro - POST /Financeiro/v3_financeiro_estornar_baixa_titulo', { 
       expect(response.status).to.eq(500);
     });
   });
+  
 });

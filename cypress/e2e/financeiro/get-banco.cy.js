@@ -18,4 +18,5 @@ describe('Financeiro - GET /Financeiro/v3_financeiro_banco3', { env: { hideCrede
       expect(ret).to.have.property('nome');
     });
   });
+  
 });

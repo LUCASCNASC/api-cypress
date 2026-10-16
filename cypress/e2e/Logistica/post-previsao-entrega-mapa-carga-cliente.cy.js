@@ -25,4 +25,5 @@ describe('Logística - POST - /Logística/v3_post_previsao_entrega_mapa_carga_cl
         expect(resposta.body.retorno[0]).toHaveProperty('volumeDisponivel');
       });
   });
+  
 });

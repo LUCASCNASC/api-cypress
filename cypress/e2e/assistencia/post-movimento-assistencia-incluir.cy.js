@@ -82,4 +82,5 @@ describe('Assistência - POST /Assistencia/v3_post_movimento_assistencia_incluir
       expect([401, 403]).to.include(response.status);
     });
   });
+  
 });

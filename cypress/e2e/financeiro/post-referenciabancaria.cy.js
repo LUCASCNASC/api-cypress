@@ -41,4 +41,5 @@ describe('Financeiro - POST /Financeiro/v3_financeiro_referencia_bancaria1', { e
       expect(response.status).to.eq(500);
     });
   });
+  
 });

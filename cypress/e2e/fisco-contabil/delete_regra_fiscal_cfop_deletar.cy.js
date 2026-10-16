@@ -20,4 +20,5 @@ describe('Fisco/Contábil - DELETE - /Fisco/Contabil/v3_regra_fiscal_cfop_delete
       expect(ret).to.have.property('Erros');
     });
   });
+  
 });

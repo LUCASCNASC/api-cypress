@@ -52,4 +52,5 @@ describe('Financeiro - GET /Financeiro/v3_financeiro_pedidos_por_titulo', { env:
       expect(response.body).to.exist;
     });
   });
+  
 });

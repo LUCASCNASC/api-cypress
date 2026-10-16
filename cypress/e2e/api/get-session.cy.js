@@ -37,4 +37,5 @@ describe('API - GET /api/session', { env: { hideCredendials: true } }, () => {
       expect([401, 403]).to.include(response.status);
     });
   });
+  
 });

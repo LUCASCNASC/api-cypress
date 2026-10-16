@@ -26,4 +26,5 @@ describe('Pedido - GET - /Pedido/v3_pedido_impressoes_disponiveis', { env: { hid
         expect(resposta.body.retorno[0]).toHaveProperty('imprimeContratoCompraVenda');
       });
   });
+  
 });

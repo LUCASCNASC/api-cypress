@@ -17,4 +17,5 @@ describe('Pedido - POST - /Pedido/v3_post_pedido_venda_previsao_entrega', { env:
         expect(response.duration).to.be.below(2000); 
       });
   });
+  
 });
