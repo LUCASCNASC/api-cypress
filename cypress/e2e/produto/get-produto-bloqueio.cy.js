@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Produto/v2_produto_bloqueio';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const filial_saldo = "12345678910";
 const sku = "12345678910"; 
 const id_cnpj_cpf = "12345678910";

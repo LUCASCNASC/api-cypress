@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Financeiro/v3_financeiro_parametro_percentual_desconto_recebimento_titulo';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const idFilial = "123123123";
 const idFilialInvalido = "abc";
 const idFilialSemParametro = "99999";

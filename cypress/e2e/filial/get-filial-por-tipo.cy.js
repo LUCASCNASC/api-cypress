@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Filial/v3_get_filial_por_tipo';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const ufValida = 'PR';
 const municipioValido = 3317;
 const tipoValido = 1;

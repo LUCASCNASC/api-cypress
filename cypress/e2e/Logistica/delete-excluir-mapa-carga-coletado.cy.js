@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Logística/v3_delete_mapa_carga_coletado';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const idFilial = "123123123"; 
 const idMapaCarga = "123123123"; 
 const TipoMapaCarga = "123123123";

@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Produto/v2_produto_detalhe';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const produto = "12345678910"; 
 const pesquisagtin = "12345678910"; 
 const pedido = "12345678910";

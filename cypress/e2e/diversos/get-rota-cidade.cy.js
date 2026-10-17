@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Diversos/v3_diversos_rota_cidade';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const idgruporotaInvalido = "abc";
 const idgruporotaSemRota = "9999";
 const idrotaSemRota = "9999";

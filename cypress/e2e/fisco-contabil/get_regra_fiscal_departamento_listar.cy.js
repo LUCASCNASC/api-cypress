@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Fisco/Contabil/v3_regra_fiscal_departamento_get';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const Grupo = "123123123";
 const UF = "123123123";
 const CFOP = "123123123";

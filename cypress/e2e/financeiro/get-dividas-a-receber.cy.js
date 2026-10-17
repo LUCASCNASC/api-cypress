@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Financeiro/v3_financeiro_dividas_a_receber';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const idFilialValido = "123123123";
 const cpf_cnpjValido = "123123123";
 const separarvinculados = "123123123";

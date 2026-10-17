@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Intenção%20compra/v2_intencao_compra_detalhe';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const codigo = "123123123";
 const cliente = "123123123";
 const situacao = "123123123";

@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Pedido/v3_gerente_filial';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const idFilial = "12345678910";
 
 describe('Pedido - GET - /Pedido/v3_gerente_filial', { env: { hideCredendials: true } }, () => {

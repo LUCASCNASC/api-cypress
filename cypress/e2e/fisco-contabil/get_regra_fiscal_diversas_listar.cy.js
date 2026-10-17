@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Fisco/Contabil/v3_regra_fiscal_diversas_get';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const TipoBase = "123123123";
 const CFOP = "123123123123123123"
 const Identificador = "";

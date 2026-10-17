@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Financeiro/v3_financeiro_referencia_bancaria_delete';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const cnpjCpfValido = "123123123";
 const idReferenciaBancariaValido = "123123123"; 
 const cnpjCpfInvalido = "00000000000000";

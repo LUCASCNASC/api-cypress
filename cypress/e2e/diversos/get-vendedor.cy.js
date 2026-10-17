@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Diversos/v2_diversos_vendedor';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const termoValido = "123";
 const limit = "123";
 const offset = "123";

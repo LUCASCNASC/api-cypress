@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Pagamento%20pedido/v3_pag_pedidos_pendentes';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const filial = "12345678910";
 const data = "12345678910"; 
 const numeroPedido = "12345678910"

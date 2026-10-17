@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Proposta%20crédito/v2_proposta_credito_situacao';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const codigo = "12345678910"; 
 
 describe('Proposta crédito - GET - /Proposta%20crédito/v2_proposta_credito_situacao', { env: { hideCredendials: true } }, () => {

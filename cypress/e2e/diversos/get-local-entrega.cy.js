@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Diversos/v2_diversos_local_entrega';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const rotaInvalida = "abc";
 const rotaSemDados = "9999";
 const rotaValida = "123";

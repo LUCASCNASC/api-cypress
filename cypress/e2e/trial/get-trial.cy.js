@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Trial/v2_trial_get_post1';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const idFilial = "12345678910"; 
 const pedido = "12345678910"; 
 const vendedor = "12345678910"; 

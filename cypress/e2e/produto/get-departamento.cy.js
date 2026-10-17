@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Produto/v2_produto_departamento';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const termo = "12345678910";
 const departamento = "12345678910"; 
 const marca = "12345678910";

@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Fisco/Contabil/v3_nota_fiscal_lista';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const Filial = "123123123";
 const Registro_Nota = "123123123";
 const Data_Inicial = "123123123";

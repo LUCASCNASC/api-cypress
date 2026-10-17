@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Cliente/v3_cliente_anexo_delete';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const idcnpj_cpfInvalido = Cypress.env('ID_CNPJ_CPF_INVALIDO');
 const idpessoaanexoInvalido = Cypress.env('ID_PESSOA_ANEXO_INVALIDO');
 const idcnpj_cpfSemAnexo = Cypress.env('ID_CNPJ_CPF_SEM_ANEXO');

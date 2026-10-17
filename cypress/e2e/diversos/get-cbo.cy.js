@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Diversos/v2_diversos_cbo';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const termoSemDados = "xxxxxx";
 const termoInvalido = "!!@@##";
 const termoValido = "123";

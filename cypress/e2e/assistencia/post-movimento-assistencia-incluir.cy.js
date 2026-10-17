@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Assistencia/v3_post_movimento_assistencia_incluir';
 const AUTHORIZATION = Cypress.env('API.PRAGMA');
-
 const AUTHORIZATION_INVALID = Cypress.env('API.PRAGMA_INVALID');
 
 describe('Assistência - POST /Assistencia/v3_post_movimento_assistencia_incluir', { env: { hideCredendials: true } }, () => {

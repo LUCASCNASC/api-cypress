@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Pós-venda/v3_pesquisa_satisfacao';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const idfilial = "12345678910";
 
 describe('Pós-venda - GET - /Pós-venda/v3_pesquisa_satisfacao', { env: { hideCredendials: true } }, () => {

@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/api/session';
 const AUTHORIZATION = Cypress.env('API.PRAGMA');
-
 const AUTHORIZATION_INVALID = Cypress.env('API.PRAGMA_INVALID');
 
 describe('API - GET /api/session', { env: { hideCredendials: true } }, () => {

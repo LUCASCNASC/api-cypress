@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Cliente/v2_cliente_simples_estatisticas';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const idpessoaSemEstatistica = "000000";
 const idpessoaInvalido = "id_invalido";
 const AUTHORIZATION_INVALID = Cypress.env('API.PRAGMA_INVALID');

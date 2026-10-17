@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Proposta%20crédito/v2_proposta_credito_get';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const data_inicial = "yyyy-mm-dd";
 const vendedor = "12345678910";
 const cliente = "12345678910";

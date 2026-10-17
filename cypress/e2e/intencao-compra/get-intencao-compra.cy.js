@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Intenção%20compra/v2_intencao_compra_get_post1';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const situacao = "123123123";
 
 describe('Intenção compra - GET /Intenção%20compra/v2_intencao_compra_get_post1', { env: { hideCredendials: true } }, () => {

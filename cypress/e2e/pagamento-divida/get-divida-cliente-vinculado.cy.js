@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Pagamento%20divida/v2_divida_cliente_vinculado';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const filial = "12345678910"; 
 const cliente = "456";
 

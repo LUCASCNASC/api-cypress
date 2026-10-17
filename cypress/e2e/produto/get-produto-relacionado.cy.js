@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Produto/v2_produto_relacionado';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const lista = "12345678910"; 
 
 describe('Produto - GET - /Produto/v2_produto_relacionado', { env: { hideCredendials: true } } , () => {

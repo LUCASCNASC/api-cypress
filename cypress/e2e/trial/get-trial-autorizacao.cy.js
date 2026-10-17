@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Trial/v3_get_trial_autorizacao';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const idFilial = "12345678910"; 
 const idUsuario = "12345678910";
 const triais = "12345678910";   

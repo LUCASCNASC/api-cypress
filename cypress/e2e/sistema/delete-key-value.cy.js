@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Sistema/v2_sistema_key_value_delete';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const key = "12345678910"; 
 
 describe('Sistema - DELETE - /Sistema/v2_sistema_key_value_delete', { env: { hideCredendials: true } } , () => {

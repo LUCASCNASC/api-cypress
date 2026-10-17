@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Fisco/Contabil/v3_regra_fiscal_cfop_get';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const UFOrigem = "123123123"; 
 const UFDestino = "123123123";
 const UFTomador = "123123123";

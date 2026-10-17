@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Pedido/v2_pedido_detalhes';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const idFilial = "12345678910"; 
 const codigo = "12345678910";
 
