@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Cliente/v3_cliente_servico_vinculado';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const clienteSemServico = "00000000000000";
 const processoSemServico = "000000";
 const clienteValido = "12345678901234";

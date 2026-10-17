@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Diversos/v2_diversos_cidade';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const ufSemCidades = "ZZ";
 const ufInvalido = "123";
 const ufValido = "123";

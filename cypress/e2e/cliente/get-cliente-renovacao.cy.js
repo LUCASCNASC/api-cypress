@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Cliente/v2_cliente_renovacao';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const clienteInvalido = "00000000000001";
 const clienteSemRenovacao = "00000000000000";
 const clienteValido = "12345678901234";

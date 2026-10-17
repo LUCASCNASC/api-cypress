@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Intenção%20compra/v2_intencao_compra_delete';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const codigo = "123123123";
 
 describe('Intenção compra - DELETE /Intenção%20compra/v2_intencao_compra_delete', { env: { hideCredendials: true } } , () => {

@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Produto/v3_produto_tipo_saldo_detalhe';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const idFilialSaldo = "12345678910"; 
 const sku = "12345678910";
 const idTipoSaldoProduto = "12345678910"; 

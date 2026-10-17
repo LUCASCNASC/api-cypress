@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Diversos/v3_diversos_grupo';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const idtipogrupoInvalido = "abc";
 const idtipogrupoSemGrupo = "9999";
 const idtipogrupoValido = "123"; 

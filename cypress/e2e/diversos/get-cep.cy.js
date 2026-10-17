@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Diversos/v2_diversos_cep';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const cepSemDados = "00000000";
 const cepInvalido = "abcde";
 const cepValido = "12312312312";

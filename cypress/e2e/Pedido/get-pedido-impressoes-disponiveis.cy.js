@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Pedido/v3_pedido_impressoes_disponiveis';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const idFilial = "12345678910"; 
 const idPedidoVenda = "12345678910";
 

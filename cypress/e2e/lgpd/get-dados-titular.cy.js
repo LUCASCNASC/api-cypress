@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/LGPD/v3_get_lgpd_dados_titular';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const cpf = "123123123";
 
 describe('LGPD - GET /LGPD/v3_get_lgpd_dados_titular', { env: { hideCredendials: true } } , () => {

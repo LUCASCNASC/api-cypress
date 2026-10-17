@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Pós-venda/v3_pos_venda_get_post1';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const datainicial = "2025-11-01"; 
 const datafinal = "2025-11-30";
 

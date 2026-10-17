@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Indicadores/v3_indicador_vendedor';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const ano = "123123123";
 const mes = "123123123"; 
 const dia = "123123123";

@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Filial/v2_filial_detalhe';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const filialValida = 10050; 
 const filialSemDados = 99999;
 

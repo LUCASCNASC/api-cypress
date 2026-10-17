@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Recarga/v3_get_recarga';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const idFilial = "12345678910"; 
 const idItemServico = "12345678910";
 

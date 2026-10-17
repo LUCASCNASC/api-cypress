@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Trial/v3_get_trial_nivel_usuario';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const idTrial = "12345678910";
 const quantidadeNivel = "12345678910"; 
 

@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Pagamento%20pedido/v2_pag_pedido_divida';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const filial = "12345678910";
 const termo = "12345678910";
 const idtipotef = "12345678910";

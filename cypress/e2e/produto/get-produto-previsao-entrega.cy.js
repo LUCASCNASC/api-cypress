@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Produto/v2_produto_previsao_entrega';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const processo_venda = "12345678910";
 const filial = "12345678910"; 
 const filial_faturar = "12345678910"; 

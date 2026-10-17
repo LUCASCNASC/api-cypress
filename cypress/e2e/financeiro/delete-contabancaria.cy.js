@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Financeiro/v3_financeiro_conta_bancaria_delete';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const codigoBancoValido = "123123123";
 const codigoAgenciaValido = "123123123";
 const codigoContaValido = "123123123";

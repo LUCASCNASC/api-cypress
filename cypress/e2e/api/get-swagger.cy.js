@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/api/API/api_swagger';
 const AUTHORIZATION = Cypress.env('API.PRAGMA');
-
 const VERSAO = Cypress.env('VERSAO');
 
 describe('API - GET /api/swagger', { env: { hideCredentials: true } }, () => {

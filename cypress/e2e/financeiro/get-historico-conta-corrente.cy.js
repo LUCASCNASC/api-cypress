@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Financeiro/v3_financeiro_historicocontacorrente';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const idTipoContaCorrente = "123123123";
 const idContaCorrente = "123123123";
 const idTipoContaCorrenteSemDados = "99999";

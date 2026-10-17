@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Pagamento%20pedido/v3_pag_pedido_detalhe';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const filial = "12345678910";
 const pedido = "12345678910";
 

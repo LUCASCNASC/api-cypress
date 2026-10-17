@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Logística/v3_get_carregar_nota_transferida_coletor';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const idFilial = "123123123";
 
 describe('Logística - GET - /Logística/v3_get_carregar_nota_transferida_coletor', { env: { hideCredendials: true } }, () => {

@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Pedido/v2_pedido_pendencia';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const idpedidovenda = "12345678910"; 
 const idvendedor = "12345678910"; 
 const cnpj_cpf = "12345678910";

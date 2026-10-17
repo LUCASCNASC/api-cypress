@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Fisco/Contabil/v3_regra_fiscal_uf_get';
 const Authorization = Cypress.env('API.PRAGMA');
-
 describe('Fisco/Contábil - POST - /Fisco/Contabil/v3_regra_fiscal_uf_get', { env: { hideCredendials: true } }, () => {
   
   it('status code 200', () => {

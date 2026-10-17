@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Sessão/v2_sessao_login';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const usuario = "12345678910"; 
 const senha = "12345678910";
 const codigoverificacao = "12345678910"; 

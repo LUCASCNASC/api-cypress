@@ -1,11 +1,10 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Financeiro/v3_financeiro_lancamento_conta_corrente_delete';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const idFilialValido = "123123123";
 const idLancamentoContaCorrenteValido = "123123123";
 const idFilialInvalido = "99999";
-  const idLancamentoContaCorrenteInvalido = "99999";
+const idLancamentoContaCorrenteInvalido = "99999";
 
 describe('Financeiro - DELETE /Financeiro/v3_financeiro_lancamento_conta_corrente_delete', { env: { hideCredentials: true } }, () => {
 

@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('API_UBASE_URLRL');
 const PATH = '/Fisco/Contabil/v3_nota_fiscal_inutilizar_conhecimento_saida';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const Filial = "123123123";
 const RegistroNota = "123123123";
 

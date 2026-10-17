@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Cliente/v2_cliente_simples_get';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const clienteSemDados = Cypress.env('00000000000000');
 const clienteValido = "12345678901234";
 

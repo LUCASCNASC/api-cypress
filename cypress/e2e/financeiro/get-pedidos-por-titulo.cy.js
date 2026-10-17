@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Financeiro/v3_financeiro_pedidos_por_titulo';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const idFilial = "123123123";
 const idTitulo = "123123123"; 
 const idTipoTitulo = "123123123";

@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Diversos/v2_diversos_dados_tabela';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const tabelaSemDados = "tabela_inexistente";
 const tabelaInvalida = "!@#";
 const tabelaValida = "123";

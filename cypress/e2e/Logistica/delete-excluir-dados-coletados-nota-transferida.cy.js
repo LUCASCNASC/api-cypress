@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Logística/v3_delete_excluir_dado_coletado_nota_transferida';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const idFilialOrigem = "123123123"; 
 const idRegistroNotaOrigem = "123123123"; 
 

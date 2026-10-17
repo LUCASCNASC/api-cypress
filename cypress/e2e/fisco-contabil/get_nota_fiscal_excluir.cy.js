@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Fisco/Contabil/v3_nota_fiscal_excluir';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const idFilial = "123123123";
 const idRegistroNota = "123123123";
 

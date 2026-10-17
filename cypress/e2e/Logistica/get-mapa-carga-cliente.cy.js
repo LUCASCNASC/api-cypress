@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Logística/v3_get_logistica_lista_mapa_carga_cliente';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const idFilial = "123123123";
 const idSituacaoMapaCarga = "123123123"; 
 const dataInicial = "123123123";

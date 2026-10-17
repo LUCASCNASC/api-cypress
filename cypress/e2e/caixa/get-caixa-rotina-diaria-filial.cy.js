@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/v3/caixa_rotina_diaria_filial';
 const Authorization = Cypress.env('API.PRAGMA');
- 
 const idFilialSemDados = Cypress.env('ID_FILIAL_SEM_DADOS');
 const idFilialValido = Cypress.env('ID_FILIAL_VALIDO');
 const dataAberturaValida = Cypress.env('DATA_ABERTURA_VALIDA');

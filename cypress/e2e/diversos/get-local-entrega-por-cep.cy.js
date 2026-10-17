@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Diversos/v3_diversos_local_entrega_por_cep';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const cepInvalido = "abcde";
 const cepSemDados = "00000000";
 const cepValido = "12123123";

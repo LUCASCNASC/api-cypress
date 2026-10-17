@@ -1,7 +1,6 @@
 const BASE_URL = Cypress.env('BASE_URL');
 const PATH = '/Cliente/v2_cliente_get_delete_get';
 const Authorization = Cypress.env('API.PRAGMA');
-
 const clienteSemDados = Cypress.env('00000000000000');
 const clienteInvalido = Cypress.env('cliente_invalido');
 const clienteValido = "12345678901234";
