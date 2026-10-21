@@ -19,5 +19,4 @@ describe('Projeto Real Time - POST - /Projeto%20Real%20Time/v3_post_estoque', { 
         expect(resposta.body.retorno[0]).toHaveProperty('data');
       });
   });
-  
 });

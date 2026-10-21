@@ -57,7 +57,6 @@ describe('Intenção compra - GET /Intenção%20compra/v2_intencao_compra_detalh
           expect(resposta.body.retorno[0].servicos[0]).toHaveProperty('motivo');
           expect(resposta.body.retorno[0].servicos[0]).toHaveProperty('observacao')
         });
-    });
-    
+    });  
   });
   

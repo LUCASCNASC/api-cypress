@@ -21,6 +21,5 @@ describe('Pagamento pedido - GET - /Pagamento%20pedido/v2_pag_pedido_contrato_se
         expect(resposta.body.retorno[0]).toHaveProperty('pdf');
         expect(resposta.body.retorno[0]).toHaveProperty('size');
       });
-  });
-  
+  }); 
 });

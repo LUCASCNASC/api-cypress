@@ -19,5 +19,4 @@ describe('Fisco/Contábil - DELETE - /Fisco/Contabil/v3_regra_fiscal_diversas_de
       expect(ret).to.have.property('Erros');
     });
   });
-  
 });

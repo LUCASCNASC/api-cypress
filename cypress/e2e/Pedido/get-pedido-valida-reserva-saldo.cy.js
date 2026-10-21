@@ -19,5 +19,4 @@ describe('Pedido - GET - /Pedido/v3_pedido_valida_reserva_saldo', { env: { hideC
         expect(response.duration).to.be.below(2000);
       });
   });
-  
 });

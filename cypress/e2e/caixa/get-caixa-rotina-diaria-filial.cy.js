@@ -16,7 +16,7 @@ describe('Caixa - GET /v3/caixa_rotina_diaria_filial', { env: { hideCredentials:
       url: `${BASE_URL}${PATH}/${idFilialValido}/${dataAberturaValida}`,
       headers: { Authorization }
     }).should((response) => {
-      expect(response.status, 'status code: 200').to.equal(200);
+      expect(response.status, 'status code 200').to.equal(200);
       expect(response.duration, 'Tempo de resposta deve ser < 2s').to.be.lessThan(2000);
       
     });
@@ -29,7 +29,7 @@ describe('Caixa - GET /v3/caixa_rotina_diaria_filial', { env: { hideCredentials:
       headers: { Authorization },
       failOnStatusCode: false
     }).should((response) => {
-      expect(response.status, 'status code: 204').to.equal(204);
+      expect(response.status, 'status code 204').to.equal(204);
       expect(response.body, 'Corpo deve ser vazio').to.be.empty;
     });
   });
@@ -45,5 +45,4 @@ describe('Caixa - GET /v3/caixa_rotina_diaria_filial', { env: { hideCredentials:
       expect(response.body).to.exist;
     });
   });
-  
 });

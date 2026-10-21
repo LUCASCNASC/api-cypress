@@ -17,5 +17,4 @@ describe('Intenção compra - POST /Intenção%20compra/v2_intencao_compra_get_p
         expect(response.duration).to.be.below(2000); 
       });
   });
-  
 });

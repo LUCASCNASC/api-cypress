@@ -72,5 +72,4 @@ describe('Fisco/Contábil - GET - /Fisco/Contabil/v3_regra_fiscal_cfop_get', { e
       expect(cfop).to.have.property('Deduzir_Difal_Base');
     });
   });
-  
 });

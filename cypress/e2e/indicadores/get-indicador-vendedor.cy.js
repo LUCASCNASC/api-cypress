@@ -25,5 +25,4 @@ describe('Indicadores - GET /Indicadores/v3_indicador_vendedor', { env: { hideCr
         expect(resposta.body.retorno[0].dados[0]).toHaveProperty('valor');
       });
   });
-  
 });

@@ -60,5 +60,4 @@ describe('Produto - GET - /Produto/v2_produto_detalhe', { env: { hideCredendials
         expect(resposta.body.retorno[0]).toHaveProperty('ordem');
       });
   });
-  
 });

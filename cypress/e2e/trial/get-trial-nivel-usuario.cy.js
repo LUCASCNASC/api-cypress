@@ -23,5 +23,4 @@ describe('Trial - GET - /Trial/v3_get_trial_nivel_usuario', { env: { hideCredend
         expect(resposta.body.retorno[0]).toHaveProperty('descricaotrial');
       });
   });
-  
 });

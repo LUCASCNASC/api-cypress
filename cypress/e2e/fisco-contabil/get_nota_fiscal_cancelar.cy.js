@@ -22,5 +22,4 @@ describe('Fisco/Contábil - GET - /Fisco/Contabil/v3_nota_fiscal_cancelar', { en
       expect(ret).to.have.property('Erros');
     });
   });
-  
 });

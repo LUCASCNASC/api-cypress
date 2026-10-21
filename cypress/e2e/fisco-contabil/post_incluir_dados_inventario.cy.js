@@ -34,5 +34,4 @@ describe('Fisco/Contábil - POST /Fisco/Contabil/v3_post_inventario_incluir', { 
       expect(ret).to.have.property('Erros');
     });
   });
-  
 });

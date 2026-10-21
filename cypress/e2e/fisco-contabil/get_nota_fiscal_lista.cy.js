@@ -159,5 +159,4 @@ describe('Fisco/Contábil - GET - /Fisco/Contabil/v3_nota_fiscal_lista', { env: 
       expect(nota.guianacionalrecolhimento[0]).to.have.property('valordocumento');
     });
   });
-  
 });

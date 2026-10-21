@@ -17,5 +17,4 @@ describe('Pedido - POST - /Pedido/v3_pedido_parcela_base_divisao', { env: { hide
         expect(response.duration).to.be.below(2000); 
       });
   });
-  
 });

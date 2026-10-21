@@ -23,5 +23,4 @@ describe('Fisco/Contábil - POST - /Fisco/Contabil/v3_post_gerar_rateio_centro_c
       expect(ret).to.have.property('IdProcessamento');
     });
   });
-  
 });

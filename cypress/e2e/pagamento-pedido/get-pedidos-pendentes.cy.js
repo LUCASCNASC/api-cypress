@@ -80,5 +80,4 @@ describe('Pagamento pedido - GET - /Pagamento%20pedido/v3_pag_pedidos_pendentes'
         expect(resposta.body.retorno[0]).toHaveProperty('quantidadeTotalRegistros');
       });
   });
-  
 });

@@ -41,5 +41,4 @@ describe('Pagamento pedido - GET - /Pagamento%20pedido/v2_pag_pedido_divida', { 
         expect(resposta.body.retorno[0].formas_pagamento[0]).toHaveProperty('item');
       });
   });
-  
 });

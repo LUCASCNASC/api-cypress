@@ -20,5 +20,4 @@ describe('Proposta crédito - GET - /Proposta%20crédito/v2_proposta_credito_sit
         expect(resposta.body.retorno[0]).toHaveProperty('mensagem');
       });
   });
-  
 });

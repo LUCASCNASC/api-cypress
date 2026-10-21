@@ -12,7 +12,7 @@ describe('API - GET /api/swagger', { env: { hideCredentials: true } }, () => {
       headers: { Authorization: AUTHORIZATION },
       failOnStatusCode: false
     }).should((response) => {
-      expect(response.status, 'status code: 200').to.eq(200);
+      expect(response.status, 'status code 200').to.eq(200);
       expect(response.duration, 'Tempo de resposta deve ser inferior a 2000ms').to.be.lessThan(2000);
       expect(response.body, 'Body deve ser um objeto').to.be.an('object');
       expect(response.body).to.have.all.keys('swagger', 'info', 'paths');

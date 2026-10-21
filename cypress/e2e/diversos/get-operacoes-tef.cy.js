@@ -21,5 +21,4 @@ describe('Diversos - GET /Diversos/v3_diversos_operacoes_tef', { env: { hideCred
       expect(ret.mensagens[0]).to.have.property('retorno');
     });
   });
-  
 });

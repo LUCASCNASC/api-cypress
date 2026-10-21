@@ -95,5 +95,4 @@ describe('Fisco/Contábil - GET - /Fisco/Contabil/v3_regra_fiscal_diversas_get',
       expect(diversas).to.have.property('Deduzir_Difal_Base');
     });
   });
-  
 });

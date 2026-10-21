@@ -48,5 +48,4 @@ describe('Cliente - GET /Cliente/v3_cliente_anexo', { env: { hideCredentials: tr
       expect(response.body).to.exist;
     });
   });
-  
 });

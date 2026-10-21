@@ -17,5 +17,4 @@ describe('Pedido - POST - /Pedido/v2_pedido_baixar', { env: { hideCredendials: t
         expect(response.duration).to.be.below(2000); 
       });
   });
-  
 });

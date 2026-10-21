@@ -35,5 +35,4 @@ describe('Cliente - POST /Cliente/v3_cliente_post', { env: { hideCredentials: tr
       expect(response.body).to.exist;
     });
   });
-  
 });

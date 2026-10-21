@@ -41,5 +41,4 @@ describe('Financeiro - PUT /Financeiro/v3_financeiro_agencia2', { env: { hideCre
       expect(response.status).to.eq(500);
     });
   });
-  
 });

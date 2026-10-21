@@ -42,5 +42,4 @@ describe('Cliente - DELETE /Cliente/v2_cliente_get_delete_delete', { env: { hide
       expect(response.body).to.exist;
     });
   });
-  
 });

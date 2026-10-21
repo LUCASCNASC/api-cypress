@@ -38,5 +38,4 @@ describe('Financeiro - POST /Financeiro/v3_financeiro_agencia1', { env: { hideCr
       expect(response.status).to.eq(500);
     });
   });
-  
 });

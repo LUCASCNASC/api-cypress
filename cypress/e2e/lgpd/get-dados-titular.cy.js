@@ -49,5 +49,4 @@ describe('LGPD - GET /LGPD/v3_get_lgpd_dados_titular', { env: { hideCredendials:
         expect(resposta.body.retorno[0].titular[0].notafiscal[0].campos[0]).toHaveProperty('titulo');
       });
   });
-  
 });

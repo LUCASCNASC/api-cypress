@@ -24,5 +24,4 @@ describe('Fisco/Contábil - POST /Fisco/Contabil/v3_post_nota_fiscal_reenvio_nfe
       expect(ret).to.have.property('Erros');
     });
   });
-  
 });

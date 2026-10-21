@@ -17,5 +17,4 @@ describe('Pagamento divida - POST - /Pagamento%20divida/v2_divida_baixa_cliente'
         expect(response.duration).to.be.below(2000);
       });
   });
-  
 });

@@ -32,5 +32,4 @@ describe('Pedido - GET - /Pedido/v2_pedido_pendencia', { env: { hideCredendials:
         expect(resposta.body.retorno[0]).toHaveProperty('descricao_pendencia');
       });
   });
-  
 });

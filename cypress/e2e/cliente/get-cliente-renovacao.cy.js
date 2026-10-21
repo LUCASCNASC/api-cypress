@@ -55,5 +55,4 @@ describe('Cliente - GET /Cliente/v2_cliente_renovacao', { env: { hideCredentials
       expect(response.body).to.exist;
     });
   });
-  
 });

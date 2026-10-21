@@ -26,5 +26,4 @@ describe('Pedido - GET - /Pedido/v3_pedido_saldo_disponivel', { env: { hideCrede
         expect(resposta.body.retorno[0]).toHaveProperty('saldoTotal');
       });
   });
-  
 });

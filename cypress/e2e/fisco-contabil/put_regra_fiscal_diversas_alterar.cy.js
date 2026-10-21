@@ -22,5 +22,4 @@ describe('Fisco/Contábil - PUT /Fisco/Contabil/v3_regra_fiscal_diversas_put', {
       expect(ret).to.have.property('Erros');
     });
   });
-  
 });

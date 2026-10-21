@@ -19,5 +19,4 @@ describe('Logística - DELETE - /Logística/v3_delete_excluir_dado_coletado_nota
         expect(response.duration).to.be.below(2000);
       });
   });
-
 });

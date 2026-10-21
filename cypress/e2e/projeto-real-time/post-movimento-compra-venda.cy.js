@@ -22,5 +22,4 @@ describe('Projeto Real Time - POST - /Projeto%20Real%20Time/v3_post_movimento_co
         expect(resposta.body.retorno[0]).toHaveProperty('hora_final');
       });
   });
-  
 });

@@ -322,6 +322,5 @@ describe('Pedido - GET - /Pedido/v2_pedido_get_delete1', { env: { hideCredendial
         expect(resposta.body.retorno[0].formaPagamentoCalculo[0]).toHaveProperty('valorServicoVinculado');
         expect(resposta.body.retorno[0].formaPagamentoCalculo[0]).toHaveProperty('valorMaximoParcela');
       });
-  });
-  
+  }); 
 });

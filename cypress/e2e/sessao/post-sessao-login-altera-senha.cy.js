@@ -17,5 +17,4 @@ describe('Sessão - POST - /Sessão/v3_post_sessao_login_altera_senha', { env: {
         expect(response.duration).to.be.below(2000);
       });
   });
-  
 });

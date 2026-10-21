@@ -36,5 +36,4 @@ describe('Fisco/Contábil - GET - /Fisco/Contabil/v3_regra_fiscal_uf_get', { env
       expect(ret).to.have.property('Data_Final');
     });
   });
-  
 });

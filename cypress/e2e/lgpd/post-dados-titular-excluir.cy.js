@@ -17,5 +17,4 @@ describe('LGPD - POST /LGPD/v3_post_lgpd_dados_titular_excluir', { env: { hideCr
         expect(response.duration).to.be.below(2000);
       });
   });
-  
 });

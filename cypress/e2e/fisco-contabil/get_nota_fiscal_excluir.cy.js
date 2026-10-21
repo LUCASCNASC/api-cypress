@@ -23,5 +23,4 @@ describe('Fisco/Contábil - GET - /Fisco/Contabil/v3_nota_fiscal_excluir', { env
       expect(ret).to.have.property('Erros');
     });
   });
-  
 });

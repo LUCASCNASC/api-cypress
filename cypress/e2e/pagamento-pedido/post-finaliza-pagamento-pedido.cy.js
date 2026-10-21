@@ -17,5 +17,4 @@ describe('Pagamento pedido - POST - /Pagamento%20pedido/v2_pag_pedido_finaliza_p
         expect(response.duration).to.be.below(2000);
       });
   });
-  
 });

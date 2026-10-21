@@ -63,5 +63,4 @@ describe('Fisco/Contábil - POST - /Fisco/Contabil/v3_post_documento_diverso_lis
       expect(doc.contacorrente[0]).to.have.property('valor');
     });
   });
-  
 });

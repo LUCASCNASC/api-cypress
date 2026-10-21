@@ -38,5 +38,4 @@ describe('Financeiro - PUT /Financeiro/v3_financeiro_conta_bancaria2', { env: { 
       expect(response.status).to.eq(500);
     });
   });
-  
 });

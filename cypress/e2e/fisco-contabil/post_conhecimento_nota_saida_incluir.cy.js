@@ -26,5 +26,4 @@ describe('Fisco/Contábil - POST - /Fisco/Contabil/v3_regra_fiscal_uf_get', { en
       expect(ret.Erros[0]).to.have.property('CFOP ');
     });
   });
-  
 });

@@ -17,5 +17,4 @@ describe('Sessão - GET - /Sessão/v2_sessao_logout', { env: { hideCredendials: 
         expect(response.duration).to.be.below(2000); 
       });
   });
-  
 });

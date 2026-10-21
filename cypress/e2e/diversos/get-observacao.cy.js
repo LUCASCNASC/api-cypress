@@ -17,5 +17,4 @@ describe('Diversos - GET /Diversos/v3_diversos_observacao', { env: { hideCredent
       expect(ret).to.have.property('descricao');
     });
   });
-  
 });

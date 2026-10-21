@@ -25,5 +25,4 @@ describe('Fisco/Contábil - POST - /Fisco/Contabil/v3_regra_fiscal_uf_get', { en
       expect(ret).to.have.property('Id_Processamento');
     });
   });
-  
 });

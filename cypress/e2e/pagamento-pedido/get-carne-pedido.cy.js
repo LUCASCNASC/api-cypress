@@ -22,5 +22,4 @@ describe('Pagamento pedido - GET - /Pagamento%20pedido/v3_pag_pedido_carne_pedid
         expect(resposta.body.retorno[0]).toHaveProperty('size');
       });
   });
-  
 });

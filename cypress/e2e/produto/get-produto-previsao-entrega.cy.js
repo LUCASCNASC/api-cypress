@@ -25,5 +25,4 @@ describe('Produto - GET - /Produto/v2_produto_previsao_entrega', { env: { hideCr
         expect(resposta.body.retorno[0]).toHaveProperty('dataprevisaoentrega');
       });
   });
-  
 });

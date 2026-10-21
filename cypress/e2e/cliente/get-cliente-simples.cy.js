@@ -69,5 +69,4 @@ describe('Cliente - GET /Cliente/v2_cliente_simples_get', { env: { hideCredentia
       expect(response.body).to.be.empty;
     });
   });
-  
 });
