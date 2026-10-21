@@ -28,5 +28,4 @@ describe('Inventário - GET /Inventário/v3_get_itens_inventario', { env: { hide
         expect(resposta.body.retorno[0].inventarios[0]).toHaveProperty('saldoFilial');
       });
   });
-  
 });

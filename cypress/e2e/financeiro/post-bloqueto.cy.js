@@ -43,5 +43,4 @@ describe('Financeiro - POST /Financeiro/v3_financeiro_bloqueto', { env: { hideCr
       expect(response.body).to.exist;
     });
   });
-  
 });

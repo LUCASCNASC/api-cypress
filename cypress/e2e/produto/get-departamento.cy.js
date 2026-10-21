@@ -34,5 +34,4 @@ describe('Produto - GET - /Produto/v2_produto_departamento', { env: { hideCreden
         expect(resposta.body.retorno[0]).toHaveProperty('ordem');
       });
   });
-  
 });

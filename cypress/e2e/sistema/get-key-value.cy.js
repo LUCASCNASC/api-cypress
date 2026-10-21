@@ -20,5 +20,4 @@ describe('Sistema - GET - /Sistema/v2_sistema_key_value', { env: { hideCredendia
         expect(resposta.body.retorno[0]).toHaveProperty('valor');
       });
   });
-  
 });

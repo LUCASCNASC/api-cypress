@@ -43,6 +43,5 @@ describe('Diversos - GET /Diversos/v3_diversos_rota', { env: { hideCredentials: 
       expect(response.status).to.eq(204);
       expect(response.body).to.be.empty;
     });
-  });
-  
+  }); 
 });

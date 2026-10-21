@@ -33,5 +33,4 @@ describe('Financeiro - DELETE /Financeiro/v3_financeiro_conta_bancaria_delete', 
       expect([404, 412]).to.include(response.status);
     });
   });
-  
 });

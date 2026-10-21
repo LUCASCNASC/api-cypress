@@ -39,6 +39,5 @@ describe('Financeiro - POST /Financeiro/v3_financeiro_incluir_voucher_pagamento'
       expect(response.status).to.eq(412);
       expect(response.body).to.exist;
     });
-  });
-  
+  }); 
 });

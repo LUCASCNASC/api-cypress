@@ -28,5 +28,4 @@ describe('Fisco/Contábil - POST /Fisco/Contabil/v3_post_nota_incluir', { env: {
       expect(ret).to.have.property('Erros');
     });
   });
-  
 });

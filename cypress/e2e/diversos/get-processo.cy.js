@@ -51,5 +51,4 @@ describe('Diversos - GET /Diversos/v2_diversos_processo', { env: { hideCredentia
       expect(ret.servicofrete[0]).to.have.property('permite_alterar');
     });
   });
-  
 });

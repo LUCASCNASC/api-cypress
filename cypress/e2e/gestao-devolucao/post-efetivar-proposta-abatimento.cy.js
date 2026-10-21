@@ -17,5 +17,4 @@ describe('Gestão Devolução - POST /Gestão%20Devolução/v2_gestao_devolucao_
         expect(response.duration).to.be.below(2000); 
       });
   });
-  
 });

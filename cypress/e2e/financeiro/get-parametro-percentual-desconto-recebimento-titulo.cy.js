@@ -44,5 +44,4 @@ describe('Financeiro - GET /Financeiro/v3_financeiro_parametro_percentual_descon
       expect(response.body).to.exist;
     });
   });
-  
 });

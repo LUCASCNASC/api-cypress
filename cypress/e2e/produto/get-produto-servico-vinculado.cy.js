@@ -43,5 +43,4 @@ describe('Produto - GET - /Produto/v2_produto_servico_vinculado', { env: { hideC
         expect(resposta.body.retorno[0].servicos[0].servicosagregados[0]).toHaveProperty('obrigatorio');
       });
   });
-  
 });

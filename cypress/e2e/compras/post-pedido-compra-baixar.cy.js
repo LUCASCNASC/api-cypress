@@ -33,5 +33,4 @@ describe('Compras - POST /Compras/v3_post_pedido_compra_baixar', { env: { hideCr
       expect(response.body).to.exist;
     });
   });
-  
 });

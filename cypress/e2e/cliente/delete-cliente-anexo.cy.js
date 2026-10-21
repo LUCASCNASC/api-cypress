@@ -45,5 +45,4 @@ describe('Cliente - DELETE /Cliente/v3_cliente_anexo_delete', { env: { hideCrede
       expect(response.body).to.exist;
     });
   });
-  
 });

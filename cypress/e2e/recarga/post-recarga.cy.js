@@ -17,5 +17,4 @@ describe('Recarga - POST - /Recarga/v3_post_recarga', { env: { hideCredendials: 
         expect(response.duration).to.be.below(2000);
       });
   });
-  
 });

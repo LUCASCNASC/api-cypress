@@ -17,5 +17,4 @@ describe('Pedido - POST - /Pedido/v3_post_pedido_venda_vinculanotarevenda', { en
         expect(response.duration).to.be.below(2000);
       });
   });
-  
 });

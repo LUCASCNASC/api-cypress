@@ -26,5 +26,4 @@ describe('Projeto Real Time - GET - /Projeto%20Real%20Time/v3_get_filial_lista',
         expect(resposta.body.retorno[0]).toHaveProperty('CEP');
       });
   });
-  
 });

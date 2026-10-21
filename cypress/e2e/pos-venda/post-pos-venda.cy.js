@@ -17,5 +17,4 @@ describe('Pós-venda - POST - /Pós-venda/v3_pos_venda_get_post2', { env: { hide
         expect(response.duration).to.be.below(2000); 
       });
   });
-  
 });

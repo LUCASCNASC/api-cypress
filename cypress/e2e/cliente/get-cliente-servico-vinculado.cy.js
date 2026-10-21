@@ -41,5 +41,4 @@ describe('Cliente - GET /Cliente/v3_cliente_servico_vinculado', { env: { hideCre
       expect(response.body).to.be.empty;
     });
   });
-  
 });

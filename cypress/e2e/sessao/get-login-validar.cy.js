@@ -19,5 +19,4 @@ describe('Sessão - GET - /Sessão/v3_sessao_login_validar', { env: { hideCreden
         expect(response.duration).to.be.below(2000);
       });
   });
-  
 });

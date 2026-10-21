@@ -17,5 +17,4 @@ describe('Pagamento pedido - POST - /Pagamento%20pedido/v3_pag_pedido_fechar_bai
         expect(response.duration).to.be.below(2000); 
       });
   });
-  
 });

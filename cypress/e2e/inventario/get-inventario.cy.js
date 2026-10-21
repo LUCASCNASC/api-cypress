@@ -31,5 +31,4 @@ describe('Inventário - GET /Inventário/v3_get_inventario', { env: { hideCreden
         expect(resposta.body.retorno[0].inventarios[0]).toHaveProperty('descricaoIntervaloFinal');
       });
   });
-  
 });

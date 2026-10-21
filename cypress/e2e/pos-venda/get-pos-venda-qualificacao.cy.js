@@ -19,5 +19,4 @@ describe('Pós-venda - GET - /Pós-venda/v2_pos_venda_qualificacao', { env: { hi
         expect(resposta.body.retorno[0]).toHaveProperty('descricao');
       });
   });
-  
 });

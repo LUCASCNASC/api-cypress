@@ -19,5 +19,4 @@ describe('Pedido - DELETE - /Pedido/v2_pedido_get_delete2', { env: { hideCredend
         expect(response.duration).to.be.below(2000); 
       });
   });
-  
 });

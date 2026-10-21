@@ -18,5 +18,4 @@ describe('Diversos - GET /Diversos/v2_diversos_forma_pagamento', { env: { hideCr
       expect(ret).to.have.property('descricao');
     });
   });
-  
 });

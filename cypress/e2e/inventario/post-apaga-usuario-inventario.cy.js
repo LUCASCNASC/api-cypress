@@ -17,5 +17,4 @@ describe('Inventário - POST /Inventário/v3_post_apaga_usuario_inventario', { e
         expect(response.duration).to.be.below(2000);
       });
   });
-  
 });

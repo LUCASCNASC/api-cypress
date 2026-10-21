@@ -19,5 +19,4 @@ describe('Logística - POST - /Logística/v3_post_logistica_faturamentopedidoloj
         expect(resposta.body.retorno[0].registrosNota[0]).toHaveProperty('idRegistroNota');
       });
   });
-  
 });

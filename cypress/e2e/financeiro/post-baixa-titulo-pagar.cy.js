@@ -37,5 +37,4 @@ describe('Financeiro - POST /Financeiro/v3_financeiro_baixa_titulo_pagar', { env
       expect(response.body).to.exist;
     });
   });
-  
 });

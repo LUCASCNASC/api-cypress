@@ -23,5 +23,4 @@ describe('Pagamento pedido - GET - /Pagamento%20pedido/v2_pag_pedido_nota_fiscal
         expect(resposta.body.retorno[0]).toHaveProperty('size');
       });
   });
-  
 });

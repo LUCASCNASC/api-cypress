@@ -92,5 +92,4 @@ describe('Cliente - GET /Cliente/v2_cliente_simples_estatisticas', { env: { hide
       expect(response.body).to.exist;
     });
   });
-  
 });

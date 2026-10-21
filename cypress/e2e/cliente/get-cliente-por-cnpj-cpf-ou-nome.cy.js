@@ -47,5 +47,4 @@ describe('Cliente - GET /Cliente/v2_cliente_get_delete_get', { env: { hideCreden
       expect(response.body).to.exist;
     });
   });
-  
 });

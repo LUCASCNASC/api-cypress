@@ -33,5 +33,4 @@ describe('Produto - GET - /Produto/v2_produto_servico', { env: { hideCredendials
         expect(resposta.body.retorno[0].servicos[0]).toHaveProperty('produtodescricao');
       });
   });
-  
 });

@@ -21,5 +21,4 @@ describe('Titulo - DELETE - /Titulo/v3_delete_titulo_remover, { env: { hideCrede
         expect(response.duration).to.be.below(2000); 
       });
   });
-  
 });

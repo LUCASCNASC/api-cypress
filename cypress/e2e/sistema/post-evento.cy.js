@@ -17,5 +17,4 @@ describe('Sistema - POST - /Sistema/v2_sistema_evento', { env: { hideCredendials
         expect(response.duration).to.be.below(2000);
       });
   });
-  
 });

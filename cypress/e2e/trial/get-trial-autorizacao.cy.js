@@ -33,5 +33,4 @@ describe('Trial - GET - /Trial/v3_get_trial_autorizacao', { env: { hideCredendia
         expect(resposta.body.retorno[0].Gerente[0].trial[0]).toHaveProperty('status');
       });
   });
-  
 });

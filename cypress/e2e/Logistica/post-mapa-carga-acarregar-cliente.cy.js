@@ -26,5 +26,4 @@ describe('Logística - POST - /Logística/v3_post_mapa_carga_acarregar_cliente',
         expect(resposta.body.retorno[0]).toHaveProperty('descricao');
       });
   });
-  
 });

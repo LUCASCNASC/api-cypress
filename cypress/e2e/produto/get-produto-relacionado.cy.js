@@ -30,5 +30,4 @@ describe('Produto - GET - /Produto/v2_produto_relacionado', { env: { hideCredend
         expect(resposta.body.retorno[0]).toHaveProperty('ordem');
       });
   });
-  
 });

@@ -21,5 +21,4 @@ describe('Pedido - GET - /Pedido/v3_gerente_filial', { env: { hideCredendials: t
         expect(resposta.body.retorno[0]).toHaveProperty('nome');
       });
   });
-  
 });

@@ -17,5 +17,4 @@ describe('Logística - POST - /Logística/v3_post_logistica_informanumeroseriepe
         expect(response.duration).to.be.below(2000);
       });
   });
-  
 });

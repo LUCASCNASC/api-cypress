@@ -24,5 +24,4 @@ describe('Indicadores - GET /Indicadores/v3_indicador_vendedor_periodo', { env: 
         expect(resposta.body.retorno[0].dados[0]).toHaveProperty('valor');
       });
   });
-  
 });

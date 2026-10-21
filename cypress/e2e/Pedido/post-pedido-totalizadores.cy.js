@@ -49,5 +49,4 @@ describe('Pedido - POST - /Pedido/v3_pedido_totalizadores', { env: { hideCredend
         expect(resposta.body.retorno[0].pedido[0].servico[0]).toHaveProperty('valorComissao');
       });
   });
-  
 });

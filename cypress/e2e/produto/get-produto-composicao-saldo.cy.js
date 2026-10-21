@@ -24,5 +24,4 @@ describe('Produto - GET - /Produto/v2_produto_composicao_saldo', { env: { hideCr
         expect(resposta.body.retorno[0]).toHaveProperty('idTipoSaldoProduto');
       });
   });
-  
 });

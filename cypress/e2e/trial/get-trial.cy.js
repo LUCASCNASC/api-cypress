@@ -39,5 +39,4 @@ describe('Trial - GET - /Trial/v2_trial_get_post1', { env: { hideCredendials: tr
         expect(resposta.body.retorno[0].trial[0]).toHaveProperty('valordescontoacrescimo');
       });
   });
-  
 });

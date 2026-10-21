@@ -47,5 +47,4 @@ describe('Financeiro - POST /Financeiro/v3_financeiro_formas_pagamento_titulos',
       expect(response.body).to.exist;
     });
   });
-  
 });

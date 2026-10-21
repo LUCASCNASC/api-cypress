@@ -28,5 +28,4 @@ describe('Fisco/Contábil - POST - /Fisco/Contabil/v3_post_documento_outras_rece
       expect(ret).to.have.property('Erros');
     });
   });
-  
 });

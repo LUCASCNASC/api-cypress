@@ -48,5 +48,4 @@ describe('Logística - GET - /Logística/v3_get_logistica_lista_mapa_carga_loja'
         expect(resposta.body.retorno[0].carga[0]).toHaveProperty('idusuario');
       });
   });
-  
 });

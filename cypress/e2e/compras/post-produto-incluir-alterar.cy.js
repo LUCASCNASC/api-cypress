@@ -35,5 +35,4 @@ describe('Compras - POST /Compras/v3_post_produto_incluir_alterar', { env: { hid
       expect(response.body).to.exist;
     });
   });
-  
 });

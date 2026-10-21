@@ -17,5 +17,4 @@ describe('Logística - POST - /Logística/v3_post_mapa_carga_update_item_coletad
         expect(response.duration).to.be.below(2000); 
       });
   });
-  
 });

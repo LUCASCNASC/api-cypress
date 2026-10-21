@@ -26,5 +26,4 @@ describe('Fisco/Contábil - POST /Fisco/Contabil/v3_validar_documento_diverso_en
       expect(ret).to.have.property('Erros');
     });
   });
-  
 });

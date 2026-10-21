@@ -30,5 +30,4 @@ describe('Financeiro - DELETE /Financeiro/v3_financeiro_agencia_delete', { env: 
       expect([404, 412]).to.include(response.status);
     });
   });
-  
 });

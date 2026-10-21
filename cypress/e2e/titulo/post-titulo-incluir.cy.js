@@ -17,5 +17,4 @@ describe('Titulo - POST - /Titulo/v3_post_titulo_incluir', { env: { hideCredendi
         expect(response.duration).to.be.below(2000);
       });
   });
-  
 });

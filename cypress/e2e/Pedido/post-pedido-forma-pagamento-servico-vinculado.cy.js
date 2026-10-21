@@ -30,5 +30,4 @@ describe('Pedido - POST - /Pedido/v3_pedido_forma_pagamento_servico_vinculado', 
         expect(resposta.body.retorno[0].servicos[0]).toHaveProperty('lancarautomatico');
       });
   });
-  
 });

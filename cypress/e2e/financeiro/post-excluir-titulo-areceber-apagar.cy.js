@@ -39,5 +39,4 @@ describe('Financeiro - POST /Financeiro/v3_excluir_titulo_areceber_apagar', { en
       expect(response.body).to.exist;
     });
   });
-  
 });

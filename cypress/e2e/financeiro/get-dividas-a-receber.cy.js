@@ -90,5 +90,4 @@ describe('Financeiro - GET /Financeiro/v3_financeiro_dividas_a_receber', { env: 
       expect(response.body).to.exist;
     });
   });
-  
 });

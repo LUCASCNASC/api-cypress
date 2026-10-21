@@ -49,5 +49,4 @@ describe('Diversos - GET /Diversos/v2_diversos_cnae', { env: { hideCredentials: 
       expect(response.body).to.exist;
     });
   });
-  
 });

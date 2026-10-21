@@ -28,5 +28,4 @@ describe('Fisco/Contábil - POST /Fisco/Contabil/v3_post_receber_transferencia',
       expect(ret).to.have.property('QtdeNotasRecebidas');
     });
   });
-  
 });

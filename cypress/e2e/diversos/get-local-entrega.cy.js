@@ -52,5 +52,4 @@ describe('Diversos - GET /Diversos/v2_diversos_local_entrega', { env: { hideCred
       expect(response.body).to.exist;
     });
   });
-  
 });

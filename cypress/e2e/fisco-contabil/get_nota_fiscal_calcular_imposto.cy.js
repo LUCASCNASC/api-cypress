@@ -23,5 +23,4 @@ describe('Fisco/Contábil - GET - /Fisco/Contabil/v3_nota_fiscal_calcular_impost
       expect(ret).to.have.property('Trial');
     });
   });
-  
 });

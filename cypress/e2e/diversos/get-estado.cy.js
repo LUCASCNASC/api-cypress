@@ -18,5 +18,4 @@ describe('Diversos - GET /Diversos/v2_diversos_estado', { env: { hideCredentials
       expect(ret).to.have.property('uf_nome');
     });
   });
-  
 });

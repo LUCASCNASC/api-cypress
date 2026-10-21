@@ -30,5 +30,4 @@ describe('Financeiro - DELETE /Financeiro/v3_financeiro_lancamento_conta_corrent
       expect(response.status).to.eq(500);
     });
   });
-  
 });

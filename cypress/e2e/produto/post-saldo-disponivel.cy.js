@@ -17,5 +17,4 @@ describe('Produto - POST - /Produto/v3_produto_saldo_disponivel', { env: { hideC
         expect(response.duration).to.be.below(2000);
       });
   });
-  
 });

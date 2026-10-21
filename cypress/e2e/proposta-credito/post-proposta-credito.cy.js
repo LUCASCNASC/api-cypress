@@ -17,5 +17,4 @@ describe('Proposta crédito - POST - /Proposta%20crédito/v2_proposta_credito_po
         expect(response.duration).to.be.below(2000);
       });
   });
-  
 });
